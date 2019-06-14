@@ -1,0 +1,508 @@
+{
+    "dashboard": {
+        "profile": {
+            "title": "AltDentifier Armaturenbrett",
+            "welcome": "Willkommen zurück, %s",
+            "profile": "Profil",
+            "servers": "Server",
+            "tf": "Vertrauensfaktor",
+            "very_trusted": "Sehr vertrauenswürdig",
+            "trusted": "Vertrauenswürdige",
+            "distrusted": "Misstrauisch",
+            "severely_distrusted": "Sehr misstrauisch",
+            "dsc_ban": "Discord Services Sperrstatus:",
+            "not_banned": "Nicht Gesperrt",
+            "banned": "Gesperrt",
+            "ksoft_ban": " KSoft.si Sperrstatus",
+            "trustfactor": "Was ist Vertrauensfaktor?",
+            "trustfactor_explained": "AltDentifier Trust Factor ist ein von Auxim#0001 entwickeltes System, das die Vertrauenswürdigkeit Ihres Discord-Kontos bestimmt. Der Vertrauensfaktor wird unter Verwendung benutzerdefinierter Formeln berechnet, die mehrere Faktoren bei der Berechnung des Endwerts berücksichtigen. Nachdem ein Vertrauensfaktor berechnet wurde, überprüfen wir den Bereich, in den Ihr Vertrauensfaktor fällt und den wir Ihnen anzeigen. Diese Vertrauensfaktoren reichen von sehr unzuverlässig bis sehr vertrauenswürdig. Ihr Vertrauensfaktor wird dann verwendet, um zu entscheiden, ob Ihr Konto beim Beitritt zu einem geschützten AltDentifier-Server überprüft werden muss!",
+            "premium": {
+                "title": "Premium",
+                "your_tier": "Ihre Premium-Stufe",
+                "plan": "Ihr aktueller Plan: ",
+                "click_here": "Klick hier",
+                "no_premium": "Es scheint, als hättest du keine Premium.",
+                "ad-free": "Sie befinden sich derzeit auf unserer werbefreien Ebene. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
+                "basic": "Sie befinden sich derzeit auf unserer Basisstufe. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
+                "pro": "Du bist derzeit auf unserer Pro-Tier. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
+                "ultra": "Du befindest dich derzeit auf unserer Ultra-Ebene. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
+                "offer": "um unsere Premium-Pläne zu sehen. Wenn Sie Premium kaufen, sollte es aktualisiert werden, wenn Sie die Seite aktualisieren. Wenn dies nicht der Fall ist, klicken Sie bitte auf die Schaltfläche Patreon aktualisieren unten!",
+                "change_plan": "Wenn du deinen Plan änderst, sollte er automatisch auf dieser Seite aktualisiert werden. Wenn dies nicht der Fall ist, klicken Sie bitte auf die Schaltfläche Patreon aktualisieren unten!",
+                "perks": "Enthaltene Vergünstigungen",
+                "no-ads": "Verwenden Sie AltDentifier ohne Werbung. Du wirst nie Werbung auf einer Seite sehen!",
+                "activate-on": "Premium aktivieren bei %s Server",
+                "activate-on-one": "Premium aktivieren bei %s Server",
+                "servers-left": "Du hast noch %s Server übrig!",
+                "servers-left-one": "Du hast noch %s Server übrig!",
+                "refresh": "Patreon aktualisieren"
+            }
+        },
+        "server": {
+            "title": "Verwalten von %s",
+            "menu_settings": "Einstellungen",
+            "menu_accessroles": "Zugriff auf Rollen",
+            "menu_banlists": "Banlisten",
+            "menu_raidmode": "Raidmodus",
+            "menu_premium": "Premium",
+            "menu_save": "Einstellungen speichern",
+            "settings": {
+                "main_settings": {
+                    "title": "Haupteinstellungen",
+                    "language": "Sprache: ",
+                    "prefix": "Präfix: ",
+                    "timezone": "Zeitzone (GMT Offset): ",
+                    "autorole": "Autorolle: "
+                },
+                "verification_settings": {
+                    "title": "Verifizierungseinstellungen",
+                    "altdentification": "AltDentifizierung: ",
+                    "bot_channel": "Botkanal: ",
+                    "warning_channel": "Warnkanal: ",
+                    "default_role": "Standardrolle: ",
+                    "in_verif_role": "Rolle bei der Verifizierung: ",
+                    "timeout_action": "Timeout-Aktion: ",
+                    "timeout_role": "Timeout-Rolle: ",
+                    "verification": "Verifizierung",
+                    "disabled": "Deaktiviert",
+                    "everyone": "Alle",
+                    "distrusted-and-higher": "Misstrauisch und höher",
+                    "trusted-and-higher": "Vertrauenswürdig und höher",
+                    "very-trusted-only": "Nur sehr vertrauenswürdig",
+                    "trustfactor_threshold": "Vertrauensfaktor Schwellenwert: ",
+                    "minimum_karma": "Reddit Minimales Karma: ",
+                    "verification_alerts": "Verifizierungswarnungen: ",
+                    "role_block": "Verhindern Sie, dass andere Bots während der Überprüfung Rollen vergeben.:",
+                    "vpn_allowed": "VPN-Benutzer von der Verifizierung ausschließen:",
+                    "timeout_time": "Timeout Zeit: ",
+                    "timeout_minutes": "Minuten",
+                    "self_allowed": "Erlauben Sie anderen Benutzern, deine Überprüfung selbst zu starten: "
+                },
+                "logging_settings": {
+                    "title": "Logging-Einstellungen",
+                    "enable": "Logging aktivieren: ",
+                    "log_channel": "Logkanal: ",
+                    "log_options": "Logging Einstellungen: "
+                },
+                "heartbeat": {
+                    "title": "AltDentifier Herzschlag",
+                    "no_issues": "Es wurden keine Probleme mit Ihrer Konfiguration festgestellt!"
+                }
+            },
+            "access_roles": {
+                "mod_roles": "Mod Rollen",
+                "admin_roles": "Admin Rollen"
+            },
+            "banlists": {
+                "suffix": "Banlist",
+                "whitelist": "Weißliste",
+                "new_line": "Platziere jeden Ban auf einer neuen Linie!"
+            },
+            "raidmode": {
+                "title": "Raidmode",
+                "activate": "Raidmode Aktivieren: ",
+                "auto": "Auto-Raidmode: ",
+                "expire": "Auto-Raidmode verfällt in",
+                "expire_2": "minuten!",
+                "trigger": "Auslösung ein:",
+                "per": "Benutzer pro",
+                "unit": "Sekunden",
+                "raidmode_action": "Raidmode Aktion"
+            },
+            "premium": {
+                "title": "Premium Einstellungen",
+                "thank_you": "Vielen Dank, dass Sie AltDentifier unterstützen.",
+                "custom_message": "Benutzerdefinierte Nachricht:",
+                "custom_color": "Benutzerdefinierte Hintergrundfarbe:",
+                "custom_image": "Benutzerdefinierte URL für Hintergrundbilder:",
+                "guidelines": {
+                    "title": "Anpassungsrichtlinien und -einschränkungen",
+                    "required": "Erforderlich",
+                    "recommended": "Empfohlen",
+                    "1": "Benutzerdefinierte Nachrichten dürfen keinerlei Werbung enthalten, mit Ausnahme von Informationen über den Server, dem der Benutzer beitreten möchte.",
+                    "2": "Benutzerdefinierte Nachrichten dürfen keine Verweise auf NSFW-Inhalte enthalten, mit Ausnahme der Angabe des Themas oder der Regeln eines Servers.",
+                    "3": "Benutzerdefinierte Nachrichten dürfen keine personenbezogenen Daten von Dritten enthalten.",
+                    "4": "Kundenspezifische Nachrichten dürfen keine Form von Hassreden, Diskriminierung, Rassismus oder anderen obszönen Inhalten enthalten.",
+                    "5": "Kundenspezifische Nachrichten dürfen keine Vulgaritäten, Schimpfwörter oder politischen Aussagen enthalten.",
+                    "6": "Benutzerdefinierte Hintergrundbilder dürfen keine Gore, NSFW, NSFL oder andere obszöne Inhalte enthalten, die für Benutzer unter 18 Jahren nicht geeignet sind.",
+                    "7": "Benutzerdefinierte Hintergrundbilder müssen auf vertrauenswürdigen Domänen bereitgestellt werden. Dazu gehören unter anderem Imgur, Flickr und Discord CDN.",
+                    "8": "Die benutzerdefinierte Hintergrundfarbe darf nicht zu hell sein, um Konflikte mit weißem Text zu vermeiden.",
+                    "9": "Benutzerdefinierte Hintergrundbilder können in keiner Weise animiert werden.",
+                    "10": "Benutzerdefinierte Hintergrundbilder sollten für den Benutzer nicht zu störend sein.",
+                    "11": "Benutzerdefinierte Nachrichten sollten dem Benutzer etwas über Ihren Server erzählen und erklären, warum er mit AltDentifier überprüfen muss, um ihm beizutreten."
+                },
+                "no_premium": "Dieser Server hat keine Premium!",
+                "click_here": "Klick hier",
+                "offers": " um sich über unsere Premium-Angebote zu informieren!",
+                "subscription": "Du hast ein Abonnement für unseren Premium-Plan und kannst auf diesem Server Premium aktivieren.",
+                "still-activatable": "Sie können noch %s Server aktivieren!",
+                "still-activatable-one": "Sie können noch %s Server aktivieren!",
+                "activate": "Premium aktivieren",
+                "deactivate": "Premium deaktivieren"
+            }
+        },
+        "privacy": {
+            "title": "Datenschutzeinstellungen",
+            "request": "Persönliche Daten anfordern",
+            "delete": "Personenbezogene Daten löschen",
+            "delete_confirm": "Wenn Sie Ihre Kontodaten löschen, ist Ihnen die Nutzung unserer Dienste für 48 Stunden untersagt. Dieser Vorgang kann eine Weile dauern, verlassen Sie die Seite nicht, solange sie noch geladen ist! Sind Sie sicher, dass Sie Ihre personenbezogenen Daten löschen möchten?",
+            "request_confirm": "Sie können eine Dateneinsicht nur einmal pro 24 Stunden anfordern. Dieser Vorgang kann eine Weile dauern, verlassen Sie die Seite nicht, bevor ein Download-Link erscheint. Achten Sie darauf, dass Sie Ihren Müll entsorgen!"
+        }
+    },
+    "error": {
+        "title": "Ein Fehler ist aufgetreten",
+        "button_normal": "Zurückgehen",
+        "button_setup": "Setup neu starten"
+    },
+    "verification": {
+        "title": "Verifizierung für %s",
+        "welcome": "Willkommen bei {}!",
+        "method": "Bitte wählen Sie eine Verifizierungsmethode!\nMethoden, die auf der Serverseite deaktiviert sind, werden ausgeblendet. Mit Ausnahme von Xbox Verification ist es nicht erforderlich, Ihr Konto mit Discord zu verknüpfen.",
+        "choices": "Sie können mit AltDentifier mit Reddit, Steam, Twitter, Overwatch, Xbox, Youtube und Captcha überprüfen. Die verfügbaren Optionen hängen vom Server ab. Klicken Sie auf den untenstehenden Button, um mit der Verifizierung fortzufahren!\n\n\nBei der Verifizierung mit AltDentifier stimmen Sie unserer <a href='https://altdentifier.com/tos'>Datenschutzrichtlinie und Allgemeinen Geschäftsbedingungen</a> zu.",
+        "message": "%s möchte Ihnen folgende Nachricht zukommen lassen: %s",
+        "login": "Anmelden mit Discord",
+        "explain": "Die Serveradministratoren haben auf diesem Server zusätzliche Sicherheitsschritte eingerichtet, um Alt-Accounts, Spammer und Raider zu bekämpfen. Leider wurde Ihr Konto von unserem System als verdächtig markiert, oder ein Moderator hat beantragt, Ihr Konto zu bearbeiten. Wenn unser System Ihr Konto erfolgreich überprüfen kann, steht es Ihnen frei, sich am Server zu beteiligen. Sollte Ihr Konto nicht bestätigen können, {}. Administratoren haben immer die Macht, dieses System zu umgehen. Mit freundlichen Grüßen, das Mitarbeiterteam.",
+        "servers": "Der Benutzer befindet sich auf {} Servern.",
+        "actions": {
+            "kick": "wirst du vom Server geworfen.",
+            "ban": "wirst du vom Server gebannt.",
+            "role": "bekommst du eine bestimmte Rolle.",
+            "nothing": "liegen die getroffenen Maßnahmen im Ermessen des Serverpersonals."
+        },
+        "failure": {
+            "title": "Verifizierung fehlgeschlagen",
+            "button": "Zurück zur Methodenauswahl"
+        },
+        "overwatch": {
+            "title": "Overwatch Verifizierung",
+            "region": {
+                "title": "Bitte wählen Sie die Region, in der Sie Overwatch spielen!",
+                "eu": "Europa",
+                "us": "Nordamerika",
+                "kr": "Südkorea"
+            },
+            "platform": "Bitte wählen Sie die Plattform, auf der Sie Overwatch spielen!",
+            "continue": "Weitermachen",
+            "result": "Battle Tag: {}\nLevel: {}, Gespielte Spiele: {}",
+            "fail_1": "Deine Verbindung zum Battle.Net wurde nicht durch Discord bestätigt. Stellen Sie sicher, dass ein Häkchen neben Ihrer Verbindung in Discord sichtbar ist. Bitte verknüpfen Sie Ihr Battle.Net-Konto erneut mit Discord und versuchen Sie es erneut, oder versuchen Sie eine andere Methode!",
+            "fail_2": "Es gab ein Problem beim Abrufen Ihres Overwatch-Profils aus der API. Bitte versuchen Sie es erneut, oder verwenden Sie eine andere Methode!",
+            "fail_3": "Dein Overwatch-Profil scheint privat zu sein. Wir können keine Daten von einem privaten Profil abrufen, bitte machen Sie Ihr Profil öffentlich oder versuchen Sie eine andere Methode!",
+            "fail_4": "Ihr Overwatch-Konto ist derzeit nicht verifizierbar."
+        },
+        "captcha": {
+            "title": "Captcha Verifizierung",
+            "fail": "Wir konnten Ihre Captcha-Antwort nicht überprüfen. Bitte versuchen Sie es erneut, oder verwenden Sie eine andere Methode!"
+        },
+        "hw_verif": {
+            "title": "Hardware-Verifizierung",
+            "code": "Dein Code lautet: "
+        },
+        "not_verified": {
+            "title": "Nicht in Verifizierung",
+            "short": "Du wirst nicht verifiziert.",
+            "long": "Sie brauchen diese Seite nicht zu besuchen, da Sie sich nicht in der Überprüfung befinden."
+        },
+        "steam": {
+            "title": "Anmelden mit Steam",
+            "desc": "Melden Sie sich mit Steam an, um die Verifizierung fortzusetzen.",
+            "unknown": "Unbekannt",
+            "result": "Benutzername: {}\nKonto Alter: {} tage\nLand: {}\nSpiele: {}",
+            "not_public": "Nicht öffentlich",
+            "fail_1": "Deine Verbindung zu Steam wurde nicht durch Discord verifiziert. Stellen Sie sicher, dass ein Häkchen neben Ihrer Verbindung in Discord sichtbar ist. Bitte verknüpfe dein Steam-Konto erneut mit Discord und versuche es erneut, oder versuche eine andere Methode!",
+            "fail_2": "Dein Steamprofil scheint privat zu sein. Wir können keine Daten von einem privaten Profil abrufen, bitte machen Sie Ihr Profil öffentlich oder versuchen Sie eine andere Methode!",
+            "fail_3": "Dein Steam-Konto ist derzeit nicht verifizierbar."
+        },
+        "reddit": {
+            "result": "Benutzername: {}\nKonto Alter: {} tage\nLink Karma: {}\nKommentar Karma: {}",
+            "fail_1": "Deine Verbindung zu Reddit wurde nicht durch Discord verifiziert. Stellen Sie sicher, dass ein Häkchen neben Ihrer Verbindung in Discord sichtbar ist. Bitte verknüpfen Sie Ihr Reddit-Konto erneut mit Discord und versuchen Sie es erneut, oder versuchen Sie eine andere Methode!",
+            "fail_2": "Wir konnten Ihr Reddit-Konto nicht finden. Bitte versuche es erneut, oder versuche eine andere Methode!",
+            "fail_3": "Ihr Reddit-Konto ist derzeit nicht verifizierbar."
+        },
+        "twitter": {
+            "result": "Display Name: {}\nKonto Alter: {} tage\nAnhänger: {}\nTweets: {}",
+            "fail_1": "Deine Verbindung zu Twitter wurde nicht von Discord überprüft. Stellen Sie sicher, dass ein Häkchen neben Ihrer Verbindung in Discord sichtbar ist. Bitte verknüpfen Sie Ihren Twitter-Account erneut mit Discord und versuchen Sie es erneut, oder versuchen Sie eine andere Methode!",
+            "fail_2": "Wir konnten Ihren Twitter-Account nicht finden. Bitte versuche es erneut, oder versuche eine andere Methode!",
+            "fail_3": "Dein Twitter-Account ist derzeit nicht verifizierbar."
+        },
+        "youtube": {
+            "result": "Benutzername: {}\nKonto Alter: {} tage\nBeschreibung: {}\nAnsichten: {}\nAbonnenten: {}\nVideos: {}\nKommentare: {}",
+            "fail_1": "Deine Verbindung zu YouTube wurde nicht von Discord überprüft. Stellen Sie sicher, dass ein Häkchen neben Ihrer Verbindung in Discord sichtbar ist. Bitte verknüpfen Sie Ihr YouTube-Konto erneut mit Discord und versuchen Sie es erneut, oder versuchen Sie eine andere Methode!",
+            "fail_2": "Es gab ein Problem beim Abrufen Ihres YouTube-Profils aus der API. Bitte versuchen Sie es erneut, oder verwenden Sie eine andere Methode!",
+            "fail_3": "Dein YouTube-Konto ist derzeit nicht verifizierbar."
+        },
+        "xbox": {
+            "result": "Gamertag: {}\nGamerscore: {}\nTier: {}\nReputation: {}",
+            "fail_1": "Wir haben derzeit die Grenze für die Überprüfung von Xbox-Konten erreicht. Bitte versuchen Sie eine andere Methode!",
+            "fail_2": "Deine Verbindung zu Xbox wurde nicht von Discord überprüft. Stellen Sie sicher, dass ein Häkchen neben Ihrer Verbindung in Discord sichtbar ist. Bitte verknüpfen Sie Ihr Xbox-Konto erneut mit Discord und versuchen Sie es erneut, oder versuchen Sie eine andere Methode!",
+            "fail_3": "Es gab ein Problem beim Abrufen Ihres Xbox-Profils aus der API. Bitte versuchen Sie es erneut, oder verwenden Sie eine andere Methode!",
+            "fail_4": "Wir konnten Ihr Xbox-Konto nicht finden. Bitte versuche es erneut, oder versuche eine andere Methode!",
+            "fail_5": "Dein Xbox-Konto ist derzeit nicht verifizierbar."
+        },
+        "success": {
+            "title": "Verifizierung erfolgreich",
+            "leave": "Du kannst diese Seite jetzt verlassen.",
+            "dm": "Sie haben Ihr Konto erfolgreich verifiziert. Wir wünschen Ihnen einen angenehmen Aufenthalt in {}{}!"
+        },
+        "vpn": {
+            "yes": "Ja",
+            "no": "Nein",
+            "maybe": "Vielleicht",
+            "not_allowed": "Dieser Server erlaubt es Benutzern nicht, während der Verwendung eines VPN zu überprüfen. Bitte deaktivieren Sie Ihr VPN und versuchen Sie es erneut!"
+        }
+    },
+    "setup": {
+        "title": "AltDentifier Einstellung",
+        "hello": "Hallo {}",
+        "perm_error": "Warnung: Während der Einladung wurden keine Berechtigungen erteilt. Wenn Sie keine ordnungsgemäßen Berechtigungen haben, kann dies zu einem nicht funktionierenden Bot führen. Stellen Sie sicher, dass Sie <b>MITGLIEDER KICKEN, MITGLIEDER BANNEN, ROLLEN VERWALTEN, KANÄLE VERWALTEN, NACHRICHTEN VERSENDEN und LINKS EINBETTEN</b> haben.</b>",
+        "greeting": "Danke, dass du mich zu {} eingeladen hast!",
+        "start": "Klicken Sie auf den Weiter-Button unten, um den Setup-Prozess zu starten<br>Mit der Installation von AltDentifier auf Ihrem Server stimmen Sie unserer <a href=https://altdentifier.com/tos>Servicebedingungen und Datenschutzerklärung</a>.<br>Wir hoffen, dass Sie eine gute Erfahrung mit AltDentifier haben!",
+        "language": "Welche Sprache soll AltDentifier auf Ihrem Server verwenden?",
+        "default_role": "Möchten Sie eine Standardrolle auswählen? Diese Rolle wird den Mitgliedern nach Abschluss der Überprüfung übertragen.",
+        "logging": "Möchten Sie die logging aktivieren?",
+        "in_verification_role": "Möchten Sie eine In-Verifizierungsrolle auswählen? Diese Rolle wird den Mitgliedern während der Überprüfung übertragen. Beachten Sie, dass Rollen die Verifizierungsstufen umgehen!",
+        "bot_channel": "Bitte wählen Sie einen Bot-Kanal aus. Dieser Kanal wird verwendet, um Informationen über den Verifikationsprozess zu liefern. Dieser Kanal sollte privat gehalten werden und ist Voraussetzung für die Funktion des Bot!",
+        "warning_channel": "Bitte wählen Sie einen Warnkanal aus. Dieser Kanal wird verwendet, um Benutzer über Probleme oder Informationen im Zusammenhang mit dem Verifizierungsprozess zu informieren. Dieser Kanal sollte für alle nicht verifizierten Mitglieder sichtbar sein und ist Voraussetzung für die Funktion des Bot!",
+        "select_role": "Wählen Sie eine Rolle aus, oder halten Sie diesen Wert leer, um keine zu setzen!",
+        "disable_logging": "Logging deaktivieren",
+        "enable_logging": "Logging aktivieren",
+        "select_log_channel": "Wählen Sie einen Kanal, wenn die logging aktiviert ist.",
+        "select_bot_channel": "Wählen Sie ein Bot-Kanal",
+        "select_warning_channel": "Wählen Sie ein Warnkanal",
+        "languages": {
+            "en": "Englisch (English)",
+            "nl": "Niederländisch (Nederlands)",
+            "fr": "Französisch (Francais)",
+            "de": "Deutsch",
+            "sv": "Schwedisch (Svenska)",
+            "es_es": "Spanisch (Español)",
+            "pt_br": "Brasilianisches Portugiesisch (Português do Brazil)",
+            "tr": "Türkisch (Türkçe)"
+        },
+        "back": "Zurück",
+        "save-and-continue": "Speichern und Weitermachen",
+        "continue": "Weitermachen",
+        "failed": {
+            "title": "Setup fehlgeschlagen",
+            "reason": "Bot-Kanal oder Warnkanal wurde nicht gesetzt! Diese sind für die Funktion des Bot zwingend erforderlich."
+        },
+        "success": {
+            "title": "Setup abgeschlossen",
+            "desc": "Das Setup wurde erfolgreich abgeschlossen. Sie können nun zum Dashboard gehen, um erweiterte Einstellungen zu konfigurieren oder die Seite zu schließen."
+        }
+    },
+    "nav": {
+        "invite": "Invite",
+        "dashboard": "Armaturenbrett",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "commands": "Kommandos",
+        "status": "Status",
+        "about": "Über",
+        "premium": "Premium",
+        "support": "Support anfordern",
+        "dark_theme": "Dunkles Thema",
+        "light_theme": "Lichtthema",
+        "login": "Anmelden",
+        "logout": "Abmelden"
+    },
+    "about": {
+        "title": "Über AltDentifier",
+        "desc": "AltDentifier ist ein einzigartiger Verifizierungs-Bot, der hilft, Ihren Server vor Alarmen und Raubzügen zu schützen. Wir bieten ein einzigartiges Social Media- und Gaming-Plattform-Verifizierungssystem und automatische Erkennung von Alt-Accounts!",
+        "staff": "Personal",
+        "dev": "Entwickler",
+        "mod": "Mod",
+        "translator": "Übersetzerin",
+        "widgets": "Widgets"
+    },
+    "authorization": {
+        "for": "Berechtigung für %s",
+        "allow": "Erlauben Sie %s um dein Konto zu nutzen?",
+        "scopes": "Diese App kann:",
+        "authorize": "Autorisieren",
+        "cancel": "Abbrechen"
+    },
+    "banned": {
+        "title": "Gesperrt",
+        "short": "Du wurdest von AltDentifier gebannt.",
+        "long": "Dein Konto wurde von AltDentifier wegen TOS-Missbrauchs gesperrt! Es ist Ihnen nicht gestattet, die Dienste von AltDentifier zu nutzen."
+    },
+    "blog": {
+        "title": "AltDentifier Blog",
+        "author": "Autor",
+        "read_more": "Mehr lesen"
+    },
+    "commands": {
+        "title": "AltDentifier Kommandos",
+        "tip": "Tipp: Verwenden Sie ;help [command] im Bot, um mehr Informationen über einen Befehl zu erhalten!"
+    },
+    "create_post": {
+        "title": "Beitrag erstellen",
+        "new": "Neuen Beitrag erstellen",
+        "title_input": "Titel",
+        "text_input": "Text"
+    },
+    "deleted": {
+        "title": "Daten gelöscht",
+        "removed": "Wir löchsten %s Verifizierungsnachrichten",
+        "restricted": "Ihr Konto wurde vorübergehend gesperrt, und Sie können innerhalb von 48 Stunden wieder auf unsere Dienste zugreifen.",
+        "not_restricted": "Dein Konto wurde nicht eingeschränkt.",
+        "logged_out": "Du bist jetzt ausgeloggt!"
+    },
+    "faq": {
+        "title": "AltDentifier FAQ",
+        "questions": {
+            "1": "Was ist AltDentifier?",
+            "2": "Wie funktioniert AltDentifier?",
+            "3": "Aktualisiert AltDentifier automatisch?",
+            "4": "Warum antworten einige Nachrichten nicht?",
+            "5": "Was ist die Standardrolle?",
+            "6": "Was sind Mod- und Admin-Rollen?",
+            "7": "Was sind Bot- und Warnkanäle und warum werden sie benötigt?",
+            "8": "Warum werden die vom Bot angeforderten Berechtigungen benötigt?"
+        },
+        "answers": {
+            "1": "AltDentifier ist ein Bot zur Erkennung und Überprüfung von Personen, die Alt-Accounts und Spam-Accounts sein könnten. Personen, die als verdächtig eingestuft sind, können automatisch aufgefordert werden, sich mit AltDentifier zu verifizieren.",
+            "2": "AltDentifier funktioniert, indem es Benutzer mit ihren Discord-Verbindungen verifiziert. Benutzer können Drittanbieterdienste wie Steam und Twitter mit ihrem Konto verbinden. AltDentifier verwendet dann die Daten dieser Konten, um die Legitimität des Kontos zu überprüfen.",
+            "3": "Ja. AltDentifier wird vollständig vom Entwickler verwaltet, so dass Sie keine Updates installieren müssen, diese gehen einfach automatisch auf Ihren Server.",
+            "4": "AltDentifier hat einen Timeout beim Abhören von Nachrichten. Das ist etwa 1 Minute. Danach mag es so aussehen, als würde der Bot nicht mehr funktionieren, aber er hat tatsächlich gerade aufgehört, auf eine Antwort zu warten.",
+            "5": "Eine Standardrolle bedeutet in diesem Zusammenhang eine Rolle, die allen Mitgliedern in Ihrem Server beim Beitritt zugewiesen wird. Diese Rolle wird entfernt, wenn ein Benutzer überprüfen muss. Seit kurzem können Sie die Arbeit auch umkehren, so dass sie sich stattdessen wie eine Verifikationsrolle verhält!",
+            "6": "Dies sind Rollen, die Sie dem Bot hinzufügen können, um Zugriff auf Berechtigungen innerhalb des Bot zu erhalten. Im Grunde genommen sind sie fast identisch, mit dem einzigen Unterschied, dass Admins die Einstellungen des Bot ändern können, Mods nicht. Beachten Sie, dass Manage Server für das Web-Dashboard weiterhin benötigt wird!",
+            "7": "Der Bot-Kanal ist der Kanal, über den AltDentifier die Mitarbeiter über den Status der zu verifizierenden Personen informiert. Der Bot benötigt einen Platz für die Ausgabe, daher ist er erforderlich. Der Warnkanal wird verwendet, um Personen zu warnen, wenn sie ihre DM's ausgeschaltet haben oder optional, wenn sie überprüfen müssen. Dies ist ebenfalls erforderlich, da Benutzer mit ausgeschalteten DM's noch in der Lage sein sollten, zu überprüfen.",
+            "8": "AltDentifier erfordert die Verwaltung von Rollen, um die Standardrolle anwenden oder entfernen zu können. Es ermöglicht uns auch, die Timeout-Rolle zu vergeben und unsere Autorole-Funktionalität bereitzustellen. Kick und Ban Berechtigungen sind erforderlich, da wir in der Lage sein müssen, diese Aktionen für Mitglieder zu unterstützen, die nicht reagieren."
+        }
+    },
+    "incorrect_account": {
+        "title": "Falsches Konto",
+        "desc": "Das Konto, mit dem Sie sich anmelden, ist nicht dasselbe wie das Konto, das Sie zur Überprüfung aufgefordert haben. Das Serverpersonal wurde darauf aufmerksam gemacht."
+    },
+    "index": {
+        "desc": "Der beste Discord-Sicherheits- und Kontrollpunkt-Bot!",
+        "trusted": "Vertrauen von ",
+        "and": " Servern und ",
+        "users": " benutzern!",
+        "features": {
+            "title": "Unsere Eigenschaften",
+            "feature_titles": [
+                "Leistungsstarkes neues Benutzer-Verifizierungssystem.",
+                "Detaillierte Verifizierungsinformationen",
+                "Einfach einzurichten",
+                "Automatische Anti-Raid-Funktion",
+                "Mehrsprachig",
+                "Saubere Protokollierung"
+            ],
+            "feature_descs": [
+                "Neue Benutzer erhalten ein DM zur schnellen Verifizierung mit unserem einfach zu bedienenden Verifizierungssystem, das Steam, Reddit, Twitter, YouTube, Xbox und sogar Google Captcha unterstützt!<br>Unser Checkpoint-System wird Bots abschrecken und Alts stoppen, während es legitime Benutzer an Ihrem Server teilnehmen lässt!",
+                "Mit AltDentifier wissen Sie genau, wer beitritt, so dass Sie ganz einfach wissen können, wer die Benutzer sind, für die sie sich ausgeben. AltDentifier warnt Sie sogar, wenn Benutzer ein VPN betreiben!",
+                "Unser leistungsstarkes Web-Panel macht es einfach, den Bot einzuladen, einzurichten und zu konfigurieren. Unser Setup ist einfach zu verstehen und dauert nur eine Minute!",
+                "Kombinieren Sie das Beste aus Antiraid- und Verifikations-Bots mit unserem automatischen Antiraid. Automatisierte Konten werden unsere Bestätigungsseite nicht passieren, während neue Mitglieder hereinkommen und Ihren Server genießen!",
+                "¿Hablas español? Wir auch. Unser Bot und unsere Website sind auf Englisch, Niederländisch, Französisch, Deutsch und Spanisch verfügbar, so dass die Benutzer wissen, was sie mit einem Bot zu tun haben, der ihre Sprache spricht!",
+                "Sie können sich darauf verlassen, dass alle Ereignisse auf Ihrem Server protokolliert werden. Verfolgen Sie Nachrichtenbearbeitungen, Löschungen, Verlassen, Bans und mehr!"
+            ]
+        },
+        "convinced": "Überzeugt?",
+        "invite_now": "Warte nicht länger! Drücken Sie jetzt auf Einladen und genießen Sie Ihren Server in Ruhe, mit dem Wissen das er geschützt ist!",
+        "endorsed": "AltDentifier wird nicht von Discord unterstützt oder erstellt.",
+        "tos": "Allgemeine Geschäftsbedingungen"
+    },
+    "premium": {
+        "title": "AltDentifier Premium",
+        "short": "Schauen Sie sich unsere Premium-Pläne an!",
+        "ad-free": "Werbefrei",
+        "personal": "Persönlich",
+        "no-ads": "Unterstützen Sie AltDentifier und nutzen Sie den Service ohne Werbung.",
+        "purchase": "Kaufen",
+        "premium": "Premium",
+        "basic": "Basic: $5/m (1 Server)",
+        "pro": "Pro: $10/m (3 Server)",
+        "ultra": "Ultra: 20$/m (8 Server)",
+        "perks": [
+            "Mit kostenloser persönlicher Werbung auf allen Seiten!",
+            "Deaktiviert Werbung auf der Seite Ihres Servers für alle Benutzer!",
+            "Unterstützen Sie AltDentifier und halten Sie die Lichter an.",
+            "Erhalten Sie zuerst Sneak Peaks über AltDentifier.",
+            "Ändern der Hintergrundfarbe der Verifizierungsseite",
+            "Setzt ein benutzerdefiniertes Hintergrundbild für die Verifizierungsseite.",
+            "Fügen Sie Ihre eigene Nachricht zur Verifizierung hinzu."
+        ],
+        "purchase_basic": "Basic Kaufen",
+        "purchase_pro": "Pro Kaufen",
+        "purchase_ultra": "Ultra Kaufen",
+        "terms": "Mit dem Kauf eines Abonnements erklären Sie sich damit einverstanden, dass Sie gegen Zahlung sofortigen Zugang zu Ihren Vergünstigungen erhalten. <br>Um eine Rückerstattung zu erhalten, kontaktieren Sie uns bitte per E-Mail unter Verwendung von <a href=\"mailto:contact@altdentifier.com\">contact@altdentifier.com</a>.<br>Sie stimmen zu, dass Sie uns zuerst kontaktieren werden, wenn Sie eine Rückerstattung wünschen. Eine Rückbelastung vor der Kontaktaufnahme kann zu einem dauerhaften Ausschluss von unseren Dienstleistungen führen."
+    },
+    "requested": {
+        "title": "Angeforderte Daten",
+        "short": "Anfrage zu aktuell!",
+        "long": "Sie haben kürzlich Ihre Daten angefordert. Du kannst dies nur einmal pro 24 Stunden tun. Bitte versuchen Sie es später noch einmal."
+    },
+    "restricted": {
+        "title": "Eingeschränkt",
+        "short": "Konto eingeschränkt",
+        "long": "Aufgrund einer kürzlich erfolgten Anfrage zur Löschung von Daten wurde Ihr Konto für 48 Stunden von der Nutzung unseres Dienstes ausgeschlossen. Bitte versuchen Sie es später noch einmal."
+
+    },
+    "session_incomplete": {
+        "title": "Sitzung unvollständig",
+        "short": "Kein Server ist mit der Verifizierung verbunden.",
+        "long": "Es scheint, dass kein Server für Ihre Überprüfung gespeichert wurde. Wenn Sie verifiziert werden, stellen Sie sicher, dass Sie den Bot-Link verwenden."
+    },
+    "status": {
+        "title": "AltDentifier Status",
+        "website": "AltDentifier Website",
+        "bot": "AltDentifier Bot",
+        "status": "Status: ",
+        "latency": "Latenz: ",
+        "offline": "Offline",
+        "online": "Online",
+        "shards": "Shards",
+        "shard": "Shard"
+    },
+    "tos": {
+        "title": "AltDentifier Nutzungsbedingungen & Datenschutzerklärung",
+        "privacy": "Datenschutzerklärung",
+        "translations": "Bitte beachten Sie, dass nur unsere AGB in englischer Sprache rechtsverbindlich sind. Während Übersetzungen dieser Dokumente zu Ihrer Bequemlichkeit zur Verfügung gestellt werden können, werden sie von der Gemeinschaft übersetzt und sind somit keine juristischen Dokumente.",
+        "policy": "Ihre Privatsphäre ist AltDentifier sehr wichtig, und wir werden Ihre Privatsphäre bei der Nutzung unserer Dienste schützen.<br><br><br>Wir bitten um Ihre persönlichen Daten, um den reibungslosen Betrieb der AltDentifier-Dienste zu gewährleisten. AltDentifier ist eine Social Media-Verifizierungsplattform und wird als solche Informationen über Ihr Profil auf diesen Plattformen anfordern und mit anderen teilen.<br><br><br>Wenn Sie Ihr Konto bei AltDentifier verifizieren, können einige Informationen mit Mitarbeitern von Chat-Gruppen geteilt werden, die die AltDentifier-Dienste nutzen. Dies beinhaltet, ist aber nicht beschränkt auf die folgenden Informationen: <br>* Die Gesamtzahl der Server, in denen Sie sich befinden, <br>* Ein Benutzername, der dem Dienst entspricht, den Sie zur Überprüfung Ihres Kontos verwendet haben <br>* Metriken über das Konto bei dem Dienst, den Sie zur Überprüfung Ihres Kontos verwendet haben, diese können unter anderem die Anzahl der Tweets, die Sie veröffentlicht haben, oder Ihr Steam-Level beinhalten.<br>* Ihr Browser-Status, der angibt, ob Sie bei der Verifizierung mit AltDentifier ein VPN verwendet haben.<br>AltDentifier speichert anonymisierte Informationen über die Dienste, mit denen Sie sich verbinden. Während diese Daten mit Ihrem AltDentifier-Konto verknüpft sind, werden die Identifikatoren der Verbindung vor der Speicherung mit dem SHA-512-Hashing-Algorithmus irreversibel anonymisiert. Ihre IP-Adresse wird von IPHub.info verarbeitet, die dafür sorgt, dass die von uns gesendeten Daten regelmäßig gelöscht werden.<br>AltDentifier speichert Ihre IP-Adresse niemals für eine spätere Verwendung.<Darüber hinaus erheben wir analytische Daten für statistische Zwecke und zur Fehlerberichterstattung sowie zur Speicherung von Konfigurationsdaten, die für den Betrieb von AltDentifier erforderlich sind, und können für personalisierte Anzeigen Drittanbieter-Integrationen wie Google AdSense und Google Analytics einsetzen, die mit Hilfe der Cookie-Technologie gezielte Anzeigen schalten. Durch die Nutzung unserer Dienste erklären Sie sich damit einverstanden, dass Venatus und ihre Partner Tracking-Cookies nach Ihrer ausdrücklichen Zustimmung platzieren dürfen und versuchen, Ihre Daten außerhalb des öffentlichen Zugangs so sicher zu speichern, wie wir es realistisch garantieren können. Aufgrund der Natur der Online-Datenspeicherung und -übertragung können wir diese Erwartung jedoch möglicherweise nicht erfüllen, da eine vollständige Sicherheit nicht gewährleistet ist. AltDentifier kann von Personen verwendet werden, die nicht direkt mit uns verbunden sind, so dass wir keine Kontrolle darüber haben, wie sie AltDentifier verwenden, sofern dies innerhalb angemessener Fristen geschieht.<Wenn Sie diese Vereinbarung nicht akzeptieren, müssen Sie jede Chat-Gruppe, die die Dienste von AltDentifier nutzt, verlassen und Ihr Konto bei AltDentifier niemals überprüfen. Für weitere Informationen zu unserer Datenschutzerklärung, Anfragen zur Datennutzung und zur Entfernung oder Einsicht Ihrer Daten, einschließlich aller Anfragen im Rahmen des GDPR oder DMCA, kontaktieren Sie uns bitte unter contact@altdentifier.com",
+        "terms": "Nutzungsbedingungen",
+        "mumble_jumble": "Bitte lesen Sie diese Allgemeinen Geschäftsbedingungen vollständig unter https://altdentifier.com, Eigentümer und Betreiber ist Geoffrey Westhoff. Diese Vereinbarung dokumentiert die rechtsverbindlichen Bedingungen, die mit der Nutzung der Website unter altdentifier.com verbunden sind. Mit dem Zugriff auf und der Nutzung dieses Dienstes erklären Sie sich damit einverstanden, an die Bedingungen und Bestimmungen dieser Vereinbarung gebunden zu sein. Darüber hinaus unterliegen Sie bei der Nutzung dieser besonderen Dienste allen veröffentlichten Richtlinien oder Regeln, die für diese Dienste gelten. Der AltDentifier-Dienst ist für Personen unter 13 Jahren nicht zugänglich, und AltDentifier speichert keine personenbezogenen Daten von Kindern unter 13 Jahren. Jede Teilnahme an diesem Service bedeutet die Annahme dieser Vereinbarung. Wenn Sie nicht damit einverstanden sind, sich an das oben Gesagte zu halten, nutzen Sie bitte diesen Service nicht.",
+        "conditions": {
+            "liability": {
+                "title": "Liability",
+                "text": "This site and it's components are offered for informational purposes only; this site shall not be responsible or liable for the accuracy, usefulness or availability of any information transmitted or made available via the site, and shall not be responsible or liable for any error or omissions in that information."
+            },
+            "intellectual_property": {
+                "title": "Intellectual Property",
+                "text": "The Site and its original content, features, and functionality are owned by Geoffrey Westhoff and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. All data generated and shared by AltDentifier in the past, present or future is property of AltDentifier and it's sole owners and must be transferred, removed or changed on request."
+            },
+            "termination": {
+                "title": "Termination",
+                "text": "We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with your account. All provisions of this Agreement that, by their nature, should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability. You may also request to terminate your account yourself, to do this, submit a deletion request on our web panel. Using AltDentifier after termination will result in a new account being opened for you."
+            },
+            "changes": {
+                "title": "Changes to the agreement",
+                "text": "AltDentifier reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms."
+            },
+            "warranty": {
+                "title": "Warranty",
+                "text": "AltDentifier is provided \"as is\" with no warranty or liability for any outcomes of using AltDentifier and/or any content you may or may not interact with on AltDentifier, and you agree that AltDentifier is not liable for any events in the past, in current times or in the future. You agree to hold harmless against AltDentifier for every possible situation except for those we accept full responsibility off. AltDentifier is not responsible and will not take responsibility for the behaviour of other parties using AltDentifier."
+            },
+            "disputes": {
+                "title": "Disputes",
+                "text": "While using AltDentifier, certain situations may or may not develop which may cause you to file a dispute with us.<br>If you find yourself banned from our services, you must e-mail our contact mail to file an official appeals, or to request the reason for your ban. Appeals must be formally written and should include your Discord ID, proof of account ownership and a reason why your ban should be overturned.<br>If you wish to be forgotten by AltDentifier, you can submit a request at our web panel.<br>If you wish to submit a personal data request, you can submit a request at our web panel once per 24 hours. <br>"
+            },
+            "other_links": {
+                "title": "Other Links",
+                "text": "Our Site does contain a number of links to other websites and online resources that are not owned or controlled by AltDentifier. AltDentifier has no control over, and therefore cannot assume responsibility for, the content or general practices of any of these third party sites and/or services. Therefore, we strongly advise you to read the entire terms and conditions and privacy policy of any site that you visit as a result of following a link that is posted on our site."
+            },
+            "law": {
+                "title": "Governing Law",
+                "text": "This Agreement is governed in accordance with the laws of The Kingdom of The Netherlands."
+            },
+            "acknowledgement": {
+                "title": "Acknowledgement",
+                "text": "By using AltDentifier, you acknowledge all above Terms. You acknowledge that, even if you did not read the Terms in full, you will comply with our Terms."
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "If you have any questions, requests or complaints about AltDentifier, please forward this to our staff using contact@altdentifier.com. We will respond to these inquiries within 28 days. AltDentifier fully complies with GDPR Data Releasements and Data Deletion."
+            }
+        }
+    }
+}

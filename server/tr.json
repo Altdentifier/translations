@@ -1,0 +1,485 @@
+{
+    "dashboard": {
+        "profile": {
+            "title": "AltDentifier Kontrol Paneli",
+            "welcome": "Tekrar hoş geldin, %s",
+            "profile": "Profil",
+            "servers": "Sunucular",
+            "tf": "Güven Faktörü",
+            "very_trusted": "Çok Güvenilir",
+            "trusted": "Güvenilir",
+            "distrusted": "Güvenilmeyen",
+            "severely_distrusted": "Bazen Güvenilir",
+            "dsc_ban": "Discord Servisleri Yasaklanmaları:",
+            "not_banned": "Yasaklanmamış",
+            "banned": "Yasaklanmış",
+            "ksoft_ban": " KSoft.si Yasaklanmaları",
+            "trustfactor": "Güven Faktörü nedir?",
+            "trustfactor_explained": "AltDentifier'ın Güven Faktörü, Auxim#0001 tarafından tasarlanan, Discord hesabınızın güvenilirliğini kararlaştıran bir sistemdir. Güven Faktörü, özel formüller ve aynı zamanda sonucu elde edene kadar farklı yollar kullanılacak şekilde hesaplanır. Güven Faktörü hesaplandıktan sonra, sizin Güven Faktörünüzün seviyesini kontrol ederiz. Bu seviyeler Aşırı Güvenilmez'den Çok Güvenilir'e kadardır. Güven Faktörünüz, AltDentifier ile korunan bir sunucuya girdiğinizde hesabınızı onaylayıp onaylamayacağınıza karar vermemizi sağlar.",
+            "premium": {
+                "title": "Premium",
+                "your_tier": "Premium Seviyeniz",
+                "plan": "Şuanki Planınız: ",
+                "click_here": "Buraya tıklayın",
+                "no_premium": "Görünüşe göre Premium sahibi değilsiniz.",
+                "ad-free": "Şu anda Reklamsız seviyesindesiniz. Planınızı yükseltmek veya değiştirmek isterseniz planınızı yükseltebilirsiniz,",
+                "basic": "Şu anda Basit seviyedesiniz. Planınızı yükseltmek veya değiştirmek isterseniz,",
+                "pro": "Şu anda Pro seviyedesiniz. Planınızı yükseltmek veya değiştirmek isterseniz,",
+                "ultra": "Şu anda Ultra seviyedesiniz. Planınızı yükseltmek veya değiştirmek isterseniz,",
+                "offer": "premium planlarına bakmak için. Premium aldığınız zaman, bu sayfada da otomatik olarak güncellenmesi gereklidir. Eğer güncellenmezse, aşağıdaki Patreon'u Yenile butonunu kullanın!",
+                "change_plan": "Planınızı değiştirdiğiniz zaman, bu sayfada da otomatik olarak güncellenmesi gereklidir. Eğer güncellenmezse, aşağıdaki Patreon'u Yenile butonunu kullanın!",
+                "perks": "İçinde Gelen Özellikler",
+                "no-ads": "AltDentifier'ı reklamsız kullan. Bir daha asla reklam görmeyeceksiniz!",
+                "activate-on": "Premium'u şu %s sunucuda aktifleştir",
+                "activate-on-one": "Premium'u şu %s sunucuda aktifleştir",
+                "servers-left": "Hala %s sunucuya sahipsiniz!",
+                "servers-left-one": "Hala %s sunucuya sahipsiniz!",
+                "refresh": "Patreon'u Yenile"
+            }
+        },
+        "server": {
+            "title": "Yönetim %s",
+            "menu_settings": "Ayarlar",
+            "menu_accessroles": "Geçiş Rolleri",
+            "menu_banlists": "Yasaklama Listesi",
+            "menu_raidmode": "Saldırı Modu",
+            "menu_premium": "Premium",
+            "menu_save": "Ayarları Kaydet",
+            "settings": {
+                "main_settings": {
+                    "title": "Ana Ayarlar",
+                    "language": "Dil: ",
+                    "prefix": "Prefix: ",
+                    "timezone": "Zaman Dilimi (GMT Ofseti): ",
+                    "autorole": "Otomatik Rol: "
+                },
+                "verification_settings": {
+                    "title": "Doğrulama Ayarları",
+                    "altdentification": "AltDentification: ",
+                    "bot_channel": "Bot Kanalı: ",
+                    "warning_channel": "Uyarı Kanalı: ",
+                    "default_role": "Varsayılan Rol: ",
+                    "in_verif_role": "Doğrulama Sırasındaki Rol: ",
+                    "timeout_action": "Zaman Aşımı Eylemi: ",
+                    "timeout_role": "Zaman Aşımı Rolü: ",
+                    "verification": "Doğrulama",
+                    "disabled": "Deaktif",
+                    "everyone": "Herkes",
+                    "distrusted-and-higher": "Güvenilmeyenler ve Üzeri",
+                    "trusted-and-higher": "Güvenilenler ve Üzeri",
+                    "very-trusted-only": "Sadece Çok Güvenilenler",
+                    "trustfactor_threshold": "Güven Faktörü Sınırlaması: ",
+                    "minimum_karma": "En Az Reddit Karma'sı: ",
+                    "verification_alerts": "Doğrulama Bildirimleri: ",
+                    "timeout_time": "Zaman aşımı süresi: ",
+                    "timeout_minutes": "dakika",
+                    "role_block": "Doğrulama sırasında diğer botların rol vermesini engelle:",
+                    "vpn_allowed": "Doğrulamadan VPN kullanıcılarını engelle:"
+                },
+                "logging_settings": {
+                    "title": "Kayıt Ayarları",
+                    "enable": "Kayıtları Aktifleştir: ",
+                    "log_channel": "Kayıt Kanalı: ",
+                    "log_options": "Kayıt Ayarları: "
+                },
+                "heartbeat": {
+                    "title": "AltDentifier Heartbeat",
+                    "no_issues": "Ayarlarınızda herhangi bir sıkıntı yok gibi gözüküyor!"
+                }
+            },
+            "access_roles": {
+                "mod_roles": "Yetkili Rolleri",
+                "admin_roles": "Yönetici Rolleri"
+            },
+            "banlists": {
+                "suffix": "Yasaklama Listesi",
+                "whitelist": "Beyaz Liste",
+                "new_line": "Her yasaklamayı ayrı birer satıra koyun!"
+            },
+            "raidmode": {
+                "title": "Saldırı Modu",
+                "activate": "Saldırı Modunu Aktifleştir: ",
+                "auto": "Otomatik Saldırı Modu: ",
+                "expire": "Otomatik Saldırı Modu ",
+                "expire_2": "dakika sonra bitecek!",
+                "trigger": "Tetikle:",
+                "per": "kullanıcı her",
+                "unit": "saniyede",
+                "raidmode_action": "Saldırı Modu Eylemi"
+            },
+            "premium": {
+                "title": "Premium Ayarları",
+                "thank_you": "AltDentifier'ı desteklediğiniz için teşekkürler.",
+                "custom_message": "Özel Mesaj:",
+                "custom_color": "Özel Arkaplan Rengi:",
+                "custom_image": "Özel Arkaplan Resmi URL'si:",
+                "guidelines": {
+                    "title": "Kişiselleştirme Rehberi ve Yasaklamaları",
+                    "required": "Gerekli",
+                    "recommended": "Önerilir",
+                    "1": "Özel mesajlar kullanıcının girdiği sunucu hakkında bilgi veya alaklı olmadığı sürece reklam içeremez.",
+                    "2": "Özel mesajlarda sunucunun temasına ve kurallarına atıf yapılmadığı takdirde NSFW'ye gönderme yapılamaz.",
+                    "3": "Özel mesajlarda kimsenin kişisel bilgilerini içeremez.",
+                    "4": "Özel mesajlar kötü söz, soyutlama, ırkçılık gibi şeyler içeremez.",
+                    "5": "Özel mesajlar argo, küfür veya siyaset içeremez.",
+                    "6": "Özel arkaplan resimleri dehşet, NSFW, NSFL gibi 18 yaşının altındaki kullanıcıların göremeyeceği içerikler içeremez.",
+                    "7": "Özel arkaplan resimleri güvenilen sitelerde barındırılmalıdır. Bunlar, Imgur, Flickr veya Discord olabilir.",
+                    "8": "Özel arkaplan rengi beyaz yazıların sıkıntı çıkartmaması için çok açık olmamalıdır.",
+                    "9": "Özel arkaplan resimleri hiçbir şekilde hareketli olmamalıdır.",
+                    "10": "Özel arkaplan resimleri kullanıcıyı kışkırtacak şekilde olmamalıdır.",
+                    "11": "Özel mesajlar, kullanıcılara sunucu hakkında bilgi vermeli ve neden AltDentifier'ın kullanıldığını aktarmalıdır."
+                },
+                "no_premium": "Bu sunucunun Premium'u yok!",
+                "click_here": "Buraya tıklayın",
+                "offers": " Premium tekliflerimizi görmek için!",
+                "subscription": "Premium planımıza aboneliğiniz bulunmakta ve bu sunucu için Premium'u aktifleştirebilecek durumdasınız.",
+                "still-activatable": "Hala aktifleştirebilirsiniz: %s",
+                "still-activatable-one": "Hala aktifleştirebilirsiniz: %s",
+                "activate": "Premium'u Aktifleştir",
+                "deactivate": "Premium'u Deaktifleştir"
+            }
+        },
+        "privacy": {
+            "title": "Gizlilik Ayarları",
+            "request": "Kişisel Verileri İste",
+            "delete": "Kişisel Verileri Sil",
+            "delete_confirm": "Hesap verilerinizi sildiğiniz zaman, servislerimizi 48 saat boyunca kullanamayacaksınız. Bu işlem biraz sürebilir, bu yüzden sakın sayfa yüklenirken sayfayı kapatmayın! Kişisel verilerinizi silmek istediğinize emin misiniz?",
+            "request_confirm": "Veri isteğini sadece 24 saatte bir yapabilirsiniz. Bu işlem biraz sürebilir, bu yüzden bir indirme bağlantısı gelene kadar sayfadan ayrılmayın. Bilgilerinizi indirdiğinizden emin olun!"
+        }
+    },
+    "error": {
+        "title": "Bir Hata Oluştu",
+        "button_normal": "Geri dön",
+        "button_setup": "Kurulumu yeniden başlat"
+    },
+    "verification": {
+        "title": "%s için Doğrulama",
+        "welcome": "{} sunucusuna hoş geldiniz!",
+        "method": "Lütfen bir doğrulama yöntemi seçin!\nMethods that are disabled server side are hidden. With the exception of Xbox Verification, it is not neccesary to link your account with Discord.",
+        "choices": "AltDentifier kullanarak, Reddit, Steam, Twitter, Overwatch, Xbox, Youtube ve Captcha ile doğrulama yapabilirsiniz. Kullanılabilir ayarlar sunucuya göre değişir. Doğrulamaya devam etmek için aşağıdaki bağlantıya tıklayın!\n\nAltDentifier ile doğrulama yaparak, <a href='https://altdentifier.com/tos'>Gizlilik Politikasını & Kullanım Şartlarını</a> kabul etmiş sayılırsınız.",
+        "message": "size şu mesajı vermek istiyor!",
+        "login": "Discord ile Giriş Yap",
+        "explain": "Sunucu yöneticileri bu sunucuda yan hesapları, boş ve saldırı yapanları önlemek için ekstra önlemler almıştır. Maalesef, sizin hesabınız da sistemimiz tarafından Şüpheli olarak işaretlenmiş ya da bir yetkili tarafından incelenmesi istenmiştir.\n\nEğer sistemimiz hesabınızı başarıyla onaylarsa, sunucuya rahatlıkla erişim sağlayabileceksiniz. Hesabınız doğrulanamazsa, {}. Yöneticiler bu sistemi istedikleri zaman değiştirebilirler.\n\nSaygılarımızla,\n\n{} yetkili ekibi.\n\n",
+        "servers": "{} sunucuda, kullanıcılar!",
+        "actions": {
+            "kick": "sunucudan atılacaksınız",
+            "ban": "sunucudan yasaklanacaksınız",
+            "role": "belirli bir rol alacaksınız",
+            "nothing": "eylem, sunucu yetkililerinin takdirine bağlı olarak gerçekleşecektir"
+        },
+        "failure": {
+            "title": "Doğrulama Başarısız Oldu",
+            "button": "Yöntem seçimine geri dön"
+        },
+        "overwatch": {
+            "title": "Overwatch Doğrulaması",
+            "region": {
+                "title": "Lütfen Overwatch'ı oynadığınız bölgeyi seçin!",
+                "eu": "Avrupa",
+                "us": "Kuzey Amerika",
+                "kr": "Güney Kore"
+            },
+            "platform": "Lütfen Overwatch'ı oynadığınız platformu seçin!",
+            "continue": "Devam et",
+            "result": "Savaş Etiketi: {}\nSeviye: {}, Oynanan Oyunlar: {}"
+        },
+        "captcha": {
+            "title": "Captcha Doğrulaması"
+        },
+        "hw_verif": {
+            "title": "Donanım Doğrulaması",
+            "code": "Kodunuz: "
+        },
+        "not_verified": {
+            "title": "Doğrulamada Değil",
+            "short": "Doğrulamada değilsiniz",
+            "long": "Doğrulamada olmadığınızdan dolayı bu sayfayı ziyaret etmenize gerek yok"
+        },
+        "steam": {
+            "title": "Steam ile Giriş Yap",
+            "desc": "Devam etmek için Steam ile giriş yap",
+            "unknown": "Bilinmeyen",
+            "result": "Kullanıcı Adı: {}\nHesap Yaşı: {} gün\nÜlke: {}\nOyunlar: {}",
+            "not_public": "Topluluğa Açık Değil"
+        },
+        "reddit": {
+            "result": "Kullanıcı Adı: {}\nnHesap Yaşı: {} gün\nLink Karma'sı: {}\nYorum Karma'sı: {}"
+        },
+        "twitter": {
+            "result": "Görünen İsim: {}\nnHesap Yaşı: {} gün\nTakipçiler: {}\nTiwitler: {}"
+        },
+        "youtube": {
+            "result": "Kullanıcı Adı: {}\nnHesap Yaşı: {} gün\nAçıklama: {}\nGörüntülenmeler: {}\nAboneler: {}\nVideolar: {}\nYorumlar: {}"
+        },
+        "xbox": {
+            "result": "Oyuncu Etiketi: {}\nSkor: {}\nSeviye: {}\nSaygınlık: {}"
+        },
+        "success": {
+            "title": "Doğrulama Başarılı",
+            "leave": "Bu sayfayı kapatabilirsiniz",
+            "dm": "Hesabınızı başarıyla doğruladığınz. {} sunucusunda iyi bir vakit geçirmenizi diliyoruz!"
+        },
+        "vpn": {
+            "yes": "Evet",
+            "no": "Hayır",
+            "maybe": "Belki",
+            "not_allowed": "Bu sunucu VPN kullanıcılarının doğrulama yapmasına izin vermiyor. Lütfen VPN bağlantınızı sonlandırın ve tekrar deneyin!"
+        }
+    },
+    "setup": {
+        "title": "AltDentifier Kurulumu",
+        "hello": "Merhaba {}",
+        "perm_error": "Uyarı: Eklenme sırasında gerekli yetkiler verilmedi. Gerekli yetkileri vermemek botun çalışmasını engelleyebilir. Botun <b>KULLANICILARI AT, KULLANICILARI YASAKLA, ROLLERİ YÖNET, KANALLARI YÖNET, MESAJ GÖNDER ve EMBED MESAJLARI</b> yetkilerine sahip olduğuna emin olun.",
+        "greeting": "Beni {} sunucusuna davet ettiğiniz için teşekkürler!",
+        "start": "Kuruluma başlamak için aşağıdaki devam et butonuna basın<br>AltDentifier'ı sunucunuza ekleyerek <a href=https://altdentifier.com/tos>Hizmet Şartlarımızı ve Gizlilik Politakımızı</a> kabul etmiş sayılırsınız.<br>AltDentifier'ı kullanırken inanılamz vakit geçirmenizi umuyoruz!",
+        "language": "Sunucunuzda AltDentifier'ı hangi dilde kullanmak istiyorsunuz?",
+        "default_role": "Bir varsayılan rol seçmek istiyor musunuz? Bu rol doğrulama sonrası kullanıcılara verilecektir",
+        "logging": "Kayıtları etkinleştirmek ister misin?",
+        "in_verification_role": "Doğrulama rolü seçmek istiyor musunuz? Bu rol doğrulama aşamasındaki kullanıcılara verilecektir. Rollerin Discord'un doğrulama seviyelerini nötrleyeceğini unutmayın!",
+        "bot_channel": "Lütfen bir bot kanalı seçin. Bu kanal doğrulama sırasında kullanıcıları bilgilendirmek için kullanılacaktır. Bu kanal her zaman gizli kalmalıdır ve botun çalışması için gereklidir!",
+        "warning_channel": "Lütfen bir uyarı kanalı seçin. Bu kanal doğrulama sırasında kullanıcıları bilgilendirmek veya uyarmak için kullanılacaktır. Bu kanal tüm doğrulanmamış kullanıcılara görünür olmalıdır ve botun çalışması için gereklidir!",
+        "select_role": "Bir rol seçin veya ayarlamamak için boş bırakın!",
+        "disable_logging": "Kayıtları Deaktifleştir",
+        "enable_logging": "Kayıtları Aktifleştir",
+        "select_log_channel": "Eğer kayıtlar etkinse bir kanal seçin",
+        "select_bot_channel": "Bot kanalını seçin",
+        "select_warning_channel": "Uyarı kanalını seçin",
+        "languages": {
+            "en": "İngilizce (English)",
+            "nl": "Flemenkçe (Nederlands)",
+            "fr": "Fransızca (Francais)",
+            "de": "Almanca (Deutsch)",
+            "sv": "İsveççe (Svenska)",
+            "es_es": "İspanyolca (Español)",
+            "pt_br": "Brezilya Portekizcesi (Português do Brazil)",
+            "tr": "Türkçe"
+        },
+        "back": "Geri Dön",
+        "save-and-continue": "Kaydet ve Devam Et",
+        "continue": "Devam Et",
+        "failed": {
+            "title": "Kurulum Başarısız",
+            "reason": "Bot veya Uyarı Kanalı ayarlanmadı! Bunlar botun çalışması için gereklidir."
+        },
+        "success": {
+            "title": "Kurulum Başarılı",
+            "desc": "Kurulum başarıyla tamamlandı. Şimdi kontrol paneline gidebilir ve diğer ayarları yapabilir ya da bu sayfayı kapatabilirsiniz."
+        }
+    },
+    "nav": {
+        "invite": "Davet Et",
+        "dashboard": "Kontrol Paneli",
+        "blog": "Blog",
+        "faq": "SSS",
+        "commands": "Komutlar",
+        "status": "Durum",
+        "about": "Hakkında",
+        "premium": "Premium",
+        "support": "Yardım Alın",
+        "dark_theme": "Karanlık Tema",
+        "light_theme": "Açık Tema",
+        "login": "Giriş Yap",
+        "logout": "Çıkış Yap"
+    },
+    "about": {
+        "title": "AltDentifier Hakkında",
+        "desc": "AltDentifier, sunucunuzu yan hesaplardan ve saldırılardan koruyabileceğiniz özgün bir doğrulama botudur. Sizlere eşi benzeri görülmemiş sosyal medya ve oyun siteleri doğrulaması sayesinde otomatik yan hesap bulma sistemi sunuyoruz!",
+        "staff": "Çalışan",
+        "dev": "Geliştirici",
+        "mod": "Yetkili",
+        "translator": "Çevirmen",
+        "widgets": "Eklentiler"
+    },
+    "authorization": {
+        "for": "%s için Doğrulama",
+        "allow": "%s uygulamasının hesabınızı kullanmasına izin veriyor musunuz? ",
+        "scopes": "Bu uygulama:",
+        "authorize": "Yetkindir",
+        "cancel": "İptal Et"
+    },
+    "banned": {
+        "title": "Yasaklanmış",
+        "short": "AltDentifier'dan yasaklandınız",
+        "long": "Hesabınız Kullanım Şartlarını ihlal ettiğinizden dolayı AltDentifier'dan yasaklanmıştır! Artık hiçbir AltDentifier servislerini kullanamazsınız."
+    },
+    "blog": {
+        "title": "AltDentifier Blog",
+        "author": "Yazar",
+        "read_more": "Daha Fazlasını Oku"
+    },
+    "commands": {
+        "title": "AltDentifier Komutları",
+        "tip": "İpucu: ;help [komut] kullanarak belirli bir komut hakkında daha fazla bilgi alabilirsiniz!"
+    },
+    "create_post": {
+        "title": "Gönderi Oluştur",
+        "new": "Yeni bir gönderi oluştur",
+        "title_input": "Başlık",
+        "text_input": "Yazı"
+    },
+    "deleted": {
+        "title": "Veriler Silindi",
+        "removed": "%s sildik",
+        "restricted": "Hesabınız geçici olarak kısıtlandı, servislerimize 48 saat içerisinde tekrar erişebileceksiniz.",
+        "not_restricted": "Hesabınız kısıtlı değil",
+        "logged_out": "Otomatik olarak çıkış yapacaksınız!"
+    },
+    "faq": {
+        "title": "AltDentifier SSS",
+        "questions": {
+            "1": "AltDentifier nedir?",
+            "2": "AltDentifier nasıl çalışır?",
+            "3": "AltDentifier otomatik mi güncellenir?",
+            "4": "Neden bazı mesajlara cevap vermiyor?",
+            "5": "Varsayılan Rol nedir?",
+            "6": "Yetkili ve Yönetici rolleri nelerdir?",
+            "7": "Bot ve Uyarı kanalları nedir ve niçin gereklidir?",
+            "8": "Botun istediği yetkiler neden ve niçin gereklidir?"
+        },
+        "answers": {
+            "1": "AltDentifier, kullanıcıların yan veya spam hesaplar olup olmadığını doğrulamak için yapılmış bir bottur. Şüpheli olarak işaretlenen kullanıcılar otomatik olarak AltDentifier ile doğrulama işlemine tabi tutulacaktır.",
+            "2": "AltDentifier, kullanıcıların Discord Bağlantılarını doğrulamalarıyla çalışır. Kullanıcılar hesaplarına üçüncü parti servisleri (Steam ve Twitter gibi) bağlayabilir. Daha sonrasında da AltDentifier bunları hesabın gerçekliğini doğrulamak için kullanır.",
+            "3": "Evet. AltDentifier tamamiyle geliştirici tarafından yönetilmekte ve sizin güncelleme yapmanız gerekmemektedir, güncellemeler otomatik olarak sunucularda kullanılabilir hale gelecektir.",
+            "4": "AltDentifier'ın mesaj okumasının bir limiti vardır. Bu limit yaklaşık 1 dakikadır. Bu süre dolunca bot çalışmıyormuş gibi görünebilir ancak sadece yeni mesajları dinlemeyi bırakmıştır.",
+            "5": "Varsayılan Rol, bu durumda, sunucunuza yeni giren her kullanıcıya verilecek rol demektir. Bu rol, kullanıcının doğrulama yapması gerektiği zamanlarda otomatik olarak alınacaktır. Ayrıca, bunu tersine de çevirebilirsiniz, bu sayede doğrulama rolü gibi çalışabilir!",
+            "6": "Bu roller, botun kontrolünü sağlayabilecekleri belirtmenizi sağlar. Aslında bunlar birbirine oldukça yakındır, farkları, Yöneticiler botun ayarlarını değiştirebiliyorken Yetkililer değiştiremiyor. Sunucuyu Yönet yetkisinin kontrol paneline erişebilmek için gerekli olduğunu aklınızdan çıkartmayın!",
+            "7": "Bot kanalı, AltDentifier'ın doğrulama sırasındaki insanların durumlarını gösterdiği kanaldır. Bot bu aşamalarda mesaj gönderir, bu yüzden bu kanal gereklidir. Uyarı kanalı ise insanları özel mesajları kapalı olduğu durumlarda veya özel olarak doğrulama istenildiğinde bilgilendirmek için vardır. Bu da gereklidir, özel mesajları kapalı olan insanların da onaylanması gerekir.",
+            "8": "AltDentifier, Varsayılan Rolü verebilmek ve alabilmek için Rolleri Yönet yetkisine ihtiyaç duyar. Bu aynı zamanda zaman aşımı rolünü vermemizi ve otomatik rol özelliğinin çalışmasını sağlar. Sunucudan atma ve yasaklama yetkisi ise işlemlere cevap vermeyen kullanıcılara eylem uygulamak için gereklidir."
+        }
+    },
+    "incorrect_account": {
+        "title": "Geçersiz Hesap",
+        "desc": "Giriş yapmak için kullandığınız hesapla doğrulama yapmanız gereken hesap aynı değil. Sunucu yetkililerine bu konuda mesaj gönderilecektir."
+    },
+    "index": {
+        "desc": "En iyi Discord güvenliği ve kontrolü botu!",
+        "trusted": "",
+        "and": " sunucu ve ",
+        "users": " kullanıcı bize giveniyor!",
+        "features": {
+            "title": "Özelliklerimiz",
+            "feature_titles": [
+                "Güçlü kullanıcı doğrulama sistemi",
+                "Detaylı doğrulama bilgilendirmeleri",
+                "Kolay kurulum",
+                "Otomatik saldırı önleme",
+                "Çoklu dil",
+                "Kayıt alma"
+            ],
+            "feature_descs": [
+                "Yeni kullanıcılar kolaylıkla hesaplarını doğrulayabilecekleri, aynı zamanda Steam, Reddit, Twitter, YouTube, Xbox ve hatta Google Captcha'nın desteklendiği sistemimiz hakkında özel mesaj alacaklar!<br>Kontrol noktalarımız, gerçek kullanıcıları sunucunuza hoşlarken saldırganları ve yan hesapları durduracaktır!",
+                "AltDentifier size kimlerin giriş yaptığını bildirecektir, bu sayede siz, onlar kendileri doğrularken rahatınıza bakabilirsiniz. Hatta AltDentifier, eğer kullanıcı VPN kullanıyorsa bile sizi uyaracaktır!",
+                "Güçlü kontrol panelimiz davet etmeyi, kurulumu ve ayarlamayı kolaylaştıracak şekilde tasarlandı. Botun kurulumu kolay ve yapması bir dakikadan az!",
+                "En iyi saldırı önleme ve doğrulama botlarını bizim otomatik saldırı önleme özeliğimizle birleştirin. Saldırganlar, yeni kullanıcılar sunucunuzda eğlenirken bizim doğrulamamızdan geçemeyecek!",
+                "¿Hablas español? Evet, bizde. Botumuz ve internet sitemiz İngilizce, Flemenkçe, Fransızca, Almanca, Brezilya Portekizcesi, İsveççe, İspanyolca ve Türkçe destekliyor, bu sayede kullanıcılar botun onlardan ne yapmalarını istediğini anlayabilir!",
+                "Sunucunuzdaki tüm olaylar kaydedilirken rahatınıza bakın. Mesaj düzenlemelerini, silinmelerini, çıkışları, yasaklamaları ve daha bir çok şeyi takip altına alın!"
+            ]
+        },
+        "convinced": "İkna oldunuz mu?",
+        "invite_now": "Daha fazla beklemeyin! Davet Et'e basın ve sunucunuzun güvende olduğunu bilerek rahat rahat takılın!",
+        "endorsed": "AltDentifier, Discord tarafından onaylı veya sahipli değildir",
+        "tos": "Kullanım Şartları"
+    },
+    "premium": {
+        "title": "AltDentifier Premium",
+        "short": "Premium planlarımızı kontrol edin!",
+        "ad-free": "Reklamsız",
+        "personal": "Kişisel",
+        "no-ads": "AltDentifier'ı destekleyin ve servisimizden reklamsız yararlanın.",
+        "purchase": "Satın Al",
+        "premium": "Premium",
+        "basic": "Basit: $5/ay (1 sunucu)",
+        "pro": "Pro: $10/ay (3 sunucu)",
+        "ultra": "Ultra: 20$/ay (8 sunucu)",
+        "perks": [
+            "Tüm sayfalarda Reklamsız bir deneyim edinin!",
+            "Tüm kullanıcılar için sunucunuzun profilindeki reklamları kaldırın!",
+            "AltDentifier'ı destekleyin",
+            "AltDentifier hakkında ilk gizli bilgilendirmelerden haberdar olun",
+            "Doğrulama sayfasının arkaplan rengini değiştirin",
+            "Doğrulama sayfası için özel arkaplan resmi ayarlayın",
+            "Doğrulamaya özel mesaj ekleyin"
+        ],
+        "purchase_basic": "Basit Satın Al",
+        "purchase_pro": "Pro Satın Al",
+        "purchase_ultra": "Ultra Satın Al",
+        "terms": "Abonelik satın alarak özelliklere anında erişim sağlayacağınızı kabul ediyorsunuz.<br>İade talebi oluşturmak için bizlere <a href=\"mailto:https://contact@altdentifier.com\">contact@altdentifier.com</a> adresinden mail gönderin.<br>Eğer para iadesi almak istiyorsanız, öncelikle bizimle iletişime geçmelisiniz. İletişime geçmeden iade almak tüm servislerimizden yasaklanmanıza neden olabilir."
+    },
+    "requested": {
+        "title": "Veriler Zaten İstenmiş",
+        "short": "İstek daha taptaze!",
+        "long": "Yakın zamanda zaten verilerinizi istemişsiniz. Bu işlemi 24 saatte bir kez yapabilirsiniz. Lütfen daha sonra tekrar deneyin."
+    },
+    "restricted": {
+        "title": "Kısıtlandınız",
+        "short": "Hesabınız Kısıtlandı",
+        "long": "Önceki veri silme talebinize istinaden, hesabınız 48 saat boyunca kısıtlanmıştır. Lütfen daha sonra tekrar deneyin."
+
+    },
+    "session_incomplete": {
+        "title": "Oturum Tamamlanmadı",
+        "short": "Böyle bir doğrulamaya uygun sunucu bulunamadı",
+        "long": "Görünüşe göre gelen verilere göre bir sunucu bulunamadı. Eğer doğrulama aşamasındaysanız, botun verdiği linki kullandığınızdan emin olun."
+    },
+    "status": {
+        "title": "AltDentifier Durumu",
+        "website": "AltDentifier Sitesi",
+        "bot": "AltDentifier Botu",
+        "status": "Durum: ",
+        "latency": "Gecikme: ",
+        "offline": "Çevrimdışı",
+        "online": "Çevrimiçi",
+        "shards": "Shardlar",
+        "shard": "Shard"
+    },
+    "tos": {
+        "title": "AltDentifier TOS & Privacy Policy (Bu alan çeviriye kapalıdır)",
+        "privacy": "Privacy Policy",
+        "translations": "Please be aware that only our TOS in English is legally binding. While translations of these documents may be provided for your convenience, they are translated by the community and are thus not legal documents.",
+        "policy": "Your privacy is very important to AltDentifier, and we will ensure protecting your privacy when using our services.<br><br>We ask for your personal information to ensure the smooth operation of AltDentifier services. AltDentifier is a social media verification platform, and as such will request and share information about your profile on these platforms with others.<br><br>When verifying your account with AltDentifier, some information may be shared with staff members of chat-groups using AltDentifier services. This includes, but is not limited to the following information:<br>* The total numbers of servers you are in<br>* A username corresponding to the service you used to verify your account<br>* Metrics about the account on the service you used to verify your account, these can include but are not limited to, the amount of tweets you have posted, or your Steam level.<br>* Your browser status, indicating whether you have used a VPN when verifying with AltDentifier.<br>AltDentifier stores anonymized information about the services you connect with. While this data is linked to your AltDentifier account, the identifiers of the connection are irreversibly anonymized before storage with the SHA-512 hashing algorithm.Your IP Address is processed by IPHub.info, who ensure to periodically delete the data sent by us.<br>AltDentifier never stores your IP Address for later use.<br><br>Furthermore, we collect analytical data for statistical and error reporting purposes, and the storing of configuration data neccesary for the operation of AltDentifier.In addition, we may employ third party integrations such as Google AdSense and Google Analytics for personalized advertisements, which uses cookie technology to provide targeted advertisements.Our automatic ad inventory is managed by https://venatusmedia.com. By using our services you agree that Venatus and their partners may place tracking cookies after your explicit consent has been given.We attempt to store your data outside of public access, in as safe a manner as we can realistically guarantee. However, due to the very nature of online data storage and transfer, we may not be able to meet this expectation, due to the fact that complete security is unobtainable.AltDentifier may be used by people not directly affiliated to us, and thus, we have no control over how they use AltDentifier, provided it is within reasonable terms.<br><br>Verification of your account with AltDentifier constitutes agreement to our policies on data collection.If you do not accept this agreement, you are to leave any chat-group using AltDentifier services, and to never verify your account with AltDentifier. Not doing so will be regarded as accepting our policies.For more information on our privacy policy, inquiries on our data usage and requesting the removal or insight of your data, including any requests made under the GDPR or DMCA, contact us at contact@altdentifier.com",
+        "terms": "Terms of Service",
+        "mumble_jumble": "Please read these Terms of Service completely using https://altdentifier.com, owned and operated by Geoffrey Westhoff. This agreement documents the legally binding terms and conditions attached to  the use of the Site at altdentifier.com. By accessing and using this service, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services. The AltDentifier service is not accessible to those under 13 years of age, and AltDentifier does not knowingly store personal information from children under the age of 13. Any participation in this service will constitute acceptance of this agreement. If you do not agree to abide by the above, please do not use this service.",
+        "conditions": {
+            "liability": {
+                "title": "Liability",
+                "text": "This site and it's components are offered for informational purposes only; this site shall not be responsible or liable for the accuracy, usefulness or availability of any information transmitted or made available via the site, and shall not be responsible or liable for any error or omissions in that information."
+            },
+            "intellectual_property": {
+                "title": "Intellectual Property",
+                "text": "The Site and its original content, features, and functionality are owned by Geoffrey Westhoff and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. All data generated and shared by AltDentifier in the past, present or future is property of AltDentifier and it's sole owners and must be transferred, removed or changed on request."
+            },
+            "termination": {
+                "title": "Termination",
+                "text": "We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with your account. All provisions of this Agreement that, by their nature, should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability. You may also request to terminate your account yourself, to do this, submit a deletion request on our web panel. Using AltDentifier after termination will result in a new account being opened for you."
+            },
+            "changes": {
+                "title": "Changes to the agreement",
+                "text": "AltDentifier reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms."
+            },
+            "warranty": {
+                "title": "Warranty",
+                "text": "AltDentifier is provided \"as is\" with no warranty or liability for any outcomes of using AltDentifier and/or any content you may or may not interact with on AltDentifier, and you agree that AltDentifier is not liable for any events in the past, in current times or in the future. You agree to hold harmless against AltDentifier for every possible situation except for those we accept full responsibility off. AltDentifier is not responsible and will not take responsibility for the behaviour of other parties using AltDentifier."
+            },
+            "disputes": {
+                "title": "Disputes",
+                "text": "While using AltDentifier, certain situations may or may not develop which may cause you to file a dispute with us.<br>If you find yourself banned from our services, you must e-mail our contact mail to file an official appeals, or to request the reason for your ban. Appeals must be formally written and should include your Discord ID, proof of account ownership and a reason why your ban should be overturned.<br>If you wish to be forgotten by AltDentifier, you can submit a request at our web panel.<br>If you wish to submit a personal data request, you can submit a request at our web panel once per 24 hours. <br>"
+            },
+            "other_links": {
+                "title": "Other Links",
+                "text": "Our Site does contain a number of links to other websites and online resources that are not owned or controlled by AltDentifier. AltDentifier has no control over, and therefore cannot assume responsibility for, the content or general practices of any of these third party sites and/or services. Therefore, we strongly advise you to read the entire terms and conditions and privacy policy of any site that you visit as a result of following a link that is posted on our site."
+            },
+            "law": {
+                "title": "Governing Law",
+                "text": "This Agreement is governed in accordance with the laws of The Kingdom of The Netherlands."
+            },
+            "acknowledgement": {
+                "title": "Acknowledgement",
+                "text": "By using AltDentifier, you acknowledge all above Terms. You acknowledge that, even if you did not read the Terms in full, you will comply with our Terms."
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "If you have any questions, requests or complaints about AltDentifier, please forward this to our staff using contact@altdentifier.com. We will respond to these inquiries within 28 days. AltDentifier fully complies with GDPR Data Releasements and Data Deletion."
+            }
+        }
+    }
+}

@@ -1,0 +1,504 @@
+{
+    "dashboard": {
+        "profile": {
+            "title":"AltDentifierダッシュボード",
+            "welcome":"ウェルカムバック,%s",
+            "profile":"プロフィール",
+            "servers":"サーバー",
+            "tf":"信頼係数",
+            "very_trusted":"非常に信頼されています",
+            "trusted":"信頼できる",
+            "distrusted":"不信感",
+            "severely_distrusted":"深刻な不信感",
+            "dsc_ban":"Discord Services Banステータス:",
+            "not_banned":"禁止されていません",
+            "banned":"禁止",
+            "ksoft_ban":"KSoft.siの禁止ステータス",
+            "trustfactor":"信頼係数とは何ですか？",
+            "trustfactor_explained":"AltDentifier Trust Factorは、不和アカウントの信頼性を決定するAuxim#0001によって開発されたシステムです。 信頼係数は、最終値を計算する際に複数の要因を考慮するカスタム式を使用して計算されます。 信頼係数が計算された後、私たちはあなたの信頼係数は、私たちはあなたに表示される、に該当する範囲を確認してください。 これらの信頼要因は非常に信頼できないから、非常に信頼できる範囲です。 ご信頼係数が用いられるか否かを決定する口座が必要で検証を接合する場合は、AltDentifier保護す。","プレミアム": {
+                "title":"プレミアム",
+                "your_tier":"あなたのプレミアム階層",
+                "plan":"現在のプラン: ",
+                "click_here":"ここをクリック",
+                "no_premium":"あなたはプレミアムを持っていないようです。",
+                "ad-free":"あなたは現在、広告なしのティアに参加しています。 プランのアップグレードまたは変更をご希望の場合,",
+                "basic":"現在、ベーシックティアに入っています。 プランのアップグレードまたは変更をご希望の場合,",
+                "pro":"あなたは現在、私たちのプロ層です。 プランのアップグレードまたは変更をご希望の場合,",
+                "ultra":"あなたは現在、私たちのUltra tierにいます。 プランのアップグレードまたは変更をご希望の場合,",
+                "オファー":"プレミアムプランをチェックアウトする。 レビューを削除しました そうでない場合は、下の更新Patreonボタンをクリックしてください！",
+                "change_plan":"計画を変更すると、このページで自動的に更新されます。 そうでない場合は、下の更新Patreonボタンをクリックしてください！",
+                "perks":"含まれる特典",
+                "no-ads":"広告なしでAltDentifierを使用します。 すことができなくなっ広告を他のページから！",
+                "activate-on":"%sサーバーでプレミアムをアクティブに！",
+                "activate-on-one":"%sサーバーでプレミアムを有効化!",
+                "servers-left":"まだ%sサーバーが残っています！",
+                "servers-left-one":"まだ%sサーバーが残っています！",
+                "refresh":"Patreonをリフレッシュ"
+            }
+        },
+        "server": {
+            "title":"%sの管理",
+            "menu_settings":"設定",
+            "menu_accessroles":"アクセスロール",
+            "menu_banlists":"バンリスト",
+            "menu_raidmode": "ありがとうございました",
+            "menu_premium":"プレミアム",
+            "menu_save":"設定を保存する",
+            "settings": {
+                "main_settings": {
+                    "title":"メイン設定",
+                    "language":"言語: ",
+                    "prefix":"接頭辞: ",
+                    "timezone":"タイムゾーン(GMTオフセット): ",
+                    "autorole":"オートロール: "
+                },
+                "verification_settings": {
+                    "title":"検証設定",
+                    "altdentification":"AltDentification: ",
+                    "bot_channel":"ボットチャンネル: ",
+                    "warning_channel":"警告チャネル: ",
+                    "default_role":"デフォルトのロール: ",
+                    "in_verif_role":"検証中のロール: ",
+                    "timeout_action":"タイムアウトアクション: ","timeout_role":"タイムアウトロール: ",
+                    "verification":"検証",
+                    "disabled":"",
+                    "everyone":"みんな",
+                    "distrusted-and-higher":"不信と高い",
+                    "trusted":"信頼できると高い",
+                    "very-trusted-only":"非常に信頼できるだけ",
+                    "trustfactor_threshold":"Trustfactorしきい値: ",
+                    "minimum_karma":"Redditの最低カルマ: ",
+                    "verification_alerts":"検証アラート: ",
+                    "role_block":"検証中に他のボットがロールを与えないようにブロックする:",
+                    "vpn_allowed":"VPNユーザーは認証できません:",
+                    "timeout_time":"タイムアウト時間を分単位で指定します: ",
+                    "self_allowed":"他のユーザーが自分で検証を開始できるようにする: "
+                },
+                "logging_settings": {
+                    "title":"ロギングの設定",
+                    "enable":"ログを有効にする: ",
+                    "log_channel":"ログチャネル: ",
+                    "log_options":"ロギングオプション: "
+                },
+                "heartbeat": {
+                    "title":"アルトデンティフィエハートビート",
+                    "no_issues":"設定で検出された問題はありません！"
+                }
+            },
+            "access_roles": {
+                "mod_roles":"Modの役割",
+                "admin_roles":"管理ロール"
+            },
+            "banlists": {
+                "suffix":"バンリスト",
+                "whitelist":"ホワイトリスト",
+                "new_line":"それぞれの禁止を新しい行に置く！"
+            },
+            "raidmode": {
+                "title":"雷モード",
+                "activate":"Raidmodeを有効にする: ",
+                "auto":"自動雷モード: ",
+                "expire":"Auto-Raidmodeの有効期限が切れます",
+                "expire_2":"分！",
+                "trigger":"トリガーオン:",
+                "per":"ユーザーごと",
+                "unit":"秒数",
+                "raidmode_action":"Raidmodeアクション"
+            },
+            "premium": {
+                "title":"プレミアム設定",
+                "thank_you":"サポートしてくれてありがとう",
+                "custom_message":"カスタムメッセージ:",
+                "custom_color":"カスタム背景色:",
+                "custom_image":"カスタム背景画像のURL:",
+                "ガイドライン": {
+                    "title":"カスタマイズのガイドラインと制限",
+                    "required": "必須",
+                    "recommended":"推奨",
+                    "1":"ユーザーが参加したいサーバーに関する情報を除き、カスタムメッセージに広告を含めることはできません。",
+                    "2":"カスタムメッセージにはNSFWコンテンツへの参照を含めることはできません。",
+                    "3":"カスタムメッセージを含めることはできませんから個人情報あります。",
+                    "4":"カスタムメッセージには、差別発言、差別、人種差別、その他のわいせつな内容を含めることはできません。",
+                    "5":"カスタムメッセージには下品さ、罵り言葉、政治的発言を含めることはできません。",
+                    "6":"カスタム背景画像には、18歳未満のユーザーに適さないgore、NSFW、NSFL、その他のわいせつなコンテンツを含めることはできません。",
+                    "7":"カスタム背景画像は、信頼されたドメインでホストする必要があります。 これらには、Imgur、Flickr、Discord CDNが含まれますが、これらに限定されません。",
+                    "8":"カスタムの背景色は、白いテキストとの競合を避けるために、明るすぎてはいけません。",
+                    "9":"カスタム背景画像をアニメーション化することはできません。",
+                    "10":"カスタム背景画像はユーザーにとってあまりにも邪魔にならないはずです。",
+                    "11":"カスタムメッセージは、ユーザーにサーバーに関する何かを伝える必要があります。"
+                },
+                "no_premium":"このサーバーにはプレミアムはありません！",
+                "click_here":"ここをクリック",
+                "offers": "私たちのプレミアム製品について調べるために！",
+                "subscription":"プレミアムプランのサブスクリプションがあり、このサーバーでPremiumを有効にできます。",
+                "still-activatable":"%sサーバーをアクティブにできます！",
+                "still-activatable-one":"あなたはまだ%sサーバーをアクティブにできます！",
+                "activate":"プレミアムを有効にする",
+                "deactivate":"プレミアムを無効にする"
+            }
+        },
+        "privacy": {
+            "title":"プライバシー設定",
+            "request":"個人データのリクエスト",
+            "delete":"個人データの削除",
+            "delete_confirm":"アカウントデータを削除すると、48時間のサービス利用が制限されます。 このプロセスばらく時間がかかる場合があり、放置しないで、ページの中での負荷! あなたの個人データを削除してもよろしいですか？",
+            "request_confirm":"24時間あたりのデータインサイトのみをリクエストできます。 このプロセスには時間がかかることがあります。 あなたのダンプを保存してください！"
+        }
+    },
+    "error": {
+        "title":"エラーが発生しました",
+        "button_normal":"戻る",
+        "button_setup":"セットアップの再起動"
+    },
+    "verification": {
+        "title":"%sの検証",
+        "welcome":"{}へようこそ！",
+        "method":"検証方法を選択してください！サーバー側で無効になっている\nMethodsは非表示になります。 Xboxの検証を除いて、あなたのアカウントを不和にリンクする必要はありません。",
+        "choices":"Reddit,Steam,Twitter,Overwatch,Xbox,Youtube and Captchaを使ってAltDentifierで確認できます。 の利用可能なオプションによって、サーバーにコピーします。 下のボタンをクリックして確認を続行します！あなたは私たちの<a href='https://altdentifier.com/tos'>プライバシーポリシー&利用規約</a>",
+        "message":"%sは次のメッセージを表示します:%s",
+        "login":"不和でログイン",
+        "explain":"サーバー管理者は、altアカウント、スパマー、レイダーに対抗するために、このサーバーに追加のセキュリティ手順を設定しています。 悲し、ユーザーアカウントしたとして不審による当社のシステム、またはモデレーター要加工のアカウントを設定します。\n\n私たちのシステムが正常にアカウントを確認することができます,あなたは、サーバーに従事して自由になります. あなたのアカウントが確認できない場合は、{}。 管理者は常にこのメソッドをオーバーライドす。\n\nよろしく、\n\nThe{}スタッフチーム。\n\n",
+        "servers":"ユーザーは{}サーバーにあります！",
+        "actions": {
+            "kick":"あなたはサーバーから蹴られます",
+            "ban":"あなたはサーバーから禁止されます",
+            "role":"あなたは特定の役割を受け取ります",
+            "nothing":"アクションはサーバースタッフの裁量に委ねられます"
+        },
+        "failure": {
+            "title":"検証に失敗しました",
+            "button":"メソッド選択に戻る"
+        },
+        "overwatch": {
+            "title":"オーバーウォッチ検証",
+            "region": {
+                "title":"Overwatchでプレイする地域を選んでください！",
+                "eu":"ヨーロッパ",
+                "us":"北アメリカ",
+                "kr":"韓国"
+            },
+            "platform":"Overwatchをプレイするプラットフォームを選択してください！",
+            "continue":"続ける",
+            "result":"バトルタグ:{}\nLevel:{},ゲームのプレイ: {}",
+            "fail_1":"あなたの接続Battle.Net Discordによって検証されませんでした。 Discordで接続の横に目盛りが表示されていることを確認してください。 再リンクしてくださいあなたBattle.Net 不和にアカウントと再試行するか、別の方法を試してみてください！",
+            "fail_2":"APIからOverwatchプロファイルを取得する際に問題が発生しました。 もう一度やり直すか、別の方法を使用してください！",
+            "fail_3":"あなたのプロフィールは非公開のようです。 プライベートプロファイルからデータを取得することはできません。",
+            "fail_4":"あなたのOverwatchアカウントは現在認証の対象外です"
+        },
+        "captcha": {
+            "title":"Captcha検証",
+            "fail":"captchaのレスポンスを確認できませんでした。 もう一度やり直すか、別の方法を使用してください！"
+        },
+        "hw_verif": {
+            "title":"ハードウェア検証",
+            "code":"あなたのコードは: "
+        },
+        "not_verified": {
+            "title":"検証ではない",
+            "short":"あなたは検証されていません",
+            "long":"このページにアクセスする必要はありません。"
+        },
+        "steam": {
+            "title":"Steamでログイン",
+            "desc":"Steamでログインして検証を続ける",
+            "unknown":"不明",
+            "result":"ユーザー名:{}\nAccount Age:{}days\nCountry:{}\nGames: {}",
+            "not_public":"パブリックではない",
+            "fail_1":"スチームへの接続はDiscordによって検証されませんでした。 Discordで接続の横に目盛りが表示されていることを確認してください。 あなたのSteamアカウントをDiscordにリンクし直してもう一度やり直してください。",
+            "fail_2":"Steamプロフィールは非公開のようです。 プライベートプロファイルからデータを取得することはできません。",
+            "fail_3":"あなたのSteamアカウントは現在認証できません"
+        },
+        "reddit": {
+            "result":"ユーザー名:{}\nAccount年齢:{}日\nLinkカルマ:{}\nCommentカルマ: {}",
+            "fail_1":"あなたのRedditへの接続はDiscordによって検証されませんでした。 Discordで接続の横に目盛りが表示されていることを確認してください。 DiscordにあなたのRedditアカウントを再リンクして、もう一度やり直すか、別の方法を試してみてください！",
+            "fail_2":"あなたのRedditアカウントが見つかりませんでした。 もう一度リンクしてみるか、別の方法を試してみてください！",
+            "fail_3":"あなたのRedditアカウントは現在認証の対象外です"
+        },
+        "twitter": {
+            "result":"表示名:{}\nAccount Age:{}days\nFollowers:{}\nTweets: {}",
+            "fail_1":"Twitterへの接続がDiscordによって検証されませんでした。 Discordで接続の横に目盛りが表示されていることを確認してください。 DiscordにあなたのTwitterアカウントを再リンクして、もう一度やり直してください。",
+            "fail_2":"あなたのTwitterアカウントが見つかりませんでした。 もう一度リンクしてみるか、別の方法を試してみてください！",
+            "fail_3":"Twitterアカウントは現在認証の対象外です"
+        },
+        "youtube": {
+            "result":"ユーザー名:{}\nAccount Age:{}days\nDescription:{}\nViews:{}\nSubscribers:{}\nVideos:{}\nComments: {}",
+            "fail_1":"Youtubeへの接続はDiscordによって検証されませんでした。 Discordで接続の横に目盛りが表示されていることを確認してください。 あなたのYouTubeアカウントをDiscordにリンクし直して再試行するか、別の方法を試してみてください！",
+            "fail_2":"APIからYouTubeプロフィールを取得する際に問題が発生しました。 もう一度やり直すか、別の方法を使用してください！",
+            "fail_3":"あなたのYouTubeアカウントは現在認証できません"
+        },
+        "xbox": {
+            "result":"ゲーマータグ:{}\nGamerscore:{}\nTier:{}\nReputation: {}",
+            "fail_1":"現在、Xboxアカウントの確認の制限に達しています。 別の方法を試してください！",
+            "fail_2":"Xboxへの接続がDiscordによって検証されませんでした。 Discordで接続の横に目盛りが表示されていることを確認してください。 XboxアカウントをDiscordにリンクし直してもう一度やり直すか、別の方法を試してみてください。",
+            "fail_3":"APIからXboxプロフィールを取得する際に問題が発生しました。 もう一度やり直すか、別の方法を使用してください！",
+            "fail_4":"Xboxアカウントが見つかりませんでした。 もう一度リンクしてみるか、別の方法を試してみてください！",
+            "fail_5":"Xboxアカウントは現在、認証の対象外です"
+        },
+        "success": {
+            "title":"検証に成功",
+            "leave":"このページを残すことができます",
+            "dm":"あなたのアカウントは正常に確認されました。 すご清聴ありがとうござい快適なご滞在{}!"
+        },
+        "vpn": {
+            "yes":"はい",
+            "no":"いいえ",
+            "maybe":"たぶん",
+            "not_allowed":"このサーバーでは、VPNの使用中にユーザーが確認することはできません。 あなたのVPNを無効にし、再試行してください！"
+            }
+    },
+    "setup": {
+        "title": "AltDentifier settings",
+        "hello": "hello {}",
+        "perm_error": "warning: no permissions were granted during the invitation. Failing to have the proper permissions can result in a non-functional bot. Make sure you kick members, ban them, manage roles, manage channels, send messages, and embed links.< / b>",
+        "greeting":"Thank you for inviting me to{}!",
+        "start": "Press the Continue button below to start the setup process<br>by installing the AltDentifier on the server, you agree with us<a href=https: / / com/tos>terms of Use and privacy</a>.We hope you have a great experience using AltDentifier!",
+        "language": "which language Do you want to use AltDentifier in your server?",
+        "default_role": "do you want to select a default role? This role is given to members after the validation is complete",
+        "logging": "do you want to enable logging?",
+        "in_verification_role": "do you want to select the in verification role? This role is given to members during validation. Note that roles bypass the verification level.",
+        "bot_channel": "please select a bot channel. This channel uses the information for verification. This channel needs to be private and is needed for bots to work!",
+        "warning_channel": "please select a warning channel. This channel will alert the user of the problem with the information about the verification. This channel is visible to all unverified members and is required for bots to function.",
+        "select_role": "select a role or empty this value and set to none.",
+        "disable_logging": "disable logging",
+        "enable_logging": "enable logging",
+        "select_log_channel": "select a channel if logging is enabled",
+        "select_bot_channel": "bot channel selection",
+        "select_warning_channel": "select a warning channel",
+        "Language": {
+            "en": "English",
+            "nl":"Dutch(Nederlands)",
+            "fr": "French(French)",
+            "de": "German(German)",
+            "se": "Swedish (Svenska)",
+            "es_es":"Spanish)",
+            "pt_br": "Brazilian Portuguese (Brazil do Portugal)"
+        },
+        "back": "back",
+        "save-and-continue": "save and continue",
+        "continue": "Continue",
+        "failed": {
+            "title": "setup failed",
+            "Reason": "no bot channel or alert channel. These are required for the bot to function."
+        },
+        "success": {
+            "title": "setup complete",
+            "desc": "setup completed successfully. If you have ever set up a dashboard, you can use the Advanced settings, or close this page."
+        }
+    },
+    "nav": {
+        "invite": "Invite",
+        "dashboard": "dashboard",
+        "blog": "Blog",
+        "faq": "frequently asked questions",
+        "commands": "commands",
+        "status": "status",
+        "about": "about",
+        "premium": "Premium",
+        "Support": "get support",
+        "dark_theme": "dark theme",
+        "light_theme": "light theme",
+        "login": "Login",
+        "logout": "logout"
+    },
+    "about": {
+        "title": "about AltDentifier",
+        "desc": "AltDentifier is a unique verification bot that helps prevent servers from alts and raids. It is also one of the features of social media and game platform verification system for automatic detection of alt accounts!",
+        "staff": "Staff",
+        "dev": "developer",
+        "mod": "Mod",
+        "translator": "translator",
+        "widgets":"Widgets"
+        },
+    "authorization": {
+        "for":"%sのための承認",
+        "allow":"%sにアカウントの使用を許可しますか？",
+        "scopes":"このアプリは: ",
+        "authorize":"Authorize",
+        "cancel":"Cancelキャンセル"
+    },
+    "banned": {
+        "title":"禁止",
+        "short":"あなたはAltDentifierから禁止されています",
+        "long":"あなたのアカウントはTOSの乱用のためにAltDentifierから禁止されています! AltDentifierサービスを使用することはできません。"
+    },
+    "blog": {
+        "title":"AltDentifierブログ",
+        "author":"著者",
+        "read_more":"続きを読む"
+    },
+    "コマンド": {
+        "title":"AltDentifierコマンド",
+        "tip":"Tip:Use;help[command]コマンドについての詳細情報を表示するには、ボットに！"
+    },
+    "create_post": {
+        "title":"投稿の作成",
+        "new":"新しい投稿を作成する",
+        "title_input":"タイトル",
+        "text_input":"テキスト"
+    },
+    "削除済み": {
+        "title":"削除されたデータ",
+        "removed":"%s検証メッセージを削除しました！",
+        "restricted":"お客様のアカウントは一時的に制限されており、48時間以内に当社のサービスに再度アクセスできるようになります。",
+        "not_restricted":"あなたのアカウントは制限されませんでした",
+        "logged_out":"ログアウトされました！"
+    },
+    "よくある質問": {
+        "title":"よく寄せられる質問",
+        "質問": {
+            "1":"AltDentifierとは何ですか？",
+            "2":"AltDentifierはどのように動作しますか？",
+            "3":"AltDentifierは自動的に更新されますか？",
+            "4":"なぜメッセージが反応しないのですか？",
+            "5":"デフォルトの役割は何ですか",
+            "6":"ModとAdminの役割は何ですか？",
+            "7":"ボットと警告チャンネルとは何ですか？",
+            "8":"ボットが要求するアクセス許可が必須なのはなぜですか？"
+        },
+        "答え": {
+            "1":"AltDentifierは、altアカウントとスパムアカウントかもしれない人々を検出し、検証するために作られたボットです。 不審なマークされている人は、自動的にAltDentifierで自分自身を確認するように求められます。",
+            "2":"AltDentifierはDiscord接続でユーザーを確認することで動作します。 ユーザーに接続できる第三者サービスなどの蒸気イベントを行い、ツイッターアカウント. AltDentifierは、これらのアカウントのデータを使用して、アカウントの正当性を検証します。",
+            "3":"はい。 AltDentifierは開発者によって完全に管理されているため、更新プログラムをインストールする必要はありません。",
+            "4":"AltDentifierはメッセージを聞くのがタイムアウトになっています。 これは約1分です。 この後、ボットが機能しなくなるように見えるかもしれませんが、実際には応答を待つのをやめました。",
+            "5":"デフォルトの役割を果たこのコンテキストという役割が与えられたすべての会員にサーバーを是非ご賞味ください. この役割がなくなユーザーのニーズを検証する。● 最近のように、あなたはまた、代わりに検証の役割のように動作するように、作業を逆にすることができます！",
+            "6":"これらはボットに追加できるロールで、ボット内のアクセス許可にアクセスできます。 基本的にはほぼ同じですが、唯一の違いは、管理者がボットの設定を変更できるということですが、Modはできません。 Webダッシュボードでは、Manage Serverが引き続き必要です。",
+            "7":"ボットチャンネルは、AltDentifierが検証中の人々のステータスをスタッフに知らせるチャンネルです。 ボットは出力する場所を必要とするため、必要です。 警告チャネルは、DMがオフになっているとき、またはオプションで確認する必要があるときに人々に警告するために使用されます。 これは、DMのオフを持つユーザーがまだ確認できる必要があるため、同様に必要です。",
+            "8":"AltDentifierは、デフォルトの役割を適用することができるように、役割を管理する必要があります,またはそれを削除. また、タイムアウトの役割を与え、私たちのオートロール機能を提供します。 キックを禁止させるのに必要なアクセス許可しておくことが必要不可欠であるが、これからの行動しない会員に対しては、対応いたします。"
+        }
+    },
+    "incorrect_account": {
+        "title":"間違ったアカウント",
+        "desc":"ログインに使用しているアカウントは、確認を求められたアカウントと同じではありません。 サーバースタッフにこのことが警告されました。"
+    },
+    "index": {
+        "desc":"最高の不和セキュリティとチェックポイントボット！",
+        "trusted":"信頼できる ",
+        "and":"サーバおよび ",
+        "users":"ユーザー！",
+        "features": {
+            "title":"私たちの特徴",
+            "feature_titles": [
+                "強力な新しいユーザー検証システム",
+                "詳細な検証情報",
+                "セットアップが簡単",
+                "自動アンチレイド",
+                "マルチ言語",
+                "クリーンログ"
+            ],
+            "feature_descs": [
+                "新しいユーザーは、Steam、Reddit、Twitter、YouTube、Xbox、さらにはGoogle Captchaをサポートする簡単なユーザー検証システムで簡単に確認するためにDMを受け取ります！私たちのチェックポイントシステムは、正当なユーザーがサーバーに参加させながら、ボットを阻止し、altを停止します！",
+                "AltDentifierは誰が参加しているかを正確に知ることができるので、ユーザーが誰であるかを簡単に知ることができます。 AltDentifierは、ユーザーがVPNを実行している場合でも、あなたに警告します！",
+                "私たちの強力なwebパネルは、ボットを招待し、設定し、設定することが容易になります。 私たちのセットアップは理解しやすく、唯一の完了までに時間がかかります！",
+                "私たちの自動アンチレイドでアンチraidと検証ボットの最高を兼ね備えています。 自動口座通りません当社の検証サイトながら新メンバーとしてご利用いただけサーバー!",
+                "ハブラススペイン語？ 私たちもそうします。 私たちのボットとウェブサイトは英語、オランダ語、フランス語、ドイツ語、スペイン語で利用できるので、ユーザーは自分の言語を話すボットと何をしな",
+                "残りを簡単に知ることのすべてのイベントがサーバーがログに出力されます。 メッセージの編集、削除、葉、禁止などを追跡！"
+            ]
+},
+        "convinced": "確信？",
+        "invite_now":"もう待ってはいけません！ プレスに招待、今を楽しんでくださいサーバーが平和であることを知りなので保護され!",
+        "endorsed":"AltDentifierはDiscordによって承認または作成されていません",
+        "tos":"利用規約"
+    },
+    "プレミアム": {
+        "title":"AltDentifierプレミアム",
+        "short":"プレミアムプランをチェック！",
+        "広告なし":"広告なし",
+        "personal":"パーソナル",
+        "no-ads":"AltDentifierをサポートし、広告なしでサービスを使用します。",
+        "購入":"購入",
+        "premium":"プレミアム",
+        "basic":"基本:$5/m(1サーバ)",
+        "pro":"プロ:$10/m(3サーバ)",
+        "ultra":"Ultra:20$/m(8台のサーバ)",
+        "特典": [
+            "すべてのページに個人的な広告なしが含まれています！",
+            "すべてのユーザーのサーバーのページに広告を無効にします！",
+            "AltDentifierをサポートし、上のライトを保つ",
+            "まずAltDentifier約スニークピークを受け取る",
+            "確認ページの背景色を変更する",
+            "検証ページのカスタム背景画像を設定する",
+            "検証に独自のメッセージを追加"
+        ],
+        "purchase_basic":"ベーシック購入",
+        "purchase_pro":"購入プロ",
+        "purchase_ultra":"ウルトラ購入",
+        "terms":"サブスクリプションを購入することにより、お客様は、支払いの際に特典にすぐにアクセスできることに同意します。払い戻しを受けるには、<a href=\"を使用して電子メールでお問い合わせください。mailto:https://contact@altdentifier.com\">contact@altdentifier.com</a>。<br>払い戻しを希望する場合は、最初にご連絡いただくことに同意するものとします。 充電後お問い合わせいただく前に恒久的禁止からのサービス"
+    },
+    "要求された": {
+        "title":"要求されたデータ",
+        "short":"あまりにも最近の要求！",
+        "long":"最近、データを要求しました。 あなたは24時間あたり一度これを行うことができます。 後でもう一度お試しください。"
+    },
+    "制限された": {
+        "title":"制限付き",
+        "short":"アカウントの制限",
+        "long":"最近のデータ削除リクエストにより、お客様のアカウントは当社のサービスの利用が48時間制限されています。 後でもう一度お試しください。"
+
+    },
+    "session_incomplete": {
+        "title":"セッションが不完全です",
+        "short":"検証に関連付けられたサーバーがありません",
+        "long":"検証用のサーバーが保存されていないようです。 あなたが検証されている場合は、ボットのリンクを使用してください。"
+    },
+    "ステータス": {
+        "title":"AltDentifierステータス",
+        "ウェブサイト":"AltDentifierウェブサイト",
+        "bot":"AltDentifierボット",
+        "status":"ステータス: ",
+        "latency":"レイテンシー: ",
+        "offline":"オフライン",
+        "オンライン":"オンライン",
+        "shards":"Shards",
+        "shard":"Shard"
+    },
+    "tos": {
+        "title":"Tosとプライバシーポリシー",
+        "privacy":"プライバシーポリシー",
+        "translations":"英語のTOSのみが法的拘束力があることにご注意ください。 ながら翻訳のこれらの文書を提供することがあり便利にご利用いただけるよう、その訳は、このような法律を提出する。",
+        "政策":"プライバシーポリシーに非常に重要AltDentifierに努めお客様のプライバシーの保護に必要な場合を除きます。<br><br>AltDentifierサービスの円滑な運営を確保するために、お客様の個人情報をお尋ねします。 AltDentifierはソーシャルメディア検証プラットフォームなどの請求に関する情報、プロフィール上でこれらのプラットフォームです。<br><br>AltDentifierでアカウントを確認すると、AltDentifierサービスを使用してチャットグループのスタッフと情報を共有することがあります。 これには以下の情報が含まれますが、これに限定されません。<br>*<br>に登録しているサーバーの総数*アカウントの確認に使用したサービスに対応するユーザーAltDentifierで確認するときにVPNを使用したかどうかを示すブラウザのステータス。AltDentifierは、接続するサービスに関する匿名化された情報を保存します。 このデータはAltDentifierアカウントにリンクされていますが、接続の識別子は、SHA-512ハッシュアルゴリズムを使用して保存する前に不可逆的に匿名化されまあなたのIPアドレスはIPHub.info、定期的に私達によって送信されたデータを削除することを確認します。AltDentifierは後で使用するためにあなたのIPアドレスを保存しません。さらに、我々は、統計およびエラー報告の目的のために分析データを収集し、AltDentifierの動作のために必要な構成データの格納。さらに, 当社は、google AdSenseやgoogle Analyticsなどの第三者の統合をパーソナライズされた広告に使用することがあります。自社の広告在庫の管理https://venatusmedia.com. による弊社のサービスを利用することに同意するVenatusとそのパートナーがモバイル端末で視聴後にご本人の同意を得るが備えられています。しようとする店舗のデータ以外の公共アクセスは、安全な方法としてできる現実的に保証するものではあ しかし、オンラインデータストレージと転送の性質上、完全なセキュリティが実現できないため、この期待を満たすことができない場合があります。AltDentifierは、直接私たちに所属していない人々によって使用することができます,したがって、我々は、彼らがAltDentifierを使用する方法を制御することはできません,そ<br><br>AltDentifierでアカウントの検証は、データ収集に関する当社の方針に同意したものとみなされます。あなたはこの契約に同意しない場合,あなたはAltDentifierサービスを使用して任意のチャットグループを残すことです,そしてAltDentifierで自分のアカウントを確認す そうしないと、当社の方針を受け入れるとみなされます。当社のプライバシーポリシーの詳細、当社のデータ使用に関するお問い合わせ、およびGDPRまたはDMCAに基づくリクエストを含む、お客様のデータの削除またはcontact@altdentifier.com",
+        "利用規約":"利用規約",
+        "mumble_jumble":"これらの利用規約を完全にお読みくださいhttps://altdentifier.com、所有し、ジェフリー Westhoffが運営。 この契約は、法的拘束力のある条件でサイトの使用に接続されているドキュメントaltdentifier.com。 このサービスにアクセスして使用することにより、お客様は、本契約の条項および条項に拘束されることに同意します。 また、ご利用になられる場合は、特定のサービスは、当該掲載ガイドラインや規則の適用などのサービス AltDentifierサービスは、13歳未満の方にはアクセスできませんし、AltDentifierは故意に13歳未満の子供からの個人情報を格納しません。 本サービスへの参加は、本契約の受諾を構成します。 上記に同意されない場合は、本サービスをご利用にならないでください。",
+        "条件": {
+            "責任": {
+                "title":"責任",
+                "テキスト":"このサイトおよびそのコンポーネントは情報提供のみを目的として提供されています;このサイトは、サイトを介して送信または利用可能"
+            },
+            "インテリジェントプロパティ": {
+                "title":"知的財産",
+                "テキスト":"本サイトおよびそのオリジナルのコンテンツ、機能、および機能は、ジェフリー-ウェストホフが所有し、国際著作権、商標、特許、企業秘密、その他の 過去にAltDentifierによって生成され、共有されたすべてのデータ,現在または将来AltDentifierの財産であり、それは唯一の所有者だと転送する必要があります,削除また"
+            },
+            "終了": {
+                "title":"終了",
+                "テキスト":"私たちは、原因や予告なしに、サイトへのアクセスを終了することができます,その没収とあなたのアカウントに関連付けられているすべ 本契約のすべての条項は、その性質上、終了後も存続するものとし、所有権条項、保証の免責、補償、責任の制限を含みますがこれらに限定されません。 また、あなたのアカウントを自分で終了することを要求することもできます。 解約後にAltDentifierを使用すると、新しいアカウントが開設されます。"
+            },
+            "変化": {
+                "title":"契約の変更",
+                "text":"AltDentifierは適宜これらの条件を変更する権利を留保し、お客様がサイトを引き続き使用することは、これらの条件の調整を受け入れることを意味しま"
+            },
+            "保証": {
+                "title":"保証",
+                "text":"AltDentifier is provided\"as is\"AltDentifierは、AltDentifierを使用した結果、および/またはAltDentifier上でやりとりすることができないコンテンツについて、保証または責任を負いません。 に同意するものと免責事項に対しAltDentifierらゆる状況を除く弊社がoffになります。 AltDentifierは責任を負わず、AltDentifierを使用している他の当事者の行動に対して責任を負いません。"
+            },
+            "紛争": {
+                "title":"紛争",
+                "text":"AltDentifierを使用している間は、特定の状況が発生する可能性があり、または発生しない可能性があります。<br>あなた自身が私たちのサービスから禁止されて見つけた場合,あなたは公式の控訴を提出するために私たちの連絡先メールを電子メールする必要が 控訴は正式に書かれなければならず、あなたの不和のID、アカウントの所有権の証明とあなたの禁止が覆されるべき理由を含める必要があります。あなたはAltDentifierによって忘れされることを希望する場合は、当社のウェブパネルで要求を提出することができます。あなたが個人データの要求を提出したい場合は、24時間ごとに一度私たちのウェブパネルで要求を提出することができます。 <br>"
+            },
+            "other_links": {
+                "title":"その他のリンク",
+                "text":"私たちのサイトには、AltDentifierが所有または管理していない他のウェブサイトやオンラインリソースへの多数のリンクが含まれています。 AltDentifierは、これらのサードパーティのサイトおよび/またはサービスのコンテンツまたは一般的な慣行を制御することはできないため、責任を負うことはでき したがって、私たちは強く、あなたが私たちのサイトに掲載されているリンクをたどった結果として訪問する任意のサイトの全体の契約条件とプ"
+            },
+            "法律": {
+                "title":"準拠法",
+                "text":"本契約は、オランダ王国の法律に準拠しています。"
+            },
+            "謝辞": {
+                "title":"アクノレッジメント",
+                "text":"AltDentifierを使用すると、上記のすべての条件を確認できます。 あなたは、あなたが完全に条件を読んでいない場合でも、あなたは私たちの条件を遵守することを認めます。"
+            },
+            "お問い合わせ": {
+                "title":"連絡先",
+                "text":"ご質問-ご要望や苦情AltDentifierください本当のスタッフcontact@altdentifier.com. にお応えいたしますこれらの問い合わせ内28日です。 AltDentifierは、GDPRのデータリリースとデータ削除に完全に準拠しています。"
+            }
+        }
+    }
+}

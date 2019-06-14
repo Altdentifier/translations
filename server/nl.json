@@ -1,0 +1,508 @@
+{
+    "dashboard": {
+        "profile": {
+            "title": "AltDentifier Controlepaneel",
+            "welcome": "Welkom terug, %s",
+            "profile": "Profiel",
+            "servers": "Servers",
+            "tf": "Vertrouwensfactor",
+            "very_trusted": "Zeer Vertrouwd",
+            "trusted": "Vertrouwd",
+            "distrusted": "Gewantrouwd",
+            "severely_distrusted": "Zeer Gewantrouwd",
+            "dsc_ban": "Discord Services Ban Status:",
+            "not_banned": "Niet Verbannen",
+            "banned": "Verbannen",
+            "ksoft_ban": " KSoft.si Ban Status",
+            "trustfactor": "Wat is Vertrouwensfactor?",
+            "trustfactor_explained": "AltDentifier Trust Factor is een systeem ontwikkeld door Auxim#0001 die de vertrouwenswaardigheid van een Discord account probeer te berekenen. Trust Factor wordt berekend door eigen formules die meerdere factoren meeneemen in de uiteindelijke waarde. Nadat Trust Factor is berekend, kijken we in welke groep de factor valt, en weergeven deze waarde. Deze waardes gaan van Ernstig Gewantrouwd tot Zeer Vertrouwd. De Trust Factor bepaalt dan of je je moet verifieren in een server die beveiligd is met AltDentifier!",
+            "premium": {
+                "title": "Premium",
+                "your_tier": "Uw Premium Niveau",
+                "plan": "Uw huidige abonnement: ",
+                "click_here": "Klik hier",
+                "no_premium": "Het lijkt erop dat u geen premium heeft.",
+                "ad-free": "U zit op dit moment op ons advertentie-vrij niveau. Als u uw abonnement wilt upgraden of veranderen,",
+                "basic": "U zit op dit moment op ons Basic niveau. Als u uw abonnement wilt upgraden of veranderen,",
+                "pro": "U zit op dit moment op ons Pro niveau. Als u uw abonnement wilt upgraden of veranderen,",
+                "ultra": "U zit op dit moment op ons Ultra niveau. Als u uw abonnement wilt upgraden of veranderen,",
+                "offer": "om onze aanbiedingen te bekijken. Als u Premium aanschaft wordt dit automatisch aangepast als u de pagina ververst. Als dit niet gebeurd, klik dan op de knop Verfris Patreon hierdonder!",
+                "change_plan": "Wanneer u uw abonnement veranderd, zou dit automatisch op deze pagina moeten updaten. Als dit niet gebeurd, klik dan op de knop Verfris Patreon hierdonder!",
+                "perks": "Inbegrepen Voordelen",
+                "no-ads": "Gebruik AltDentifier zonder advertenties. U zult op geen enkele pagina nog advertenties tegenkomen!",
+                "activate-on": "Activeer Premium op %s servers!",
+                "activate-on-one": "Activeer Premium op %s server!",
+                "servers-left": "U heeft nog %s servers over.",
+                "servers-left-one": "U heeft nog %s server over.",
+                "refresh": "Verfris Patreon"
+            }
+        },
+        "server": {
+            "title": "Beheert %s",
+            "menu_settings": "Instellingen",
+            "menu_accessroles": "Toegangsrollen",
+            "menu_banlists": "Banlijsten",
+            "menu_raidmode": "Raidmodus",
+            "menu_premium": "Premium",
+            "menu_save": "Instellingen Opslaan",
+            "settings": {
+                "main_settings": {
+                    "title": "Hoofdinstellingen",
+                    "language": "Taal: ",
+                    "prefix": "Prefix: ",
+                    "timezone": "Tijdzone (Verschil in GMT): ",
+                    "autorole": "Autorole: "
+                },
+                "verification_settings": {
+                    "title": "Verificatie Instellingen",
+                    "altdentification": "AltDentificatie: ",
+                    "bot_channel": "Bot Kanaal: ",
+                    "warning_channel": "Waarschuwingskanaal: ",
+                    "default_role": "Standaardrol: ",
+                    "in_verif_role": "Rol Tijdens Verificatie: ",
+                    "timeout_action": "Timeout Actie: ",
+                    "timeout_role": "Timeout Rol: ",
+                    "verification": "Verificatie",
+                    "disabled": "Uitgeschakeld",
+                    "everyone": "Iedereen",
+                    "distrusted-and-higher": "Gewantrouwd en Hoger",
+                    "trusted-and-higher": "Vertrouwd and Hoger",
+                    "very-trusted-only": "Enkel Zeer Vertrouwd",
+                    "trustfactor_threshold": "Vertrouwensfactor Grens: ",
+                    "minimum_karma": "Reddit Minimum Karma: ",
+                    "verification_alerts": "Verificatie Waarschuwingen: ",
+                    "role_block": "Blokkeer andere bots van het geven van rollen tijdens verificatie:",
+                    "vpn_allowed": "Weiger VPN gebruikers van verificatie:",
+                    "timeout_time": "Timeout Tijd:",
+                    "timeout_minutes": "minuten",
+                    "self_allowed": "Sta andere gebruikers toe verificatie voor zichzelf te starten: "
+                },
+                "logging_settings": {
+                    "title": "Logging Instellingen",
+                    "enable": "Logging Ingeschakeld: ",
+                    "log_channel": "Log Kanaal: ",
+                    "log_options": "Logging Opties: "
+                },
+                "heartbeat": {
+                    "title": "AltDentifier Hartslag",
+                    "no_issues": "Geen problemen gevonden met uw configuratie!"
+                }
+            },
+            "access_roles": {
+                "mod_roles": "Mod Rollen",
+                "admin_roles": "Admin Rollen"
+            },
+            "banlists": {
+                "suffix": "Banlijst",
+                "whitelist": "Whitelist",
+                "new_line": "Plaats elke ban op een nieuwe regel!"
+            },
+            "raidmode": {
+                "title": "Raidmodus",
+                "activate": "Activeer Raidmodus: ",
+                "auto": "Auto-Raidmodus: ",
+                "expire": "Auto-Raidmodus verloopt in",
+                "expire_2": "minuten!",
+                "trigger": "Activeer bij:",
+                "per": "gebruikers per",
+                "unit": "seconde",
+                "raidmode_action": "Raidmodus Actie"
+            },
+            "premium": {
+                "title": "Premium Instellingen",
+                "thank_you": "Bedankt voor het ondersteunen van AltDentifier",
+                "custom_message": "Aangepast Bericht:",
+                "custom_color": "Aangepaste Achtergrondskleur:",
+                "custom_image": "Aangepaste Achtergrondsafbeelding:",
+                "guidelines": {
+                    "title": "Aanpassingsrichtlijnen en Restricties",
+                    "required": "Verplicht",
+                    "recommended": "Aanbevolen",
+                    "1": "Gepersonaliseerde berichten mogen absoluut geen enkele vorm van adverteren bevatten, met uitzondering van de server die de gebruiker wilt joinen.",
+                    "2": "Gepersonaliseerde berichten mogen absoluut geen enkele vorm van NSFW bevatten, met uitzondering voor indicatie van een server thema of regels.",
+                    "3": "Gepersonaliseerde berichten mogen absoluut geen persoonlijke informatie bevatten.",
+                    "4": "Gepersonaliseerde berichten mogen absoluut geen haatdragende teksten, discriminatie, racisme of andere onzedelijkheden bevatten.",
+                    "5": "Gepersonaliseerde berichten mogen absoluut geen vulgariteiten, schuttingtaal of politieke uitdrukkingen bevatten.",
+                    "6": "Gepersonaliseerde afbeeldingen mogen absoluut geen walgelijkheden, NSFW, NSFL of andere content bevatten die niet geschikt is voor gebruikers onder de 18 jaar",
+                    "7": "Gepersonaliseerde afbeeldingen moeten bewaard worden op betrouwbare domeinen. Dit zijn onder andere, maar niet beperkt tot, Imgur, Flickr en Discord's CDN.",
+                    "8": "Gepersonaliseerde achtergrondkleur moet niet te licht zijn, om conflict met witte tekst te voorkomen.",
+                    "9": "Gepersonaliseerde afbeeldingen mogen geen enkele vorm van animatie bevatten",
+                    "10": "Gepersonaliseerde afbeeldingen moeten niet te afleidend zijn voor gebruikers.",
+                    "11": "Gepersonaliseerde berichten zijn het best geschikt om iets te vertellen over jouw server, en waarom ze AltDentifier moeten gebruiken om toe te kunnen treden"
+                },
+                "no_premium": "Deze server heeft geen premium!",
+                "click_here": "Klik hier",
+                "offers": " om onze aanbiedingen te bekijken!",
+                "subscription": "U heeft een abonnement op Premium, en kan Premium in deze server activeren.",
+                "still-activatable": "U kunt nog %s servers activeren!",
+                "still-activatable-one": "U kunt nog %s server activeren!",
+                "activate": "Activeer Premium",
+                "deactivate": "Deactiveer Premium"
+            }
+        },
+        "privacy": {
+            "title": "Privacy Instellingen",
+            "request": "Verzoek Persoonlijke Data",
+            "delete": "Verwijder Persoonlijke Data",
+            "delete_confirm": "Als u uw persoonlijke data verwijderd, wordt u voor 48 uur geblokkeerd van onze diensten. Het verwijderen kan enkele momenten duren, verlaat de pagina niet terwijl deze nog bezig is! Weet u zeker dat u uw persoonlijke data wilt verwijderen?",
+            "request_confirm": "U kunt uw persoonlijke data slechts 1 maal per 24 uur opvragen. Het verzoek kan enkele momenten duren, verlaat de pagina niet voordat er een download is gestart. Zorg ervoor dat u uw inzicht opslaat!"
+        }
+    },
+    "error": {
+        "title": "Er is een fout opgetreden",
+        "button_normal": "Ga terug",
+        "button_setup": "Herstart setup"
+    },
+    "verification": {
+        "title": "Verificatie voor %s",
+        "welcome": "Welkom bij {}!",
+        "method": "Kies alstublieft een verificatiemethode!\nMethoden die door de server zijn geblokkeerd worden niet weergegeven. Met uitzondering van Xbox Verificatie, is het niet nodig om uw accounts te linken met Discord voor verificatie.",
+        "choices": "U kunt voor AltDentifier verifiëren met Reddit, Steam, Twitter, Overwatch, Xbox, Youtube en Captcha. De beschikbare opties kunnen per server verschillen. Klik op de knop hieronder om verder te gaan met verificatie!\n\nDoor te verifiëren met AltDentifier gaat u akkoord met onze <a href='https://altdentifier.com/tos'>Algemene Voorwaarden & Privacybeleid</a>",
+        "message": "%s wilt u het volgende bericht meedelen: %s",
+        "login": "Inloggen met Discord",
+        "explain": "De server administratoren hebben extra beveiliging ingeschakeld om zich te weren tegen alt accounts, spammers en raiders. Helaas heeft het systeem geoordeeld dat uw account geverifieërd moet worden, of een moderator heeft besloten om handmatig verificatie voor u te starten.\n\n succesvolle verificatie zult u toegang verkrijgen tot de server. Mocht u uw account niet verifieëren, zal {} Administratoren hebben de mogelijkheid de controle over te nemen.\n\nMet vriendelijke groet,\n\nHet {} moderatie team.\n\n",
+        "servers": "Gebruiker is in {} servers!",
+        "actions": {
+            "kick": "u van de server verwijderd worden!",
+            "ban": "u van de server verbannen worden!",
+            "role": "u een speciale rol ontvangen",
+            "nothing": "de actie die genomen wordt afhankelijk zijn van het moderatieteam"
+        },
+        "failure": {
+            "title": "Verificatie Mislukt",
+            "button": "Terug naar methode selectie"
+        },
+        "overwatch": {
+            "title": "Overwatch Verificatie",
+            "region": {
+                "title": "Kies de regio waarin u Overwatch speelt!",
+                "eu": "Europa",
+                "us": "Noord-Amerika",
+                "kr": "Zuid-Korea"
+            },
+            "platform": "Kies het platform waarop u Overwatch speelt!",
+            "continue": "Verder",
+            "result": "Battle Tag: {}\nLevel: {}, Potjes gespeeld: {}",
+            "fail_1": "Uw verbinding met Battle.Net is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw Battle.Net account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
+            "fail_2": "Er was een probleem met het ophalen van Overwatch data. Probeer opnieuw, of gebruik een andere methode!",
+            "fail_3": "Uw Overwatch profiel lijkt privé te zijn. We kunnen geen informatie ophalen van privé profielen, maak uw profiel openbaar, of probeer het opnieuw!",
+            "fail_4": "Uw Overwatch profiel is op dit moment niet bruikbaar voor verificatie!"
+        },
+        "captcha": {
+            "title": "Captcha Verificatie",
+            "fail": "We konden de captcha niet verifiëren. Probeer opnieuw, of gebruik een andere methode!"
+        },
+        "hw_verif": {
+            "title": "Hardware Verificatie",
+            "code": "Uw Code is: "
+        },
+        "not_verified": {
+            "title": "Niet in Verificatie",
+            "short": "U wordt niet geverifieërd",
+            "long": "Er is geen reden om deze pagina te bezoeken, want u ondergaat op dit moment geen verificatie!"
+        },
+        "steam": {
+            "title": "Inloggen met Steam",
+            "desc": "Log in met Steam om verder te gaan met verificatie",
+            "unknown": "Onbekend",
+            "result": "Gebruikersnaam: {}\nAccount Leeftijd: {} dagen\nLand: {}\nSpellen: {}",
+            "not_public": "Niet Openbaar",
+            "fail_1": "Uw verbinding met Steam is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw Steam account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
+            "fail_2": "Uw Steam profiel lijkt privé te zijn. Het is niet mogelijk om data op te halen van privé profielen, maak uw profiel openbaar, of probeer een andere methode!",
+            "fail_3": "Uw Steam account is op dit moment niet bruikbaar voor verificatie!"
+        },
+        "reddit": {
+            "result": "Gebruikersnaam: {}\nAccount Leeftijd: {} dagen\nLink Karma: {}\nReactie Karma: {}",
+            "fail_1": "Uw verbinding met Reddit is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw Reddit account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
+            "fail_2": "We konden uw Reddit account niet vinden. Probeer deze opnieuw te verbinden, of probeer een andere methode!",
+            "fail_3": "Uw Reddit account is op dit moment niet bruikbaar voor verificatie!"
+        },
+        "twitter": {
+            "result": "Naam: {}\nAccount Leeftijd: {} dagen\nVolgers: {}\nTweets: {}",
+            "fail_1": "Uw verbinding met Twitter is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw Twitter account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
+            "fail_2": "We konden uw Twitter account niet vinden. Probeer deze opnieuw te verbinden, of probeer een andere methode!",
+            "fail_3": "Uw Twitter account is op dit moment niet bruikbaar voor verificatie!"
+        },
+        "youtube": {
+            "result": "Gebruikersnaam: {}\nAccount Leeftijd: {} dagen\nBeschrijving: {}\nWeergaven: {}\nAbonnees: {}\nVideos: {}\nReacties: {}",
+            "fail_1": "Uw verbinding met YouTube is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw YouTube account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
+            "fail_2": "Er was een probleem met ophalen van uw YouTube data. Probeer opnieuw, of gebruik een andere methode!",
+            "fail_3": "Uw YouTube account is op dit moment niet bruikbaar voor verificatie!"
+        },
+        "xbox": {
+            "result": "Gamertag: {}\nGamerscore: {}\nTier: {}\nReputatie: {}",
+            "fail_1": "De limiet voor verificatie van Xbox accounts is bereikt. Probeer alstublieft een andere methode!",
+            "fail_2": "Uw verbinding met Xbox is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw Xbox account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
+            "fail_3": "Er was een probleem met het ophalen van Xbox data. Probeer opnieuw, of gebruik een andere methode!",
+            "fail_4": "We konden uw Xbox account niet vinden. Probeer deze opnieuw te verbinden, of gebruik een andere methode!",
+            "fail_5": "Uw Xbox account is op dit moment niet bruikbaar voor verificatie!"
+        },
+        "success": {
+            "title": "Verificatie Succesvol",
+            "leave": "U kunt nu deze pagina verlaten",
+            "dm": "U heeft uw account met succes geverifieërd. We hopen dat u een plezierig verblijf heeft in {}!"
+        },
+        "vpn": {
+            "yes": "Ja",
+            "no": "Nee",
+            "maybe": "Misschien",
+            "not_allowed": "Deze server staat verificatie niet toe als u een VPN gebruikt. Schakel uw VPN alstublieft uit, en probeer opnieuw!"
+        }
+    },
+    "setup": {
+        "title": "AltDentifier Setup",
+        "hello": "Hallo {}",
+        "perm_error": "Opgelet: Permissies zijn niet gegeven tijdens uitnodiging. Het niet hebben van de vereiste permissies kan resulteren in een degradeerde ervaring. Zorg ervoor dat de bot toegang heeft tot <b>LEDEN VERWIJDEREN, LEDEN VERBANNEN, BEHEER ROLLEN, BEHEER KANALEN, VERSTUUR BERICHTEN en LINKS INSLUITEN</b>",
+        "greeting": "Bedankt dat u mij heeft toegevoegd aan {}!",
+        "start": "Druk op de knop 'Verder' om met de installatie te beginnen.<br>Door het installeren van AltDentifier in uw server gaat u akkoord met onze <a href=https://altdentifier.com/tos>Algemene Voorwaarden en Privacybeleid</a>.<br>We hopen dat u een geweldige ervaring heeft met AltDentifier!",
+        "language": "Welke taal wilt u gebruiken voor AltDentifier?",
+        "default_role": "Wilt u een Standaardrol selecteren? Deze rol wordt gegeven aan leden na verificatie.",
+        "logging": "Wilt u logging inschakelen?",
+        "in_verification_role": "Wilt u een In Verificatie rol selecteren? Deze rol wordt gegeven tijdens verificatie. Wees u ervan bewust dat rollen verificatie niveaus van de server omzeilen!",
+        "bot_channel": "Selecteer alstublieft een bot kanaaal. Dit kanaal wordt gebruik voor informatie over het verificatieproces. Dit kanaal moet privé worden gehouden, en is benodigd voor de werking van de bot!",
+        "warning_channel": "Selecteer alstublieft een waarshuwingskanaal. Dit kanaal wordt gebruikt om leden te informeren of te waarschuwen tijdens het verificatieproces. Dit kanaal moet zichtbaar zijn voor alle niet-geverifieërde leden, en is benodigd voor de werking van de bot!",
+        "select_role": "Selecteer een rol, of houd deze waarde leeg om er geen te selecteren!",
+        "disable_logging": "Logging Uit",
+        "enable_logging": "Logging Aan",
+        "select_log_channel": "Selecteer een log kanaal als logging ingeschakeld is",
+        "select_bot_channel": "Selecteer een bot kanaal",
+        "select_warning_channel": "Selecteer een waarschuwingskanaal",
+        "languages": {
+            "en": "Engels (English)",
+            "nl": "Nederlands",
+            "fr": "Frans (Francais)",
+            "de": "Duits (Deutsch)",
+            "sv": "Zweeds (Svenska)",
+            "es_es": "Spaans (Español)",
+            "pt_br": "Brazilliaans Portugees (Português do Brazil)",
+            "tr": "Turks (Türkçe)"
+        },
+        "back": "Terug",
+        "save-and-continue": "Opslaan en Verder Gaan",
+        "continue": "Verder",
+        "failed": {
+            "title": "Installatie Mislukt",
+            "reason": "Bot Kanaal of Waarschuwingskanaal was niet ingesteld! Deze zijn benodigd voor het juist functioneren van de bot."
+        },
+        "success": {
+            "title": "Installatie Compleet",
+            "desc": "De installatie is met success voltooid. U kunt nu naar het controlepaneel gaan om de bot verder in te stellen, of dezer pagina sluiten."
+        }
+    },
+    "nav": {
+        "invite": "Uitnodigen",
+        "dashboard": "Controlepaneel",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "commands": "Commandos",
+        "status": "Status",
+        "about": "Over Ons",
+        "premium": "Premium",
+        "support": "Verkrijg Ondersteuning",
+        "dark_theme": "Donker Thema",
+        "light_theme": "Licht Thema",
+        "login": "Inloggen",
+        "logout": "Uitloggen"
+    },
+    "about": {
+        "title": "Over AltDentifier",
+        "desc": "AltDentifier is een unieke verificatie bot die jouw server beschermt tegen raids en alts. We hebben een uniek sociale media en gaming platform verificatie systeem en automatische detectie voor alt accounts!",
+        "staff": "Personeel",
+        "dev": "Ontwikkelaar",
+        "mod": "Moderator",
+        "translator": "Vertaler",
+        "widgets": "Widgets"
+    },
+    "authorization": {
+        "for": "Authorizatie voor %s",
+        "allow": "Staat u %s toe om uw account te gebruiken?",
+        "scopes": "Deze app kan:",
+        "authorize": "Authorizeren",
+        "cancel": "Annuleren"
+    },
+    "banned": {
+        "title": "Verbannen",
+        "short": "U bent verbannen van AltDentifier",
+        "long": "Uw account is verbannen van AltDentifier vanwege schending van de Algemene Voorwaarden! U bent de toegang tot onze diensten ontzegd."
+    },
+    "blog": {
+        "title": "AltDentifier Blog",
+        "author": "Auteur",
+        "read_more": "Lees meer"
+    },
+    "commands": {
+        "title": "AltDentifier Commandos",
+        "tip": "Tip: Gebruik ;help [commando] in de bot om meer informatie te zien over een commando!"
+    },
+    "create_post": {
+        "title": "Maak Post",
+        "new": "Maak nieuwe post",
+        "title_input": "Titel",
+        "text_input": "Tekst"
+    },
+    "deleted": {
+        "title": "Data Verwijderd",
+        "removed": "We hebben %s verificatie berichten verwijderd!",
+        "restricted": "Uw account is tijdelijk beperkt, en u kunt na 48 uur onze diensten weer gebruiken.",
+        "not_restricted": "Uw account was niet beperkt.",
+        "logged_out": "U bent nu uitgelogd!"
+    },
+    "faq": {
+        "title": "AltDentifier FAQ",
+        "questions": {
+            "1": "Wat is AltDentifier?",
+            "2": "Hoe werkt AltDentifier?",
+            "3": "Update AltDentifier automatisch?",
+            "4": "Waarom wordt er niet op sommige berichten gereageerd?",
+            "5": "Wat is de Standaardrol?",
+            "6": "Wat zijn de Mod en Admin rollen?",
+            "7": "Wat zijn Bot en Waarschuwingskanelen en waarom zijn deze vereist?",
+            "8": "Waarom zijn de permissies die de bot vraagt benodigd?"
+        },
+        "answers": {
+            "1": "AltDentifier is een bot gemaakt om vermoedelijke alt accounts en spam accounts te detecteren en te verifiëren. Mensen gemarkeerd als verdacht worden automatisch gevraagd zich te verifiëren met AltDentifier.",
+            "2": "AltDentifier werkt door gebruikers te verifiëren met hun sociale en gaming accounts. Gebruikers kunnen verificatie methodes gebruiken zoals Steam en Twitter. AltDentifier gebruikt dan informatie van de accounts om te controleren of het account legitiem is.",
+            "3": "Ja. AltDentifier wordt volledig beheerd door zijn ontwikkelaar, en u zult daarom nooit zelf updates hoeven te installeren. Updates worden automatisch toegepast in uw server!",
+            "4": "AltDentifier luistert slechts een beperkte tijd naar berichten. Dit is ongeveer 1 minuut. Hierna lijkt het misschien alsof de bot is gestopt met werken, maar de bot luistert simpelweg niet meer voor een reactie.",
+            "5": "Een Standaardrol in deze context is een rol die het merendeel van de server heeft. De rol wordt weggenomen als de gebruiker zich moet verifiëren. Sinds recent kunt u ook een rol toekennen die gegeven wordt tijdens verificatie!",
+            "6": "Dit zijn rollen die u kunt instellen om andere leden extra permissies te geven met de bot. Fundamenteel zijn admin en mod rollen gelijk, met als enige verschil dat Admins de instellingen van de bot kunnen aanpassen, terwijl Mods dit niet kunnen. Onthoud dat Server Beheren nog steeds verplicht is voor het web dashboard!",
+            "7": "Het bot kanaal is het kanaal waar AltDentifier server moderators zal informeren van de status van mensen in verificatie. De bot heeft een plaats nodig om dit te kunnen doen, en daarom is dit kanaal verplicht. Het waarschuwings kanaal wordt gebruikt om leden te informeren die hun privéberichten uit hebben staan. Dit is ook verplicht, aangezien gebruikers met DM's uit zichzelf nog steeds moeten kunnen verifiëren.",
+            "8": "AltDentifier vereist Beheer Rollen, om de Standaardrol te geven, of te verwijderen. Het laat ons ook timeout rollen en autorole gebruiken. Kick en Ban zijn vereist wanneer deze worden gebruikt als timeout actie, als gebruikers in een banlist zitten, of als een incorrect account in de banlijst staat."
+        }
+    },
+    "incorrect_account": {
+        "title": "Onjuist Account",
+        "desc": "Het account waarmee u bent ingelogd is het niet hetzelfde als het account waarvoor u wilt verifieren. Server moderatie is hierover ingelicht!"
+    },
+    "index": {
+        "desc": "De beste Discord beveiligings en checkpoint bot!",
+        "trusted": "Vertrouwd door ",
+        "and": " servers en ",
+        "users": " gebruikers!",
+        "features": {
+            "title": "Onze mogelijkheden",
+            "feature_titles": [
+                "Krachtig verificatiesysteem voor nieuwe leden",
+                "Gedetailleerde verificatie informatie",
+                "Makkelijk in te stellen",
+                "Automatische Anti-Raid",
+                "Meertalig",
+                "Heldere logging"
+            ],
+            "feature_descs": [
+                "Nieuwe leden ontvangen een DM om zich snel te verifiëren met ons gemakkelijke verificatie systeem, dat Steam, Reddit, Twitter, YouTube, Xbox en zelfs Google Captcha ondersteunt.<br>Ons checkpoint systeem stopt bots en alts, alderwijl legitieme gebruikers uw server in kunnen!",
+                "AltDentifier laat u precies weten wie uw server binnenkomt, zodat u gerust gesteld kan zijn, wetende dat gebruikers zijn wie ze beweren te zijn. AltDentifier informeert u zelfs als gebruikers een VPN gebruiken!",
+                "Ons krachtig web paneel maakt het makkelijk om de bot uit te nodigen, te installeren en aan te passen. Onze installatie is gemakkelijk om te begrijpen en duurt slechts een minuut!",
+                "Conbineer het beste van anti-raid en verificatie bots met onze automatische anti-raid. Geautomatiseerde accounts kunnen ons verificatie systeem niet passeren, alderwijl normale gebruikers wel binnen kunnen en genieten van uw server!",
+                "¿Hablas español? Wij ook. Onze bot en website zijn beschikbaar in Engels, Nederlands, Frans, Duits, Portugees en Spaans, zodat gebruikers zich kunnen vertrouwen in een systeem dat hun taal spreekt!",
+                "Alles in uw server wordt bijgehouden. Volg aangepaste berichten, verwijderde berichten, leden die weggaan, bans en meer!"
+            ]
+        },
+        "convinced": "Overtuigd?",
+        "invite_now": "Wacht niet langer! Druk nu op Uitnodigen en geniet in rust van uw server, wetende dat ze in goede handen is!",
+        "endorsed": "AltDentifier is niet aanbevolen of gemaakt door Discord",
+        "tos": "Algemene Voorwaarden"
+    },
+    "premium": {
+        "title": "AltDentifier Premium",
+        "short": "Bekijk onze premium opties!",
+        "ad-free": "Ad-Free",
+        "personal": "Persoonlijk",
+        "no-ads": "Ondersteun AltDentifier en gebruik de dienst zonder advertenties.",
+        "purchase": "Kopen",
+        "premium": "Premium",
+        "basic": "Basic: $5/m (1 server)",
+        "pro": "Pro: $10/m (3 servers)",
+        "ultra": "Ultra: 20$/m (8 servers)",
+        "perks": [
+            "Bevat persoonlijke advertentie-vrij!",
+            "Schakelt voor alle gebruikers advertenties uit op de server's pagina's!",
+            "Ondersteun AltDentifier en hou het licht aan!",
+            "Ontvang als eerste previews van AltDentifier",
+            "Verander de achtergrondkleur van de verificatiepagina",
+            "Stel een eigen achtergrondsplaatje in op de verificatiepagina",
+            "Voeg uw eigen bericht toe aan verificatie"
+        ],
+        "purchase_basic": "Koop Basic",
+        "purchase_pro": "Koop Pro",
+        "purchase_ultra": "Koop Ultra",
+        "terms": "Door een abonnement aan te schaffen gaat u ermee akkoord dat u onmiddelijke toegang wordt verstrekt tot de functionaliteit na betaling.<br>Als u uw aankoop ongedaan wilt maken, kunt u mailen naar <a href=\"mailto:https://contact@altdentifier.com\">contact@altdentifier.com</a>. U gaat ermee akkoord dat u eerst met ons contact opneemt als u uw geld terug wilt vragen. Chargebacks zonder contact op te nemen kan resulteren in een permanente blokkade van onze diensten."
+    },
+    "requested": {
+        "title": "Dataverzoek",
+        "short": "Verzoek te recent!",
+        "long": "Uw dataverzoek was te recent, u kunt dit slechts 1 maal per 24 uur doen."
+    },
+    "restricted": {
+        "title": "Beperkt",
+        "short": "Account Beperkt",
+        "long": "Vanwege een recent dataverzoek is uw account tijdelijk de toegang tot onze diensten ontzegd. U kunt uw account weer gebruiken na 48 uur. Probeer later opnieuw!"
+
+    },
+    "session_incomplete": {
+        "title": "Sessie Onvolledig",
+        "short": "Geen server geassocieerd met verificatie",
+        "long": "Het lijkt erop dat er geen server open staat voor verificatie. Gebruik de link die de bot stuurt als u geverifieërd wordt."
+    },
+    "status": {
+        "title": "AltDentifier Status",
+        "website": "AltDentifier Website",
+        "bot": "AltDentifier Bot",
+        "status": "Status: ",
+        "latency": "Vertraging: ",
+        "offline": "Offline",
+        "online": "Online",
+        "shards": "Shards",
+        "shard": "Shard"
+    },
+    "tos": {
+        "title": "AltDentifier Voorwaarden & Privacybeleid",
+        "privacy": "Privacybeleid",
+        "translations": "Wees bewust dat enkel de Engelse versie van onze voorwaarden wettelijke betekenis heeft. Hoewel vertalingen voor uw gemak kunnen worden aangeboden, zijn deze vertalingen gemaakt door vrijwillegers, en hierdoor geen wettelijk document is.",
+        "policy": "Your privacy is very important to AltDentifier, and we will ensure protecting your privacy when using our services.<br><br>We ask for your personal information to ensure the smooth operation of AltDentifier services. AltDentifier is a social media verification platform, and as such will request and share information about your profile on these platforms with others.<br><br>When verifying your account with AltDentifier, some information may be shared with staff members of chat-groups using AltDentifier services. This includes, but is not limited to the following information:<br>* The total numbers of servers you are in<br>* A username corresponding to the service you used to verify your account<br>* Metrics about the account on the service you used to verify your account, these can include but are not limited to, the amount of tweets you have posted, or your Steam level.<br>* Your browser status, indicating whether you have used a VPN when verifying with AltDentifier.<br>AltDentifier stores anonymized information about the services you connect with. While this data is linked to your AltDentifier account, the identifiers of the connection are irreversibly anonymized before storage with the SHA-512 hashing algorithm.Your IP Address is processed by IPHub.info, who ensure to periodically delete the data sent by us.<br>AltDentifier never stores your IP Address for later use.<br><br>Furthermore, we collect analytical data for statistical and error reporting purposes, and the storing of configuration data neccesary for the operation of AltDentifier.In addition, we may employ third party integrations such as Google AdSense and Google Analytics for personalized advertisements, which uses cookie technology to provide targeted advertisements.Our automatic ad inventory is managed by https://venatusmedia.com. By using our services you agree that Venatus and their partners may place tracking cookies after your explicit consent has been given.We attempt to store your data outside of public access, in as safe a manner as we can realistically guarantee. However, due to the very nature of online data storage and transfer, we may not be able to meet this expectation, due to the fact that complete security is unobtainable.AltDentifier may be used by people not directly affiliated to us, and thus, we have no control over how they use AltDentifier, provided it is within reasonable terms.<br><br>Verification of your account with AltDentifier constitutes agreement to our policies on data collection.If you do not accept this agreement, you are to leave any chat-group using AltDentifier services, and to never verify your account with AltDentifier. Not doing so will be regarded as accepting our policies.For more information on our privacy policy, inquiries on our data usage and requesting the removal or insight of your data, including any requests made under the GDPR or DMCA, contact us at contact@altdentifier.com",
+        "terms": "Algemene Voorwaarden",
+        "mumble_jumble": "Lees deze voorwaarden volledig op https://altdentifier.com, eigendom en beheerd door Geoffrey Westhoff. Deze overeenkomst bevat de wettelijk bindende condities verbonden aan het gebruik van altdentifier.com. Door toegang te verschaffen en gebruik te maken van onze dienst, gaat u akkoord met de voorwaardenen provisies van deze overeenkomst. Hier bovenop bent u onderworpen aan alle geplaatste richtlijnen of regulaties die van toepassing zijn op soortgelijke diensten. De AltDentifier dienst is niet toegankelijk voor leden onder de 13 jaar, en AltDentifier tracht om geen gegevens te bewaren van kinderen on der de 13 jaar. Elk gebruik van onze dienst betekent een acceptatie van deze overeenkomst. Als u niet met de overeenkomst akkoord gaat, kunt u onze diensten niet gebruiken.",
+        "conditions": {
+            "liability": {
+                "title": "Liability",
+                "text": "This site and it's components are offered for informational purposes only; this site shall not be responsible or liable for the accuracy, usefulness or availability of any information transmitted or made available via the site, and shall not be responsible or liable for any error or omissions in that information."
+            },
+            "intellectual_property": {
+                "title": "Intellectual Property",
+                "text": "The Site and its original content, features, and functionality are owned by Geoffrey Westhoff and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. All data generated and shared by AltDentifier in the past, present or future is property of AltDentifier and it's sole owners and must be transferred, removed or changed on request."
+            },
+            "termination": {
+                "title": "Termination",
+                "text": "We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with your account. All provisions of this Agreement that, by their nature, should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability. You may also request to terminate your account yourself, to do this, submit a deletion request on our web panel. Using AltDentifier after termination will result in a new account being opened for you."
+            },
+            "changes": {
+                "title": "Changes to the agreement",
+                "text": "AltDentifier reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms."
+            },
+            "warranty": {
+                "title": "Warranty",
+                "text": "AltDentifier is provided \"as is\" with no warranty or liability for any outcomes of using AltDentifier and/or any content you may or may not interact with on AltDentifier, and you agree that AltDentifier is not liable for any events in the past, in current times or in the future. You agree to hold harmless against AltDentifier for every possible situation except for those we accept full responsibility off. AltDentifier is not responsible and will not take responsibility for the behaviour of other parties using AltDentifier."
+            },
+            "disputes": {
+                "title": "Disputes",
+                "text": "While using AltDentifier, certain situations may or may not develop which may cause you to file a dispute with us.<br>If you find yourself banned from our services, you must e-mail our contact mail to file an official appeals, or to request the reason for your ban. Appeals must be formally written and should include your Discord ID, proof of account ownership and a reason why your ban should be overturned.<br>If you wish to be forgotten by AltDentifier, you can submit a request at our web panel.<br>If you wish to submit a personal data request, you can submit a request at our web panel once per 24 hours. <br>"
+            },
+            "other_links": {
+                "title": "Other Links",
+                "text": "Our Site does contain a number of links to other websites and online resources that are not owned or controlled by AltDentifier. AltDentifier has no control over, and therefore cannot assume responsibility for, the content or general practices of any of these third party sites and/or services. Therefore, we strongly advise you to read the entire terms and conditions and privacy policy of any site that you visit as a result of following a link that is posted on our site."
+            },
+            "law": {
+                "title": "Governing Law",
+                "text": "This Agreement is governed in accordance with the laws of The Kingdom of The Netherlands."
+            },
+            "acknowledgement": {
+                "title": "Acknowledgement",
+                "text": "By using AltDentifier, you acknowledge all above Terms. You acknowledge that, even if you did not read the Terms in full, you will comply with our Terms."
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "If you have any questions, requests or complaints about AltDentifier, please forward this to our staff using contact@altdentifier.com. We will respond to these inquiries within 28 days. AltDentifier fully complies with GDPR Data Releasements and Data Deletion."
+            }
+        }
+    }
+}
