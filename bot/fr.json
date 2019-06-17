@@ -50,7 +50,7 @@
       "no_staff": "Vous ne pouvez pas forcer la vérification d'un membre du personnel !",
       "higher_role": "Vous ne pouvez pas forcer la vérification des membres qui ont un rôle plus important que le vôtre !",
       "already": "%s est déjà en cours de vérification. Veuillez patienter jusqu'à ce qu'ils aient terminé la vérification !",
-      "no_bots": "Les bots ne peuvent pas être vérifiés !",
+      "no_bots": "Les robots ne peuvent pas être vérifiés !",
       "no_whitelist": "Vous ne pouvez pas vérifier les membres qui sont dans votre liste blanche. Enlevez-les d'abord de celle-ci !",
       "no_self_already": "Vous ne pouvez pas vérifier vous-même si vous êtes déjà en cours de vérification !",
       "no_self": "Ce serveur ne permet pas l'auto-vérification !",
@@ -70,7 +70,7 @@
       "dserv_ban": "<:dnd:313956276893646850> L'utilisateur a été banni de discord.services pour %s !",
       "no_ksoft_ban": "<:online:313956277808005120> L'utilisateur n'est pas banni de KSoft Bans !",
       "ksoft_ban": "<:dnd:313956276893646850> L'utilisateur a été banni de KSoft Bans !",
-      "bots": "Les bots n'ont pas de facteur de confiance !",
+      "bots": "Les robots n'ont pas de facteur de confiance !",
       "not_found": "Impossible de trouver cet utilisateur !"
     },
     "feedback": {
@@ -95,11 +95,11 @@
       "tip": "Astuce",
       "tips": [
         "Saviez-vous que nous avons aussi une page de commande sur notre site web ! Visitez https://altdentifier.com/commands pour le voir.",
-        "Saviez-vous que vous pouvez aussi me mentionner si vous oubliez votre préfixe ? Il suffit de faire <@372022813813839851520> pour le retrouver",
-        "Saviez-vous que vous pouvez également utiliser les réactions pour faire défiler le menu d'aide ? La seule chose dont j'ai besoin, c'est la permission AJOUTER DES RÉACTIONS. Vous pouvez aussi me donner GÉRER LES MESSAGES pour que je puisse nettoyer vos réactions !",
+        "Saviez-vous que vous pouvez aussi me mentionner si vous oubliez votre préfixe ? Il suffit de faire <@372022813813839851520> pour le retrouver.",
+        "Saviez-vous que vous pouvez également utiliser les réactions pour faire défiler le menu d'aide ? La seule chose dont j'ai besoin, c'est la permission AJOUTER DES RÉACTIONS. Vous pouvez aussi me donner GÉRER LES MESSAGES pour que je puisse enlever  vos réactions !",
         "Saviez-vous que vous pouvez configurer le raidmode pour qu'il s'active automatiquement lorsqu'un grand nombre d'utilisateurs rejoignent dans un court laps de temps ? Visitez https://altdentifier.com/dashboard, sélectionnez votre serveur et ouvrez l'onglet raidmode.",
         "Saviez-vous que nous avons un Patreon où vous pouvez acheter des fonctionnalités supplémentaires, telles que la possibilité de définir des messages sur le site, ou ajouter une image de fond à la vérification ? Visitez https://altdentifier.com/premium pour en savoir plus !\nTous les dons sont grandement appréciés.",
-        "Saviez-vous que vous pouvez aussi consulter un menu d'aide avec leur nom ? Essayez-le, tapez simplement <@372022813813839851520> help modération !",
+        "Saviez-vous que vous pouvez aussi consulter une catégorie d'aide grâce au nom de celle-ci ? Essayez, tapez simplement <@372022813813839851520> help moderation !",
         "Saviez-vous que toutes nos traductions sont alimentées par la communauté ? Si vous êtes intéressé, veuillez consulter notre serveur de support avec la commande info et demander directement à Auxim. Nous sommes actuellement à la recherche de locuteurs allemands et suédois, mais toutes les nouvelles traductions sont les bienvenues !"
       ],
       "doesnt_exist": "Cette page d'aide n'existe pas !",
@@ -116,77 +116,77 @@
         "bypass": {
           "usage": "[membre]",
           "permissions": "GÉRER LE SERVEUR/RÔLE MODERATEUR",
-          "short": "Laisser un utilisateur sauter la vérification",
+          "short": "Laisser un utilisateur sauter la vérification.",
           "long": "Utilisez cette commande pour faire sauter le processus de vérification à un utilisateur. Cela peut être utile si vous connaissez la personne en question. Vous pouvez utiliser une mention, un nom ou un ID pour choisir un membre. Exemple : ;bypass Auxim"
         },
         "raidmode": {
           "permissions": "GÉRER LE SERVEUR/RÔLE MODERATEUR",
-          "short": "Active le mode anti-raid, qui fait automatiquement une tentative d'authentification sur tous les nouveaux utilisateurs",
+          "short": "Active le mode anti-raid, qui fait automatiquement une tentative d'authentification sur tous les nouveaux utilisateurs.",
           "long": "Utilisez cette commande pour activer ou désactiver le mode raid. Le raidmode va vérifier les nouveaux members, les bannir ou les expulser en fonction de vos paramètres. Vous pouvez également activer le raidmode automatique, voir https://altdentifier.com/dashboard pour plus d'informations !"
         },
         "force": {
           "usage": "<membre>",
           "permissions": "GÉRER LE SERVEUR/RÔLE MODERATEUR",
-          "short": "Démarrer manuellement la vérification pour un utilisateur",
+          "short": "Démarrer manuellement la vérification pour un utilisateur.",
           "long": "Utilisez cette commande pour vérifier quelqu'un. Cela peut être utile si vous ne faites pas confiance à quelqu'un qui vient de rejoindre. Vous pouvez utiliser une mention, un nom ou un ID pour choisir un membre. Exemple: ;force Auxim"
         },
         "ban": {
-          "usage": "[membre] <jours de message à supprimer> <raison>",
+          "usage": "[membre] <nombre de jours de messages à supprimer> <raison>",
           "permissions": "BANNIR DES MEMBRES",
-          "short": "Bannit un membre",
-          "long": "Bannit quelqu'un de votre serveur. Vous pouvez utiliser une mention, un nom ou un ID pour choisir un membre. Exemple: ;ban Auxim\nVous pouvez également définir le nombre de jours de messages que vous voulez supprimer, de 1 à 7 jours. Enfin, vous pouvez également ajouter une raison qui apparaîtra dans les logs du serveur."
+          "short": "Banni un membre.",
+          "long": "Banni quelqu'un de votre serveur. Vous pouvez utiliser une mention, un nom ou un ID pour choisir un membre. Exemple: ;ban Auxim\nVous pouvez également définir le nombre de jours de messages que vous voulez supprimer, de 1 à 7 jours. Enfin, vous pouvez également ajouter une raison qui apparaîtra dans les logs du serveur."
         },
         "kick": {
           "usage": "[membre] <raison>",
           "permissions": "EXPULSER DES MEMBRES",
-          "short": "Expulse a un membre",
-          "long": "Expulse quelqu'un de votre serveur. Vous pouvez utiliser une mention, un nom ou un ID pour choisir un membre. Exemple: ;kick Auxim\nVous pouvez également ajouter une raison qui apparaîtra dans les logs du serveur"
+          "short": "Expulse a un membre.",
+          "long": "Expulse quelqu'un de votre serveur. Vous pouvez utiliser une mention, un nom ou un ID pour choisir un membre. Exemple: ;kick Auxim\nVous pouvez également ajouter une raison qui apparaîtra dans les logs du serveur."
         },
         "donate": {
           "short": "Faites un don pour le développement d'AltDentifier"
         },
         "feedback": {
           "usage": "[type] [message]",
-          "short": "Envoyez vos commentaires au développeur du bot. Les types de commentaires sont `bug`, `feature` et `support`.",
+          "short": "Envoyez vos commentaires au développeur du robot. Les types de commentaires sont `bug`, `feature` et `support`.",
           "long": "Envoyez vos commentaires au développeur. Vous devez définir votre type de commentaire, qu'il s'agisse de support, de feature ou de bug. Sachez que cette commande a une limite de temps de 1 heure pour empêcher le spam, alors assurez-vous d'avoir tout saisi correctement !"
         },
         "heartbeat": {
-          "short": "Recherche de problèmes de configuration",
+          "short": "Recherche de problèmes de configuration.",
           "permissions": "GÉRER LE SERVEUR/RÔLE MODERATEUR",
           "long": "Heartbeat vérifie les problèmes courants de la configuration de votre serveur. L'utilisation de cette commande indiquera ce qui doit être réparé !"
         },
         "help": {
           "usage": "<numéro de page, catégorie ou nom de commande>",
-          "short": "Affiche cette commande",
+          "short": "Affiche cette commande.",
           "long": "Ceci montre la commande d'aide. Tu sais, celle-là. Tu t'attendais à quoi, des baguettes ? Tu peux ajouter un numéro de page, un nom de catégorie ou un nom de commande pour trouver une page ou une commande spécifique !"
         },
         "info": {
-          "short": "Statistiques et informations sur le robot"
+          "short": "Statistiques et informations sur le robot."
         },
         "invite": {
-          "short": "Donne le lien d'invitation du robot"
+          "short": "Donne le lien d'invitation du robot."
         },
         "ping": {
-          "short": "Affiche la latence entre le robot et Discord"
+          "short": "Affiche la latence entre le robot et Discord."
         },
         "profile": {
           "usage": "<utilisateur>",
-          "short": "Afficher les informations du profil d'un utilisateur"
+          "short": "Afficher les informations du profil d'un utilisateur."
         },
         "settings": {
           "usage": "<numéro de paramètre>",
           "permissions": "GÉRER LE SERVEUR/RÔLE ADMIN",
-          "short": "Modifier les paramètres du robot"
+          "short": "Modifier les paramètres du robot."
         },
         "togglebroadcast": {
           "usage": "<salon>",
           "permissions": "GÉRER LE SERVEUR/RÔLE ADMIN",
-          "short": "Bascule la diffusion des mises à jour et des annonces dans le salon courant",
-          "long": "Bascule les messages de mise à jour dans ce salon. Nous posterons automatiquement ici dès qu'il y a une mise à jour"
+          "short": "Bascule la diffusion des mises à jour et des annonces dans le salon courant.",
+          "long": "Bascule les messages de mise à jour dans ce salon. Nous posterons automatiquement ici dès qu'il y a une mise à jour."
         },
         "userinfo": {
           "usage": "<utilisateur>",
-          "short": "Afficher des informations sur vous-même ou sur d'autres personnes"
+          "short": "Afficher des informations sur vous-même ou sur d'autres personnes."
         }
       },
       "embed": "Activez Intégrer des Liens pour moi dans ce salon afin que je puisse envoyer des messages d'aide plus propres !"
@@ -219,7 +219,7 @@
         "current": "Vos rôles administrateurs actuels sont les suivants : ```\n%s```. Voulez-vous ajouter ou supprimer un rôle ? Taper `add`, `remove` ou `no` pour quitter ! Notez que les rôles administrateurs sont automatiquement ajoutés aux rôles modérateurs aussi, mais les supprimer des rôles administrateurs ne les supprimera pas des rôles modérateurs !",
         "input": "Tapez le nom, la mention ou l'ID du rôle que vous souhaitez ajouter ou supprimer de vos rôles administrateur !",
         "added": "%s a été ajouté aux rôles administrateurs !",
-        "removed": "%s a été supprimé des rôles administrateurs",
+        "removed": "%s a été supprimé des rôles administrateurs.",
         "no_roles": "Vous n'avez aucun rôle administrateur ! Voulez-vous ajouter ou supprimer un rôle ? Tapez `add`, `remove` ou `no` pour quitter ! Notez que les rôles administrateurs sont automatiquement ajoutés aux rôles modérateurs aussi, mais les supprimer des rôles administrateurs ne les supprimera pas des rôles modérateurs !"
       },
       "mod_roles": {
@@ -251,7 +251,7 @@
       },
       "language": {
         "change": "Voulez-vous changer la langue du server ? La langue actuelle est %s. Tapez `yes` ou `no` !",
-        "change_to": "Par quoi voulez-vous changer la langue du serveur ? Les langages suivants sont disponibles : %s",
+        "change_to": "Par quoi voulez-vous changer la langue du serveur ? Les langages suivants sont disponibles : %s.",
         "set": "La langue a été configurée sur %s !"
       },
       "prefix": {
@@ -318,7 +318,7 @@
         "currently_disabled": "Les alertes de vérification sont actuellement désactivées. Les alertes de vérification vont mentionner les utilisateurs dans le salon d'avertissement si ils sont en train d'être vérifiés ! Voulez vous les activer ? Tapez `yes` ou `no` !",
         "currently_enabled": "Les alertes de vérificaton sont actuellement activées. Voulez vous les désactiver ? Tapez `yes` ou `no` !",
         "disabled": "Les alertes de vérification ont été activées !",
-        "enabled": "Les alertes de vérification ont été désactivées"
+        "enabled": "Les alertes de vérification ont été désactivées."
       },
       "trustfactor": {
         "currently_enabled": "Le facteur de confiance est actuellement activé. Voulez vous retourner à la verification de l'âge du compte seulement ? Tapez `yes` ou `no` !",
@@ -339,8 +339,8 @@
       "default_role_warning": "Un rôle par défaut a été configuré, mais je n'ai pas la permission de l'enlever. Veuillez vérifier que j'ai bien la permission `GÉRER LES RÔLES` et que le rôle par défaut est en dessous de mon rôle le plus haut ! La vérification va continuer, mais les membres en cours de vérification risquent d'être capable de parler pendant le processus.",
       "suspicious": "Compte suspicieux détecté !",
       "manual": "Un membre du staff a lancé manuellement la vérification de %s !",
-      "self": "%s a lancé la vérification de lui-même",
-      "suspicious_long_age": "%s a un compte dont l'âge est inférieur à votre seuil.\n\nLe compte de %s a un âge de %s jours, mais votre seuil est %s jours. %s à rejoint le serveur le %s\n\nAltDentifier a lancé le processus de vérification.",
+      "self": "%s a lancé la vérification de lui-même.",
+      "suspicious_long_age": "%s a un compte dont l'âge est inférieur à votre seuil.\n\nLe compte de %s a un âge de %s jours, mais votre seuil est %s jours. L'utilisateur à rejoint le serveur le %s\n\nAltDentifier a lancé le processus de vérification.",
       "suspicious_long_tf": "%s a un compte dont le facteur de confiance est inférieur à votre seuil.\n\nLe compte de %s a un facteur de confiance de %s, mais votre seuil est %s.\n\nAltDentifier a lancé le processus de vérification.",
       "manual_long": "\nSon facteur de confiance est %s.\n\nAltDentifier a lancé le processus de vérification !",
       "self_long": "\nSon facteur de confiance est %s.\n\nAltDentifier a lancé le processus de vérification !",
@@ -351,7 +351,7 @@
         "role": "vous allez recevoir le rôle %s !",
         "nothing": "les mesures prises seront laissées à la discrétion du staff."
       },
-      "dm_off": "Salut %s, Je ne peut pas vous envoyer de MP ! Veuillez activer vos MP pour ce serbeur dans 1 minute ou %s",
+      "dm_off": "Salut %s, Je ne peut pas vous envoyer de MP ! Veuillez activer vos MP pour ce serveur dans 1 minute ou %s.",
       "left": "%s a quitté le serveur avant que la vérification n'aie pu être complétée !",
       "no_response": "Pas de réponse !",
       "action_applied": {
@@ -373,7 +373,7 @@
       "success": "Vous avez vérifié votre compte avec succès. Nous espérons que vous aurez une expérience agréable dans %s !",
       "warn": "Salut %s, pour participer dans ce serveur, vous devez vérifier votre compte. Veuillez lire avec attention le MP que je vous ai envoyé. Vous avez %s minutes pour compléter la vérification !",
       "in_verif": "Vous êtes toujours en train d'être vérifié. Veuillez vous vérifier avec le lien au dessus !",
-      "in_verif_audit": "L'utilisateur est toujours en vérification"
+      "in_verif_audit": "L'utilisateur est toujours en vérification."
     },
   "autoraidmode": {
       "raided": "Il semble que votre serveur subisse un raid ! Les utilisateurs suivant ont rejoint pendant cette periode et vont être %s: \n%s",
@@ -388,7 +388,7 @@
     "no_warn_channel": "Un salon d'avertissement n'a pas été configuré ! Ceci est requis pour que la fonction AltDentifier fonctionne correctement. Veuillez en choisir un !",
     "cant_send": "Je ne peut pas envoyer de messages dans %s ! Veuillez me donner la permission ENVOYER DES MESSAGES !",
     "no_rich": "Je ne peut pas envoyer des messages riches dans %s ! Activer la permission INTÉGRER DES LIENS est recommandé afin d'avoir des messages plus propres !",
-    "cant_give": "Je ne peut pas donner le rôle %s aux nouveaux membres. Vérifiez que mon rôle est au dessus de %s",
+    "cant_give": "Je ne peut pas donner le rôle %s aux nouveaux membres. Vérifiez que mon rôle est au dessus de %s.",
     "no_role_perm": "Je ne peut pas donner de rôle aux nouveaux membres. Veuillez activer la permission GÉRER LES RÔLES !",
     "no_timeout_role": "Vous avez choise de donner aux membres un rôle quand ils échouent à la vérification, mais aucun rôle n'a été confuré. Veuillez en choisir un !",
     "no_kick": "Vous avez choisi d'expulser les membres quand ils échouent à la vérification, mais je ne serai pas capable de les expulser. Veuillez activer la permission EXPULSER DES MEMBRES !",
@@ -422,7 +422,7 @@
       "text": "Salon textuel",
       "vc": "Salon vocal",
       "category": "Catégorie",
-      "other": "Soit un salon d'actualité soit un salon de boutique. AltDentifier ne peut pas voir le type précis pour le moment"
+      "other": "Soit un salon d'actualité soit un salon de boutique. AltDentifier ne peut pas voir le type précis pour le moment."
     },
     "channel_create": {
       "title": "**Salon Créé**",
@@ -455,7 +455,7 @@
       },
       "nick": {
         "title": "**Surnom Changé**",
-        "simple": "%s a changé son surnom %s par %s"
+        "simple": "%s a changé son surnom %s par %s."
       }
     },
     "member_join": {
