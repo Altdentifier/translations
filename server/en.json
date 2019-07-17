@@ -39,29 +39,74 @@
         },
         "server": {
             "title": "Managing %s",
-            "menu_settings": "Settings",
+            "menu_settings": "Your Server",
             "menu_accessroles": "Access Roles",
             "menu_banlists": "Banlists",
-            "menu_raidmode": "Raidmode",
+            "menu_moderation": "Moderation",
+            "menu_verification": "Verification",
+            "menu_logging": "Logging",
+            "menu_auditlog": "Audit-Log",
             "menu_premium": "Premium",
             "menu_save": "Save Settings",
             "settings": {
+                "owner": "Owner: %s",
+                "members": "%s member(s)",
+                "current": "%s member(s) currently in verification",
+                "server_stats": {
+                    "daily": {
+                        "title": "Daily",
+                        "total": "%s user(s) put through verification today!",
+                        "success": "%s user(s) passed verification today!",
+                        "failure": "%s user(s) failed verification today!",
+                        "bypass": "%s user(s) had their verification bypassed today!",
+                        "incorrect": "%s user(s) have had action taken for an account mismatch today!"
+                    },
+                    "weekly": {
+                        "title": "Weekly",
+                        "total": "%s user(s) put through verification this week!",
+                        "success": "%s user(s) passed verification this week!",
+                        "failure": "%s user(s) failed verification this week!",
+                        "bypass": "%s user(s) had their verification bypassed this week!",
+                        "incorrect": "%s user(s) have had action taken for an account mismatch this week!"
+                    },
+                    "monthly": {
+                        "title": "Monthly",
+                        "total": "%s user(s) put through verification this month!",
+                        "success": "%s user(s) passed verification this month!",
+                        "failure": "%s user(s) failed verification this month!",
+                        "bypass": "%s user(s) had their verification bypassed this month!",
+                        "incorrect": "%s user(s) have had action taken for an account mismatch this month!"
+                    }
+                },
                 "main_settings": {
                     "title": "Main Settings",
                     "language": "Language: ",
+                    "language_desc": "Set the language AltDentifier should use in your server!",
                     "prefix": "Prefix: ",
+                    "prefix_desc": "Set the prefix AltDentifier should listen for in your server!",
                     "timezone": "Timezone (GMT Offset): ",
-                    "autorole": "Autorole: "
+                    "timezone_desc": "Set the timezone AltDentifier should use when dates are sent!",
+                    "autorole": "Autorole: ",
+                    "autorole_desc": "Automatically give the Default Role to users that do not have to verify!"
                 },
                 "verification_settings": {
                     "title": "Verification Settings",
                     "altdentification": "AltDentification: ",
+                    "altdentification_desc": "Enable or disable the automatic verification of members according to your trust factor",
                     "bot_channel": "Bot Channel: ",
+                    "bot_channel_desc": "Change the channel where the bot output's the status of verification. This channel should be staff only!",
                     "warning_channel": "Warning Channel: ",
+                    "warning_channel_desc": "Change the channel where members in verification are alerted of potential issues!",
                     "default_role": "Default Role: ",
+                    "default_role_desc": "Select a role that you want all members that verify to have. If you don't verify everyone, make sure to enable autorole under main settings!",
                     "in_verif_role": "Role During Verification: ",
+                    "in_verif_role_desc": "Select a role that you want to give to members during verification.",
                     "timeout_action": "Timeout Action: ",
+                    "timeout_action_desc": "Select what happens when a member does not respond to verification in time.",
+                    "incorrect_action": "Incorrect Account Action: ",
+                    "incorrect_action_desc": "Select what happens when a member in verification logs into AltDentifier with a different account than expected!\nBe aware that mistakes can happen, so weigh your options carefully!",
                     "timeout_role": "Timeout Role: ",
+                    "timeout_role_desc": "If you give a role as your timeout action, choose one here!",
                     "verification": "Verification",
                     "disabled": "Disabled",
                     "everyone": "Everyone",
@@ -69,19 +114,31 @@
                     "trusted-and-higher": "Trusted and Higher",
                     "very-trusted-only": "Very Trusted Only",
                     "trustfactor_threshold": "Trustfactor Threshold: ",
+                    "trustfactor_threshold_desc": "Select the amount of trust a member needs to have to not require verification.",
                     "minimum_karma": "Reddit Minimum Karma: ",
+                    "minimum_karma_desc": "Select the amount of combined Reddit karma a member needs to have if they want to pass Reddit verification.",
                     "verification_alerts": "Verification Alerts: ",
+                    "verification_alerts_desc": "Send a message in the warning channel when somebody needs to verify.",
                     "role_block": "Block other bots from giving roles during verification:",
+                    "role_block_desc": "Attempt to stop other bots from giving roles to members that are currently verifying",
                     "vpn_allowed": "Disallow VPN users from verification:",
+                    "vpn_allowed_desc": "Block users that are connecting with a VPN from succesfully verifying.",
                     "timeout_time": "Timeout Time: ",
+                    "timeout_time_desc": "Select the amount of time users have to complete verification. ",
                     "timeout_minutes": "minutes",
-                    "self_allowed": "Allow other users to start verification for themselves: "
+                    "self_allowed": "Allow other users to start verification for themselves: ",
+                    "self_allowed_desc": "Allow users to manually start their own verification with the ;verify command!",
+                    "verification_methods": "Verification Methods",
+                    "verification_methods_desc": "Enable, disable or restrict a certain verification method for users"
                 },
                 "logging_settings": {
                     "title": "Logging Settings",
                     "enable": "Enable Logging: ",
+                    "enable_desc": "Send a message when a certain event happens in your server!",
                     "log_channel": "Log Channel: ",
-                    "log_options": "Logging Options: "
+                    "log_channel_desc": "Select the channel you want logging messages to be sent to.",
+                    "log_options": "Logging Options: ",
+                    "log_options_desc": "Select the events that you want AltDentifier to log."
                 },
                 "heartbeat": {
                     "title": "AltDentifier Heartbeat",
@@ -90,7 +147,9 @@
             },
             "access_roles": {
                 "mod_roles": "Mod Roles",
-                "admin_roles": "Admin Roles"
+                "mod_roles_desc": "Select roles that can access command that are restricted, such as force and bypass",
+                "admin_roles": "Admin Roles",
+                "admin_roles_desc": "Select roles that are allowed to change the bot's configuration, such as settings"
             },
             "banlists": {
                 "suffix": "Banlist",
@@ -100,13 +159,17 @@
             "raidmode": {
                 "title": "Raidmode",
                 "activate": "Activate Raidmode: ",
+                "activate_desc": "Enable or Disable Raidmode. This will apply the Raidmode Action to every member that joins!",
                 "auto": "Auto-Raidmode: ",
+                "auto_desc": "Auto-Raidmode will activate Raidmode automatically when the trigger is met, and disable it self after the expiry!",
                 "expire": "Auto-Raidmode expires in",
                 "expire_2": "minutes!",
                 "trigger": "Trigger on:",
                 "per": "users per",
                 "unit": "seconds",
-                "raidmode_action": "Raidmode Action"
+                "raidmode_action": "Raidmode Action",
+                "raidmode_action_desc": "Set the action AltDentifier should take against members that join during raids!",
+                "enabled": "WARNING: Raidmode is currently enabled. AltDentifier will %s EVERY member that joins your server!"
             },
             "premium": {
                 "title": "Premium Settings",
@@ -114,6 +177,8 @@
                 "custom_message": "Custom Message:",
                 "custom_color": "Custom Background Color:",
                 "custom_image": "Custom Background Image URL:",
+                "preview_verify": "Preview Verify Page",
+                "preview_verification": "Preview Verification Page",
                 "guidelines": {
                     "title": "Customization Guidelines and Restrictions",
                     "required": "Required",
@@ -138,6 +203,35 @@
                 "still-activatable-one": "You can still activate %s server!",
                 "activate": "Activate Premium",
                 "deactivate": "Deactivate Premium"
+            },
+            "moderation": {
+                "title": "Mod-Log",
+                "enable": "Enable Mod-Log",
+                "enable_desc": "Enable or disable AltDentifier's Mod-Log functionality!",
+                "modlog_channel": "Mod-Log Channel",
+                "modlog_channel_desc": "Select the channel for AltDentifier to output mod-log cases!",
+                "mute_role": "Mute/Punishment Role",
+                "mute_role_desc": "Select a role for muting or punishing people. If this is not set, AltDentifier will look for a role called \"Muted\" before cancelling the command!"
+            },
+            "audit_log": {
+                "title": "Dashboard Edit Log",
+                "date": "Date",
+                "user": "User",
+                "changes": "Changes"
+            },
+            "logging": {
+                "message_delete": "Message Deleted",
+                "message_edit": "Message Edited",
+                "channel_create": "Channel Created",
+                "channel_delete": "Channel Deleted",
+                "role_create": "Role Created",
+                "role_delete": "Role Deleted",
+                "member_leave": "Member Leaves",
+                "member_join": "Member Joins",
+                "member_ban": "Member Banned",
+                "member_unban": "Member Unbanned",
+                "member_update": "Nickname and Role Changes",
+                "voice_update": "Voice Channel Changes"
             }
         },
         "privacy": {
@@ -372,7 +466,11 @@
     },
     "incorrect_account": {
         "title": "Incorrect Account",
-        "desc": "The account you are using to login is not the same as the account asked to verify. Server staff has been alerted of this."
+        "desc": "The account you are using to login is not the same as the account asked to verify. Server staff has been alerted of this.",
+        "msg": "%s has attempted to verify with a different account. This account belongs to %s#%s",
+        "ban": "%s#%s has been found in your ban list. %s has been banned as a result!",
+        "kicked": "In addition, this server has decided to remove all members that verify with a different Discord account. Please contact the server's moderation team if you think this is a mistake!\nAltDentifier cannot assist you with this!",
+        "banned": "In addition, this server has decided to ban all members that verify with a different Discord account. Please contact the server's moderation team if you think this is a mistake!\nAltDentifier cannot assist you with this!"
     },
     "index": {
         "desc": "The best Discord security and checkpoint bot!",

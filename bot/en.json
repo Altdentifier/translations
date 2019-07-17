@@ -1,485 +1,553 @@
 {
-  "commands": {
-    "ban": {
-      "banned": "%s banned!",
-      "ban_reason": "%s banned for %s",
-      "above": "You cannot ban members that are above your role!",
-      "above_bot": "I could not ban this member! Perhaps the member has a higher role than me?",
-      "no_perms": "You do not have permission to ban this member!",
-      "no_perms_bot": "I do not have permission to ban this member! Please make sure I have the `Ban Members` permission!"
-    },
-    "kick": {
-      "kicked": "%s kicked!",
-      "kick_reason": "%s kicked for %s",
-      "above": "You cannot kick members that are above your role!",
-      "above_bot": "I could not kick this member! Perhaps the member has a higher role than me?",
-      "no_perms": "You do not have permission to kick this member!",
-      "no_perms_bot": "I do not have permission to kick this member! Please make sure I have the `Kick Members` permission!"
-    },
-    "info": {
-      "stats": "Statistics",
-      "python": "Python Version",
-      "guilds": "Guild Count",
-      "d_py_version": "discord.py Version",
-      "shards": "Shards",
-      "shard_info": "(Current Shard/Shard Count)",
-      "owner": "Owner",
-      "ping": "Ping",
-      "id": "My ID: %s",
-      "site": "Website",
-      "users": "Users",
-      "desc": "The best Discord security and checkpoint bot!",
-      "support": "Support Server"
-    },
-    "ping": ":ping_pong: My ping is %sms",
-    "user_info": {
-      "creation": "Creation Date",
-      "join": "Join Date",
-      "status": "Status",
-      "owner": "Server Owner",
-      "yes": "Yes",
-      "time": "%a, %-d %b %Y at %H:%M:%S GMT"
-    },
-    "raidmode": {
-      "enabled": "Raidmode has been enabled!",
-      "disabled": "Raidmode has been disabled!"
-    },
-    "force": {
-      "afk": "%s may be AFK, are you sure you want to start verification for them? Type `yes` or `no`!",
-      "starting": "Starting verification for %s!",
-      "no_staff": "You cannot force verification on a staff member!",
-      "higher_role": "You cannot force verification on members that have a higher role than you!",
-      "already": "%s is already being verified. Please wait until they complete verification!",
-      "no_bots": "Bots cannot be verified!",
-      "no_whitelist": "You cannot verify members that are in your whitelist. Remove them first!",
-      "no_self_already": "You cannot verify yourself if you are already being verified!",
-      "no_self": "This server does not allow self-verification!",
-      "canceled": "Okay, canceled!"
-    },
-    "donate": "You can see our Premium plans at <https://altdentifier.com/premium>!",
-    "upvote": "You can upvote AltDentifier at <https://discordbots.org/bot/altdentifier/vote>!",
-    "profile": {
-      "title": "AltDentifier Profile",
-      "tf": "Trust Factor",
-      "user_tf": "%s is %s!",
-      "0": "Severely Distrusted",
-      "1": "Distrusted",
-      "2": "Trusted",
-      "3": "Very Trusted",
-      "no_dserv_ban": "<:online:313956277808005120> User is not banned from discord.services!",
-      "dserv_ban": "<:dnd:313956276893646850> User has been banned from discord.services for %s!",
-      "no_ksoft_ban": "<:online:313956277808005120> User is not banned from KSoft Bans!",
-      "ksoft_ban": "<:dnd:313956276893646850> User has been banned from KSoft Bans!",
-      "bots": "Bots do not have a Trust Factor!",
-      "not_found": "Could not find this user!"
-    },
-    "feedback": {
-      "blocked": "You have been blocked from sending feedback due to abuse of the feature!",
-      "not_supported": "This feedback type is not supported. Use `bug`, `feature` or `support`!",
-      "limit": "You can only send feedback messages once per hour",
-      "missing_args": "You must include a feedback type and message!",
-      "sent": "Feedback has been sent!"
-    },
-    "heartbeat": {
-      "title": "AltDentifier Heartbeat",
-      "no_issues": "No issues detected with your configuration!"
-    },
-    "broadcast": {
-      "removed": "%s removed from broadcast list!",
-      "added": "%s added to broadcast list!"
-    },
-    "help": {
-      "title": "Help",
-      "desc": "Protection against spambots and alt accounts.\n[arg] means the argument is required.\n<arg> means the argument is optional",
-      "page": "Page %s/3 - Made by: Auxim#0001",
-      "tip": "Tip",
-      "tips": [
-        "Did you know we have a command page on our website as well! Visit https://altdentifier.com/commands to see it",
-        "Did you know that you can also mention me if you forget your prefix? Simply do <@372022813839851520> to find it again",
-        "Did you know that you can also use reactions to scroll through the help menu? The only thing I need is ADD REACTIONS. You can also give me MANAGE MESSAGES' so I can clean your reactions!",
-        "Did you know that you can set up raidmode to activate automatically when a lot of users join in a short timeframe? Visit https://altdentifier.com/dashboard, select your server and open the raidmode tab.",
-        "Did you know that we have a Patreon where you can buy additional functionality, such as the ability to set messages on the site, or add a background picture to verification? Visit https://altdentifier.com/premium to learn more!\nAll donations are greatly appreciated",
-        "Did you know you can also look up a help menu with their name? Try it, just type <@372022813839851520> help moderation!",
-        "Did you know that all our translations are community powered? If you are interested, please check out our support server with the info command and ask Auxim directly.\nWe are currently looking for German and Swedish speakers, but all new translations are welcome!"
-      ],
-      "doesnt_exist": "This help page does not exist!",
-      "no_args": "This command has no arguments!",
-      "no_perms": "No permissions required for this command!",
-      "requested_by": "Requested by %s",
-      "usage": "Usage",
-      "aliases": "Aliases",
-      "perms": "Permissions",
-      "cmd_desc": "Description",
-      "no_usage": "None",
-      "no_desc": "No long description set for this command!",
-      "commands": {
-        "bypass": {
-          "usage": "[member]",
-          "permissions": "MANAGE SERVER/MOD ROLE",
-          "short": "Let a user skip verification",
-          "long": "Use this command to make a user skip the verification process. This can be useful if you know the person in question.\nYou can use a mention, name or ID to choose a member. Example: ;bypass Auxim"
-        },
-        "raidmode": {
-          "permissions": "MANAGE SERVER/MOD ROLE",
-          "short": "Enables anti-raid mode, which automatically does an authentication attempt on all new users",
-          "long": "Use this command to toggle raidmode on or off. Raidmode makes everyone who joins get verified, banned or kicked, depending on your settings.\nYou can also enable automatic raidmode, see https://altdentifier.com/dashboard for more info!"
-        },
-        "force": {
-          "usage": "<member>",
-          "permissions": "MANAGE SERVER/MOD ROLE",
-          "short": "Manually start verification for a user",
-          "long": "Use this command to make someone verify. This can be useful if you are not trusting someone who just joined.\nYou can use a mention, name or ID to choose a member. Example: ;force Auxim"
-        },
+    "commands": {
         "ban": {
-          "usage": "[member] <delete message days> <reason>",
-          "permissions": "BAN MEMBERS",
-          "short": "Bans a member",
-          "long": "Bans someone from your server. You can use a mention, name or ID to choose a member. Example: ;ban Auxim\nYou can also set the how many days worth of messages you want to delete, from 1 to 7 days. Finally, you can also append a reason to show up in the Audit Log"
+            "banned": "%s has been banned!",
+            "ban_reason": "%s has been banned for the following reason: \"%s\"",
+            "above": "You cannot ban members that have a higher role than you!",
+            "above_bot": "I could not ban this member! Perhaps this member has a higher role than me?",
+            "no_perms": "You do not have permission to ban this member!",
+            "no_perms_bot": "I do not have permission to ban this member! Please make sure I have the `Ban Members` permission!",
+            "self": "You might want to reconsider banning yourself!"
         },
         "kick": {
-          "usage": "[member] <reason>",
-          "permissions": "KICK MEMBERS",
-          "short": "Kicks a member",
-          "long": "Kicks someone from your server. You can use a mention, name or ID to choose a member. Example: ;kick Auxim\nYou can also append a reason to show up in the Audit Log"
+            "kicked": "%s has been kicked!",
+            "kick_reason": "%s has been kicked for the following reason: \"%s\"",
+            "above": "You cannot kick members that have a higher role than you!",
+            "above_bot": "I could not kick this member! Perhaps this member has a higher role than me?",
+            "no_perms": "You do not have permission to kick this member!",
+            "no_perms_bot": "I do not have permission to kick this member! Please make sure I have the `Kick Members` permission!",
+            "self": "You might want to reconsider kicking yourself!"
         },
-        "donate": {
-          "short": "Donate towards AltDentifier's development"
+        "mute": {
+            "muted": "%s has been muted!",
+            "muted_reason": "%s has been muted for the following reason: \"%s\"",
+            "above": "You cannot mute members if you cannot assign or remove the mute role yourself!",
+            "above_bot": "I could not mute this member! Perhaps this member member has a higher role than me?",
+            "no_perms": "You do not have permission to mute this member!",
+            "no_perms_bot": "I do not have permission to mute this member! Please make sure I have the `Manage Roles` permission!",
+            "self": "You might want to reconsider muting yourself!",
+            "expired": "AUTO: This mute has expired!",
+            "until": "\nThey have been muted until %s",
+            "negative_time": "You cannot set a mute to expire in the past. Keep in mind that the default timezone is GMT. Make sure to include your timezone in duration!"
         },
-        "feedback": {
-          "usage": "[type] [message]",
-          "short": "Send feedback to the bot's developer. Support types are 'bug', 'feature' and 'support'.",
-          "long": "Send feedback to the developer. You must define your feedback type, either one of support, feature or bug.\nBe aware that this command has a ratelimit of 1 hour to prevent spam, so make sure you input everything correctly!"
-        },
-        "heartbeat": {
-          "short": "Search for configuration issues",
-          "permissions": "MANAGE SERVER/MOD ROLE",
-          "long": "Heartbeat checks for common issues with your server configuration. Using this command will indicate what needs to be fixed!"
-        },
-        "help": {
-          "usage": "<page number, category or command name>",
-          "short": "Shows this very command",
-          "long": "This shows the help command. You know, this one. What did you expect, pumpkin juice?\nYou can append a page number, category name or command name to find a specific page or command!"
+        "unmute": {
+            "unmuted": "%s has been unmuted!",
+            "unmuted_reason": "%s has been unmuted for the following reason: \"%s\"",
+            "above_bot": "I could not unmute this member! Perhaps this member member has a higher role than me?",
+            "no_perms": "You do not have permission to unmute this member!",
+            "no_perms_bot": "I do not have permission to unmute this member! Please make sure I have the `Manage Roles` permission!"
         },
         "info": {
-          "short": "Bot statistics and information"
+            "stats": "Statistics",
+            "python": "Python Version",
+            "guilds": "Guild Count",
+            "d_py_version": "discord.py Version",
+            "shards": "Shards",
+            "shard_info": "(Current Shard/Shard Count)",
+            "owner": "Owner",
+            "ping": "Ping",
+            "id": "My ID: %s",
+            "site": "Website",
+            "users": "Users",
+            "desc": "The best Discord security and checkpoint bot!",
+            "support": "Support Server"
         },
-        "invite": {
-          "short": "Gets the bots invite link"
+        "ping": ":ping_pong: My ping is %sms",
+        "user_info": {
+            "creation": "Creation Date",
+            "join": "Join Date",
+            "status": "Status",
+            "owner": "Server Owner",
+            "yes": "Yes",
+            "time": "%a, %-d %b %Y at %H:%M:%S GMT"
         },
-        "ping": {
-          "short": "Shows the latency of the bot to Discord"
+        "raidmode": {
+            "enabled": "Raidmode has been enabled!",
+            "disabled": "Raidmode has been disabled!"
         },
+        "force": {
+            "afk": "%s may be AFK, are you sure you want to start verification for them? Type `yes` or `no`!",
+            "starting": "Starting verification for %s!",
+            "no_staff": "You cannot force verification on a staff member!",
+            "higher_role": "You cannot force verification on members that have a higher role than you!",
+            "already": "%s is already being verified. Please wait until they complete verification!",
+            "no_bots": "Bots cannot be verified!",
+            "no_whitelist": "You cannot verify members that are in your whitelist. Remove them first!",
+            "no_self_already": "You cannot verify yourself if you are already being verified!",
+            "no_self": "This server does not allow self-verification!",
+            "canceled": "Okay, canceled!"
+        },
+        "donate": "You can see our Premium plans at <https://altdentifier.com/premium>!",
+        "upvote": "You can upvote AltDentifier at <https://discordbots.org/bot/altdentifier/vote>!",
         "profile": {
-          "usage": "<user>",
-          "short": "Show the profile information of a user"
+            "title": "AltDentifier Profile",
+            "tf": "Trust Factor",
+            "user_tf": "%s is %s!",
+            "0": "Severely Distrusted",
+            "1": "Distrusted",
+            "2": "Trusted",
+            "3": "Very Trusted",
+            "no_dserv_ban": "<:online:313956277808005120> User is not banned from discord.services!",
+            "dserv_ban": "<:dnd:313956276893646850> User has been banned from discord.services for %s!",
+            "no_ksoft_ban": "<:online:313956277808005120> User is not banned from KSoft Bans!",
+            "ksoft_ban": "<:dnd:313956276893646850> User has been banned from KSoft Bans!",
+            "bots": "Bots do not have a Trust Factor!",
+            "not_found": "Could not find this user!"
+        },
+        "feedback": {
+            "blocked": "You have been blocked from sending feedback due to abuse of the feature!",
+            "not_supported": "This feedback type is not supported. Use `bug`, `feature` or `support`!",
+            "limit": "You can only send feedback messages once per hour",
+            "missing_args": "You must include a feedback type and message!",
+            "sent": "Feedback has been sent!"
+        },
+        "heartbeat": {
+            "title": "AltDentifier Heartbeat",
+            "no_issues": "No issues detected with your configuration!"
+        },
+        "broadcast": {
+            "removed": "%s removed from broadcast list!",
+            "added": "%s added to broadcast list!"
+        },
+        "help": {
+            "title": "Help",
+            "desc": "Protection against spambots and alt accounts.\n[arg] means the argument is required.\n<arg> means the argument is optional",
+            "page": "Page %s/3 - Made by: Auxim#0001",
+            "tip": "Tip",
+            "tips": [
+                "Did you know we have a command page on our website as well! Visit https://altdentifier.com/commands to see it",
+                "Did you know that you can also mention me if you forget your prefix? Simply do <@372022813839851520> to find it again",
+                "Did you know that you can also use reactions to scroll through the help menu? The only thing I need is ADD REACTIONS. You can also give me MANAGE MESSAGES' so I can clean your reactions!",
+                "Did you know that you can set up raidmode to activate automatically when a lot of users join in a short timeframe? Visit https://altdentifier.com/dashboard, select your server and open the raidmode tab.",
+                "Did you know that we have a Patreon where you can buy additional functionality, such as the ability to set messages on the site, or add a background picture to verification? Visit https://altdentifier.com/premium to learn more!\nAll donations are greatly appreciated",
+                "Did you know you can also look up a help menu with their name? Try it, just type <@372022813839851520> help moderation!",
+                "Did you know that all our translations are community powered? If you are interested, please check out our support server with the info command and ask Auxim directly.\nWe are currently looking for German and Swedish speakers, but all new translations are welcome!"
+            ],
+            "doesnt_exist": "This help page does not exist!",
+            "no_args": "This command has no arguments!",
+            "no_perms": "No permissions required for this command!",
+            "requested_by": "Requested by %s",
+            "usage": "Usage",
+            "aliases": "Aliases",
+            "perms": "Permissions",
+            "cmd_desc": "Description",
+            "no_usage": "None",
+            "no_desc": "No long description set for this command!",
+            "commands": {
+                "bypass": {
+                    "usage": "[member]",
+                    "permissions": "MANAGE SERVER/MOD ROLE",
+                    "short": "Let a user skip verification",
+                    "long": "Use this command to make a user skip the verification process. This can be useful if you know the person in question.\nYou can use a mention, name or ID to choose a member. Example: ;bypass Auxim"
+                },
+                "raidmode": {
+                    "permissions": "MANAGE SERVER/MOD ROLE",
+                    "short": "Enables anti-raid mode, which automatically does an authentication attempt on all new users",
+                    "long": "Use this command to toggle raidmode on or off. Raidmode makes everyone who joins get verified, banned or kicked, depending on your settings.\nYou can also enable automatic raidmode, see https://altdentifier.com/dashboard for more info!"
+                },
+                "force": {
+                    "usage": "<member>",
+                    "permissions": "MANAGE SERVER/MOD ROLE",
+                    "short": "Manually start verification for a user",
+                    "long": "Use this command to make someone verify. This can be useful if you are not trusting someone who just joined.\nYou can use a mention, name or ID to choose a member. Example: ;force Auxim"
+                },
+                "ban": {
+                    "usage": "[member] <delete message days> <reason>",
+                    "permissions": "BAN MEMBERS",
+                    "short": "Bans a member",
+                    "long": "Bans someone from your server. You can use a mention, name or ID to choose a member. Example: ;ban Auxim\nYou can also set the how many days worth of messages you want to delete, from 1 to 7 days. Finally, you can also append a reason to show up in the Audit Log"
+                },
+                "kick": {
+                    "usage": "[member] <reason>",
+                    "permissions": "KICK MEMBERS",
+                    "short": "Kicks a member",
+                    "long": "Kicks someone from your server. You can use a mention, name or ID to choose a member. Example: ;kick Auxim\nYou can also append a reason to show up in the Audit Log"
+                },
+                "donate": {
+                    "short": "Donate towards AltDentifier's development"
+                },
+                "feedback": {
+                    "usage": "[type] [message]",
+                    "short": "Send feedback to the bot's developer. Support types are 'bug', 'feature' and 'support'.",
+                    "long": "Send feedback to the developer. You must define your feedback type, either one of support, feature or bug.\nBe aware that this command has a ratelimit of 1 hour to prevent spam, so make sure you input everything correctly!"
+                },
+                "heartbeat": {
+                    "short": "Search for configuration issues",
+                    "permissions": "MANAGE SERVER/MOD ROLE",
+                    "long": "Heartbeat checks for common issues with your server configuration. Using this command will indicate what needs to be fixed!"
+                },
+                "help": {
+                    "usage": "<page number, category or command name>",
+                    "short": "Shows this very command",
+                    "long": "This shows the help command. You know, this one. What did you expect, pumpkin juice?\nYou can append a page number, category name or command name to find a specific page or command!"
+                },
+                "info": {
+                    "short": "Bot statistics and information"
+                },
+                "invite": {
+                    "short": "Gets the bots invite link"
+                },
+                "ping": {
+                    "short": "Shows the latency of the bot to Discord"
+                },
+                "profile": {
+                    "usage": "<user>",
+                    "short": "Show the profile information of a user"
+                },
+                "settings": {
+                    "usage": "<setting number>",
+                    "permissions": "MANAGE SERVER/ADMIN ROLE",
+                    "short": "Change the bot's settings"
+                },
+                "togglebroadcast": {
+                    "usage": "<channel>",
+                    "permissions": "MANAGE SERVER/ADMIN ROLE",
+                    "short": "Toggle update and announcement broadcast in the current channel",
+                    "long": "Toggle update messages in this channel. We will then automatically post here when there is a new update"
+                },
+                "userinfo": {
+                    "usage": "<user>",
+                    "short": "Show info about yourself or others"
+                },
+                "mute": {
+                    "usage": "[member] <expiry> <reason>",
+                    "short": "Mutes a member",
+                    "long": "Mutes a member using your mute role, when no mute role is set, AltDentifier will search for a role called Muted before giving up.\nYou can set an expiry time and a reason for the mute as well. Example: ;mute Auxim \"for 1 hour\" \"Not coding quickly enough\". This expiry time can be set using absolute or relative times, such as `15:00` or `in 1 hour`. \nMake sure to wrap the expiry time and reason in quotes, otherwise the bot will take it's best guess.",
+                    "permissions": "MANAGE ROLES"
+                },
+                "unmute": {
+                    "usage": "[member] <reason>",
+                    "short": "Unmutes a previously muted member!",
+                    "long": "Use this command to unmute a member that is currently muted. You can also give a reason for the unmute. Example: ;unmute Auxim finally released update",
+                    "permissions": "MANAGE ROLES"
+                },
+                "reason": {
+                    "usage": "<case> [reason]",
+                    "short": "Sets a mod-log reason",
+                    "long": "Use this command to set a reason in the mod log. Example: ;reason 1 Auxim did not fix all the bugs. If the case id is omitted, the reason will be applied to the most recent case in your server!",
+                    "permissions": "MANAGE ROLES/BAN MEMBERS/KICK MEMBERS"
+                }
+            },
+            "embed": "Enable Embed Links for me in this channel so I can send cleaner help messages!"
         },
         "settings": {
-          "usage": "<setting number>",
-          "permissions": "MANAGE SERVER/ADMIN ROLE",
-          "short": "Change the bot's settings"
-        },
-        "togglebroadcast": {
-          "usage": "<channel>",
-          "permissions": "MANAGE SERVER/ADMIN ROLE",
-          "short": "Toggle update and announcement broadcast in the current channel",
-          "long": "Toggle update messages in this channel. We will then automatically post here when there is a new update"
-        },
-        "userinfo": {
-          "usage": "<user>",
-          "short": "Show info about yourself or others"
+            "title": "Settings",
+            "list": "1. AltDentification\n2. Default Role\n3. Admin Roles\n4. Mod Roles\n5. Logging\n6. Warning Channel\n7. Bot Channel\n8. Language\n9. Prefix\n10. Timezone\n11. Minimum account age\n12. Autorole\n13. Authentication Methods\n14. Timeout Action\n15. Reddit Minimum Karma\n16. Logging Channel\n17. Logging Options\n18. Verification Alerts\n19. Trust Factor\n\nType `exit` to cancel!",
+            "list_tf": "1. AltDentification\n2. Default Role\n3. Admin Roles\n4. Mod Roles\n5. Logging\n6. Warning Channel\n7. Bot Channel\n8. Language\n9. Prefix\n10. Timezone\n11. Trust Factor Threshold\n12. Autorole\n13. Authentication Methods\n14. Timeout Action\n15. Reddit Minimum Karma\n16. Logging Channel\n17. Logging Options\n18. Verification Alerts\n19. Trust Factor\n\nType `exit` to cancel!",
+            "canceled": "Okay, canceled!",
+            "dashboard": "Want an easier way to manage settings? Visit our web dashboard at https://altdentifier.com/dashboard or click the blue link up top!",
+            "dashboard_notif": "All of our settings can be managed on our web dashboard now! We strongly recommend using it, as the settings command may not be updated for new features!\nVisit <https://altdentifier.com/dashboard> to view the dashboard!",
+            "not_number": "Settings argument must be a number!",
+            "already_open": "Settings is already open on this server. Please use the already open dialog!",
+            "altdentification": {
+                "currently_enabled": "AltDentification is currently enabled! Would you like to disable it? Type `yes` or `no`.",
+                "currently_disabled": "AltDentification is currently disabled! Would you like to enable it? Type `yes` or `no`.",
+                "enabled": "AltDentification has been enabled!",
+                "disabled": "AltDentification has been disabled"
+            },
+            "default_role": {
+                "not_set": "You don't have a Default Role set up, do you want to set one up now? Type `yes` or `no`.",
+                "input": "Type the name of your Default Role, mention the role or type it's ID.",
+                "not_found": "Sorry, I could not find this role, make sure you have spelled everything correctly!",
+                "set_to": "Default Role has been set to `%s`!",
+                "is_set": "The current Default Role is `%s`. Do you want to change it? If you still have reverse default role enabled, please disable it and set an in verification role on the dashboard! You cannot enable reverse anymore due to this change! Type `yes`, `no` or `reverse`.",
+                "reverse_disabled": "Reverse has been disabled!",
+                "no_perms": "You have set a Default Role, however, I will not be able to give it to members, because I am missing the `MANAGE ROLES` permission, or my role is lower than the Default Role!"
+            },
+            "admin_roles": {
+                "current": "Your current Admin Roles are: ```\n%s```. Do you want to add or remove a role? Type `add`, `remove` or `no` to exit! Note that Admin Roles are automatically added to Mod Roles too, but removing them from Admin Roles won't remove them from Mod Roles!",
+                "input": "Type the name, mention or ID of the role you want to add or remove from your Admin Roles!",
+                "added": "Added %s to the Admin Roles!",
+                "removed": "Removed %s from the Admin Roles!",
+                "no_roles": "You don't have any Admin Roles! Do you want to add or remove a role? Type `add`, `remove` or `no` to exit! Note that Admin Roles are automatically added to Mod Roles too, but removing them from Admin Roles won't remove them from Mod Roles!"
+            },
+            "mod_roles": {
+                "current": "Your current Mod Roles are: ```\n%s```. Do you want to add or remove a role? Type `add`, `remove` or `no` to exit!",
+                "input": "Type the name, mention or ID of the role you want to add or remove from your Mod Roles!",
+                "added": "Added %s to the Mod Roles!",
+                "removed": "Removed %s from the Mod Roles!",
+                "no_roles": "You don't have any Mod Roles! Do you want to add or remove a role? Type `add`, `remove` or `no` to exit!"
+            },
+            "logging": {
+                "currently_enabled": "Logging is currently enabled, do you wish to disable it? Type `yes` or `no`!",
+                "currently_disabled": "Logging is currently disabled, do you wish to enable it? Type `yes` or `no`!",
+                "enabled": "Logging has been enabled!",
+                "disabled": "Logging has been disabled!"
+            },
+            "warning_channel": {
+                "is_set": "Warning channel is currently set to %s, do you want to change it? Type `yes` or `no`!",
+                "not_set": "You do not have a warning channel set! Do you want to set this now? A warning channel is required for AltDentification to work! Type `yes` or `no`.",
+                "input": "Type the ID, mention or the name of the channel you want to set as a warning channel!",
+                "set_to": "Warning channel has been set to %s!",
+                "not_found": "Sorry, I could not find this channel, make sure you have spelled everything correctly!"
+            },
+            "bot_channel": {
+                "is_set": "Bot channel is currently set to %s, do you want to change it? Type `yes` or `no`!",
+                "not_set": "You do not have a bot channel set! Do you want to set this now? A bot channel is required for AltDentification to work! Type `yes` or `no`.",
+                "input": "Type the ID, mention or the name of the channel you want to set as a bot channel!",
+                "set_to": "Bot channel has been set to %s!",
+                "not_found": "Sorry, I could not find this channel, make sure you have spelled everything correctly!"
+            },
+            "language": {
+                "change": "Do you want to change the server's language? The current language is %s. Type `yes` or `no`!",
+                "change_to": "What do you want to change the language to? The following languages are available: %s",
+                "set": "Language has been set to %s!"
+            },
+            "prefix": {
+                "change": "Do you want to change the bot prefix in this server? The current Prefix is `%s`. Type `yes` or `no`!",
+                "change_to": "What do you want to change the prefix to?",
+                "set": "Prefix has been set to %s. Note that you can always mention me if you forget your prefix!"
+            },
+            "timezone": {
+                "change": "Your current timezone is UTC %s%s. Do you wish to change it? Type `yes` or `no`!",
+                "change_to": "Type the difference between UTC and your timezone, or use a timezone code, like `Europe/Amsterdam`.",
+                "not_found": "This timezone could not be found. Please run this command again to retry!",
+                "set": "Timezone has been set to %s (UTC %s%s)!"
+            },
+            "minimum_age": {
+                "change": "The current minimum account age is %s days. User's account must be older than this amount to not enter verification. Do you want to change the age? Type `yes` or `no`!",
+                "change_to": "What do you want to set the minimum account age to? Enter the time in days!",
+                "set": "Minimum account age has been set to %s days!"
+            },
+            "autorole": {
+                "currently_enabled": "Autorole is currently enabled. Do you want to disable it? Type `yes` or `no`!",
+                "currently_disabled": "Autorole is currently disabled. Do you want to enable it? Type `yes` or `no`!",
+                "enabled": "Autorole has been enabled!",
+                "disabled": "Autorole has been disabled!",
+                "no_role": "You cannot enable Autorole if you do not have a Default Role set!",
+                "no_perms": "You cannot enable Autorole if I do not have permission to give the default role! Please check if my highest role is above the Default Role, and that I have the `MANAGE ROLES` permission!",
+                "reverse_active": "You cannot enable Autorole while a reversed Default Role is active!"
+            },
+            "authentication_methods": {
+                "change": "The following authentication methods are allowed on your server:\n%s.\n\nReddit, Twitter, Steam, Overwatch, Captcha, Xbox and YouTube are available. Type the name of the method you want to disable or enable, or type `no` to cancel!",
+                "disabled": "%s verification has been disabled!",
+                "enabled": "%s verification has been enabled!",
+                "one_active": "You need to have at least one verification option enabled!"
+            },
+            "timeout_action": {
+                "change": "Set a timeout action for users that fail to verify in time. The current timeout action is %s. You can select `kick` to kick them from your server, `ban` to ban them from your server, `role` to give them a role of your choosing, `nothing` to ignore them or `no` to keep the current setting!",
+                "chose_role": "To use the role action, you must select a role that the user will receive if they do not respond. Type it's ID, mention or name now!",
+                "not_found": "This role could not be found, please run this command again to retry, or select a different timeout action!",
+                "role": "Timeout action has been set to `role`. Users will be given the `%s` role if they don't verify in time!",
+                "no_perms_role": "You cannot set your timeout action to role if I cannot give users this role! Please check if my role is above the role you selected, and that I have the `MANAGE ROLES` permission!",
+                "no_perms_kick": "You cannot set your timeout action to kick if I cannot kick members! Please check that I have the `KICK MEMBERS` permission!",
+                "no_perms_ban": "You cannot set your timeout action to ban if I cannot ban members! Please check that I have the `BAN MEMBERS` permission!",
+                "set": "Timeout action has been set to %s!"
+            },
+            "minimum_karma": {
+                "change": "Minimum Reddit Karma is currently set to %s. Do you want to change it? Type `yes` or `no`.",
+                "change_to": "What would you like to set the Minimum Reddit Karma to? Keep in mind this is a combination of both link and comment karma, and it must be a number!",
+                "not_number": "Minimum Karma must be a number!",
+                "set": "Minimum Reddit Karma has been set to %s!"
+            },
+            "log_channel": {
+                "not_enabled": "You do not have logging enabled and therefore cannot set a logging channel! Please enable logging first!",
+                "not_set": "You do not have a logging channel set! Do you want to set it now? Type `yes` or `no`!",
+                "current": "Your logging channel is %s. Do you want to change it? Type `yes` or `no`!",
+                "input": "Type the ID, mention or name of the the channel you wish to use for logging!",
+                "set": "Logging channel has been set to %s!"
+            },
+            "log_options": {
+                "current": "The following log options are currently enabled:\n\n%s!Type the name of a log option to toggle it on or off, or type `no` to cancel.\n\nThe available options are `member join`, `member leave`, `member update`, `member ban`, `member unban`, `channel create`, `channel delete`, `role create`, `role delete`, `voice update`, `message edit` and `message delete`!",
+                "not_enabled": "You do not have logging enabled and therefore cannot select logging any logging options! Please enable logging first!",
+                "enabled": "%s has been enabled!",
+                "disabled": "%s has been disabled!"
+            },
+            "verif_alerts": {
+                "currently_disabled": "Verification Alerts are currently disabled. Verification Alerts will mention the user in the Warning Channel if they are being verified! Would you like to enable them? Type `yes` or `no`!",
+                "currently_enabled": "Verification Alerts are currently enabled. Would you like to disable them? Type `yes` or `no`!",
+                "disabled": "Verification Alerts have been disabled!",
+                "enabled": "Verification Alerts have been enabled"
+            },
+            "trustfactor": {
+                "currently_enabled": "Trust Factor is currently enabled. Do you want to return to account age only verification? Type `yes` or `no`!",
+                "currently_disabled": "Trust Factor is currently disabled. Trust Factor takes more factors into account when checking if an account should be verified. Do you wish to enable Trust Factor? Type `yes` or `no`!",
+                "enabled": "Trust Factor has been enabled!",
+                "disabled": "Trust Factor has been disabled!",
+                "threshold": "Your Trust Factor threshold is currently `%s`! Do you want to change it? Type `yes` or `no`!",
+                "input": "Which Trust Level would you like to use? Type `0` for Severely Distrusted, `1` for Distrusted and Lower (Default), `2` for Trusted and Lower, `3` for Very Trusted and Lower (Everyone) or type `exit` to cancel!",
+                "set_to_sd": "Your Trust Factor threshold has been set to `Severely Distrusted`!",
+                "set_to_d": "Your Trust Factor threshold has been set to `Distrusted and Lower`!",
+                "set_to_t": "Your Trust Factor threshold has been set to `Trusted and Lower`!",
+                "set_to_vt": "Your Trust Factor threshold has been set to `Very Trusted and Lower`, which means everybody has to verify!"
+            }
         }
-      },
-      "embed": "Enable Embed Links for me in this channel so I can send cleaner help messages!"
     },
-    "settings": {
-      "title": "Settings",
-      "list": "1. AltDentification\n2. Default Role\n3. Admin Roles\n4. Mod Roles\n5. Logging\n6. Warning Channel\n7. Bot Channel\n8. Language\n9. Prefix\n10. Timezone\n11. Minimum account age\n12. Autorole\n13. Authentication Methods\n14. Timeout Action\n15. Reddit Minimum Karma\n16. Logging Channel\n17. Logging Options\n18. Verification Alerts\n19. Trust Factor\n\nType `exit` to cancel!",
-      "list_tf": "1. AltDentification\n2. Default Role\n3. Admin Roles\n4. Mod Roles\n5. Logging\n6. Warning Channel\n7. Bot Channel\n8. Language\n9. Prefix\n10. Timezone\n11. Trust Factor Threshold\n12. Autorole\n13. Authentication Methods\n14. Timeout Action\n15. Reddit Minimum Karma\n16. Logging Channel\n17. Logging Options\n18. Verification Alerts\n19. Trust Factor\n\nType `exit` to cancel!",
-      "canceled": "Okay, canceled!",
-      "dashboard": "Want an easier way to manage settings? Visit our web dashboard at https://altdentifier.com/dashboard or click the blue link up top!",
-      "dashboard_notif": "All of our settings can be managed on our web dashboard now! We strongly recommend using it, as the settings command may not be updated for new features!\nVisit <https://altdentifier.com/dashboard> to view the dashboard!",
-      "not_number": "Settings argument must be a number!",
-      "already_open": "Settings is already open on this server. Please use the already open dialog!",
-      "altdentification": {
-        "currently_enabled": "AltDentification is currently enabled! Would you like to disable it? Type `yes` or `no`.",
-        "currently_disabled": "AltDentification is currently disabled! Would you like to enable it? Type `yes` or `no`.",
-        "enabled": "AltDentification has been enabled!",
-        "disabled": "AltDentification has been disabled"
-      },
-      "default_role": {
-        "not_set": "You don't have a Default Role set up, do you want to set one up now? Type `yes` or `no`.",
-        "input": "Type the name of your Default Role, mention the role or type it's ID.",
-        "not_found": "Sorry, I could not find this role, make sure you have spelled everything correctly!",
-        "set_to": "Default Role has been set to `%s`!",
-        "is_set": "The current Default Role is `%s`. Do you want to change it? If you still have reverse default role enabled, please disable it and set an in verification role on the dashboard! You cannot enable reverse anymore due to this change! Type `yes`, `no` or `reverse`.",
-        "reverse_disabled": "Reverse has been disabled!",
-        "no_perms": "You have set a Default Role, however, I will not be able to give it to members, because I am missing the `MANAGE ROLES` permission, or my role is lower than the Default Role!"
-      },
-      "admin_roles": {
-        "current": "Your current Admin Roles are: ```\n%s```. Do you want to add or remove a role? Type `add`, `remove` or `no` to exit! Note that Admin Roles are automatically added to Mod Roles too, but removing them from Admin Roles won't remove them from Mod Roles!",
-        "input": "Type the name, mention or ID of the role you want to add or remove from your Admin Roles!",
-        "added": "Added %s to the Admin Roles!",
-        "removed": "Removed %s from the Admin Roles!",
-        "no_roles": "You don't have any Admin Roles! Do you want to add or remove a role? Type `add`, `remove` or `no` to exit! Note that Admin Roles are automatically added to Mod Roles too, but removing them from Admin Roles won't remove them from Mod Roles!"
-      },
-      "mod_roles": {
-        "current": "Your current Mod Roles are: ```\n%s```. Do you want to add or remove a role? Type `add`, `remove` or `no` to exit!",
-        "input": "Type the name, mention or ID of the role you want to add or remove from your Mod Roles!",
-        "added": "Added %s to the Mod Roles!",
-        "removed": "Removed %s from the Mod Roles!",
-        "no_roles": "You don't have any Mod Roles! Do you want to add or remove a role? Type `add`, `remove` or `no` to exit!"
-      },
-      "logging": {
-        "currently_enabled": "Logging is currently enabled, do you wish to disable it? Type `yes` or `no`!",
-        "currently_disabled": "Logging is currently disabled, do you wish to enable it? Type `yes` or `no`!",
-        "enabled": "Logging has been enabled!",
-        "disabled": "Logging has been disabled!"
-      },
-      "warning_channel": {
-        "is_set": "Warning channel is currently set to %s, do you want to change it? Type `yes` or `no`!",
-        "not_set": "You do not have a warning channel set! Do you want to set this now? A warning channel is required for AltDentification to work! Type `yes` or `no`.",
-        "input": "Type the ID, mention or the name of the channel you want to set as a warning channel!",
-        "set_to": "Warning channel has been set to %s!",
-        "not_found": "Sorry, I could not find this channel, make sure you have spelled everything correctly!"
-      },
-      "bot_channel": {
-        "is_set": "Bot channel is currently set to %s, do you want to change it? Type `yes` or `no`!",
-        "not_set": "You do not have a bot channel set! Do you want to set this now? A bot channel is required for AltDentification to work! Type `yes` or `no`.",
-        "input": "Type the ID, mention or the name of the channel you want to set as a bot channel!",
-        "set_to": "Bot channel has been set to %s!",
-        "not_found": "Sorry, I could not find this channel, make sure you have spelled everything correctly!"
-      },
-      "language": {
-        "change": "Do you want to change the server's language? The current language is %s. Type `yes` or `no`!",
-        "change_to": "What do you want to change the language to? The following languages are available: %s",
-        "set": "Language has been set to %s!"
-      },
-      "prefix": {
-        "change": "Do you want to change the bot prefix in this server? The current Prefix is `%s`. Type `yes` or `no`!",
-        "change_to": "What do you want to change the prefix to?",
-        "set": "Prefix has been set to %s. Note that you can always mention me if you forget your prefix!"
-      },
-      "timezone": {
-        "change": "Your current timezone is UTC %s%s. Do you wish to change it? Type `yes` or `no`!",
-        "change_to": "Type the difference between UTC and your timezone, or use a timezone code, like `Europe/Amsterdam`.",
-        "not_found": "This timezone could not be found. Please run this command again to retry!",
-        "set": "Timezone has been set to %s (UTC %s%s)!"
-      },
-      "minimum_age": {
-        "change": "The current minimum account age is %s days. User's account must be older than this amount to not enter verification. Do you want to change the age? Type `yes` or `no`!",
-        "change_to": "What do you want to set the minimum account age to? Enter the time in days!",
-        "set": "Minimum account age has been set to %s days!"
-      },
-      "autorole": {
-        "currently_enabled": "Autorole is currently enabled. Do you want to disable it? Type `yes` or `no`!",
-        "currently_disabled": "Autorole is currently disabled. Do you want to enable it? Type `yes` or `no`!",
-        "enabled": "Autorole has been enabled!",
-        "disabled": "Autorole has been disabled!",
-        "no_role": "You cannot enable Autorole if you do not have a Default Role set!",
-        "no_perms": "You cannot enable Autorole if I do not have permission to give the default role! Please check if my highest role is above the Default Role, and that I have the `MANAGE ROLES` permission!",
-        "reverse_active": "You cannot enable Autorole while a reversed Default Role is active!"
-      },
-      "authentication_methods": {
-        "change": "The following authentication methods are allowed on your server:\n%s.\n\nReddit, Twitter, Steam, Overwatch, Captcha, Xbox and YouTube are available. Type the name of the method you want to disable or enable, or type `no` to cancel!",
-        "disabled": "%s verification has been disabled!",
-        "enabled": "%s verification has been enabled!",
-        "one_active": "You need to have at least one verification option enabled!"
-      },
-      "timeout_action": {
-        "change": "Set a timeout action for users that fail to verify in time. The current timeout action is %s. You can select `kick` to kick them from your server, `ban` to ban them from your server, `role` to give them a role of your choosing, `nothing` to ignore them or `no` to keep the current setting!",
-        "chose_role": "To use the role action, you must select a role that the user will receive if they do not respond. Type it's ID, mention or name now!",
-        "not_found": "This role could not be found, please run this command again to retry, or select a different timeout action!",
-        "role": "Timeout action has been set to `role`. Users will be given the `%s` role if they don't verify in time!",
-        "no_perms_role": "You cannot set your timeout action to role if I cannot give users this role! Please check if my role is above the role you selected, and that I have the `MANAGE ROLES` permission!",
-        "no_perms_kick": "You cannot set your timeout action to kick if I cannot kick members! Please check that I have the `KICK MEMBERS` permission!",
-        "no_perms_ban": "You cannot set your timeout action to ban if I cannot ban members! Please check that I have the `BAN MEMBERS` permission!",
-        "set": "Timeout action has been set to %s!"
-      },
-      "minimum_karma": {
-        "change": "Minimum Reddit Karma is currently set to %s. Do you want to change it? Type `yes` or `no`.",
-        "change_to": "What would you like to set the Minimum Reddit Karma to? Keep in mind this is a combination of both link and comment karma, and it must be a number!",
-        "not_number": "Minimum Karma must be a number!",
-        "set": "Minimum Reddit Karma has been set to %s!"
-      },
-      "log_channel": {
-        "not_enabled": "You do not have logging enabled and therefore cannot set a logging channel! Please enable logging first!",
-        "not_set": "You do not have a logging channel set! Do you want to set it now? Type `yes` or `no`!",
-        "current": "Your logging channel is %s. Do you want to change it? Type `yes` or `no`!",
-        "input": "Type the ID, mention or name of the the channel you wish to use for logging!",
-        "set": "Logging channel has been set to %s!"
-      },
-      "log_options": {
-        "current": "The following log options are currently enabled:\n\n%s!Type the name of a log option to toggle it on or off, or type `no` to cancel.\n\nThe available options are `member join`, `member leave`, `member update`, `member ban`, `member unban`, `channel create`, `channel delete`, `role create`, `role delete`, `voice update`, `message edit` and `message delete`!",
-        "not_enabled": "You do not have logging enabled and therefore cannot select logging any logging options! Please enable logging first!",
-        "enabled": "%s has been enabled!",
-        "disabled": "%s has been disabled!"
-      },
-      "verif_alerts": {
-        "currently_disabled": "Verification Alerts are currently disabled. Verification Alerts will mention the user in the Warning Channel if they are being verified! Would you like to enable them? Type `yes` or `no`!",
-        "currently_enabled": "Verification Alerts are currently enabled. Would you like to disable them? Type `yes` or `no`!",
-        "disabled": "Verification Alerts have been disabled!",
-        "enabled": "Verification Alerts have been enabled"
-      },
-      "trustfactor": {
-        "currently_enabled": "Trust Factor is currently enabled. Do you want to return to account age only verification? Type `yes` or `no`!",
-        "currently_disabled": "Trust Factor is currently disabled. Trust Factor takes more factors into account when checking if an account should be verified. Do you wish to enable Trust Factor? Type `yes` or `no`!",
-        "enabled": "Trust Factor has been enabled!",
-        "disabled": "Trust Factor has been disabled!",
-        "threshold": "Your Trust Factor threshold is currently `%s`! Do you want to change it? Type `yes` or `no`!",
-        "input": "Which Trust Level would you like to use? Type `0` for Severely Distrusted, `1` for Distrusted and Lower (Default), `2` for Trusted and Lower, `3` for Very Trusted and Lower (Everyone) or type `exit` to cancel!",
-        "set_to_sd": "Your Trust Factor threshold has been set to `Severely Distrusted`!",
-        "set_to_d": "Your Trust Factor threshold has been set to `Distrusted and Lower`!",
-        "set_to_t": "Your Trust Factor threshold has been set to `Trusted and Lower`!",
-        "set_to_vt": "Your Trust Factor threshold has been set to `Very Trusted and Lower`, which means everybody has to verify!"
-      }
+    "verify": {
+        "whitelist": "%s is in your whitelist. Verification will not happen!",
+        "default_role_warning": "A Default Role was set, but I don't have permission to remove it. Please ensure I have `MANAGE ROLES` permission and the Default Role is below my highest role! Verification will continue, but members in verification might be able to talk during the process.",
+        "suspicious": "Suspicious account detected!",
+        "manual": "A staff member has manually started verification for %s!",
+        "self": "%s has started their own verification",
+        "suspicious_long_age": "%s has an account whose minimum age is lower than your threshold.\n\n%s's account is %s days old, but your threshold is %s days. %s joined the server on %s\n\nAltDentifier has started the verification process.",
+        "suspicious_long_tf": "%s has an account whose Trust Factor is lower than your threshold.\n\n%s's account has a Trust Factor of %s, but your threshold is %s.\n\nAltDentifier has started the verification process.",
+        "manual_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
+        "self_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
+        "invite_tracker": "Invite Used",
+        "hello": "Hello %s,\nWelcome to %s. This server is protected by AltDentifier. To verify your account, please visit https://altdentifier.com/verify/%s/%s?lang=%s. You have %s minutes to complete verification!\nWith kind regards, the %s staff team.",
+        "actions": {
+            "ban": "you will be banned from the server!",
+            "kick": "you will be kicked from the server!",
+            "role": "you will receive the %s role!",
+            "nothing": "the action taken will be up to the discretion of the staff."
+        },
+        "dm_off": "Hi %s, I cannot send DM's to you! Please enable your DM's for this server within 1 minute or %s",
+        "left": "%s has left the server before verification could be completed!",
+        "no_response": "No Response!",
+        "action_applied": {
+            "kick": "%s has been kicked from the server for not responding!",
+            "ban": "%s has been banned from the server for not responding!",
+            "role": "%s has been given %s for not responding!",
+            "kick_dm": "You have been kicked from the server for not responding!",
+            "ban_dm": "You have been banned from the server for not responding!",
+            "role_dm": "You have been given the %s role for not responding!",
+            "nothing_dm": "You have not responded in time, what will happen now is up to the discretion of the server staff!",
+            "nothing": "%s did not respond!",
+            "ban_fail": "I tried to ban %s for not responding, but it failed! Please make sure I have the `BAN MEMBERS` permission!",
+            "kick_fail": "I tried to kick %s for not responding, but it failed! Please make sure I have the `KICK MEMBERS` permission!",
+            "role_fail": "I tried to add %s to %s, but it failed! Please make sure I have the `MANAGE ROLES` permission, and my role is higher than the user!",
+            "kick_ic_dm": "You have been kicked for verifying with a different Discord account!",
+            "ban_ic_dm": "You have been banned for verifying with a different Discord account!",
+            "kick_ic": "%s has been kicked for verifying with a different Discord account!",
+            "ban_ic": "%s has been banned for verifying with a different Discord account!"
+        },
+        "bypass": "%s bypassed %s!",
+        "bypass_dm": "%s has allowed you to skip verification!",
+        "not_verified": "This member is not being verified!",
+        "success": "You have succesfully verified your account. We hope you have a pleasant experience in %s!",
+        "warn": "Hi %s, to participate in this server, you must verify your account. Please read the DM I sent to you carefully. You have %s minutes to complete verification!",
+        "in_verif": "You are still being verified. Please verify with the link above!",
+        "in_verif_audit": "User still in verification"
+    },
+    "autoraidmode": {
+        "raided": "It appears your server is being raided! The following users joined in this period and will be %s: \n%s",
+        "actions": {
+            "verified": "verified",
+            "kicked": "kicked",
+            "banned": "banned"
+        }
+    },
+    "heartbeat": {
+        "no_bot_channel": "A bot channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
+        "no_warn_channel": "A warning channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
+        "cant_send": "I can't send messages in %s! Please enable the SEND MESSAGES permission!",
+        "no_rich": "I can't send rich messages in %s! Enabling EMBED LINKS is recommended for cleaner message!",
+        "cant_give": "I can't give %s to new members. Make sure that my highest role is above %s",
+        "no_role_perm": "I can't give roles to new members. Please enable the MANAGE ROLES permission!",
+        "no_timeout_role": "You have chosen to give members a role when they fail verification, but no such role has been configured. Please choose one!",
+        "no_kick": "You have chosen to kick members when they fail verification, but I will not be able to kick them. Please enable the KICK MEMBERS permission!",
+        "no_ban": "You have chosen to ban members when they fail verification, but I will not be able to ban them. Please enable the BAN MEMBERS permission!",
+        "no_audit_log": "You have enabled Role Block, but I cannot view the Audit Log. Please enable the VIEW AUDIT LOG permission!",
+        "no_verif_methods": "All Verification Methods in this server are disabled. Users joining will not be able to verify!"
+    },
+    "errors": {
+        "no_member": "You must supply a member for this command! Choose a member by mentioning, typing their name or typing their ID!",
+        "not_found": "Sorry, I could not find this member! Is this member in your server, and did you type their name correctly?",
+        "no_perms": "You must be a staff member to use this!"
+    },
+    "trustfactor": {
+        "0": "Severely Distrusted",
+        "1": "Distrusted",
+        "2": "Trusted",
+        "3": "Very Trusted"
+    },
+    "tf_threshold": {
+        "0": "Severely Distrusted",
+        "1": "Distrusted and Lower",
+        "2": "Trusted and Lower",
+        "3": "Very Trusted and Lower"
+    },
+    "logging": {
+        "embed": "\nFor nicer messages, consider giving me the `Embed Links` permission",
+        "before": "Before",
+        "after": "After",
+        "channel": {
+            "type": "Type",
+            "text": "Text Channel",
+            "vc": "Voice Channel",
+            "category": "Category Channel",
+            "store": "Store Channel",
+            "news": "News Channel",
+            "other": "Either a News Channel or a Store Channel. AltDentifier cannot see which channel type it is at this time"
+        },
+        "channel_create": {
+            "title": "Channel Created",
+            "simple": "A new %s was made called %s"
+        },
+        "channel_delete": {
+            "title": "Channel Deleted",
+            "simple": "Channel %s was deleted"
+        },
+        "role": {
+            "name": "Name: %s\n",
+            "color": "Color: %s\n",
+            "hoisted": "Hoisted: %s\n",
+            "mentionable": "Mentionable: %s\n"
+        },
+        "role_create": "Role %s Created",
+        "role_delete": "Role %s Deleted",
+        "member_ban": {
+            "title": "Member Banned",
+            "simple": "%s was banned from your server!"
+        },
+        "member_update": {
+            "role": {
+                "given": "Role %s Given",
+                "given_long": "%s was given the %s role!",
+                "given_simple": "Role Given",
+                "taken": "Role %s Taken",
+                "taken_long": "%s had their %s role taken away!",
+                "taken_simple": "Role Taken"
+            },
+            "nick": {
+                "title": "Nickname Changed",
+                "simple": "%s changed their nickname from %s to %s"
+            }
+        },
+        "member_join": {
+            "title": "Member Joined",
+            "simple": "%s has joined your server!",
+            "age": "Account Age",
+            "age_value": "%s days",
+            "invite_tracker": "Invite Used",
+            "invitetrack_init": "To track invites, please make sure I have the Manage Server permission. If I have this permission, invite tracking should work when the next member joins!",
+            "no_change": "None of the invites have changed. Perhaps this member joined using a guilds.join connection?",
+            "invite": "This member joined using invite code `%s` which was made by %s.\nIt has been used %s times!"
+        },
+        "member_leave": {
+            "title": "Member Left",
+            "simple": "%s left your server!"
+        },
+        "member_kick": {
+            "title": "Member Kicked",
+            "simple": "%s has been kicked from your server!"
+        },
+        "member_unban": {
+            "title": "Member Unbanned",
+            "simple": "%s was unbanned from your server!"
+        },
+        "message_delete": "Message from %s deleted in %s\n",
+        "message_edit": "Message from %s edited in %s\n",
+        "voice_update": {
+            "title": "Member changed voice channel",
+            "entered": "%s entered voice channel %s!",
+            "left": "%s left voice channel %s!",
+            "changed": "%s went from voice channel %s to %s!"
+        }
+    },
+    "prefix": "Hi, my prefix here is: **%s**",
+    "mod_log": {
+        "case": "Case #%s | %s ",
+        "ban": "Ban",
+        "mute": "Mute",
+        "unban": "Unban",
+        "kick": "Kick",
+        "unmute": "Unmute",
+        "timeout": "Timout Role",
+        "target": "Target",
+        "mod": "Moderator",
+        "reason": "Reason",
+        "no_reason": "No reason was given. You can set a reason with %sr %s reasonhere!",
+        "future": "This case is from the future. You do not know what happens yet!"
     }
-  },
-  "verify": {
-      "whitelist": "%s is in your whitelist. Verification will not happen!",
-      "default_role_warning": "A Default Role was set, but I don't have permission to remove it. Please ensure I have `MANAGE ROLES` permission and the Default Role is below my highest role! Verification will continue, but members in verification might be able to talk during the process.",
-      "suspicious": "Suspicious account detected!",
-      "manual": "A staff member has manually started verification for %s!",
-      "self": "%s has started their own verification",
-      "suspicious_long_age": "%s has an account whose minimum age is lower than your threshold.\n\n%s's account is %s days old, but your threshold is %s days. %s joined the server on %s\n\nAltDentifier has started the verification process.",
-      "suspicious_long_tf": "%s has an account whose Trust Factor is lower than your threshold.\n\n%s's account has a Trust Factor of %s, but your threshold is %s.\n\nAltDentifier has started the verification process.",
-      "manual_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
-      "self_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
-      "hello": "Hello %s,\nWelcome to %s. This server is protected by AltDentifier. To verify your account, please visit https://altdentifier.com/verify/%s/%s?lang=%s. You have %s minutes to complete verification!\nWith kind regards, the %s staff team.",
-      "actions": {
-        "ban": "you will be banned from the server!",
-        "kick": "you will be kicked from the server!",
-        "role": "you will receive the %s role!",
-        "nothing": "the action taken will be up to the discretion of the staff."
-      },
-      "dm_off": "Hi %s, I cannot send DM's to you! Please enable your DM's for this server within 1 minute or %s",
-      "left": "%s has left the server before verification could be completed!",
-      "no_response": "No Response!",
-      "action_applied": {
-        "kick": "%s has been kicked from the server for not responding!",
-        "ban": "%s has been banned from the server for not responding!",
-        "role": "%s has been given %s for not responding!",
-        "kick_dm": "You have been kicked from the server for not responding!",
-        "ban_dm": "You have been banned from the server for not responding!",
-        "role_dm": "You have been given the %s role for not responding!",
-        "nothing_dm": "You have not responded in time, what will happen now is up to the discretion of the server staff!",
-        "nothing": "%s did not respond!",
-        "ban_fail": "I tried to ban %s for not responding, but it failed! Please make sure I have the `BAN MEMBERS` permission!",
-        "kick_fail": "I tried to kick %s for not responding, but it failed! Please make sure I have the `KICK MEMBERS` permission!",
-        "role_fail": "I tried to add %s to %s, but it failed! Please make sure I have the `MANAGE ROLES` permission, and my role is higher than the user!"
-      },
-      "bypass": "%s bypassed %s!",
-      "bypass_dm": "%s has allowed you to skip verification!",
-      "not_verified": "This member is not being verified!",
-      "success": "You have succesfully verified your account. We hope you have a pleasant experience in %s!",
-      "warn": "Hi %s, to participate in this server, you must verify your account. Please read the DM I sent to you carefully. You have %s minutes to complete verification!",
-      "in_verif": "You are still being verified. Please verify with the link above!",
-      "in_verif_audit": "User still in verification"
-    },
-  "autoraidmode": {
-      "raided": "It appears your server is being raided! The following users joined in this period and will be %s: \n%s",
-      "actions": {
-          "verified": "verified",
-          "kicked": "kicked",
-          "banned": "banned"
-      }
-    },
-  "heartbeat": {
-    "no_bot_channel": "A bot channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
-    "no_warn_channel": "A warning channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
-    "cant_send": "I can't send messages in %s! Please enable the SEND MESSAGES permission!",
-    "no_rich": "I can't send rich messages in %s! Enabling EMBED LINKS is recommended for cleaner message!",
-    "cant_give": "I can't give %s to new members. Make sure that my highest role is above %s",
-    "no_role_perm": "I can't give roles to new members. Please enable the MANAGE ROLES permission!",
-    "no_timeout_role": "You have chosen to give members a role when they fail verification, but no such role has been configured. Please choose one!",
-    "no_kick": "You have chosen to kick members when they fail verification, but I will not be able to kick them. Please enable the KICK MEMBERS permission!",
-    "no_ban": "You have chosen to ban members when they fail verification, but I will not be able to ban them. Please enable the BAN MEMBERS permission!",
-    "no_audit_log": "You have enabled Role Block, but I cannot view the Audit Log. Please enable the VIEW AUDIT LOG permission!",
-    "no_verif_methods": "All Verification Methods in this server are disabled. Users joining will not be able to verify!"
-  },
-  "errors": {
-      "no_member": "You must supply a member for this command! Choose a member by mentioning, typing their name or typing their ID!",
-      "not_found": "Sorry, I could not find this member! Is this member in your server, and did you type their name correctly?",
-      "no_perms": "You must be a staff member to use this!"
-  },
-  "trustfactor": {
-    "0": "Severely Distrusted",
-    "1": "Distrusted",
-    "2": "Trusted",
-    "3": "Very Trusted"
-  },
-  "tf_threshold": {
-    "0": "Severely Distrusted",
-    "1": "Distrusted and Lower",
-    "2": "Trusted and Lower",
-    "3": "Very Trusted and Lower"
-  },
-  "logging": {
-    "embed": "\nFor nicer messages, consider giving me the `Embed Links` permission",
-    "before": "Before",
-    "after": "After",
-    "channel": {
-      "type": "Type",
-      "text": "Text Channel",
-      "vc": "Voice Channel",
-      "category": "Category Channel",
-      "other": "Either a News Channel or a Store Channel. AltDentifier cannot see which channel type it is at this time"
-    },
-    "channel_create": {
-      "title": "**Channel Created**",
-      "simple": "A new %s was made called %s"
-    },
-    "channel_delete": {
-      "title": "**Channel Deleted**",
-      "simple": "Channel %s was deleted"
-    },
-    "role": {
-      "name": "**Name:** %s\n",
-      "color": "**Color:** %s\n",
-      "hoisted": "**Hoisted:** %s\n",
-      "mentionable": "**Mentionable:** %s\n"
-    },
-    "role_create": "**Role %s Created**",
-    "role_delete": "**Role %s Deleted**",
-    "member_ban": {
-      "title": "**Member Banned**",
-      "simple": "%s was banned from your server!"
-    },
-    "member_update": {
-      "role": {
-        "given": "**Role %s Given**",
-        "given_long": "%s was given the %s role!",
-        "given_simple": "**Role Given**",
-        "taken": "**Role %s Taken**",
-        "taken_long": "%s had their %s role taken away!",
-        "taken_simple": "**Role Taken**"
-      },
-      "nick": {
-        "title": "**Nickname Changed**",
-        "simple": "%s changed their nickname from %s to %s"
-      }
-    },
-    "member_join": {
-      "title": "**Member Joined**",
-      "simple": "%s has joined your server!",
-      "age": "Account Age",
-      "age_value": "%s days"
-    },
-    "member_leave": {
-      "title": "**Member Left**",
-      "simple": "%s left your server!"
-    },
-    "member_unban": {
-      "title": "**Member Unbanned**",
-      "simple": "%s was unbanned from your server!"
-    },
-    "message_delete": "**Message from %s deleted in %s**\n",
-    "message_edit": "**Message from %s edited in %s**\n",
-    "voice_update": {
-      "title": "**Member changed voice channel**",
-      "entered": "%s entered voice channel %s!",
-      "left": "%s left voice channel %s!",
-      "changed": "%s went from voice channel %s to %s!"
-    }
-  },
-  "prefix": "Hi, my prefix here is: **%s**"
 }
