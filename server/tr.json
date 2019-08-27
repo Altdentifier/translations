@@ -203,13 +203,13 @@
             "not_public": "Topluluğa Açık Değil"
         },
         "reddit": {
-            "result": "Kullanıcı Adı: {}\nnHesap Yaşı: {} gün\nLink Karma'sı: {}\nYorum Karma'sı: {}"
+            "result": "Kullanıcı Adı: {}\nHesap Yaşı: {} gün\nLink Karma'sı: {}\nYorum Karma'sı: {}"
         },
         "twitter": {
-            "result": "Görünen İsim: {}\nnHesap Yaşı: {} gün\nTakipçiler: {}\nTiwitler: {}"
+            "result": "Görünen İsim: {}\nHesap Yaşı: {} gün\nTakipçiler: {}\nTiwitler: {}"
         },
         "youtube": {
-            "result": "Kullanıcı Adı: {}\nnHesap Yaşı: {} gün\nAçıklama: {}\nGörüntülenmeler: {}\nAboneler: {}\nVideolar: {}\nYorumlar: {}"
+            "result": "Kullanıcı Adı: {}\nHesap Yaşı: {} gün\nAçıklama: {}\nGörüntülenmeler: {}\nAboneler: {}\nVideolar: {}\nYorumlar: {}"
         },
         "xbox": {
             "result": "Oyuncu Etiketi: {}\nSkor: {}\nSeviye: {}\nSaygınlık: {}"

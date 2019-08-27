@@ -1,0 +1,485 @@
+{
+  "commands": {
+    "ban": {
+      "banned": "%s ha sido baneado!",
+      "ban_reason": "%s ha sido baneado por %s",
+      "above": "No puedes banear usuarios que están por encima de tu rol!",
+      "above_bot": "No pudes banear a este usuario! Es posible que su rol esté por encima del mío?",
+      "no_perms": "No tienes permisos para banear a este usuario!",
+      "no_perms_bot": "No tengo los permisos necesarios para banear a este usuario! Por favor, asegúrate de que tengo el permiso `BANEAR USUARIOS`!"
+    },
+    "kick": {
+      "kicked": "%s ha sido expulsado!",
+      "kick_reason": "%s ha sido expulsado por %s",
+      "above": "No puedes expulsar usuarios que están por encima de tu rol!",
+      "above_bot": "No pude expulsar a este usuario! Es posible que su rol esté por encima del mío?",
+      "no_perms": "No tienes permisos para expulsar a este usuario!",
+      "no_perms_bot": "No tengo los permisos necesarios para expulsar a este usuario! Por favor, asegúrate de que tengo el permiso `EXPULSAR USUARIOS`!"
+    },
+    "info": {
+      "stats": "Estadísticas",
+      "python": "Versión Python",
+      "guilds": "Servidores",
+      "d_py_version": "Versión discord.py",
+      "shards": "Shards",
+      "shard_info": "(Shard Actual/Número de Shard)",
+      "owner": "Dueño",
+      "ping": "Ping",
+      "id": "Mi ID: %s",
+      "site": "Página web",
+      "users": "Usuarios",
+      "desc": "El mejor bot de seguridad de Discord!",
+      "support": "Servidor de Soporte"
+    },
+    "ping": ":ping_pong: Mi ping es %sms",
+    "user_info": {
+      "creation": "Fecha de Creación",
+      "join": "Fecha de Entrada",
+      "status": "Estado",
+      "owner": "Dueño del Servidor",
+      "yes": "Si",
+      "time": "%a, %-d %b %Y a las %H:%M:%S GMT"
+    },
+    "raidmode": {
+      "enabled": "El modo Raid ha sido activado!",
+      "disabled": "El modo Raid ha sido desactivado!"
+    },
+    "force": {
+      "afk": "Es posible que %s esté AFK, estás seguro de que quieres empezar una verificación? Escribe `si` o `no`!",
+      "starting": "Empezando una verificación para %s!",
+      "no_staff": "No puedes forzar una verificación a un miembro del Staff",
+      "higher_role": "No puedes forzar una verificación a usuarios que tienen un rango mayor que el tuyo!",
+      "already": "%s ya está siendo verificado. Por favor, espera a que termine!",
+      "no_bots": "Los Bots no pueden ser verificados!",
+      "no_whitelist": "No puedes verificar usuarios que están en la whitelist. Elimínalos primero!",
+      "no_self_already": "No puedes verificarte a ti mismo si ya estás verificado!",
+      "no_self": "Este server no permite la auto-verificación!",
+      "canceled": "Ok, cancelado!"
+    },
+    "donate": "Puedes ver nuestras tarifas Premium en <https://altdentifier.com/premium>!",
+    "upvote": "Puedes votar por AltDentifier en <https://discordbots.org/bot/altdentifier/vote>!",
+    "profile": {
+      "title": "Perfil de AltDentifier",
+      "tf": "Factor de confianza",
+      "user_tf": "%s es %s!",
+      "0": "Muy Desconfiado",
+      "1": "Desconfiado",
+      "2": "De confianza",
+      "3": "De mucha confianza",
+      "no_dserv_ban": "<:online:313956277808005120> no está baneado de discord.services!",
+      "dserv_ban": "<:dnd:313956276893646850> ha sido baneado de discord.services por %s!",
+      "no_ksoft_ban": "<:online:313956277808005120> no está baneado por KSoft Bans!",
+      "ksoft_ban": "<:dnd:313956276893646850> User ha sido baneado por KSoft Bans!",
+      "bots": "Los Bots no tienen un Factor de confianza!",
+      "not_found": "No se puede encontrar a este usuario!"
+    },
+    "feedback": {
+      "blocked": "Has sido bloqueado, ya no puedes enviar más comentarios porque has abusado de esta herramienta!",
+      "not_supported": "Este tipo de comentario no está disponible. Utiliza `error`, `característica` o `soporte`!",
+      "limit": "Solo puedes enviar un comentario por hora!",
+      "missing_args": "Debes incluir un tipo de comentario y un mensaje!",
+      "sent": "El comentario ha sido enviado!"
+    },
+    "heartbeat": {
+      "title": "Palpitación de AltDentifier",
+      "no_issues": "No se ha detectado ningún problema en la configuración!"
+    },
+    "broadcast": {
+      "removed": "%s ha sido eliminado de la lista de emisión!",
+      "added": "%s ha sido añadido a la lista de emisión!"
+    },
+    "help": {
+      "title": "Ayuda",
+      "desc": "Protección contra spambots y multicuentas.\n[arg] significa que el argumento es necesario.\n<arg> significa que el argumento es opcional",
+      "page": "Página %s/3 - Creado por: Auxim#0001",
+      "tip": "Donar",
+      "tips": [
+        "Sabías que tenemos una lista de comandos en nuestra web?! Visita https://altdentifier.com/commands para verla",
+        "Sabías que también puedes mencionarme si no recuerdas mi prefijo? Simplemente escribe <@372022813839851520> para encontrarlo de nuevo",
+        "Sabías que también puedes usar reacciones para desplazarse por el menú de ayuda? Lo único que necesito es AGREGAR REACCIONES. También puedes darme GESTIONAR MENSAJES para que pueda limpiar tus reacciones.",
+        "Sabías que puedes configurar el modo raid para que se active automáticamente cuando muchos usuarios se unen en un corto período de tiempo? Visita https://altdentifier.com/dashboard, selecciona tu servidor y abre la pestaña del modo raid.",
+        "Sabías que tenemos un Patreon donde puedes comprar funcionalidades adicionales, como la capacidad de customizar los mensajes en la web, o agregar una imagen de fondo para la verificación? ¡Visita https://altdentifier.com/premium para obtener más información!\nTodas las donaciones son muy apreciadas",
+        "Sabías que también puedes buscar un menú de ayuda con su nombre? Pruébalo, simplemente escribe <@372022813839851520> help moderation!",
+        "Sabías que nuestras traducciones son creadas por la comunidad? Si estás interesado, entra en nuestro servidor de discord con el comando info y pregúntale directamente a Auxim.\nActualmente estamos buscando traductores de alemán y sueco, pero todas las nuevas traducciones son bienvenidas!"
+      ],
+      "doesnt_exist": "Esta página de ayuda no existe!",
+      "no_args": "Este comando no tiene argumentos!",
+      "no_perms": "No se requieren permisos para este comando!",
+      "requested_by": "Solicitado por %s",
+      "usage": "Uso",
+      "aliases": "Alias",
+      "perms": "Permisos",
+      "cmd_desc": "Descripción",
+      "no_usage": "Ninguno",
+      "no_desc": "No se ha establecido una descripción larga para este comando!",
+      "commands": {
+        "bypass": {
+          "usage": "[miembro]",
+          "permissions": "GESTIÓN DEL SERVIDOR/ROL MODERADOR",
+          "short": "Dejar que un usuario omita la verificación",
+          "long": "Utiliza este comando para hacer que un usuario omita el proceso de verificación. Esto puede ser útil si conoces a la persona en cuestión.\nPuedes usar una mención, nombre o ID para elegir un miembro. Ejemplo: ;bypass Auxim"
+        },
+        "raidmode": {
+          "permissions": "GESTIÓN DEL SERVIDOR/ROL MODERADOR",
+          "short": "Activa el modo anti-raid, el cual automáticamente fuerza la autenticación a todos los nuevos usuarios.",
+          "long": "Utiliza este comando para activar o desactivar el modo raid. Esto hace que todos los que se unen sean verificados, baneados o expulsados, dependiendo de tu configuración.\nTambién puedes activar el modo raid automático, visita https://altdentifier.com/dashboard para más información!"
+        },
+        "force": {
+          "usage": "<miembro>",
+          "permissions": "GESTIÓN DEL SERVIDOR/ROL MODERADOR",
+          "short": "Iniciar manualmente la verificación para un usuario.",
+          "long": "Utiliza este comando para hacer que alguien se verifique. Esto puede ser útil si no confías en alguien que acaba de unirse.\nPuedes usar una mención, nombre o ID para elegir un miembro. Ejemplo: ;force Auxim"
+        },
+        "ban": {
+          "usage": "[member] <eliminar mensajes en días> <razón>",
+          "permissions": "BANEAR USUARIOS",
+          "short": "Banea a un usuario",
+          "long": "Banea a alguien de tu servidor. Puedes usar una mención, nombre o ID para elegir un miembro. Ejemplo: ;ban Auxim\nTambién puedes configurar el número de días de mensajes que deseas eliminar, de 1 a 7. Finalmente, puedes agregar una razón para que aparezca en el Registro de auditoría"
+        },
+        "kick": {
+          "usage": "[miembro] <razón>",
+          "permissions": "EXPULSAR USUARIOS",
+          "short": "Expulsa a un miembro",
+          "long": "Expulsa a alguien de tu servidor. Puedes usar una mención, nombre o ID para elegir un miembro. Ejemplo: ;kick Auxim\nTambién puedes agregar una razón para que aparezca en el Registro de auditoría"
+        },
+        "donate": {
+          "short": "Dona para el desarrollo de AltDentifier."
+        },
+        "feedback": {
+          "usage": "[tipo] [mensaje]",
+          "short": "Envía comentarios al desarrollador del Bot. Los tipos de comentarios son 'error', 'característica' o 'soporte'.",
+          "long": "Envía comentarios al desarrollador. Debes definir el tipo de comentario, ya sea de soporte, característica o error.\nTen en cuenta que este comando tiene un límite de 1 hora para evitar el spam, así que asegúrate de completar todo correctamente."
+        },
+        "heartbeat": {
+          "short": "Buscar problemas de configuración",
+          "permissions": "GESTIÓN DEL SERVIDOR/ROL MODERADOR",
+          "long": "Las pulsaciones verifican problemas comunes con la configuración de tu servidor. El uso de este comando indicará lo que necesita ser arreglado!"
+        },
+        "help": {
+          "usage": "<número de página, categoría o nombre del comando>",
+          "short": "Muestra este mismo comando",
+          "long": "Esto muestra el comando de ayuda. Ya sabes, este. Qué esperabas, zumo de calabaza?\nPuedes añadir un número de página, nombre de categoría o nombre de comando para encontrar una página o comando específico!"
+        },
+        "info": {
+          "short": "Estadísticas del Bot e información"
+        },
+        "invite": {
+          "short": "Obtén el enlace para invitar al bot"
+        },
+        "ping": {
+          "short": "Muestra la latencia del bot a Discord"
+        },
+        "profile": {
+          "usage": "<usuario>",
+          "short": "Muestra la información del perfil de un usuario"
+        },
+        "settings": {
+          "usage": "<número de ajuste>",
+          "permissions": "GESTIÓN DEL SERVIDOR/ROL ADMINISTRADOR",
+          "short": "Cambia la configuración del servidor"
+        },
+        "togglebroadcast": {
+          "usage": "<canal>",
+          "permissions": "GESTIÓN DEL SERVIDOR/ROL ADMINISTRADOR",
+          "short": "Alterna la actualización y anuncios de emisiones en el canal actual",
+          "long": "Alterna la actualización de mensajes en este canal. Por lo que enviaremos un mensaje aquí cuando haya una actualización"
+        },
+        "userinfo": {
+          "usage": "<usuario>",
+          "short": "Muestra información sobre otros o sobre ti mismo"
+        }
+      },
+      "embed": "Activa el permiso Insertar Enlaces para que pueda enviar mensajes de ayuda más claros!"
+    },
+    "settings": {
+      "title": "Ajustes",
+      "list": "1. AltDentification\n2. Rol por Defecto\n3. Roles de Admin\n4. Roles de Mod\n5. Registro\n6. Canal de Advertencias\n7. Canal del Bot\n8. Idioma\n9. Prefijo\n10. Zona Horaria\n11. Edad mínima de la cuenta\n12. Autorol\n13. Métodos de Autentificación\n14. Sanción\n15. Karma Mínimo en Reddit\n16. Canal de Registro\n17. Opciones de Registro\n18. Alertas de Verificación\n19. Factor de Confianza\n\nEscribe `salir` para cancelar!",
+      "list_tf": "1. AltDentification\n2. Rol por Defecto\n3. Roles de Admin\n4. Roles de Mod\n5. Registro\n6. Canal de Advertencias\n7. Canal del Bot\n8. Idioma\n9. Prefijo\n10. Zona Horaria\n11. Edad mínima de la cuenta\n12. Autorol\n13. Métodos de Autentificación\n14. Sanción\n15. Karma Mínimo en Reddit\n16. Canal de Registro\n17. Opciones de Registro\n18. Alertas de Verificación\n19. Factor de Confianza\n\nEscribe `salir` para cancelar!",
+      "canceled": "Ok, cancelado!",
+      "dashboard": "Quieres una forma más fácil de gestionar la configuración? Visita nuestro panel web en https://altdentifier.com/dashboard o haz click en el link de arriba!",
+      "dashboard_notif": "Todas nuestras configuraciones se pueden administrar en nuestro panel de control web! Recomendamos utilizarlo, ya que es posible que el comando de configuración no se actualice para las nuevas funciones.\nVisita <https://altdentifier.com/dashboard> para ver el panel web!",
+      "not_number": "El argumento de configuración debe ser un número!",
+      "already_open": "La configuración ya está abierta en este servidor. Por favor, usa el diálogo ya abierto!",
+      "altdentification": {
+        "currently_enabled": "AltDentification está activado! Te gustaría desactivarlo? Escribe `si` o` no`.",
+        "currently_disabled": "AltDentification está desactivado! Te gustaría activarlo? Escribe `si` o` no`.",
+        "enabled": "AltDentification ha sido activado!",
+        "disabled": "AltDentification ha sido desactivado"
+      },
+      "default_role": {
+        "not_set": "No tienes un rol por defecto configurado, te gustaría configurar uno ahora? Escribe `si` o` no`.",
+        "input": "Escribe el nombre de tu rol por defecto, menciona el rol o escribe su ID.",
+        "not_found": "Lo siento, no he podido encontrar este rol, asegúrate de haber escrito todo correctamente!",
+        "set_to": "El rol por defecto se ha cambiado a `%s`!",
+        "is_set": "El rol por defecto actualmente es `%s`. Te gustaría cambiarlo? Si todavía tienes habilitado el rol predeterminado de retroceso, deshabilítalo y establece un rol de verificación en el panel de control. No puedrás habilitar el retroceso haciendo este cambio! Escribe `si`,` no` o `retroceso`",
+        "reverse_disabled": "El retroceso ha sido desactivado!",
+        "no_perms": "Has establecido un Rol por defecto, sin embargo, no podré asignárselo a los miembros, porque me falta el permiso `ADMINISTRAR ROLES`, o mi rol está por debajo del rol predeterminado!"
+      },
+      "admin_roles": {
+        "current": "Tus actuales roles de Administrador son: ```\n%s```. Quieres añadir o eliminar un rol? Escribe `añadir`, `eliminar` o `no` para salir! Ten en cuenta que los roles de administrador también se agregan automáticamente a los roles de moderador, pero eliminarlos de los roles de administración no los eliminará de los roles de moderación!",
+        "input": "Escribe el nombre, la mención o ID del rol que quieres añadir o eliminar de los Roles de Administrador!",
+        "added": "Añadido %s a Roles de Administrador!",
+        "removed": "Eliminado %s de Roles de Administrador!",
+        "no_roles": "No tienes ningún Rol de Administrador! Quieres añadir o eliminar un rol? Escribe `añadir`, `eliminar` o `no` para salir! Ten en cuenta que los roles de administrador también se agregan automáticamente a los roles de moderador, pero eliminarlos de los roles de administración no los eliminará de los roles de moderación!"
+      },
+      "mod_roles": {
+        "current": "Tus actuales roles de Moderador son: ```\n%s```. Quieres añadir o eliminar un rol? Escribe `añadir`, `eliminar` o `no` para salir!",
+        "input": "Escribe el nombre, la mención o ID del rol que quieres añadir o eliminar de los Roles de Moderador!",
+        "added": "Añadido %s a Roles de Moderador!",
+        "removed": "Eliminado %s de Roles de Moderador!",
+        "no_roles": "No tienes ningún Rol de Moderador! Quieres añadir o eliminar un rol? Escribe `añadir`, `eliminar` o `no` para salir!"
+      },
+      "logging": {
+        "currently_enabled": "El Registro está activado, quieres desactivarlo? Escribe `si` o `no`!",
+        "currently_disabled": "El Registro está desactivado, quieres activarlo? Escribe `si` o `no`!",
+        "enabled": "El Registro de auditoría ha sido activado!",
+        "disabled": "El Registro de auditoría ha sido desactivado!"
+      },
+      "warning_channel": {
+        "is_set": "El canal de advertencias es actualmente %s, quieres cambiarlo? Escribe `si` o `no`!",
+        "not_set": "No tienes un canal de advertencias configurado! Quieres configurarlo ahora? Se necesita este canal para que AltDentification funcione! Escribe `si` o `no`.",
+        "input": "Escribe la ID, mención o el nombre del canal que quieres establecer como canal de advertencias!",
+        "set_to": "El canal de advertencias ha sido actualizado a %s!",
+        "not_found": "Lo siento, no he podido encontrar este canal, asegúrate de haberlo escrito correctamente!"
+      },
+      "bot_channel": {
+        "is_set": "El canal del Bot es actualmente %s, quieres cambiarlo? Escribe `si` o `no`!",
+        "not_set": "No tienes el canal del bot configurado! Quieres configurarlo ahora? Se necesita este canal para que AltDentification funcione! Escribe `si` o `no`.",
+        "input": "Escribe la ID, mención o el nombre del canal que quieres establecer como canal del bot!",
+        "set_to": "El canal del bot ha sido actualizado a %s!",
+        "not_found": "Lo siento, no he podido encontrar este canal, asegúrate de haberlo escrito correctamente!"
+      },
+      "language": {
+        "change": "Quieres cambiar el idioma del servidor? El idioma actual es %s. Escribe `si` o `no`!",
+        "change_to": "Que lenguaje te gustaría añadir? Actualmente están disponibles: %s",
+        "set": "El idioma ha sido actualizado a %s!"
+      },
+      "prefix": {
+        "change": "Quieres cambiar el prefijo del bot en este servidor? El prefijo actual es `% s`. Escribe `si` o` no`!",
+        "change_to": "Que nuevo prefijo quieres establecer?",
+        "set": "El prefijo ha sido cambiado a %s. Ten en cuenta que siempre puedes mencionarme si olvidas mi prefijo!"
+      },
+      "timezone": {
+        "change": "Tu zona horaria actual es UTC %s%s. Quieres cambiarla? Escribe `si` o` no`!",
+        "change_to": "Escribe la diferencia entre UTC y tu zona horaria, o usa un código de zona horaria, como `Europa/Amsterdam`.",
+        "not_found": "No se pudo encontrar esta zona horaria. Escribe de nuevo este comando para volver a intentarlo.!",
+        "set": "La zona horaria se ha establecido en %s (UTC %s%s)!"
+      },
+      "minimum_age": {
+        "change": "La edad mínima actual de las cuentas es de %s días. La cuenta del usuario debe ser más antigua que esta cantidad para no ser verificado. Quieres cambiar la edad? Escribe `si` o` no`!",
+        "change_to": "A qué deseas establecer la edad mínima de las cuentas? Introduce el tiempo en días!",
+        "set": "La edad mínima es ahora de %s días!"
+      },
+      "autorole": {
+        "currently_enabled": "Autorole está activado. Te gustaría desactivarlo? Escribe `si` o `no`!",
+        "currently_disabled": "Autorole está desactivado. Te gustaría activarlo? Escribe `si` o `no`!",
+        "enabled": "Autorole ha sido activado!",
+        "disabled": "Autorole ha sido desactivado!",
+        "no_role": "No puedes activar Autorole sin añadir un rol por defecto!",
+        "no_perms": "No puedes activar Autorole si no tengo permiso para dar el rol por defecto! Comprueba si mi rol está por encima del rol por defecto y si tengo el permiso `ADMINISTRAR ROLES`!",
+        "reverse_active": "No puedes activar Autorole cuando un rol de retroceso por defecto está activo!"
+      },
+      "authentication_methods": {
+        "change": "Los siguientes métodos de autenticación están permitidos en tu servidor:\n%s.\n\nReddit, Twitter, Steam, Overwatch, Captcha, Xbox y YouTube. Escribe el nombre del método que quieres activar o desactivar, o escribe `no` para cancelar!",
+        "disabled": "La verificación de %s ha sido desactivada!",
+        "enabled": "La verificación de %s ha sido activada!",
+        "one_active": "Necesitas tener al menos una opción de verificación activada!"
+      },
+      "timeout_action": {
+        "change": "Establece una sanción para los usuarios que no se verifican en el tiempo establecido. La sanción actual es %s. Puedes seleccionar `expulsar` para expulsar a alguien de tu servidor, `ban` para banearlo de tu servidor, `rol` para darle un rol de tu elección, `nada` para ignorarlo, o `no` para mantener la configuración actual!",
+        "chose_role": "Para utilizar la sanción del rol, debes seleccionar un rol que recibirá el usuario si no responde. Escribe su ID, mención o nombre!",
+        "not_found": "No se pudo encontrar este rol, ejecuta de nuevo este comando para volver a intentarlo, o selecciona una sanción diferente!",
+        "role": "La sanción se ha establecido en `rol`. Los usuarios recibirán el rol `%s` si no se verifican a tiempo!",
+        "no_perms_role": "No puedo establecer la sanción en rol si no tengo el permiso a dar este rol a los usuarios! Por favor, comprueba que mi rol esté por encima del rol que seleccionaste y si tengo el permiso `ADMINISTRAR ROLES`!",
+        "no_perms_kick": "No puedo establecer la sanción en expulsar si no puedo expulsar miembros! Por favor, comprueba que tengo el permiso `EXPULSAR MIEMBROS`!",
+        "no_perms_ban": "No puedo establecer la sanción en banear si no puedo banear miembros! Por favor, comprueba que tengo el permiso `BANEAR MIEMBROS`!",
+        "set": "La sanción se ha establecido en %s!"
+      },
+      "minimum_karma": {
+        "change": "Karma mínimo en Reddit está configurado en %s. Quieres cambiarlo? Escribe `si` o `no`.",
+        "change_to": "Cual quieres que sea el Karma mínimo? Ten en cuenta que esto es una combinación de karma de enlaces y comentarios, y debe ser un número!",
+        "not_number": "El karma mínimo debe ser un número!",
+        "set": "El Karma mínimo de Reddit se ha establecido en %s!"
+      },
+      "log_channel": {
+        "not_enabled": "No tienes habilitado el registro y, por lo tanto, no puede establecer un canal de registro! Por favor activa el registro primero!",
+        "not_set": "No tienes un canal de registro establecido! Quieres configurarlo ahora?? Escribe `si` o `no`!",
+        "current": "Tu canal de registro es %s. Quieres cambiarlo? Escribe `si` o `no`!",
+        "input": "Escribe la ID, la mención o el nombre del canal que quieras utilizar para el registro!",
+        "set": "El canal de registro se ha establecido en %s!"
+      },
+      "log_options": {
+        "current": "Las siguientes opciones de registro están actualmente habilitadas.:\n\n%s!Escribe el nombre de una opción de registro para activarla o desactivarla, o escribe `no` para cancelarla.\n\nLas opciones disponibles son `miembro nuevo`, `miembro sale`, `miembro actualizado`, `miembro baneado`, `miembro desbaneado`, `canal creado`, `canal eliminado`, `rol creado`, `rol eliminado`, `voz actualizado`, `mensaje editado` y `mensaje eliminado`!",
+        "not_enabled": "No tienes el registro habilitado y, por lo tanto, no puedes seleccionar ninguna opción de registro! Por favor, activa primero el registro!",
+        "enabled": "%s ha sido activado!",
+        "disabled": "%s ha sido desactivado!"
+      },
+      "verif_alerts": {
+        "currently_disabled": "Las alertas de Verificación están desactivadas. Las alertas de verificación mencionarán al usuario en el canal de advertencia si se está verificando! Te gustaría activarlas? Escribe `si` o `no`!",
+        "currently_enabled": "Las alertas de Verificación están activadas. Te gustaría desactivarlas? Escribe `si` o `no`!",
+        "disabled": "Las Alertas de Verificación han sido desactivadas!",
+        "enabled": "Las Alertas de Verificación han sido activadas"
+      },
+      "trustfactor": {
+        "currently_enabled": "El Factor de Confianza está activado. Te gustaría volver al método de verificación por edad de la cuenta? Escribe `si` o `no`!",
+        "currently_disabled": "El Factor de Confianza está desactivado. El Factor de Confianza tiene más factores en cuenta a la hora de verificarla. Te gustaría activarlo? Escribe `si` o `no`!",
+        "enabled": "El Factor de confianza ha sido activado!",
+        "disabled": "El Factor de confianza ha sido desactivado!",
+        "threshold": "Su umbral de factor de confianza es actualmente `%s`! Quieres cambiarlo? Escribe `si` o `no`!",
+        "input": "Qué nivel de confianza te gustaría utilizar? Escribe `0` para Severamente Desconfiado, `1` para Desconfiado y bajando (Por defecto), `2` para De Confianza y bajando, `3` para Muy de Confianza y bajando (todos) o escribe `salir` para cancelar!",
+        "set_to_sd": "El Factor de Confianza se ha establecido en `Desconfiado`!",
+        "set_to_d": "El Factor de Confianza se ha establecido en `Desconfiado y bajando`!",
+        "set_to_t": "El Factor de Confianza se ha establecido en `De Confianza y bajando`!",
+        "set_to_vt": "El Factor de Confianza se ha establecido en `Muy de Confianza y bajando`, lo que significa que todo el mundo debe verificarse!"
+      }
+    }
+  },
+  "verify": {
+      "whitelist": "%s está en la whitelist. Imposible verificar!",
+      "default_role_warning": "Se estableció un rol por defecto, pero no tengo permiso para eliminarlo. Por favor asegurate de que tengo el permiso `ADMINISTRAR ROLES` y que este rol por defecto está por debajo del mio! La verificación continuará, pero es posible que puedan hablar durante el proceso.",
+      "suspicious": "Cuenta sospechosa detectada!",
+      "manual": "Un miembro del staff ha iniciado una verificación manual para %s!",
+      "self": "%s ha empezado su propia verificación",
+      "suspicious_long_age": "%s tiene una cuenta cuya edad mínima es inferior a la que se ha establecido.\n\nLa cuenta %s tiene %s días de antigüedad, pero se establecieron un mínimo de %s días. Ingresó en el servidor en %s\n\nAltDentifier ha iniciado el proceso de verificación.",
+      "suspicious_long_tf": "%s tiene una cuenta cuyo Factor de Confianza está por debajo del que se ha establecido.\n\nEl factor de confianza de %s es de %s, pero tu umbral es %s.\n\nAltDentifier ha iniciado el proceso de verificación.",
+      "manual_long": "\nSu Factor de Confianza es %s.\n\nAltDentifier ha iniciado el proceso de verificación!",
+      "self_long": "\nSu Factor de Confianza es %s.\n\nAltDentifier ha iniciado el proceso de verificación!",
+      "hello": "Hello %s,\nBienvenido a %s. Este servidor está protegido con AltDentifier. Para verificar tu cuenta, por favor visita %s/verify/%s/%s?lang=%s. Tienes %s minutos para completar la verificación!\nUn saludo, el staff de %s.",
+      "actions": {
+        "ban": "serás baneado del servidor!",
+        "kick": "serás expulsado del servidor!",
+        "role": "recibirás el rol %s!",
+        "nothing": "la acción tomada será a discreción del staff."
+      },
+      "dm_off": "Hola %s, no puedo enviarte mensajes privados! Por favor, activa tus mensajes privados en menos de 1 minuto o %s",
+      "left": "%s ha salido del servidor antes de que la verificación pueda ser completada!",
+      "no_response": "Sin respuesta!",
+      "action_applied": {
+        "kick": "%s ha sido expulsado del servidor por no responder!",
+        "ban": "%s ha sido expulsado del servidor por no responder!",
+        "role": "%s ha recibido el rol %s por no responder!",
+        "kick_dm": "Has sido expulsado del servidor por no responder!",
+        "ban_dm": "Has sido baneado del servidor por no responder!",
+        "role_dm": "Has recibido el rol %s por no responder!",
+        "nothing_dm": "No has respondido a tiempo, lo que sucederá ahora depende de la discreción del staff!",
+        "nothing": "%s no ha respondido!",
+        "ban_fail": "Intenté banear a %s por no responder, pero no funcionó! Por favor, asegúrate de que tengo el permiso `BANEAR MIEMBROS`!",
+        "kick_fail": "Intenté expulsar a %s por no responder, pero no funcionó! Por favor, asegúrate de que tengo el permiso `EXPULSAR MIEMBROS`!",
+        "role_fail": "Intenté añadir el rol %s a %s, pero no funcionó! Por favor, asegúrate de que tengo el permiso `ADMINISTRAR ROLES`, y que mi rol está por encima del que quiero añadir!"
+      },
+      "bypass": "%s eluyó a %s!",
+      "bypass_dm": "%s ha permitido que te saltes la verificación!",
+      "not_verified": "Este miembro no está siendo verificado!",
+      "success": "Has verificado tu cuenta correctamente. Esperamos que tengas una grata experiencia en %s!",
+      "warn": "Hola %s, para participar en este servidor debes verificar tu cuenta. Por favor, lee el mensaje privado que te he enviado cuidadosamente. Tienes %s minutos para completar la verificación!",
+      "in_verif": "Aún estás siendo verificado. Por favor, utiliza el link de arriba!",
+      "in_verif_audit": "El usuario sigue en estado de verificación."
+    },
+  "autoraidmode": {
+      "raided": "Parece que tu servidor está siendo raideado! Los siguientes usuarios entraron en este período y serán %s: \n%s",
+      "actions": {
+          "verified": "verificado",
+          "kicked": "expulsado",
+          "banned": "baneado"
+      }
+    },
+  "heartbeat": {
+    "no_bot_channel": "No se ha configurado el canal del bot! Esto es necesario para que AltDentifier funcione correctamente. Por favor, elige uno!",
+    "no_warn_channel": "No se ha configurado el canal advertencias! Esto es necesario para que AltDentifier funcione correctamente. Por favor, elige uno!",
+    "cant_send": "No puedo enviar mensajes en %s! Por favor, agrega el permiso `ENVIAR MENSAJES`!",
+    "no_rich": "No puedo enviar embeds en %s! Activando INSERTAR ENLACES es recomendable para mensajes más claros!",
+    "cant_give": "No puedo agregar %s a nuevos miembros. Asegúrate de que mi rol está por encima de %s",
+    "no_role_perm": "No puedo agregar roles a nuevos miembros. Por favor, agrega el permiso ADMINISTRAR ROLES!",
+    "no_timeout_role": "Has elegido dar un rol cuando los miembros fallen la verificación, pero este rol no se ha configurado. Por favor, elige uno!",
+    "no_kick": "Has elegido expulsar miembros cuando fallen la verificación, pero no puedo expulsarlos. Por favor, activa el permiso `EXPULSAR MIEMBROS`!",
+    "no_ban": "Has elegido banear miembros cuando fallen la verificación, pero no puedo expulsarlos. Por favor, activa el permiso `BANEAR MIEMBROS`!",
+    "no_audit_log": "Has activado bloquear roles de otros bots, pero no puedo ver el Registro de Auditoría. Por favor, activa el permiso `VER REGISTRO DE AUDITORÍA`!",
+    "no_verif_methods": "Todos los métodos de verificación están desactivados en este servidor. Los nuevos usuarios no serán verificados!"
+  },
+  "errors": {
+      "no_member": "Debes proporcionar un miembro para este comando! Elige un miembro mencionandolo, escribiendo su nombre o escribiendo su ID!",
+      "not_found": "Lo siento, no pude encontrar a este miembro! Está este miembro en tu servidor, y escribiste su nombre correctamente?",
+      "no_perms": "Debes ser miembro del staff para utilizar esto!"
+  },
+  "trustfactor": {
+    "0": "Severamente deconfiado",
+    "1": "Desconfiado",
+    "2": "De confianza",
+    "3": "De mucha confianza"
+  },
+  "tf_threshold": {
+    "0": "Severamente deconfiado",
+    "1": "Desconfiado y bajando",
+    "2": "De confianza y bajando",
+    "3": "De mucha confianza y bajando"
+  },
+  "logging": {
+    "embed": "\nPara mensajes más cool, considera agregar el permiso `Insertar Enlaces` a mi rol",
+    "before": "Antes",
+    "after": "Después",
+    "channel": {
+      "type": "Tipo",
+      "text": "Canal de Texto",
+      "vc": "Canal de Voz",
+      "category": "Categoría",
+      "other": "Ya sea un canal de noticias o un canal de tienda. AltDentifier no puede ver qué tipo de canal es en este momento"
+    },
+    "channel_create": {
+      "title": "**Canal Creado**",
+      "simple": "Un nuevo %s ha sido creado llamado %s"
+    },
+    "channel_delete": {
+      "title": "**Canal Eliminado**",
+      "simple": "El canal %s ha sido eliminado"
+    },
+    "role": {
+      "name": "**Nombre:** %s\n",
+      "color": "**Color:** %s\n",
+      "hoisted": "**Hoisted:** %s\n",
+      "mentionable": "**Mencionable:** %s\n"
+    },
+    "role_create": "**Rol %s Creado**",
+    "role_delete": "**Rol %s Eliminado**",
+    "member_ban": {
+      "title": "**Miembro Baneado**",
+      "simple": "%s ha sido baneado de tu servidor!"
+    },
+    "member_update": {
+      "role": {
+        "given": "**Rol %s Añadido**",
+        "given_long": "%s ha recibido el rol %s!",
+        "given_simple": "**Role Añadido**",
+        "taken": "**Rol %s Eliminado**",
+        "taken_long": "%s ha perdido el rol %s!",
+        "taken_simple": "**Rol Eliminado**"
+      },
+      "nick": {
+        "title": "**Cambio de Nombre**",
+        "simple": "%s ha cambiado su nombre de %s a %s"
+      }
+    },
+    "member_join": {
+      "title": "**Miembro nuevo**",
+      "simple": "%s ha entrado al servidor!",
+      "age": "Antigüedad de la cuenta",
+      "age_value": "%s días"
+    },
+    "member_leave": {
+      "title": "**Un miembro ha salido**",
+      "simple": "%s ha salido de tu servidor!"
+    },
+    "member_unban": {
+      "title": "**Miembro Desbaneado**",
+      "simple": "%s ha sido desbaneado de tu servidor!"
+    },
+    "message_delete": "**Mensaje de %s eliminado en %s**\n",
+    "message_edit": "**Mensaje de %s editado en %s**\n",
+    "voice_update": {
+      "title": "**Un miembro cambió de canal de voz**",
+      "entered": "%s ha entrado en el canal de voz %s!",
+      "left": "%s ha salido del canal de voz %s!",
+      "changed": "%s cambió del canal de voz %s a %s!"
+    }
+  },
+  "prefix": "Hola, mi prefijo aquí es: **%s**"
+}

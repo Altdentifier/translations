@@ -1,485 +1,557 @@
 {
-  "commands": {
-    "ban": {
-      "banned": "%s verbannen!",
-      "ban_reason": "%s verbannen vanwege %s",
-      "above": "U kunt geen leden verbannen die een hogere rol hebben!",
-      "above_bot": "Ik kon dit lid niet verbannen! Misschien heeft dit lid een hogere rol dan ik?",
-      "no_perms": "U heeft niet genoeg permissies om dit lid te verbannen!",
-      "no_perms_bot": "Ik heb niet genoeg permissies om dit lid te verbannen! Controleer of ik de `Leden Verbannen` permissie heb!"
-    },
-    "kick": {
-      "kicked": "%s verwijderd!",
-      "kick_reason": "%s verwijderd vanwege %s",
-      "above": "U kunt geen leden verwijderen die een hogere rol hebben!",
-      "above_bot": "Ik kon dit lid niet verwijderen! Misschien heeft dit lid een hogere rol dan ik?",
-      "no_perms": "U heeft niet genoeg permissies om dit lid te verwijderen!",
-      "no_perms_bot": "Ik heb niet genoeg permissies om dit lid te verwijderen! Controleer of ik de `Leden Verwijderen` permissie heb!"
-    },
-    "info": {
-      "stats": "Statistieken",
-      "python": "Python Versie",
-      "guilds": "Hoeveelheid Servers",
-      "d_py_version": "discord.py Versie",
-      "shards": "Shards",
-      "shard_info": "(Huidige Shard/Hoeveelheid Shards)",
-      "owner": "Eigenaar",
-      "ping": "Vertraging",
-      "id": "Mijn ID: %s",
-      "site": "Website",
-      "users": "Gebruikers",
-      "desc": "De beste Discord beveiligings en checkpoint bot!",
-      "support": "Ondersteuningsserver"
-    },
-    "ping": ":ping_pong: Mijn vertraging is %sms",
-    "user_info": {
-      "creation": "Datum van account creatie",
-      "join": "Datum van binnenkomst",
-      "status": "Status",
-      "owner": "Server Eigenaar",
-      "yes": "Ja",
-      "time": "%a, %-d %b %Y om %H:%M:%S GMT"
-    },
-    "raidmode": {
-      "enabled": "Raidmodus is ingeschakeld!",
-      "disabled": "Raidmode is uitgeschakeld!"
-    },
-    "force": {
-      "afk": "%s is mogelijk afwezig, weet u zeker dat u verificatie voor hen wilt starten? Type `yes` of `no`!",
-      "starting": "Start verificatie van %s!",
-      "no_staff": "U kunt een ander staflid niet verifiëren!",
-      "higher_role": "U kunt geen leden verifiëren die een hogere rol dan u hebben!",
-      "already": "%s wordt al geverifieërd. Wacht alstublieft totdat verificatie voltooid is!",
-      "no_bots": "Bots kunnen niet worden geverifieërd!",
-      "no_whitelist": "U kunt geen leden verifiëren die in uw whitelist staan. Verwijder de leden eerst!",
-      "no_self_already": "U kunt uzelf niet verifiëren, want u wordt al geverifieërd! Voltooi eerst de verificatie die nu bezig is!",
-      "no_self": "Deze server staat zelf-verificatie niet toe!",
-      "canceled": "Oké, geannuleerd!"
-    },
-    "donate": "U kunt onze Premium opties bekijken op <https://altdentifier.com/premium>!",
-    "upvote": "U kunt stemmen op AltDentifier via <https://discordbots.org/bot/altdentifier/vote>!",
-    "profile": {
-      "title": "AltDentifier Profiel",
-      "tf": "Vertrouwensfactor",
-      "user_tf": "%s is %s!",
-      "0": "Zeer Gewantrouwd",
-      "1": "Gewantrouwd",
-      "2": "Vertrouwd",
-      "3": "Zeer Vertrouwd",
-      "no_dserv_ban": "<:online:313956277808005120> Gebruiker staat niet op de zwarte lijst van discord.services!",
-      "dserv_ban": "<:dnd:313956276893646850> Gebruiker staat op de zwarte lijst van discord.services vanwerge %s!",
-      "no_ksoft_ban": "<:online:313956277808005120> Gebruiker staat niet op de zwarte lijst van KSoft Bans!",
-      "ksoft_ban": "<:dnd:313956276893646850> Gebruiker staat op de zwarte lijst van KSoft Bans!",
-      "bots": "Bots hebben geen vertrouwensfactor!",
-      "not_found": "Ik kon deze gebruiker niet vinden!"
-    },
-    "feedback": {
-      "blocked": "U bent geblokkeerd van het insturen van feedback vanwege misbruik!",
-      "not_supported": "Dit type feedback wordt niet ondersteund. Gebruik `bug`, `feature` of `support`!",
-      "limit": "U kunt slechts éémaal per uur feedback verzenden!",
-      "missing_args": "U moet een feedback type en bericht bijvoegen!",
-      "sent": "Feedback is met succes verzonden!"
-    },
-    "heartbeat": {
-      "title": "AltDentifier Hartslag",
-      "no_issues": "Geen problemen gevonden met uw configuratie!"
-    },
-    "broadcast": {
-      "removed": "%s verwijdert uit de omroeplijst!",
-      "added": "%s toegevoegd aan de omroeplijst!"
-    },
-    "help": {
-      "title": "Help",
-      "desc": "Bescherming tegen spambots en alt accounts.\n[optie] betekent dat de optie noodzakelijk is.\n<optie> betekent dat de optie optioneel is.",
-      "page": "Pagina %s/3 - Gemaakt door: Auxim#0001",
-      "tip": "Tip",
-      "tips": [
-        "Wist u dat u al onze commando's ook op de website kan zien! Bezoek https://altdentifier.com/commands?lang=nl om ze te zien!",
-        "Wist u dat je me ook kan vermelden als u de prefix vergeet? Stuur simpelweg <@372022813839851520> om hem te zien",
-        "Wist u dat u ook reacties kunt gebruiken om door het help menu te scrollen? Het enige dat ik nodig heb hiervoor is REACTIES TOEVOEGEN. U kunt ook BERICHTEN BEHEREN geven, zodat ik de reacties die u plaatst weer weg kan halen!",
-        "Wist u dat u raidmodus automatisch kunt laten activeren wanneer veel gebruikers binnen een korte tijd de server binnentreden? Bezoek https://altdentifier.com/dashboard, selecteer uw server en open het raidmodus tabje.",
-        "Wist u dat wij een Patreon hebben met extra functionaliteit, zoals de mogelijkheid uw eigen berichten in te stellen op de site, of een achtergrondplaatje in te stellen? Bezoek https://altdentifier.com/premium om meer te weten te komen!\nAlle donaties worden zeer gewaardeerd!",
-        "Wist u dat u help tabbladen ook kunt opzoeken met de naam? Probeer het, type simpelweg <@372022813839851520> help moderation!",
-        "Wist u dat de meeste vertalingen door de gemeenschap worden gemaakt? Als u interesse heeft, bezoek dan onze server met het info commando, en vraag voor meer informatie bij Auxim.\nWe zijn op dit moment op zoek naar Duitse en Zweedse sprekers, maar alle talen zijn welkom!"
-      ],
-      "doesnt_exist": "Deze help pagina bestaat niet!",
-      "no_args": "Dit commando heeft geen opties!",
-      "no_perms": "Geen permissies nodig voor dit commando!",
-      "requested_by": "Aangevraagd door %s",
-      "usage": "Gebruik",
-      "aliases": "Alternatieve Namen",
-      "perms": "Permissions",
-      "cmd_desc": "Beschrijving",
-      "no_usage": "Geen",
-      "no_desc": "Er is geen lange beschrijving voor dit commando!",
-      "commands": {
-        "bypass": {
-          "usage": "[lid]",
-          "permissions": "SERVER BEHEREN/MOD ROL",
-          "short": "Laat een gebruiker verificatie overslaan",
-          "long": "Gebruik dit commando om een gebruiker het verificatieproces over te laten slaan. Dit kan nuttig zijn als de persoon in kwestie een bekende is.\nU kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;bypass Auxim"
-        },
-        "raidmode": {
-          "permissions": "SERVER BEHERENMOD ROL",
-          "short": "Schakelt de anti-raidmodus in, waardoor elk lid dat binnenkomt zich moet verifiëren",
-          "long": "Gebruik dit commando om raidmodus in of uit te schakelen. Raidmodus zorgt ervoor, dat afhankelijk van uw instellingen, gebruikers worden geverifieërd, verwijderd of verbannen.\nU kunt ook automatische raidmodus aanzetten, zie https://altdentifier.com/dashboard voor meer informatie!"
-        },
-        "force": {
-          "usage": "<lid>",
-          "permissions": "SERVER BEHEREN/MOD ROL",
-          "short": "Start handmatig verificatie van een gebruiker",
-          "long": "Gebruik dit commando om handmatig het verificatieproces te starten voor iemand. Dit kan nuttig zijn als u iemand die binnenkomt niet vertrouwd.\nU kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;force Auxim"
-        },
+    "commands": {
         "ban": {
-          "usage": "[lid] <aantal dagen waarin berichten verwijderd worden> <reden>",
-          "permissions": "LEDEN VERBANNEN",
-          "short": "Verban een lid",
-          "long": "Verban iemand van uw server. U kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;ban Auxim\nU kunt ook instellen of berichten verwijderd worden, tussen 1 en 7 dagen. Als laatste kunt u ook een reden toevoegen die in het Logboek wordt weergegeven!"
+            "banned": "%s verbannen!",
+            "ban_reason": "%s verbannen vanwege %s",
+            "above": "U kunt geen leden verbannen die een hogere rol hebben!",
+            "above_bot": "Ik kon dit lid niet verbannen! Misschien heeft dit lid een hogere rol dan ik?",
+            "no_perms": "U heeft niet genoeg permissies om dit lid te verbannen!",
+            "no_perms_bot": "Ik heb niet genoeg permissies om dit lid te verbannen! Controleer of ik de `Leden Verbannen` permissie heb!",
+            "self": "U wilt misschien heroverwegen of u uwzelf wilt bannen!"
         },
         "kick": {
-          "usage": "[lid] <reden>",
-          "permissions": "LEDEN VERWIJDEREN",
-          "short": "Verwijdert een lid",
-          "long": "Verwijder iemand van uw server. U kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;kick Auxim\nU kunt ook een reden toevoegen die in het Logboek wordt weergegeven!"
+            "kicked": "%s verwijderd!",
+            "kick_reason": "%s verwijderd vanwege %s",
+            "above": "U kunt geen leden verwijderen die een hogere rol hebben!",
+            "above_bot": "Ik kon dit lid niet verwijderen! Misschien heeft dit lid een hogere rol dan ik?",
+            "no_perms": "U heeft niet genoeg permissies om dit lid te verwijderen!",
+            "no_perms_bot": "Ik heb niet genoeg permissies om dit lid te verwijderen! Controleer of ik de `Leden Verwijderen` permissie heb!",
+            "self": "U wilt misschien heroverwegen of u uwzelf wilt kicken!"
         },
-        "donate": {
-          "short": "Doneer aan de ontwikkeling van AltDentifier"
+        "mute": {
+            "muted": "%s gemute!",
+            "muted_reason": "%s gemute voor de volgende reden: \"%s\"",
+            "above": "U kunt geen leden muten als u de rol niet zelf kan toekennen of wegnemen!",
+            "above_bot": "Ik kon dit lid niet muten! Misschien heeft dit lid een hogere rol dan ik?",
+            "no_perms": "U heeft niet genoeg permissies om dit lid te muten!",
+            "no_perms_bot": "Ik heb geen niet genoeg permissies om dit lid te muten! Controlleer of ik de `Rollen Beheren` permissie heb!",
+            "self": "U wilt misschien heroverwegen of u uwzelf wilt muten!",
+            "expired": "AUTO: Deze mute is verlopen",
+            "until": "\nDit lid is gemute tot %s",
+            "negative_time": "Je kan geen mute laten verlopen in het verleden. Vergeet niet dat GMT wordt gehandteerd als standaard zone. Zorg ervoor dat uw eigen tijdzone is ingevuld bij de duratie!"
         },
-        "feedback": {
-          "usage": "[type] [bericht]",
-          "short": "Stuur feedback of kritiek naar de ontwikkelaar. Ondersteunde types zijn 'bug', 'feature' and 'support'.",
-          "long": "Stuur feedback of kritiek naar de ontwikkelaar. U moet een feedback keuze maken, kiezende uit 'bug' voor fouten,'feature' voor verzoeken en 'support' voor ondersteuning.\nWees ervan bewist dat dit commando slechts 1 maal per uur gebruikt kan worden, als maatregel tegen spam. Controleer op typefouten voordat u het bericht verzend!"
-        },
-        "heartbeat": {
-          "short": "Zoek voor problemen met configuratie",
-          "permissions": "SERVER BEHEREN/MOD ROL",
-          "long": "Hartslag zoekt naar veel voorkomende problemen met de configuratie. Indien nodig, zal dit commando aangeven wat gerepareerd moet worden!"
-        },
-        "help": {
-          "usage": "<pagina nummer, categorie of commando naam>",
-          "short": "Laat dit hier commando zien",
-          "long": "Dit commando geeft het help commando weer. Je weet wel, deze. Wat had je dan verwacht, een frietje mayo ofzo?\nJe kan een pagina nummer, categorie naam of commando naam gebruiken om een specifieke pagina of commando te vinden!"
+        "unmute": {
+            "unmuted": "%s is niet meer gemute!",
+            "unmuted_reason": "%s is niet meer gemute vanwege \"%s\"",
+            "above_bot": "Ik kon dit lid niet unmuten! Misschien heeft dit lid een hogere rol dan ik?",
+            "no_perms": "U heeft niet genoeg permissies om dit lid te unmuten!",
+            "no_perms_bot": "Ik heb geen niet genoeg permissies om dit lid te unmuten! Controlleer of ik de `Rollen Beheren` permissie heb!"
         },
         "info": {
-          "short": "Statistieken en informatie van de bot"
+            "stats": "Statistieken",
+            "python": "Python Versie",
+            "guilds": "Hoeveelheid Servers",
+            "d_py_version": "discord.py Versie",
+            "cluster": "Cluster",
+            "shards": "Shards",
+            "shard_info": "(Huidige Shard/Hoeveelheid Shards)",
+            "owner": "Eigenaar",
+            "ping": "Vertraging",
+            "id": "Mijn ID: %s",
+            "site": "Website",
+            "users": "Gebruikers",
+            "desc": "De beste Discord beveiligings en checkpoint bot!",
+            "support": "Ondersteuningsserver"
         },
-        "invite": {
-          "short": "Verkrijg de uitnodigingslink van de bot"
+        "ping": ":ping_pong: Mijn vertraging is %sms",
+        "user_info": {
+            "creation": "Datum van account creatie",
+            "join": "Datum van binnenkomst",
+            "status": "Status",
+            "owner": "Server Eigenaar",
+            "yes": "Ja",
+            "time": "%a, %-d %b %Y om %H:%M:%S GMT"
         },
-        "ping": {
-          "short": "Laat de vertraging tussen Discord en de bot zien"
+        "raidmode": {
+            "enabled": "Raidmodus is ingeschakeld!",
+            "disabled": "Raidmode is uitgeschakeld!"
         },
+        "force": {
+            "afk": "%s is mogelijk afwezig, weet u zeker dat u verificatie voor hen wilt starten? Type `yes` of `no`!",
+            "starting": "Start verificatie van %s!",
+            "no_staff": "U kunt een ander staflid niet verifiëren!",
+            "higher_role": "U kunt geen leden verifiëren die een hogere rol dan u hebben!",
+            "already": "%s wordt al geverifieërd. Wacht alstublieft totdat verificatie voltooid is!",
+            "no_bots": "Bots kunnen niet worden geverifieërd!",
+            "no_whitelist": "U kunt geen leden verifiëren die in uw whitelist staan. Verwijder de leden eerst!",
+            "no_self_already": "U kunt uzelf niet verifiëren, want u wordt al geverifieërd! Voltooi eerst de verificatie die nu bezig is!",
+            "no_self": "Deze server staat zelf-verificatie niet toe!",
+            "canceled": "Oké, geannuleerd!",
+            "no_staff_self": "Moderators kunnen zelf-verificatie niet starten!"
+        },
+        "donate": "U kunt onze Premium opties bekijken op <https://altdentifier.com/premium>!",
+        "upvote": "U kunt stemmen op AltDentifier via <https://discordbots.org/bot/altdentifier/vote>!",
         "profile": {
-          "usage": "<gebruiker>",
-          "short": "Geeft het profiel van de gebruiker weer"
+            "title": "AltDentifier Profiel",
+            "tf": "Vertrouwensfactor",
+            "user_tf": "%s is %s!",
+            "0": "Zeer Gewantrouwd",
+            "1": "Gewantrouwd",
+            "2": "Vertrouwd",
+            "3": "Zeer Vertrouwd",
+            "no_dserv_ban": "<:online:313956277808005120> Gebruiker staat niet op de zwarte lijst van discord.services!",
+            "dserv_ban": "<:dnd:313956276893646850> Gebruiker staat op de zwarte lijst van discord.services vanwerge %s!",
+            "no_ksoft_ban": "<:online:313956277808005120> Gebruiker staat niet op de zwarte lijst van KSoft Bans!",
+            "ksoft_ban": "<:dnd:313956276893646850> Gebruiker staat op de zwarte lijst van KSoft Bans!",
+            "bots": "Bots hebben geen vertrouwensfactor!",
+            "not_found": "Ik kon deze gebruiker niet vinden!"
+        },
+        "feedback": {
+            "blocked": "U bent geblokkeerd van het insturen van feedback vanwege misbruik!",
+            "not_supported": "Dit type feedback wordt niet ondersteund. Gebruik `bug`, `feature` of `support`!",
+            "limit": "U kunt slechts éémaal per uur feedback verzenden!",
+            "missing_args": "U moet een feedback type en bericht bijvoegen!",
+            "sent": "Feedback is met succes verzonden!"
+        },
+        "heartbeat": {
+            "title": "AltDentifier Hartslag",
+            "no_issues": "Geen problemen gevonden met uw configuratie!"
+        },
+        "broadcast": {
+            "removed": "%s verwijdert uit de omroeplijst!",
+            "added": "%s toegevoegd aan de omroeplijst!"
+        },
+        "help": {
+            "title": "Help",
+            "desc": "Bescherming tegen spambots en alt accounts.\n[optie] betekent dat de optie noodzakelijk is.\n<optie> betekent dat de optie optioneel is.",
+            "page": "Pagina %s/3 - Gemaakt door: Auxim#0001",
+            "tip": "Tip",
+            "tips": [
+                "Wist u dat u al onze commando's ook op de website kan zien! Bezoek https://altdentifier.com/commands?lang=nl om ze te zien!",
+                "Wist u dat je me ook kan vermelden als u de prefix vergeet? Stuur simpelweg <@372022813839851520> om hem te zien",
+                "Wist u dat u ook reacties kunt gebruiken om door het help menu te scrollen? Het enige dat ik nodig heb hiervoor is REACTIES TOEVOEGEN. U kunt ook BERICHTEN BEHEREN geven, zodat ik de reacties die u plaatst weer weg kan halen!",
+                "Wist u dat u raidmodus automatisch kunt laten activeren wanneer veel gebruikers binnen een korte tijd de server binnentreden? Bezoek https://altdentifier.com/dashboard, selecteer uw server en open het raidmodus tabje.",
+                "Wist u dat wij een Patreon hebben met extra functionaliteit, zoals de mogelijkheid uw eigen berichten in te stellen op de site, of een achtergrondplaatje in te stellen? Bezoek https://altdentifier.com/premium om meer te weten te komen!\nAlle donaties worden zeer gewaardeerd!",
+                "Wist u dat u help tabbladen ook kunt opzoeken met de naam? Probeer het, type simpelweg <@372022813839851520> help moderation!",
+                "Wist u dat de meeste vertalingen door de gemeenschap worden gemaakt? Als u interesse heeft, bezoek dan onze server met het info commando, en vraag voor meer informatie bij Auxim.\nWe zijn op dit moment op zoek naar Duitse en Zweedse sprekers, maar alle talen zijn welkom!"
+            ],
+            "doesnt_exist": "Deze help pagina bestaat niet!",
+            "no_args": "Dit commando heeft geen opties!",
+            "no_perms": "Geen permissies nodig voor dit commando!",
+            "requested_by": "Aangevraagd door %s",
+            "usage": "Gebruik",
+            "aliases": "Alternatieve Namen",
+            "perms": "Permissions",
+            "cmd_desc": "Beschrijving",
+            "no_usage": "Geen",
+            "no_desc": "Er is geen lange beschrijving voor dit commando!",
+            "commands": {
+                "bypass": {
+                    "usage": "[lid]",
+                    "permissions": "SERVER BEHEREN/MOD ROL",
+                    "short": "Laat een gebruiker verificatie overslaan",
+                    "long": "Gebruik dit commando om een gebruiker het verificatieproces over te laten slaan. Dit kan nuttig zijn als de persoon in kwestie een bekende is.\nU kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;bypass Auxim"
+                },
+                "raidmode": {
+                    "permissions": "SERVER BEHERENMOD ROL",
+                    "short": "Schakelt de anti-raidmodus in, waardoor elk lid dat binnenkomt zich moet verifiëren",
+                    "long": "Gebruik dit commando om raidmodus in of uit te schakelen. Raidmodus zorgt ervoor, dat afhankelijk van uw instellingen, gebruikers worden geverifieërd, verwijderd of verbannen.\nU kunt ook automatische raidmodus aanzetten, zie https://altdentifier.com/dashboard voor meer informatie!"
+                },
+                "force": {
+                    "usage": "<lid>",
+                    "permissions": "SERVER BEHEREN/MOD ROL",
+                    "short": "Start handmatig verificatie van een gebruiker",
+                    "long": "Gebruik dit commando om handmatig het verificatieproces te starten voor iemand. Dit kan nuttig zijn als u iemand die binnenkomt niet vertrouwd.\nU kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;force Auxim"
+                },
+                "ban": {
+                    "usage": "[lid] <aantal dagen waarin berichten verwijderd worden> <reden>",
+                    "permissions": "LEDEN VERBANNEN",
+                    "short": "Verban een lid",
+                    "long": "Verban iemand van uw server. U kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;ban Auxim\nU kunt ook instellen of berichten verwijderd worden, tussen 1 en 7 dagen. Als laatste kunt u ook een reden toevoegen die in het Logboek wordt weergegeven!"
+                },
+                "kick": {
+                    "usage": "[lid] <reden>",
+                    "permissions": "LEDEN VERWIJDEREN",
+                    "short": "Verwijdert een lid",
+                    "long": "Verwijder iemand van uw server. U kunt een vermelding, naam of ID gebruiken om een lid te selecteren. Voorbeeld: ;kick Auxim\nU kunt ook een reden toevoegen die in het Logboek wordt weergegeven!"
+                },
+                "donate": {
+                    "short": "Doneer aan de ontwikkeling van AltDentifier"
+                },
+                "feedback": {
+                    "usage": "[type] [bericht]",
+                    "short": "Stuur feedback of kritiek naar de ontwikkelaar. Ondersteunde types zijn 'bug', 'feature' and 'support'.",
+                    "long": "Stuur feedback of kritiek naar de ontwikkelaar. U moet een feedback keuze maken, kiezende uit 'bug' voor fouten,'feature' voor verzoeken en 'support' voor ondersteuning.\nWees ervan bewist dat dit commando slechts 1 maal per uur gebruikt kan worden, als maatregel tegen spam. Controleer op typefouten voordat u het bericht verzend!"
+                },
+                "heartbeat": {
+                    "short": "Zoek voor problemen met configuratie",
+                    "permissions": "SERVER BEHEREN/MOD ROL",
+                    "long": "Hartslag zoekt naar veel voorkomende problemen met de configuratie. Indien nodig, zal dit commando aangeven wat gerepareerd moet worden!"
+                },
+                "help": {
+                    "usage": "<pagina nummer, categorie of commando naam>",
+                    "short": "Laat dit hier commando zien",
+                    "long": "Dit commando geeft het help commando weer. Je weet wel, deze. Wat had je dan verwacht, een frietje mayo ofzo?\nJe kan een pagina nummer, categorie naam of commando naam gebruiken om een specifieke pagina of commando te vinden!"
+                },
+                "info": {
+                    "short": "Statistieken en informatie van de bot"
+                },
+                "invite": {
+                    "short": "Verkrijg de uitnodigingslink van de bot"
+                },
+                "ping": {
+                    "short": "Laat de vertraging tussen Discord en de bot zien"
+                },
+                "profile": {
+                    "usage": "<gebruiker>",
+                    "short": "Geeft het profiel van de gebruiker weer"
+                },
+                "settings": {
+                    "usage": "<nummer van instelling>",
+                    "permissions": "SERVER BEHEREN/ADMIN ROL",
+                    "short": "Verander de instellingen van de bot"
+                },
+                "togglebroadcast": {
+                    "usage": "<kanaal>",
+                    "permissions": "SERVER BEHEREN/ADMIN ROL",
+                    "short": "Schakel updates en aankondigingen in dit kanaal aan of uit.",
+                    "long": "Schakel updates en aankondigingen in dit kanaal aan of uit. We zullen ze dan in dit kanaal plaatsen als er een aankondiging is."
+                },
+                "userinfo": {
+                    "usage": "<gebruiker>",
+                    "short": "Laat info over jezelf of anderen zien"
+                },
+                "mute": {
+                    "usage": "[lid] <verloopdatum> <reden>",
+                    "short": "Mute een lid",
+                    "long": "Mute een lid door de mute rol te geven. Als er geen rol is ingesteld, zal AltDentifier eerst naar een rol genaamd Muted zoeken voordat het commando wordt geannuleerd.\nU kunt ook een verlooptijd en reden instellen. Bijvoorbeeld: ;mute Auxim \"voor 1 uur\" \"Niet snel genoeg coderen\". Deze tijd kan zowel absoluut als relatief ingesteld worden, zoals `15:00` of `over 1 uur`.\nZorg ervoor dat de verlooptijd en reden met dubbele aanhalingstekens zijn omgeven, anders zal de bot gokken wat er bedoeld wordt.",
+                    "permissions": "BEHEER ROLLEN"
+                },
+                "unmute": {
+                    "usage": "[lid] <reden>",
+                    "short": "Unmute een lid dat eerder gemute was!",
+                    "long": "Gebruik dit commando om een mute van iemand weg te nemen. Je kan ook een reden geven voor de unmute. Bijvoorbeeld: ;unmute Auxim update eindelijk uitgebracht",
+                    "permissions": "BEHEER ROLLEN"
+                },
+                "reason": {
+                    "usage": "<casus> [reden]",
+                    "short": "Stel de reden voor een modlog casus in",
+                    "long": "Gebruik dit commando om de reden voor een modlog casus aan te geven. Bijvoorbeeld: ;reason 1 Auxim heeft niet alle foutjes eruit gehaald. Als het casus ID niet gegeven is, wordt de reden toegepast op de meest recente casus!",
+                    "permissions": "BEHEER ROLLEN/LEDEN VERBANNEN/LEDEN VERWIJDEREN"
+                }
+            },
+            "embed": "Schakel INGESLOTEN LINKS in zodat ik schonere help berichten kan versturen!"
         },
         "settings": {
-          "usage": "<nummer van instelling>",
-          "permissions": "SERVER BEHEREN/ADMIN ROL",
-          "short": "Verander de instellingen van de bot"
-        },
-        "togglebroadcast": {
-          "usage": "<kanaal>",
-          "permissions": "SERVER BEHEREN/ADMIN ROL",
-          "short": "Schakel updates en aankondigingen in dit kanaal aan of uit.",
-          "long": "Schakel updates en aankondigingen in dit kanaal aan of uit. We zullen ze dan in dit kanaal plaatsen als er een aankondiging is."
-        },
-        "userinfo": {
-          "usage": "<gebruiker>",
-          "short": "Laat info over jezelf of anderen zien"
+            "title": "Instellingen",
+            "list": "1. AltDentificatie\n2. Standaardrol\n3. Admin Rollen\n4. Mod Rollen\n5. Logging\n6. Waarschuwingskanaal\n7. Botkanaal\n8. Taal\n9. Prefix\n10. Tijdzone\n11. Minimale Account Leeftijd\n12. Autorol\n13. Authenticatie Methoden\n14. Timeout Actie\n15. Minimale Reddit Karma\n16. Logging Kanaal\n17. Logging Instellingen\n18. Verificatiewaarschuwingen\n19. Vertrouwensfactor\n\nType `exit` om te annuleren!",
+            "list_tf": "1. AltDentificatie\n2. Standaardrol\n3. Admin Rollen\n4. Mod Rollen\n5. Logging\n6. Waarschuwingskanaal\n7. Botkanaal\n8. Taal\n9. Prefix\n10. Tijdzone\n11. Vertrouwensfactorgrens\n12. Autorol\n13. Authenticatie Methoden\n14. Timeout Actie\n15. Minimale Reddit Karma\n16. Logging Kanaal\n17. Logging Instellingen\n18. erificatiewaarschuwingen\n19. Vertrouwensfactor\n\nType `exit`  om te annuleren!",
+            "canceled": "Oké, geannuleerd!",
+            "dashboard": "Zoekt u een makkelijkere manier om onze instellingen te wijzigen? Bezoek ons web controlepaneel op https://altdentifier.com/dashboard of klik op de blauwe link bovenaan!",
+            "dashboard_notif": "Al onze instellingen kunnen nu ook op ons web controlepaneel worden beheerd! We raden sterk aan om dit te gebruiken, aangezien het instellingencommando mogelijk niet wordt voorzien van de laatste updates!\nBezoek <https://altdentifier.com/dashboard> om het controlepaneel te bezichtigen!",
+            "not_number": "Instellingskeuze moet een nummer zijn!",
+            "already_open": "Instellingen is al geopend op deze server. Gebruik alstublieft de openstaande dialoog!",
+            "altdentification": {
+                "currently_enabled": "AltDentificatie op dit moment ingeschakeld! Wilt u dit uitschakelen? Type `yes` of `no`.",
+                "currently_disabled": "AltDentificatie is op dit moment uitgeschakeld! Wilt u dit inschakelen? Type `yes` of `no`.",
+                "enabled": "AltDentificatie is nu ingeschakeld!",
+                "disabled": "AltDentificatie is nu uitgeschakeld"
+            },
+            "default_role": {
+                "not_set": "U heeft nog geen standaardrol, wilt u er nu één instellen? Type `yes` of `no`.",
+                "input": "Type de naam van uw standaardrol, benoem de rol of type zijn ID.",
+                "not_found": "Sorry, maar ik kon deze rol niet vinden! Controleer alstublieft of u alles juist heeft ingevoerd!",
+                "set_to": "Standaardrol is gewijzigd naar `%s`!",
+                "is_set": "De huidige standaardrol is `%s`. Wilt u deze veranderen? Als u nog steeds omgedraaide standaardrol ingesteld heeft, raden we aan deze nu uit te schakelen en de In Verificatie Rol in te stellen op ons controlepaneel! U kunt vanwege deze wijzigingen de Omgedraaide standaardrol niet meer aanzetten! Type `yes`, `no` of `reverse`.",
+                "reverse_disabled": "Omgedraaide standaardrol is nu uitgeschakeld!",
+                "no_perms": "U heeft een standaardrol ingesteld, maar ik zal deze niet aan leden kunnen geven omdat ik de `ROLLEN BEHEREN` permissie niet heb, of mijn rol is lager dan de standaardrol!"
+            },
+            "admin_roles": {
+                "current": "Uw huidige Admin Rollen zijn: ```\n%s```. Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren! Let op dat Admin Rollen ook automatisch Mod Rol worden, maar de rol niet zal woorden weggehaald van Mod Rollen als u deze uit de Admin Rollen verwijderdt!",
+                "input": "Type de naam van de rol, benoem de rol of type het ID van de rol die u wilt toevoegen of verwijderen van de Admin Rollen!",
+                "added": "%s is nu toegevoegd aan de Admin Rollen!",
+                "removed": "%s is nu verwijderd uit de Admin Rollen!",
+                "no_roles": "U heeft op dit moment geen Admin Rollen! Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren! Let op dat Admin Rollen ook automatisch Mod Rol worden, maar de rol niet zal woorden weggehaald van Mod Rollen als u deze uit de Admin Rollen verwijderdt!"
+            },
+            "mod_roles": {
+                "current": "Uw huidige Mod Rollen zijn: ```\n%s```. Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren!",
+                "input": "Type de naam van de rol, benoem de rol of type het ID van de rol die u wilt toevoegen of verwijderen van de Mod Rollen!",
+                "added": "%s is nu toegevoegd aan de Mod Rollen!",
+                "removed": "%s is nu verwijderd uit de Mod Rollen!",
+                "no_roles": "U heeft op dit moment geen Mod Rollen! Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren!"
+            },
+            "logging": {
+                "currently_enabled": "Logging is op dit moment ingeschakeld! Wilt u dit uitschakelen? Type `yes` of `no`!",
+                "currently_disabled": "Logging is op dit moment uitgeschakeld! Wilt u dit inschakelen? Type `yes` of `no`!",
+                "enabled": "Logging is nu ingeschakeld!",
+                "disabled": "Logging is nu uitgeschakeld!"
+            },
+            "warning_channel": {
+                "is_set": "Het waarschuwingskanaal is op dit moment ingesteld op %s! Wilt u dit veranderen? Type `yes` of `no`!",
+                "not_set": "U heeft nog geen waarschuwingskanaal! Wilt u dit nu instellen? Een waarschuwingskanaal is verplicht voor de juiste werking van AltDentifier! Type `yes` of `no`.",
+                "input": "Type het ID, de benoeming of de naam van het kanaal dat u als waarschuwingskanaal in wilt stellen!",
+                "set_to": "Het waarschuwingskanaal is nu ingesteld op %s!",
+                "not_found": "Sorry, ik kon dit kanaal niet vinden, controleer of u alles juist heeft ingevoerd!"
+            },
+            "bot_channel": {
+                "is_set": "Het botkanaal is op dit moment ingesteld op %s! Wilt u dit veranderen? Type `yes` of `no`!",
+                "not_set": "U heeft nog geen botkanaal! Wilt u dit nu instellen? Een botkanaal is verplicht voor de juiste werking van AltDentifier! Type `yes` of `no`.",
+                "input": "Type het ID, de benoeming of de naam van het kanaal dat u als botkanaal in wilt stellen!",
+                "set_to": "Het botkanaal is nu ingesteld op %s!",
+                "not_found": "Sorry, ik kon dit kanaal niet vinden, controleer of u alles juist heeft ingevoerd!"
+            },
+            "language": {
+                "change": "Wilt u de taal die ik gebruik in de server wijzigen? De huidige taal is %s. Type `yes` of `no`!",
+                "change_to": "Naar welke taal wilt u de taal wijzigen? De volgende talen zijn beschikbaar: %s",
+                "set": "Taal is nu ingesteld op %s!"
+            },
+            "prefix": {
+                "change": "Wilt u de prefix die ik heb in de server wijzigen? De huidige prefix is `%s`. Type `yes` of `no`!",
+                "change_to": "Wat wilt u instellen als nieuwe prefix? Type deze nu!",
+                "set": "De prefix is nu ingesteld op %s. Wees bewust dat u mij altijd kunt benoemen als u de prefix vergeet!"
+            },
+            "timezone": {
+                "change": "Uw huidige tijdzone is GMT %s%s. Wilt u dit veranderen? Type `yes` of `no`!",
+                "change_to": "Type het verschil in uren tussen uw tijdzone en GMT, of gebruik een tijdzone code, zoals `Europe/Amsterdam`.",
+                "not_found": "Deze tijdzone kon niet gevonden worden. Gebruik dit commando nogmaals om opnieuw te proberen!",
+                "set": "Tijdzone is nu ingesteld op %s (UTC %s%s)!"
+            },
+            "minimum_age": {
+                "change": "De huidige minimale account leeftijd is %s dagen. Het account van de gebruiker moet ouder zijn dan deze waarde om niet geverifieërd te hoeven worden. Wilt u dit veranderen? Type `yes` of `no`!",
+                "change_to": "Waarin wilt u de minimale leeftijd wijzigen? Voer de tijd in dagen in!",
+                "set": "De minimale account leeftijd is ingesteld op %s dagen!"
+            },
+            "autorole": {
+                "currently_enabled": "Autorol is op dit moment ingeschakeld. Wilt u dit uitschakelen? Type `yes` of `no`!",
+                "currently_disabled": "Autorol is op dit moment uitgeschakeld. Wilt u dit inschakelen? Type `yes` of `no`!",
+                "enabled": "Autorol is nu ingeschakeld!",
+                "disabled": "Autorol is nu uitgeschakeld!",
+                "no_role": "U kunt Autorol niet inschakelen als u geen standaardrol heeft ingesteld!",
+                "no_perms": "U kunt Autorol niet inschakelen als ik geen permissie heb om de standaardrol te geven! Controleer alstublieft of mijn hoogste rol boven de standaardrol is, en dat ik de `ROLLEN BEHEREN` permissie heb!",
+                "reverse_active": "U kunt Autorol niet inschakelen als omgedraaide standaardrol actief is!"
+            },
+            "authentication_methods": {
+                "change": "De volgende verificatiemethoden zijn ingeschakeld in uw server:\n%s.\n\nReddit, Twitter, Steam, Overwatch, Captcha, Xbox en YouTube zijn beschikbaar. Type de naam van de methode die u in of uit wilt schakelen, of type `no` om te annuleren!",
+                "disabled": "%s verificatie is nu uitgeschakeld!",
+                "enabled": "%s verificatie is nu ingeschakeld!",
+                "one_active": "U moet op zijn minst één verificatie methode actief hebben!"
+            },
+            "timeout_action": {
+                "change": "Stel een timeout actie in voor gebruikers die niet op tijd verifiëren. De huidige timeout actie is %s. U kunt `kick` selecteren om leden te verwijderen, `ban` om ze van uw server te verbannen, `role` om ze een rol naar keuze te geven, `nothing` om ze te negeren of `no` om de huidige waarde te behouden!",
+                "chose_role": "Om de rol actie te gebruiken moet u een rol selecteren die het lid zal ontvangen als ze niet reageren. Type nu zijn ID, benoeming of naam!",
+                "not_found": "Deze rol kon niet worden gevonden, probeer dit commando nogmaals, of selecteer een andere timeout actie!",
+                "role": "Timeout actie is nu ingesteld op `role`. Leden zullen de `%s` rol ontvangen als ze niet op tijd verifiëren!",
+                "no_perms_role": "U kunt de timeout actie niet op rol instellen als ik de rol niet kan geven! Controleer alstublieft of mijn rol boven de gekozen rol is, en dat ik de `ROLLEN BEHEREN` permissie heb!",
+                "no_perms_kick": "U kunt de timeout actie niet op kick instellen als ik leden niet kan verwijderen! Controleer alstublieft of ik de `LEDEN VERWIJDEREN` permissie heb!",
+                "no_perms_ban": "U kunt de timeout actie niet op ban instellen als ik leden niet kan verbannen! Controleer alstublieft of ik de `LEDEN VERBANNEN` permissie heb!",
+                "set": "Timeout actie is nu ingesteld op %s!"
+            },
+            "minimum_karma": {
+                "change": "Minimale Reddit Karma is op dit moment ingesteld op %s. Wilt u dit veranderen? Type `yes` of `no`.",
+                "change_to": "Waar wilt u de Minimale Reddit Karma in wijzigen? Onthoud dat dit een combinate is van link en reactie karma, en dat dit een nummer moet zijn!",
+                "not_number": "Minimale Karma moet een nummer zijn!",
+                "set": "Minimale Reddit Karma is nu ingesteld op %s!"
+            },
+            "log_channel": {
+                "not_enabled": "U heeft logging niet ingeschakeld en kunt daarom geen logging kanaal selecteren! Schakel alstublieft eerst logging in!",
+                "not_set": "U heeft nog geen logging kanaal! Wilt u dit nu instellen? Type `yes` of `no`!",
+                "current": "Het huidige logging kanaal is %s. Wilt u dit veranderen? Type `yes` of `no`!",
+                "input": "Type het ID, de naam of de vernoeming van het kanaal dat u als logging kanaal wilt instellen!",
+                "set": "Logging kanaal is nu ingesteld op %s!"
+            },
+            "log_options": {
+                "current": "De volgende log opties zijn op dit moment ingeschakeld:\n\n%s!Type de naam van een log optie om deze in of uit te schakelen, of type `no` om te annuleren.\n\nDe beschikbare opties zijn `member join`, `member leave`, `member update`, `member ban`, `member unban`, `channel create`, `channel delete`, `role create`, `role delete`, `voice update`, `message edit` en `message delete`!",
+                "not_enabled": "U heeft logging niet ingeschakeld en kunt daarom geen logging opties selecteren! Schakel alstublieft eerst logging in!",
+                "enabled": "%s is nu ingeschakeld!",
+                "disabled": "%s is nu uitgeschakeld"
+            },
+            "verif_alerts": {
+                "currently_disabled": "Verificatiewaarschuwingen zijn op dit moment uitgeschakeld. Verificatiewaarschuwingen zullen het lid vermelden in het waarschuwingskanaal als ze worden geverifieërd! Wilt u dit inschakelen? Type `yes` of `no`!",
+                "currently_enabled": "Verificatiewaarschuwingen zijn op dit moment ingeschakeld. Wilt u dit uitschakelen? Type `yes` of `no`!",
+                "disabled": "Verificatiewaarschuwingen zijn nu uitgeschakeld!",
+                "enabled": "Verificatiewaarschuwingen zijn nu ingeschakeld"
+            },
+            "trustfactor": {
+                "currently_enabled": "Vertrouwensfactor is op dit moment ingeschakeld. Wilt u teruggaan naar accountleeftijd gebaseerde verificatie? Type `yes` of `no`!",
+                "currently_disabled": "Vertrouwensfactor is op dit moment uitgeschakeld. Vertrouwensfactor weegt meerdere factoren af om te bepalen of een account geverifieërd moet worden. Wilt u Vertrouwensfactor inschakelen? Type `yes` of `no`!",
+                "enabled": "Vertrouwensfactor is nu ingeschakeld!",
+                "disabled": "Vertrouwensfactor is nu uitgeschakeld!",
+                "threshold": "Uw Vertrouwensfactorgrens is op dit moment `%s`! Do you want to change it? Type `yes` of `no`!",
+                "input": "Welk Vertrouwensniveau wilt u gebruiken? Type `0` voor Zeer Gewantrouwd, `1` voor Gewantrouwd en Lager (Standaard), `2` voor Vertrouwd en Lager, `3` voor VZeer Vertrouwd en Lager (Iedereen) of type `exit` om te annuleren!",
+                "set_to_sd": "Uw Vertrouwensfactorgrens is nu ingesteld op `Zeer Gewantrouwd`!",
+                "set_to_d": "Uw Vertrouwensfactorgrens is nu ingesteld op `Gewantrouwd en Lager`!",
+                "set_to_t": "Uw Vertrouwensfactorgrens is nu ingesteld op `Vertrouwd en Lager`!",
+                "set_to_vt": "Uw Vertrouwensfactorgrens is nu ingesteld op `Zeer Vertrouwd en Lager`, wat betekent dat elk lid dat binnenkomt zich moet verifieren!"
+            }
         }
-      },
-      "embed": "Schakel INGESLOTEN LINKS in zodat ik schonere help berichten kan versturen!"
     },
-    "settings": {
-      "title": "Instellingen",
-      "list": "1. AltDentificatie\n2. Standaardrol\n3. Admin Rollen\n4. Mod Rollen\n5. Logging\n6. Waarschuwingskanaal\n7. Botkanaal\n8. Taal\n9. Prefix\n10. Tijdzone\n11. Minimale Account Leeftijd\n12. Autorol\n13. Authenticatie Methoden\n14. Timeout Actie\n15. Minimale Reddit Karma\n16. Logging Kanaal\n17. Logging Instellingen\n18. Verificatiewaarschuwingen\n19. Vertrouwensfactor\n\nType `exit` om te annuleren!",
-      "list_tf": "1. AltDentificatie\n2. Standaardrol\n3. Admin Rollen\n4. Mod Rollen\n5. Logging\n6. Waarschuwingskanaal\n7. Botkanaal\n8. Taal\n9. Prefix\n10. Tijdzone\n11. Vertrouwensfactorgrens\n12. Autorol\n13. Authenticatie Methoden\n14. Timeout Actie\n15. Minimale Reddit Karma\n16. Logging Kanaal\n17. Logging Instellingen\n18. erificatiewaarschuwingen\n19. Vertrouwensfactor\n\nType `exit`  om te annuleren!",
-      "canceled": "Oké, geannuleerd!",
-      "dashboard": "Zoekt u een makkelijkere manier om onze instellingen te wijzigen? Bezoek ons web controlepaneel op https://altdentifier.com/dashboard of klik op de blauwe link bovenaan!",
-      "dashboard_notif": "Al onze instellingen kunnen nu ook op ons web controlepaneel worden beheerd! We raden sterk aan om dit te gebruiken, aangezien het instellingencommando mogelijk niet wordt voorzien van de laatste updates!\nBezoek <https://altdentifier.com/dashboard> om het controlepaneel te bezichtigen!",
-      "not_number": "Instellingskeuze moet een nummer zijn!",
-      "already_open": "Instellingen is al geopend op deze server. Gebruik alstublieft de openstaande dialoog!",
-      "altdentification": {
-        "currently_enabled": "AltDentificatie op dit moment ingeschakeld! Wilt u dit uitschakelen? Type `yes` of `no`.",
-        "currently_disabled": "AltDentificatie is op dit moment uitgeschakeld! Wilt u dit inschakelen? Type `yes` of `no`.",
-        "enabled": "AltDentificatie is nu ingeschakeld!",
-        "disabled": "AltDentificatie is nu uitgeschakeld"
-      },
-      "default_role": {
-        "not_set": "U heeft nog geen standaardrol, wilt u er nu één instellen? Type `yes` of `no`.",
-        "input": "Type de naam van uw standaardrol, benoem de rol of type zijn ID.",
-        "not_found": "Sorry, maar ik kon deze rol niet vinden! Controleer alstublieft of u alles juist heeft ingevoerd!",
-        "set_to": "Standaardrol is gewijzigd naar `%s`!",
-        "is_set": "De huidige standaardrol is `%s`. Wilt u deze veranderen? Als u nog steeds omgedraaide standaardrol ingesteld heeft, raden we aan deze nu uit te schakelen en de In Verificatie Rol in te stellen op ons controlepaneel! U kunt vanwege deze wijzigingen de Omgedraaide standaardrol niet meer aanzetten! Type `yes`, `no` of `reverse`.",
-        "reverse_disabled": "Omgedraaide standaardrol is nu uitgeschakeld!",
-        "no_perms": "U heeft een standaardrol ingesteld, maar ik zal deze niet aan leden kunnen geven omdat ik de `ROLLEN BEHEREN` permissie niet heb, of mijn rol is lager dan de standaardrol!"
-      },
-      "admin_roles": {
-        "current": "Uw huidige Admin Rollen zijn: ```\n%s```. Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren! Let op dat Admin Rollen ook automatisch Mod Rol worden, maar de rol niet zal woorden weggehaald van Mod Rollen als u deze uit de Admin Rollen verwijderdt!",
-        "input": "Type de naam van de rol, benoem de rol of type het ID van de rol die u wilt toevoegen of verwijderen van de Admin Rollen!",
-        "added": "%s is nu toegevoegd aan de Admin Rollen!",
-        "removed": "%s is nu verwijderd uit de Admin Rollen!",
-        "no_roles": "U heeft op dit moment geen Admin Rollen! Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren! Let op dat Admin Rollen ook automatisch Mod Rol worden, maar de rol niet zal woorden weggehaald van Mod Rollen als u deze uit de Admin Rollen verwijderdt!"
-      },
-      "mod_roles": {
-        "current": "Uw huidige Mod Rollen zijn: ```\n%s```. Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren!",
-        "input": "Type de naam van de rol, benoem de rol of type het ID van de rol die u wilt toevoegen of verwijderen van de Mod Rollen!",
-        "added": "%s is nu toegevoegd aan de Mod Rollen!",
-        "removed": "%s is nu verwijderd uit de Mod Rollen!",
-        "no_roles": "U heeft op dit moment geen Mod Rollen! Wilt u een rol toevoegen of verwijderen? Type `add`, `remove` of `no` om te annuleren!"
-      },
-      "logging": {
-        "currently_enabled": "Logging is op dit moment ingeschakeld! Wilt u dit uitschakelen? Type `yes` of `no`!",
-        "currently_disabled": "Logging is op dit moment uitgeschakeld! Wilt u dit inschakelen? Type `yes` of `no`!",
-        "enabled": "Logging is nu ingeschakeld!",
-        "disabled": "Logging is nu uitgeschakeld!"
-      },
-      "warning_channel": {
-        "is_set": "Het waarschuwingskanaal is op dit moment ingesteld op %s! Wilt u dit veranderen? Type `yes` of `no`!",
-        "not_set": "U heeft nog geen waarschuwingskanaal! Wilt u dit nu instellen? Een waarschuwingskanaal is verplicht voor de juiste werking van AltDentifier! Type `yes` of `no`.",
-        "input": "Type het ID, de benoeming of de naam van het kanaal dat u als waarschuwingskanaal in wilt stellen!",
-        "set_to": "Het waarschuwingskanaal is nu ingesteld op %s!",
-        "not_found": "Sorry, ik kon dit kanaal niet vinden, controleer of u alles juist heeft ingevoerd!"
-      },
-      "bot_channel": {
-        "is_set": "Het botkanaal is op dit moment ingesteld op %s! Wilt u dit veranderen? Type `yes` of `no`!",
-        "not_set": "U heeft nog geen botkanaal! Wilt u dit nu instellen? Een botkanaal is verplicht voor de juiste werking van AltDentifier! Type `yes` of `no`.",
-        "input": "Type het ID, de benoeming of de naam van het kanaal dat u als botkanaal in wilt stellen!",
-        "set_to": "Het botkanaal is nu ingesteld op %s!",
-        "not_found": "Sorry, ik kon dit kanaal niet vinden, controleer of u alles juist heeft ingevoerd!"
-      },
-      "language": {
-        "change": "Wilt u de taal die ik gebruik in de server wijzigen? De huidige taal is %s. Type `yes` of `no`!",
-        "change_to": "Naar welke taal wilt u de taal wijzigen? De volgende talen zijn beschikbaar: %s",
-        "set": "Taal is nu ingesteld op %s!"
-      },
-      "prefix": {
-        "change": "Wilt u de prefix die ik heb in de server wijzigen? De huidige prefix is `%s`. Type `yes` of `no`!",
-        "change_to": "Wat wilt u instellen als nieuwe prefix? Type deze nu!",
-        "set": "De prefix is nu ingesteld op %s. Wees bewust dat u mij altijd kunt benoemen als u de prefix vergeet!"
-      },
-      "timezone": {
-        "change": "Uw huidige tijdzone is GMT %s%s. Wilt u dit veranderen? Type `yes` of `no`!",
-        "change_to": "Type het verschil in uren tussen uw tijdzone en GMT, of gebruik een tijdzone code, zoals `Europe/Amsterdam`.",
-        "not_found": "Deze tijdzone kon niet gevonden worden. Gebruik dit commando nogmaals om opnieuw te proberen!",
-        "set": "Tijdzone is nu ingesteld op %s (UTC %s%s)!"
-      },
-      "minimum_age": {
-        "change": "De huidige minimale account leeftijd is %s dagen. Het account van de gebruiker moet ouder zijn dan deze waarde om niet geverifieërd te hoeven worden. Wilt u dit veranderen? Type `yes` of `no`!",
-        "change_to": "Waarin wilt u de minimale leeftijd wijzigen? Voer de tijd in dagen in!",
-        "set": "De minimale account leeftijd is ingesteld op %s dagen!"
-      },
-      "autorole": {
-        "currently_enabled": "Autorol is op dit moment ingeschakeld. Wilt u dit uitschakelen? Type `yes` of `no`!",
-        "currently_disabled": "Autorol is op dit moment uitgeschakeld. Wilt u dit inschakelen? Type `yes` of `no`!",
-        "enabled": "Autorol is nu ingeschakeld!",
-        "disabled": "Autorol is nu uitgeschakeld!",
-        "no_role": "U kunt Autorol niet inschakelen als u geen standaardrol heeft ingesteld!",
-        "no_perms": "U kunt Autorol niet inschakelen als ik geen permissie heb om de standaardrol te geven! Controleer alstublieft of mijn hoogste rol boven de standaardrol is, en dat ik de `ROLLEN BEHEREN` permissie heb!",
-        "reverse_active": "U kunt Autorol niet inschakelen als omgedraaide standaardrol actief is!"
-      },
-      "authentication_methods": {
-        "change": "De volgende verificatiemethoden zijn ingeschakeld in uw server:\n%s.\n\nReddit, Twitter, Steam, Overwatch, Captcha, Xbox en YouTube zijn beschikbaar. Type de naam van de methode die u in of uit wilt schakelen, of type `no` om te annuleren!",
-        "disabled": "%s verificatie is nu uitgeschakeld!",
-        "enabled": "%s verificatie is nu ingeschakeld!",
-        "one_active": "U moet op zijn minst één verificatie methode actief hebben!"
-      },
-      "timeout_action": {
-        "change": "Stel een timeout actie in voor gebruikers die niet op tijd verifiëren. De huidige timeout actie is %s. U kunt `kick` selecteren om leden te verwijderen, `ban` om ze van uw server te verbannen, `role` om ze een rol naar keuze te geven, `nothing` om ze te negeren of `no` om de huidige waarde te behouden!",
-        "chose_role": "Om de rol actie te gebruiken moet u een rol selecteren die het lid zal ontvangen als ze niet reageren. Type nu zijn ID, benoeming of naam!",
-        "not_found": "Deze rol kon niet worden gevonden, probeer dit commando nogmaals, of selecteer een andere timeout actie!",
-        "role": "Timeout actie is nu ingesteld op `role`. Leden zullen de `%s` rol ontvangen als ze niet op tijd verifiëren!",
-        "no_perms_role": "U kunt de timeout actie niet op rol instellen als ik de rol niet kan geven! Controleer alstublieft of mijn rol boven de gekozen rol is, en dat ik de `ROLLEN BEHEREN` permissie heb!",
-        "no_perms_kick": "U kunt de timeout actie niet op kick instellen als ik leden niet kan verwijderen! Controleer alstublieft of ik de `LEDEN VERWIJDEREN` permissie heb!",
-        "no_perms_ban": "U kunt de timeout actie niet op ban instellen als ik leden niet kan verbannen! Controleer alstublieft of ik de `LEDEN VERBANNEN` permissie heb!",
-        "set": "Timeout actie is nu ingesteld op %s!"
-      },
-      "minimum_karma": {
-        "change": "Minimale Reddit Karma is op dit moment ingesteld op %s. Wilt u dit veranderen? Type `yes` of `no`.",
-        "change_to": "Waar wilt u de Minimale Reddit Karma in wijzigen? Onthoud dat dit een combinate is van link en reactie karma, en dat dit een nummer moet zijn!",
-        "not_number": "Minimale Karma moet een nummer zijn!",
-        "set": "Minimale Reddit Karma is nu ingesteld op %s!"
-      },
-      "log_channel": {
-        "not_enabled": "U heeft logging niet ingeschakeld en kunt daarom geen logging kanaal selecteren! Schakel alstublieft eerst logging in!",
-        "not_set": "U heeft nog geen logging kanaal! Wilt u dit nu instellen? Type `yes` of `no`!",
-        "current": "Het huidige logging kanaal is %s. Wilt u dit veranderen? Type `yes` of `no`!",
-        "input": "Type het ID, de naam of de vernoeming van het kanaal dat u als logging kanaal wilt instellen!",
-        "set": "Logging kanaal is nu ingesteld op %s!"
-      },
-      "log_options": {
-        "current": "De volgende log opties zijn op dit moment ingeschakeld:\n\n%s!Type de naam van een log optie om deze in of uit te schakelen, of type `no` om te annuleren.\n\nDe beschikbare opties zijn `member join`, `member leave`, `member update`, `member ban`, `member unban`, `channel create`, `channel delete`, `role create`, `role delete`, `voice update`, `message edit` en `message delete`!",
-        "not_enabled": "U heeft logging niet ingeschakeld en kunt daarom geen logging opties selecteren! Schakel alstublieft eerst logging in!",
-        "enabled": "%s is nu ingeschakeld!",
-        "disabled": "%s is nu uitgeschakeld"
-      },
-      "verif_alerts": {
-        "currently_disabled": "Verificatiewaarschuwingen zijn op dit moment uitgeschakeld. Verificatiewaarschuwingen zullen het lid vermelden in het waarschuwingskanaal als ze worden geverifieërd! Wilt u dit inschakelen? Type `yes` of `no`!",
-        "currently_enabled": "Verificatiewaarschuwingen zijn op dit moment ingeschakeld. Wilt u dit uitschakelen? Type `yes` of `no`!",
-        "disabled": "Verificatiewaarschuwingen zijn nu uitgeschakeld!",
-        "enabled": "Verificatiewaarschuwingen zijn nu ingeschakeld"
-      },
-      "trustfactor": {
-        "currently_enabled": "Vertrouwensfactor is op dit moment ingeschakeld. Wilt u teruggaan naar accountleeftijd gebaseerde verificatie? Type `yes` of `no`!",
-        "currently_disabled": "Vertrouwensfactor is op dit moment uitgeschakeld. Vertrouwensfactor weegt meerdere factoren af om te bepalen of een account geverifieërd moet worden. Wilt u Vertrouwensfactor inschakelen? Type `yes` of `no`!",
-        "enabled": "Vertrouwensfactor is nu ingeschakeld!",
-        "disabled": "Vertrouwensfactor is nu uitgeschakeld!",
-        "threshold": "Uw Vertrouwensfactorgrens is op dit moment `%s`! Do you want to change it? Type `yes` of `no`!",
-        "input": "Welk Vertrouwensniveau wilt u gebruiken? Type `0` voor Zeer Gewantrouwd, `1` voor Gewantrouwd en Lager (Standaard), `2` voor Vertrouwd en Lager, `3` voor VZeer Vertrouwd en Lager (Iedereen) of type `exit` om te annuleren!",
-        "set_to_sd": "Uw Vertrouwensfactorgrens is nu ingesteld op `Zeer Gewantrouwd`!",
-        "set_to_d": "Uw Vertrouwensfactorgrens is nu ingesteld op `Gewantrouwd en Lager`!",
-        "set_to_t": "Uw Vertrouwensfactorgrens is nu ingesteld op `Vertrouwd en Lager`!",
-        "set_to_vt": "Uw Vertrouwensfactorgrens is nu ingesteld op `Zeer Vertrouwd en Lager`, wat betekent dat elk lid dat binnenkomt zich moet verifieren!"
-      }
+    "verify": {
+        "whitelist": "%s bevindt zich in uw whitelist. Verificatie zal niet plaatsvinden!",
+        "default_role_warning": "Een standaardrol is ingesteld, maar ik heb geen toestemming om deze te verwijden. Controleer alstublieft of ik de `ROLLEN BEHEREN` permissie heb, en mijn hoogste rol boven de standaardrol staat! Verificatie zal doorgaan, maar het is mogelijk dat ze tijdens het proces kunnen praten in uw server.",
+        "suspicious": "Verdacht account gedetecteerd!",
+        "manual": "Een staflid heeft handmatig de verificatie van %s gestart!",
+        "self": "%s heeft hun eigen verificatie gestart!",
+        "raidmode": "%s is tijdens een raid binnengekomen!",
+        "suspicious_long_age": "%s heeft een account waarvan de leeftijd lager is dan uw grens.\n\n%s's account is %s dagen oud, maar uw grens is %s dagen. %s is de server binnengetreden op %s\n\nAltDentifier heeft het verificatieproces gestart.",
+        "suspicious_long_tf": "%s heeft een account waarvan de vertrouwensfactor lager is dan uw grens.\n\n%s's account heef een vertrouwensfactor van %s, maar uw grens is %s.\n\nAltDentifier heeft het verificatieproces gestart.",
+        "manual_long": "\nHeeft een vertrouwensfactor van %s.\n\nAltDentifier heeft het verificatieproces gestart.",
+        "self_long": "\nHeeft een vertrouwensfactor van %s.\n\nAltDentifier heeft het verificatieproces gestart.",
+        "raidmode_long": "\nHeeft een vertrouwensfactor van %s\n\nAltDentifier is ingesteld om alle leden te verifiëren tijdens wanneer raidmodus is ingeschakeld!\n\nAltDentifier heeft het verificatieproces gestart.",
+        "invite_tracker": "Gebruikte Uitnodiging",
+        "hello": "Hallo %s,\nWelkom in %s. Deze server wordt bescherm door AltDentifier. Om uw account te verifiëren, bezoekt u %s/verify/%s/%s?lang=%s. U heeft %s minuten om het verificatieproces te voltooien!\nMet vriendelijke groet, de staf van %s .",
+        "actions": {
+            "ban": "u wordt van de server verbannen!",
+            "kick": "u wordt van de server verwijderd!",
+            "role": "u ontvangt de %s rol!",
+            "nothing": "de ondernome actie is afhankelijk van de server staf."
+        },
+        "dm_off": "Hallo %s, ik kan geen privéberichten naar u versturen! Schakel alstublieft privéberichten voor deze server in binnen 1 minuut of %s",
+        "left": "%s heeft de server verlaten voordat verificatie voltooid kon worden!",
+        "no_response": "Geen Reactie!",
+        "action_applied": {
+            "kick": "%s is van de server verwijderd omdat er niet op tijd is gereageerd!",
+            "ban": "%s is van de server verbannen omdat er niet op tijd is gereageerd!",
+            "role": "%s heeft de %s rol gekregen omdat er niet op tijd is gereageerd!",
+            "kick_dm": "U bent van de server verwijderd omdat u niet op tijd gereageerd heeft!",
+            "ban_dm": "U bent van de server verwijderd omdat u niet op tijd gereageerd heeft!",
+            "role_dm": "U heeft de %s rol gekregen omdat u niet op tijd gereageerd heeft!",
+            "nothing_dm": "U heeft niet op tijd gereageerd, de ondernome actie zal door de stafleden van de server bepaald worden!",
+            "nothing": "%s heeft niet op tijd gereageerd!",
+            "ban_fail": "Ik heb geprobeerd om %s verbannen omdat er niet op tijd gereageerd is, maar dat is mislukt! Controleer alstublieft of ik de `LEDEN VERBANNEN` permissie heb!",
+            "kick_fail": "Ik heb geprobeerd om %s verwijderen omdat er niet op tijd gereageerd is, maar dat is mislukt!  Controleer alstublieft of ik de `LEDEN VERWIJDEREN` permissie heb!!",
+            "role_fail": "Ik heb geprobeerd om de %s rol te geven aan %s, maar dat is mislukt! Controleer alstublieft of ik de `ROLLEN BEHEREN` permissie heb, en mijn rol hoger is dan die van het lid!",
+            "kick_ic_dm": "U bent gekickt voor proberen te verifiëren met een ander Discord account!",
+            "ban_ic_dm": "U bent verbannen voor proberen te verifiëren met een ander Discord account!",
+            "kick_ic": "%s was gekickt voor proberen te verifiëren met een ander Discord account!",
+            "ban_ic": "%s was verbannen voor proberen te verifiëren met een ander Discord account!"
+        },
+        "bypass": "%s heeft verificatie voor %s overgeslagen!",
+        "bypass_dm": "%s heeft u de verificatie laten overslaan!",
+        "not_verified": "Dit lid wordt op dit moment niet geverifieërd!",
+        "success": "U heeft uw account met succes geverifieërd. We hopen dat u een fijne ervaring heeft in %s!",
+        "warn": "Hallo %s, om in deze server te kunnen spreken, moet u uw account verifiëren. Lees het bericht dat ik u verzonden heb zorgvuldig. U heeft %s minuten om verificatie te voltooien!",
+        "in_verif": "U ondergaat nog steeds verificatie. Verifieër uzelf alstublieft met bovenstaande link!",
+        "in_verif_audit": "Lid bevindt zich nog steeds in verificatie"
+    },
+    "autoraidmode": {
+        "raided": "Het lijkt erop dat er een raid plaatsvind in uw server! De volgende gebruikers zijn in deze periode binnengekomen en worden %s: \n%s",
+        "actions": {
+            "verified": "geverifieërd",
+            "kicked": "verwijderd",
+            "banned": "verbannen"
+        }
+    },
+    "heartbeat": {
+        "no_bot_channel": "Een botkanaal is niet ingesteld! Dit is benodigd voor de juiste werking van AltDentifier. Selecteer er alstublieft één!",
+        "no_warn_channel": "Een waarschuwingskanaal is niet ingesteld! Dit is benodigd voor de juiste werking van AltDentifier. Selecteer er alstublieft één!",
+        "cant_send": "Ik kan geen berichten versturen in %s! Zet alstublieft de BERICHTEN VERZENDEN permissie voor mij aan!",
+        "no_rich": "Ik kan geen luxe berichten verzenden in %s! Het inschakelen van INGESLOTEN LINKS wordt aangeraden voor mooiere berichten!",
+        "cant_give": "Ik kan de rol %s niet geven aan leden. Controleer alstublieft of mijn hoogste rol boven %s staat!",
+        "no_role_perm": "Ik kan geen rollen geven aan leden. Controleer alstublieft of ik de ROLLEN BEHEREN permissie heb!",
+        "no_timeout_role": "U heeft ervoor gekozen om leden een rol toe te kennen als ze zich niet verifiëren, maar deze rol is niet ingesteld. Selecteer er alstublieft één!!",
+        "no_kick": "U heeft ervoor gekozen leden te verwijderen als ze zich niet verifieren, maar het zal mij niet lukken om ze te verwijderen. Controleer alstublieft of ik de LEDEN VERWIJDEREN permissie heb!",
+        "no_ban": "U heeft ervoor gekozen leden te verbannen als ze zich niet verifieren, maar het zal mij niet lukken om ze te verbannen. Controleer alstublieft of ik de LEDEN VERBANNEN permissie heb!",
+        "no_audit_log": "U heeft rolblokkade ingeschakeld, maar ik kan het audit-logboek niet inzien. Controleer alstublieft of ik de AUDIT-LOGBOEK WEERGEVEN permissie heb!",
+        "no_verif_methods": "Alle Verificatie Methoden in deze server zijn uitgeschakeld. Leden die binnenkomen zullen zich niet kunnen verifiëren!"
+    },
+    "errors": {
+        "no_member": "U moet een lid benoemen voor dit commando! Kies een gebruiker door hen te vermelden, hun naam of hun ID in te typen!",
+        "not_found": "Sorry, ik kon dit lid niet vinden! Is dit lid in uw server, en heeft u hun naam correct ingevoerd?",
+        "no_perms": "U moet een staflid zijn om dit commando te kunnen gebruiken!",
+        "cannot_apply_role": "Ik kan de %s rol niet geven of afnemen! Controleer of ik de `BEHEER ROLLEN` permissie heb en de %s rol onder mijn hoogste rol is!"
+    },
+    "trustfactor": {
+        "0": "Zeer Gewantrouwd",
+        "1": "Gewantrouwd",
+        "2": "Vertrouwd",
+        "3": "Zeer Vertrouwd"
+    },
+    "tf_threshold": {
+        "0": "Zeer Gewantrouwd",
+        "1": "Gewantrouwd en Lager",
+        "2": "Vertrouwd en Lager",
+        "3": "Zeer Vertrouwd en Lager"
+    },
+    "logging": {
+        "embed": "\nVoor mooiere berichten kunt u overwegen om mij de `Ingesloten Links` permissie te geven!",
+        "before": "Voorheen",
+        "after": "Na",
+        "channel": {
+            "type": "Type",
+            "text": "Tekstkanaal",
+            "vc": "Spraakkanaal",
+            "category": "Categoriekanaal",
+            "store": "Winkelkanaal",
+            "news": "Nieuwskanaal",
+            "other": "Mogelijk een nieuwskanaal of winkelkanaal. AltDentifier heeft op dit moment niet de mogelijkheid om te zien welke dit precies is!"
+        },
+        "channel_create": {
+            "title": "**Kanaal Gemaakt**",
+            "simple": "Een nieuw %s was aangemaakt die %s heet"
+        },
+        "channel_delete": {
+            "title": "**Kanaal Verwijderd**",
+            "simple": "Kanaal %s was verwijderd"
+        },
+        "role": {
+            "name": "**Naam:** %s\n",
+            "color": "**Kleur:** %s\n",
+            "hoisted": "**Apart Weergegeven:** %s\n",
+            "mentionable": "**Vermeldbaar:** %s\n"
+        },
+        "role_create": "**Rol %s Gemaakt**",
+        "role_delete": "**Rol %s Verwijderd**",
+        "member_ban": {
+            "title": "**Lid Verbannen**",
+            "simple": "%s was van uw server verbannen!"
+        },
+        "member_update": {
+            "role": {
+                "given": "**Rol %s Gegeven**",
+                "given_long": "%s heeft de %s rol gekregen!",
+                "given_simple": "**Role Gegeven**",
+                "taken": "**Rol %s Afgenomen**",
+                "taken_long": "%s verloor hun %s rol!",
+                "taken_simple": "**Role Afgenomen**"
+            },
+            "nick": {
+                "title": "**Bijnaam Gewijzigd**",
+                "simple": "%s heeft zijn bijnaam veranderd van %s naar %s"
+            }
+        },
+        "member_join": {
+            "title": "**Lid Binnengetreden**",
+            "simple": "%s is uw server binnengetreden!",
+            "age": "Account Leeftijd",
+            "age_value": "%s dagen",
+            "invite_tracker": "Gebruikte Uitnodiging",
+            "invitetrack_init": "Om invites te tracken moet u ervoor zorgen dat ik de Server Beheren permissie heb. Als ik deze permissie heb, zal ik vanaf het volgende lid invites kunnen traceren!",
+            "no_change": "Geen van de uitnodigingen is veranderd. Misschien is dit lid vie een guilds.join connectie binnengetreden?",
+            "invite": "Dit lid is binnengekomen met uitnodingscode `%s`, gemaakt door %s.\nDe code is %s keer gebruikt!"
+        },
+        "member_leave": {
+            "title": "**Lid Weggegaan**",
+            "simple": "%s heeft uw server verlaten!"
+        },
+        "member_kick": {
+            "title": "Lid Gekickt",
+            "simple": "%s is van uw server gekickt!"
+        },
+        "member_unban": {
+            "title": "**Lid Ontbannen**",
+            "simple": "%s is uit de banlijst gehaald!"
+        },
+        "message_delete": "**Bericht van %s verwijderd in %s**\n",
+        "message_edit": "**Bericht van %s aangepast in %s**\n",
+        "voice_update": {
+            "title": "**Lid is van spraakkanaal veranderd**",
+            "entered": "%s is het spraakkanaal %s binnengetreden!",
+            "left": "%s heeft het spraakkanaal %s verlaten!",
+            "changed": "%s ging van spraakkanaal %s naar %s!"
+        }
+    },
+    "prefix": "Hallo, mijn prefix hier is: **%s**",
+    "mod-log": {
+        "case": "Casus #%s | %s ",
+        "ban": "Ban",
+        "mute": "Mute",
+        "unban": "Unban",
+        "kick":  "Kick",
+        "unmute": "Unmute",
+        "timeout": "Timeout Rol",
+        "target": "Doelwit",
+        "mod": "Moderator",
+        "no_reason": "Geen reden gegeven. U kunt een reden instellen met %sr %s redenhier!",
+        "future": "Deze casus moet nog gebeuren. We hebben geen idee wat plaats gaat vinden!"
     }
-  },
-  "verify": {
-      "whitelist": "%s bevindt zich in uw whitelist. Verificatie zal niet plaatsvinden!",
-      "default_role_warning": "Een standaardrol is ingesteld, maar ik heb geen toestemming om deze te verwijden. Controleer alstublieft of ik de `ROLLEN BEHEREN` permissie heb, en mijn hoogste rol boven de standaardrol staat! Verificatie zal doorgaan, maar het is mogelijk dat ze tijdens het proces kunnen praten in uw server.",
-      "suspicious": "Verdacht account gedetecteerd!",
-      "manual": "Een staflid heeft handmatig de verificatie van %s gestart!",
-      "self": "%s heeft hun eigen verificatie gestart!",
-      "suspicious_long_age": "%s heeft een account waarvan de leeftijd lager is dan uw grens.\n\n%s's account is %s dagen oud, maar uw grens is %s dagen. %s is de server binnengetreden op %s\n\nAltDentifier heeft het verificatieproces gestart.",
-      "suspicious_long_tf": "%s heeft een account waarvan de vertrouwensfactor lager is dan uw grens.\n\n%s's account heef een vertrouwensfactor van %s, maar uw grens is %s.\n\nAltDentifier heeft het verificatieproces gestart.",
-      "manual_long": "\nHeeft een vertrouwensfactor van %s.\n\nAltDentifier heeft het verificatieproces gestart.",
-      "self_long": "\nHeeft een vertrouwensfactor van %s.\n\nAltDentifier heeft het verificatieproces gestart.",
-      "hello": "Hallo %s,\nWelkom in %s. Deze server wordt bescherm door AltDentifier. Om uw account te verifiëren, bezoekt u https://altdentifier.com/verify/%s/%s?lang=%s. U heeft %s minuten om het verificatieproces te voltooien!\nMet vriendelijke groet, de staf van %s .",
-      "actions": {
-        "ban": "u wordt van de server verbannen!",
-        "kick": "u wordt van de server verwijderd!",
-        "role": "u ontvangt de %s rol!",
-        "nothing": "de ondernome actie is afhankelijk van de server staf."
-      },
-      "dm_off": "Hallo %s, ik kan geen privéberichten naar u versturen! Schakel alstublieft privéberichten voor deze server in binnen 1 minuut of %s",
-      "left": "%s heeft de server verlaten voordat verificatie voltooid kon worden!",
-      "no_response": "Geen Reactie!",
-      "action_applied": {
-        "kick": "%s is van de server verwijderd omdat er niet op tijd is gereageerd!",
-        "ban": "%s is van de server verbannen omdat er niet op tijd is gereageerd!",
-        "role": "%s heeft de %s rol gekregen omdat er niet op tijd is gereageerd!",
-        "kick_dm": "U bent van de server verwijderd omdat u niet op tijd gereageerd heeft!",
-        "ban_dm": "U bent van de server verwijderd omdat u niet op tijd gereageerd heeft!",
-        "role_dm": "U heeft de %s rol gekregen omdat u niet op tijd gereageerd heeft!",
-        "nothing_dm": "U heeft niet op tijd gereageerd, de ondernome actie zal door de stafleden van de server bepaald worden!",
-        "nothing": "%s heeft niet op tijd gereageerd!",
-        "ban_fail": "Ik heb geprobeerd om %s verbannen omdat er niet op tijd gereageerd is, maar dat is mislukt! Controleer alstublieft of ik de `LEDEN VERBANNEN` permissie heb!",
-        "kick_fail": "Ik heb geprobeerd om %s verwijderen omdat er niet op tijd gereageerd is, maar dat is mislukt!  Controleer alstublieft of ik de `LEDEN VERWIJDEREN` permissie heb!!",
-        "role_fail": "Ik heb geprobeerd om de %s rol te geven aan %s, maar dat is mislukt! Controleer alstublieft of ik de `ROLLEN BEHEREN` permissie heb, en mijn rol hoger is dan die van het lid!"
-      },
-      "bypass": "%s heeft verificatie voor %s overgeslagen!",
-      "bypass_dm": "%s heeft u de verificatie laten overslaan!",
-      "not_verified": "Dit lid wordt op dit moment niet geverifieërd!",
-      "success": "U heeft uw account met succes geverifieërd. We hopen dat u een fijne ervaring heeft in %s!",
-      "warn": "Hallo %s, om in deze server te kunnen spreken, moet u uw account verifiëren. Lees het bericht dat ik u verzonden heb zorgvuldig. U heeft %s minuten om verificatie te voltooien!",
-      "in_verif": "U ondergaat nog steeds verificatie. Verifieër uzelf alstublieft met bovenstaande link!",
-      "in_verif_audit": "Lid bevindt zich nog steeds in verificatie"
-    },
-  "autoraidmode": {
-      "raided": "Het lijkt erop dat er een raid plaatsvind in uw server! De volgende gebruikers zijn in deze periode binnengekomen en worden %s: \n%s",
-      "actions": {
-          "verified": "geverifieërd",
-          "kicked": "verwijderd",
-          "banned": "verbannen"
-      }
-    },
-  "heartbeat": {
-    "no_bot_channel": "Een botkanaal is niet ingesteld! Dit is benodigd voor de juiste werking van AltDentifier. Selecteer er alstublieft één!",
-    "no_warn_channel": "Een waarschuwingskanaal is niet ingesteld! Dit is benodigd voor de juiste werking van AltDentifier. Selecteer er alstublieft één!",
-    "cant_send": "Ik kan geen berichten versturen in %s! Zet alstublieft de BERICHTEN VERZENDEN permissie voor mij aan!",
-    "no_rich": "Ik kan geen luxe berichten verzenden in %s! Het inschakelen van INGESLOTEN LINKS wordt aangeraden voor mooiere berichten!",
-    "cant_give": "Ik kan de rol %s niet geven aan leden. Controleer alstublieft of mijn hoogste rol boven %s staat!",
-    "no_role_perm": "Ik kan geen rollen geven aan leden. Controleer alstublieft of ik de ROLLEN BEHEREN permissie heb!",
-    "no_timeout_role": "U heeft ervoor gekozen om leden een rol toe te kennen als ze zich niet verifiëren, maar deze rol is niet ingesteld. Selecteer er alstublieft één!!",
-    "no_kick": "U heeft ervoor gekozen leden te verwijderen als ze zich niet verifieren, maar het zal mij niet lukken om ze te verwijderen. Controleer alstublieft of ik de LEDEN VERWIJDEREN permissie heb!",
-    "no_ban": "U heeft ervoor gekozen leden te verbannen als ze zich niet verifieren, maar het zal mij niet lukken om ze te verbannen. Controleer alstublieft of ik de LEDEN VERBANNEN permissie heb!",
-    "no_audit_log": "U heeft rolblokkade ingeschakeld, maar ik kan het audit-logboek niet inzien. Controleer alstublieft of ik de AUDIT-LOGBOEK WEERGEVEN permissie heb!",
-    "no_verif_methods": "Alle Verificatie Methoden in deze server zijn uitgeschakeld. Leden die binnenkomen zullen zich niet kunnen verifiëren!"
-  },
-  "errors": {
-      "no_member": "U moet een lid benoemen voor dit commando! Kies een gebruiker door hen te vermelden, hun naam of hun ID in te typen!",
-      "not_found": "Sorry, ik kon dit lid niet vinden! Is dit lid in uw server, en heeft u hun naam correct ingevoerd?",
-      "no_perms": "U moet een staflid zijn om dit commando te kunnen gebruiken!"
-  },
-  "trustfactor": {
-    "0": "Zeer Gewantrouwd",
-    "1": "Gewantrouwd",
-    "2": "Vertrouwd",
-    "3": "Zeer Vertrouwd"
-  },
-  "tf_threshold": {
-    "0": "Zeer Gewantrouwd",
-    "1": "Gewantrouwd en Lager",
-    "2": "Vertrouwd en Lager",
-    "3": "Zeer Vertrouwd en Lager"
-  },
-  "logging": {
-    "embed": "\nVoor mooiere berichten kunt u overwegen om mij de `Ingesloten Links` permissie te geven!",
-    "before": "Voorheen",
-    "after": "Na",
-    "channel": {
-      "type": "Type",
-      "text": "Tekstkanaal",
-      "vc": "Spraakkanaal",
-      "category": "Categoriekanaal",
-      "other": "Mogelijk een nieuwskanaal of winkelkanaal. AltDentifier heeft op dit moment niet de mogelijkheid om te zien welke dit precies is!"
-    },
-    "channel_create": {
-      "title": "**Kanaal Gemaakt**",
-      "simple": "Een nieuw %s was aangemaakt die %s heet"
-    },
-    "channel_delete": {
-      "title": "**Kanaal Verwijderd**",
-      "simple": "Kanaal %s was verwijderd"
-    },
-    "role": {
-      "name": "**Naam:** %s\n",
-      "color": "**Kleur:** %s\n",
-      "hoisted": "**Apart Weergegeven:** %s\n",
-      "mentionable": "**Vermeldbaar:** %s\n"
-    },
-    "role_create": "**Rol %s Gemaakt**",
-    "role_delete": "**Rol %s Verwijderd**",
-    "member_ban": {
-      "title": "**Lid Verbannen**",
-      "simple": "%s was van uw server verbannen!"
-    },
-    "member_update": {
-      "role": {
-        "given": "**Rol %s Gegeven**",
-        "given_long": "%s heeft de %s rol gekregen!",
-        "given_simple": "**Role Gegeven**",
-        "taken": "**Rol %s Afgenomen**",
-        "taken_long": "%s verloor hun %s rol!",
-        "taken_simple": "**Role Afgenomen**"
-      },
-      "nick": {
-        "title": "**Bijnaam Gewijzigd**",
-        "simple": "%s heeft zijn bijnaam veranderd van %s naar %s"
-      }
-    },
-    "member_join": {
-      "title": "**Lid Binnengetreden**",
-      "simple": "%s is uw server binnengetreden!",
-      "age": "Account Leeftijd",
-      "age_value": "%s dagen"
-    },
-    "member_leave": {
-      "title": "**Lid Weggegaan**",
-      "simple": "%s heeft uw server verlaten!"
-    },
-    "member_unban": {
-      "title": "**Lid Ontbannen**",
-      "simple": "%s is uit de banlijst gehaald!"
-    },
-    "message_delete": "**Bericht van %s verwijderd in %s**\n",
-    "message_edit": "**Bericht van %s aangepast in %s**\n",
-    "voice_update": {
-      "title": "**Lid is van spraakkanaal veranderd**",
-      "entered": "%s is het spraakkanaal %s binnengetreden!",
-      "left": "%s heeft het spraakkanaal %s verlaten!",
-      "changed": "%s ging van spraakkanaal %s naar %s!"
-    }
-  },
-  "prefix": "Hallo, mijn prefix hier is: **%s**"
 }

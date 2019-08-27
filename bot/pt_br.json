@@ -344,7 +344,7 @@
     "suspicious_long_tf":"%s possui uma conta que o Fator de Confiança é menor que seu limite.\n\nA conta de %s tem um Fator de Confiança de %s, mas seu limite é %s.\n\nAltDentifier iniciou o processo de verificação.",
     "manual_long":"O Fator de Confiança deles é %s.\n\nAltDentifier iniciou o processo de verificação!",
     "self_long":"O Fator de Confiança deles é %s.\n\nAltDentifier iniciou o processo de verificação!",
-    "hello":"Olá %s,\nBem-vindo(a) ao %s. Esse servidor é protegido pelo AltDentifier. Para verificar sua conta, visite https://altdentifier.com/verify/%s/%s?lang=%s. Você tem %s minutos para completar a verificação!\nCom cumprimentos, a staff do %s.",
+    "hello":"Olá %s,\nBem-vindo(a) ao %s. Esse servidor é protegido pelo AltDentifier. Para verificar sua conta, visite %s/verify/%s/%s?lang=%s. Você tem %s minutos para completar a verificação!\nCom cumprimentos, a staff do %s.",
     "actions":{
       "ban":"você vai ser banido do servidor!",
       "kick":"você vai ser expulso do servidor!",

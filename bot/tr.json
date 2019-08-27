@@ -1,0 +1,485 @@
+{
+  "commands": {
+    "ban": {
+      "banned": "%s sunucudan yasaklandı!",
+      "ban_reason": "%s, %s sebebiyle sunucudan yasaklandı!",
+      "above": "Kendi rolünüzden yukarıda bulunan roldeki insanları yasaklayamazsınız!",
+      "above_bot": "Bu kullanıcıyı yasaklayamıyorum! Belki de rolü benimkilerden yüksektedir?",
+      "no_perms": "Bu kullanıcıyı yasaklamaya yetecek yetkiniz bulunmuyor!",
+      "no_perms_bot": "Bu kullanıcıyı yasaklayacak yetkiye sahip değilim! Lütfen `Kullanıcıları Yasakla` yetkimin olduğundan emin olun!"
+    },
+    "kick": {
+      "kicked": "%s sunucudan atıldı!",
+      "kick_reason": "%s, %s sebebiyle sunucudan atıldı!",
+      "above": "Kendi rolünüzden yukarıda bulunan roldeki insanları sunucudan atamazsınız!",
+      "above_bot": "Bu kullanıcıyı sunucudan atamıyorum! Belki de rolü benimkilerden yüksektedir?",
+      "no_perms": "Bu kullanıcıyı sunucudan atmaya yetecek yetkiniz bulunmuyor!",
+      "no_perms_bot": "Bu kullanıcıyı sunucudan atacak yetkiye sahip değilim! Lütfen `Kullanıcıları At` yetkimin olduğundan emin olun!"
+    },
+    "info": {
+      "stats": "İstatistikler",
+      "python": "Python Sürümü",
+      "guilds": "Sunucu Sayısı",
+      "d_py_version": "discord.py Sürümü",
+      "shards": "Shardlar",
+      "shard_info": "(Bu Shard/Shard Sayısı)",
+      "owner": "Sahip",
+      "ping": "Ping",
+      "id": "ID: %s",
+      "site": "Site",
+      "users": "Kullanıcılar",
+      "desc": "En iyi Discord güvenlik ve hesap kontrol botu!",
+      "support": "Destek Sunucusu"
+    },
+    "ping": ":ping_pong: Ping: %sms",
+    "user_info": {
+      "creation": "Oluşturulma Tarihi",
+      "join": "Katılma Tarihi",
+      "status": "Durum",
+      "owner": "Sunucu Sahibi",
+      "yes": "Evet",
+      "time": "%a, %-d %b %Y, %H:%M:%S GMT"
+    },
+    "raidmode": {
+      "enabled": "Saldırı modu aktifleştirildi!",
+      "disabled": "Saldırı modu kapatıldı!"
+    },
+    "force": {
+      "afk": "{} kullanıcısı AFK olabilir, doğrulama işlemini yine de başlatmak istiyor musunuz? `yes` ya da `no` yazarak cevaplayın!",
+      "starting": "%s kullanıcısı için doğrulama başlatılıyor!",
+      "no_staff": "Yetkililer zorla doğrulamaya sokulamaz!",
+      "higher_role": "Sizin rolünüzden yukarıdaki bir role sahip olan kullanıcılar zorla doğrulamaya sokulamaz!",
+      "already": "{} kullanıcısı zaten doğrulama aşamasında. Lütfen doğrulamasını tamamlayana kadar bekleyin!",
+      "no_bots": "Botlar doğrulamaya tabi tutulamaz!",
+      "no_whitelist": "Beyaz listedeki kullanıcıları doğrulayamazsınız. Öncelikle onları listeden çıkartmalısınız!",
+      "no_self_already": "Zaten doğrulama aşamasındayken tekrar doğrulama yapamazsınız!",
+      "no_self": "Bu sunucu şahıs doğrulamasına izin vermiyor!",
+      "canceled": "Tamamdır, iptal ettim!"
+    },
+    "donate": "Premium planlarımızı <https://altdentifier.com/premium> adresinden öğrenebilirsiniz!",
+    "upvote": "AltDentifier'ı <https://discordbots.org/bot/altdentifier/vote> adresinden oylayabilirsiniz!",
+    "profile": {
+      "title": "AltDentifier Profili",
+      "tf": "Güven Faktörü",
+      "user_tf": "%s, %s!",
+      "0": "Aşırı Güvenilmez",
+      "1": "Güvenilmez",
+      "2": "Güvenilir",
+      "3": "Çok Güvenilir",
+      "no_dserv_ban": "<:online:313956277808005120> Kullanıcı discord.services'da yasaklı değil!",
+      "dserv_ban": "<:dnd:313956276893646850> Kullanıcı discord.services'da {} sebebiyle yasaklanmış!",
+      "no_ksoft_ban": "<:online:313956277808005120> Kullanıcı KSoft Bans'da yasaklı değil!",
+      "ksoft_ban": "<:dnd:313956276893646850> Kullanıcı KSoft Bans'da yasaklanmış!",
+      "bots": "Botlar Güven Faktörüne sahip değillerdir!",
+      "not_found": "Belirtilen kullanıcı bulunamadı!"
+    },
+    "feedback": {
+      "blocked": "Geri bildirim sistemini kötüye kullandığınız için bu özelliği kullanmanız yasaklanmıştır!",
+      "not_supported": "Bu geri bildirim türü desteklenmiyor. Sadece `bug`, `feature` ya da `support` türleri desteklenmektedir!",
+      "limit": "Sadece saatte bir geri bildirim gönderebilirsiniz.",
+      "missing_args": "Geri bildirim göndermek için bir tür ve mesajınızı girmelisiniz!",
+      "sent": "Geri bildirim gönderildi!"
+    },
+    "heartbeat": {
+      "title": "AltDentifier Heartbeat",
+      "no_issues": "Ayarlarınızda herhangi bir sıkıntı yok gibi gözüküyor!"
+    },
+    "broadcast": {
+      "removed": "%s yayın listesinden çıkartıldı!",
+      "added": "%s yayın listesine eklendi!"
+    },
+    "help": {
+      "title": "Yardım",
+      "desc": "Spam ve yan hesaplara karşı koruma.\n[arg] argümanın gerekli olduğunu belirtir.\n<arg> argümanın isteğe bağlı olduğunu belirtir.",
+      "page": "Sayfa %s/3 - Yapımcı: Auxim#0001",
+      "tip": "İpucu",
+      "tips": [
+        "İnternet sitemizde de komutlar sayfamız olduğunu biliyor muydunuz? https://altdentifier.com/commands adresini kullanabilirsiniz.",
+        "Prefixi unuttuğunuzda beni etiketleyebileceğinizi biliyor muydunuz? Sadece <@372022813839851520> yapın ve sonucu görün.",
+        "Yardım menüsünde geçiş yapmak için tepkileri de kullanabileceğinizi biliyor muydunuz? Tek ihtiyacım olan TEPKİ EKLE yetkisi. MESAJLARI YÖNET yetkisi verirseniz sizin için tepkileri de temizleyebilirim!",
+        "Bir sürü kullanıcı girdiğinde saldırı modunu otomatik olarak başlatabileceğinizi biliyor muydunuz? https://altdentifier.com/dashboard adresini ziyaret edin, sunucunuzu seçin ve saldırı modu sekmesini inceleyin.",
+        "Doğrulama ekranına özel resim ekleyebileceğiniz, sitede mesajlar kısmını ayarlayabileceğiniz ekstra özellikler satın alabileceğiniz Patreon sayfamızın olduğunu biliyor muydunuz? Daha fazlası için https://altdentifier.com/premium adresini ziyaret edin!\nYapılan tüm bağışlar bizim için çok değerlidir.",
+        "Yardım menülerine isimleriyle de bakabileceğinizi biliyor muydunuz? Denemek istersen, <@372022813839851520> help moderation yazabilirsin!",
+        "Çevirilerimizin tamamen topluluk tarafından yapıldığını biliyor muydunuz? Eğer ilgini çektiyse, destek suncusuna katıl ve Auxim'e danış.\nŞuanda Almanca ve İsveççe çevirmen arıyoruz fakat diğerlerine de kapımız açık!"
+      ],
+      "doesnt_exist": "Bu yardım sayfası geçerli değil!",
+      "no_args": "Bu komutun herhangi bir parametresi yok!",
+      "no_perms": "Bu komut için herhangi bir yetki gerekmiyor!",
+      "requested_by": "%s tarafından istendi.",
+      "usage": "Kullanım",
+      "aliases": "Alternatifler",
+      "perms": "Yetkiler",
+      "cmd_desc": "Açıklama",
+      "no_usage": "Yok",
+      "no_desc": "Bu komut için uzun açıklama ayarlanmamış!",
+      "commands": {
+        "bypass": {
+          "usage": "[kullanıcı]",
+          "permissions": "SUNUCUYU YÖNET/YETKİLİ ROLÜ",
+          "short": "Kullanıcının doğrulamayı atlamasını sağlar",
+          "long": "Bir kullanıcının doğrulama aşamasını atlaması için bu komutu kullanın. Bu, eğer kullanıcıyı tanıyorsanız işinize yarayabilir.\nKullanıcıyı etiketleyebilir, ismini veya ID'sini girebilirsiniz: ;bypass Auxim"
+        },
+        "raidmode": {
+          "permissions": "SUNUCUYU YÖNET/YETKİLİ ROLÜ",
+          "short": "Giren tüm kullanıcıları doğrulamaya sokan saldırı modunu aktifleştirir",
+          "long": "Saldırı modunu aktifleştirmek veya kapatmak için bu komutu kullanın. Saldırı modu ayarlarınıza göre giren kullanıcıları doğrular, yasaklar veya sunucudan atar.\nEğer isterseniz otomatik saldırı modunu da kullanabilirsiniz, bunun için https://altdentifier.com/dashboard adresine göz atın!"
+        },
+        "force": {
+          "usage": "<kullanıcı>",
+          "permissions": "SUNUCUYU YÖNET/YETKİLİ ROLÜ",
+          "short": "Bir kullanıcı için manuel doğrulama işlemini başlatır",
+          "long": "Bir kullanıcıyı doğrulatmak için bu komutu kullanın. Eğer giren kişiye güvenmiyorsanız bu komutu kullanabilirsiniz.\nEtiketleyebilir, ismini veya ID'sini yazarak manuel doğrulama işlemini yapabilirsiniz ;force Auxim"
+        },
+        "ban": {
+          "usage": "[kullanıcı] <gün kadar mesajını sil> <neden>",
+          "permissions": "KULLANICILARI YASAKLA",
+          "short": "Bir kullanıcıyı yasaklar",
+          "long": "Sunucunuzdan birini yasaklar. Etiketleyebilir, ismini veya ID'sini yazarak yasaklama işlemini yapabilirsiniz: ;ban Auxim\nEğer isterseniz silinmesini istediğiniz mesajların 1'den 7'ye kadar gün sayısını yazabilirsiniz. Sonrasında da Denetim Kayıtlarında gözükecek bir neden girebilirsiniz."
+        },
+        "kick": {
+          "usage": "[kullanıcı] <neden>",
+          "permissions": "KULLANICILARI AT",
+          "short": "Bir kullanıcıyı sunucudan atar",
+          "long": "Sunucunuzdan birini sunucudan atar. Etiketleyebilir, ismini veya ID'sini yazarak atma işlemini yapabilirsiniz: ;kick Auxim\nEğer isterseniz Denetim Kayıtlarında da gözükecek bir neden girebilirsiniz."
+        },
+        "donate": {
+          "short": "AltDentifier'ın gelişmesinde katkınız olsun"
+        },
+        "feedback": {
+          "usage": "[tür] [mesaj]",
+          "short": "Geliştiriciye bir geri bilidrim gönderir. 'bug', 'feature' ve 'support' türlerini destekler.",
+          "long": "Geliştiriciye bir geri bildirim gönder. Geri bildirim türünüzünü girmeli ve bu tür 'bug', 'feature', 'support'dan biri olmalıdır.\nBu komutun spam olasılığını engellemek için bir saatlik zaman kısıtlaması olduğunu unutmayın ve yazdıklarınızdan emin olun!"
+        },
+        "heartbeat": {
+          "short": "Ayarlarınızdaki hataları kontrol edin",
+          "permissions": "SUNUCUYU YÖNET/YETKİLİ ROLÜ",
+          "long": "Heartbeat sunucu ayarlarınızdaki olası hataları kontrol eder. Bu komutu kullanarak neleri düzeltmeniz gerektiğini görebilirsiniz!"
+        },
+        "help": {
+          "usage": "<sayfa numarası, kategori ya da komut ismi>",
+          "short": "Bu güzelim komutu gösterir",
+          "long": "Bu komut yardım menüsünü gösterir. Şuankini yani. Sen ne sanmıştın ki?\nEğer isterseniz sayfa numarası, kategori ya da komut ismi girebilirsiniz!"
+        },
+        "info": {
+          "short": "Bot istatistikleri ve bilgileri"
+        },
+        "invite": {
+          "short": "Botun davet etme linkini gösterir"
+        },
+        "ping": {
+          "short": "Botun Discord'a olan gecikmesini gösterir"
+        },
+        "profile": {
+          "usage": "<kullanıcı>",
+          "short": "Kullanıcının profil bilgilerini gösterir"
+        },
+        "settings": {
+          "usage": "<ayar numrası>",
+          "permissions": "SUNUCUYU YÖNET/YÖNETİCİ ROLÜ",
+          "short": "Botun ayarlarını değiştirir"
+        },
+        "togglebroadcast": {
+          "usage": "<kanal>",
+          "permissions": "SUNUCUYU YÖNET/YÖNETİCİ ROLÜ",
+          "short": "Geçerli kanal için güncelleme ve duyuru yayınlarını ayarlar",
+          "long": "Bu kanal için güncelleme mesajlarını ayarlar. Ayarlandığında ise güncelleme notları otomatik olarak buraya gönderilecektir"
+        },
+        "userinfo": {
+          "usage": "<kullanıcı>",
+          "short": "Kendiniz veya başkaları hakkında bilgileri görüntüleyin"
+        }
+      },
+      "embed": "Bu kanal için Embed Mesajları yetkisi verirseniz sizlere çok daha güzel yardım mesajları gösterebilirim!"
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "list": "1. AltDentification\n2. Varsayılan Rol\n3. Yönetici Rolleri\n4. Yetkili Rolleri\n5. Kayıtlar\n6. Uyarı Kanalı\n7. Bot Kanalı\n8. Language\n9. Prefix\n10. Zaman dilimi\n11. Minimum hesap yaşı\n12. Otomatik rol\n13. Doğrulama Yöntemleri\n14. Zaman aşımı eylemi\n15. Reddit Minimum Karma\n16. Kayıt kanalı\n17. Kayıt ayarları\n18. Doğrulama bildirimleri\n19. Güven Faktörü\n\nİptal etmek için `exit` yazın!",
+      "list_tf": "1. AltDentification\n2. Varsayılan Rol\n3. Yönetici Rolleri\n4. Yetkili Rolleri\n5. Kayıtlar\n6. Uyarı Kanalı\n7. Bot Kanalı\n8. Language\n9. Prefix\n10. Zaman dilimi\n11. Güven Faktörü sınırı\n12. Otomatik rol\n13. Doğrulama Yöntemleri\n14. Zaman aşımı eylemi\n15. Reddit Minimum Karma\n16. Kayıt kanalı\n17. Kayıt ayarları\n18. Doğrulama bildirimleri\n19. Güven Faktörü\n\nİptal etmek için `exit` yazın!",
+      "canceled": "Tamamdır, iptal ettim!",
+      "dashboard": "Ayarları yönetmenin daha kolay bir yolunu mu arıyorsunuz? https://altdentifier.com/dashboard adresinden ya da yukarıdaki mavi linke tıklayarak kontrol panelimizi ziyaret edin!",
+      "dashboard_notif": "Tüm ayarlarınız artık kontrol panelimizden ayarlanabilir! Paneli kullanmanızı şiddetle tavsiye ediyoruz, zira ayarlar komutunun güncellenmesi panele göre daha uzun sürebilir ve yeni özelliklerden mahrum kalabilirsiniz!\nKontrol paneli için <https://altdentifier.com/dashboard> adresini ziyaret edin!",
+      "not_number": "Ayarlar argümanı bir numara olmalıdır!",
+      "already_open": "Ayarlar şu anda zaten başka bir mesajda gösteriliyor. Lütfen onu kullanın!",
+      "altdentification": {
+        "currently_enabled": "AltDentification şu anda aktif! Kapatmak ister misiniz? `yes` veya `no` yazın.",
+        "currently_disabled": "AltDentification şu anda kapalı! Aktifleştirmek ister misiniz? `yes` veya `no` yazın.",
+        "enabled": "AltDentification aktifleştirdi!",
+        "disabled": "AltDentification kapatıldı"
+      },
+      "default_role": {
+        "not_set": "Varsayılan Rolünüz ayarlı değil, hemen ayarlamak ister misiniz? `yes` veya `no` yazın.",
+        "input": "Varsayılan Rolü etiketleyin, ismini ya da ID'sini girin.",
+        "not_found": "Üzgünüm, böyle bir rol bulamıyorum, her şeyi doğru girdiğinizden emin olun!",
+        "set_to": "Varsayılan Rol `%s` olarak ayarlandı!",
+        "is_set": "Şuanki Varsayılan Rol `%s` olarak ayarlı. Değiştirmek ister misiniz? Eğer hala ters varsayılan rolünüz aktifse, lütfen kapatın ve kontrol panelinden bir doğrulama rolü ekleyin! Bu değişiklikten dolayı artık tersleme işlemini yapamazsınız! `yes`, `no` veya `reverse` yazın.",
+        "reverse_disabled": "Tersleme kapatıldı!",
+        "no_perms": "Varsayılan Rol ayarlanmış durumda ancak `ROLLERİ YÖNET` yetkim bulunmadığından veya Varsayılan Rol, şu anki rolümden yukarıda olduğundan dolayı kullanıcılara müdahele edemiyorum!"
+      },
+      "admin_roles": {
+        "current": "Şuanki Yönetici Rolleriniz: ```\n%s```. Rol eklemek ya da kaldırmak ister misiniz? Eklemek için `add`, kaldırmak için `remove` ya da çıkmak için `no` yazın! Yönetici Rollerinin otomatik olarak Yetkili Rollerine de eklendiğini unutmayın, bu rolleri Yönetici Rollerinden silmeniz, onları Yetkili Rollerinden silmeyecektir!",
+        "input": "Yönetici Rollerine eklemek ya da bu listeden çıkartmak istedidğiniz rolü etiketleyin, ismini veya ID'sini yazın!",
+        "added": "%s rolü Yönetici Rollerine eklendi!",
+        "removed": "%s rolü Yönetici Rollerinden kaldırıldı!",
+        "no_roles": "Sunucunuzda hiçbir Yönetici Rolü bulunmuyor! Hemen eklemek ya da kaldırmak ister misinzi? Eklemek için `add`, kaldırmak için `remove` ya da çıkmak için `no` yazın! Yönetici Rollerinin otomatik olarak Yetkili Rollerine de eklendiğini unutmayın, bu rolleri Yönetici Rollerinden silmeniz, onları Yetkili Rollerinden silmeyecektir!"
+      },
+      "mod_roles": {
+        "current": "Şuanki Yetkili Rolleriniz: ```\n%s```. Rol eklemek ya da kaldırmak ister misiniz? Eklemek için `add`, kaldırmak için `remove` ya da çıkmak için `no` yazın!",
+        "input": "Yetkili Rollerine eklemek ya da bu listeden çıkartmak istedidğiniz rolü etiketleyin, ismini veya ID'sini yazın!",
+        "added": "%s rolü Yetkili Rollerine eklendi!",
+        "removed": "%s rolü yetkili rollerinden kaldırıldı!",
+        "no_roles": "Sunucunuzda hiçbir Yetkili Rolü bulunmuyor! Hemen eklemek ya da kaldırmak ister misinzi? Eklemek için `add`, kaldırmak için `remove` ya da çıkmak için `no` yazın!"
+      },
+      "logging": {
+        "currently_enabled": "Kayıt özelliği şu anda açık, kapatmak ister misiniz? `yes` ya da `no` yazın!",
+        "currently_disabled": "Kayıt özelliği şu anda kapalı, aktifleştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "enabled": "Kayıtlar aktifleştirildi!",
+        "disabled": "Kayıt özelliği kapatıldı!"
+      },
+      "warning_channel": {
+        "is_set": "Uyarı kanalı şu anda %s olarak ayarlı, değiştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "not_set": "Ayarlı bir Uyarı kanalınız bulunmuyor! Hemen ayarlamak ister misiniz? Bir Uyarı kanalı, AltDentifier'ın çalışması için gereklidir! `yes` ya da `no` yazın.",
+        "input": "Uyarı kanalı olarak ayarlamak istediğiniz kanalı etiketleyin, ismini ya da ID'sini girin!",
+        "set_to": "Uyarı kanalı %s olarak ayarlandı!",
+        "not_found": "Üzgünüm, bu kanalı bulamıyorum, her şeyi doğru girdiğinizden emin olun!"
+      },
+      "bot_channel": {
+        "is_set": "Bot kanalı şu anda %s olarak ayarlı, değiştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "not_set": "Ayarlı bir Bot kanalınız bulunmuyor! Hemen ayarlamak ister misiniz? Bir Bot kanalı, AltDentifier'ın çalışması için gereklidir! `yes` ya da `no` yazın.",
+        "input": "Bot kanalı olarak ayarlamak istediğiniz kanalı etiketleyin, ismini ya da ID'sini girin!",
+        "set_to": "Bot kanalı %s olarak ayarlandı!",
+        "not_found": "Üzgünüm, bu kanalı bulamıyorum, her şeyi doğru girdiğinizden emin olun!"
+      },
+      "language": {
+        "change": "Sunucunuzun dilini değiştirmek istiyor musunuz? Şu anda dil %s olarak ayarlanmış. `yes` ya da `no` yazın!",
+        "change_to": "Dili ne olarak değiştirmek istiyorsunuz? Şu anda bu diller mevcut: %s",
+        "set": "Dil başarıyla %s olarak ayarlandı!"
+      },
+      "prefix": {
+        "change": "Bu sunucu için botun prefixini değiştirmek istiyor musunuz? Şu anda prefix `%s` olarak ayarlı. `yes` ya da `no` yazın!",
+        "change_to": "Prefixi ne olarak değiştirmek istersiniz?",
+        "set": "Prefix başarıyla %s olarak ayarlandı. Prefixi unuttuğunuz zaman etiketleyebileceğinizi unutmayın!"
+      },
+      "timezone": {
+        "change": "Şu anda zaman diliminiz UTC %s%s olarak ayarlı. Değiştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "change_to": "Zaman diliminiz ile UTC zaman dilimi arasındaki farkı girin veya bir zaman dilimi kodu girin; `Europe/Istanbul`.",
+        "not_found": "Böyle bir zaman dilimi bulunamadı. Lütfen komutu tekrar çalıştırarak yeniden deneyin!",
+        "set": "Zaman dilimi başarıyla %s (UTC %s%s) olarak ayarlandı!"
+      },
+      "minimum_age": {
+        "change": "Minimum hesap yaşı şuanda %s olarak ayarlı. Kullanıcılar doğrulamayı geçmek için hesaplarının bu sayıdan büyük olmaları gerekir. Değiştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "change_to": "Minimum hesap yaşını ne olarak değiştirmek istersiniz? Gün olarak girin!",
+        "set": "Minimum hesap yaşı %s gün olarak ayarlandı!"
+      },
+      "autorole": {
+        "currently_enabled": "Otomatik rol şu anda aktif. Kapatmak ister misiniz? `yes` ya da `no` yazın!",
+        "currently_disabled": "Otomatik rol şu anda kapalı. Aktifleştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "enabled": "Otomatik rol aktifleştirildi!",
+        "disabled": "Otomatik rol özelliği kapatıldı!",
+        "no_role": "Varsayılan Rolünüzü ayarlamadan Otomatik Rol özelliğini aktifleştiremezsiniz!",
+        "no_perms": "Varayılan rolü verme yetkim bulunmadığı sürece Otomatik Rol özelliğini aktifleştiremezsiniz! Lütfen rollerimden en az birinin varsayılan rolden yukarıda olduğuna ve `ROLLERİ YÖNET` yetkimin bulunduğuna emin olun.",
+        "reverse_active": "Terslenmiş Varsayılan Rol aktifken Otomatik Rol özelliğini aktifleştiremezsiniz!"
+      },
+      "authentication_methods": {
+        "change": "Sunucunuzda kullanabileceğiniz doğrulama yöntemleri şunlardır:\n%s.\n\nReddit, Twitter, Steam, Overwatch, Captcha, Xbox ve YouTube. Aktifleştirmek veya kapatmak istediğiniz doğrulama yönteminin ismini girin ya da çıkmak için `no` yazın!",
+        "disabled": "%s doğrulaması kapatıldı!",
+        "enabled": "%s doğrulaması etkinleştirildi!",
+        "one_active": "En az bir doğrulama yöntemi aktifleştirmelisiniz!"
+      },
+      "timeout_action": {
+        "change": "Zamanında doğrulamadan geçemeyen kullanıcılar için bir eylem ayarlayın. Şu anki eylem %s olarak ayarlanmış. Zamanı geçirenleri suucudan atmak için`kick`, yasaklamak için `ban`, belirli bir rol vermek için `role`, hiçbir şey yapmamak için ise `nothing` yazabilir, şuanki ayarı korumak için `no` yazabilirsiniz!",
+        "chose_role": "Rol eylemini kullanmak için kullanıcılar cevap vermediğinde alabilecekleri bir rol seçmeniz gereklidir. Şimdi bu rolü etiketleyin, ismini ya da ID'sini girin!",
+        "not_found": "Böyle bir rol bulunamadı, lütfen komutunu yeniden çalıştırın ya da başka bir zaman aşımı eylemi seçin!",
+        "role": "Zaman aşımı eylemi `rol verme` olarak ayarlandı. Zamanında doğrulama yapmayan kullanıcılar bundan sonra `%s` rolünü alacaklar!",
+        "no_perms_role": "Eğer belirttiğiniz rolü kullanıcılara veremeyeceksem zaman aşımı eylemini rol verme olarak ayarlamanın bir mantığı yok! Lütfen rollerimden en az bir tanesinin istediğiniz rolden yukarıda olduğuna ve `ROLLERİ YÖNET` yetkimin olduğuna emin olun!",
+        "no_perms_kick": "Eğer kullanıcıları sunucudan atamayacaksam zaman aşımı eylemini sunucudan atma olarak ayarlamanın bir mantığı yok! Lütfen `KULLANICILARI AT` yetkimin olduğundan emin olun!",
+        "no_perms_ban": "Eğer kullanıcıları sunucudan yasaklayamayacaksam zaman aşımı eylemini sunucudan yasaklama olarak ayarlamanın bir mantığı yok! Lütfen `KULLANICILARI YASAKLA` yetkimin olduğundan emin olun!",
+        "set": "Zaman aşımı eylemi başarıyla %s olarak ayarlandı!"
+      },
+      "minimum_karma": {
+        "change": "Minimum Reddit Karma'sı şu anda %s olarak ayarlı. Değiştirmek istiyor musunuz? `yes` ya da `no` yazın.",
+        "change_to": "Minimum Reddit Karma'sınık aç olarak değiştirmek istiyorsunuz? Bunun yorum ve link toplamı karma'sı olduğunu ve bir sayı olması gerektiğini unutmayın!",
+        "not_number": "Minimum Karma değeri bir sayı olmalıdır!",
+        "set": "Minimum Reddit Karma başarıyla %s olarak ayarlandı!"
+      },
+      "log_channel": {
+        "not_enabled": "Kayıt özelliğiniz atkif olmadığından dolayı kayıt kanalı ayarı yapamıyorsunuz! Lütfen önce kayıt özelliğini aktifleştirin!",
+        "not_set": "Şu anda ayarlı bir kayıt kanalınız bulunmuyor! Hemen ayarlamak ister misiniz? `yes` ya da `no` yazın!",
+        "current": "Şu anda kayıt kanalınız %s olarak ayarlı. Değiştirmek istiyor musunuz? `yes` ya da `no` yazın!",
+        "input": "Kayıt kanalı olarak ayarlamak istediğiniz kanalı etiketleyin, ismini veya ID'sini yazın!",
+        "set": "Kayıt kanalı başarıyla %s olarak ayarlandı!"
+      },
+      "log_options": {
+        "current": "Şu anda kullanılabilir kayıt ayarları şunlardır:\n\n%s!Açmak veya kapatmak istediğiniz kayıt ayarının ismini girin ya da iptal etmek için `no` yazın.\n\nGeçerli ayarlar `member join`, `member leave`, `member update`, `member ban`, `member unban`, `channel create`, `channel delete`, `role create`, `role delete`, `voice update`, `message edit` ve `message delete`'dir!",
+        "not_enabled": "Kayıt özelliğiniz aktif olmadığından dolayı kayıt ayarları yapamazsınız! Lütfen önce kayıt özelliğini aktifleştirin!",
+        "enabled": "%s kayıtları aktifleştirildi!",
+        "disabled": "%s kayıtları kapatıldı!"
+      },
+      "verif_alerts": {
+        "currently_disabled": "Doğrulama Bildirimleri şu anda kapalı. Doğrulama Bildirimleri kullanıcılar doğrulama aşamasındayken onları Uyarı Kanalından etiketleyecektir! Bunları aktifleştirmek ister misiniz? `yes` ya da `no` yazın!",
+        "currently_enabled": "Doğrulama Bildirimleri şu anda aktif. Bu özelliği kapatmak ister misiniz? `yes` ya da `no` yazın!",
+        "disabled": "Doğrulama Bildirimleri kapatıldı!",
+        "enabled": "Doğrulama Bildirimleri başarıyla aktifleştirildi!"
+      },
+      "trustfactor": {
+        "currently_enabled": "Güven Faktörü şu anda aktif. Sadece hesap yaşı doğrulamasına geri dönmek istiyor musunuz? `yes` ya da `no` yazın!",
+        "currently_disabled": "Güven Fakötürü şu anda kapalı. Güven Faktörü, hesaplar doğrulanırken daha çok faktörü ele alarak kontrol sağlar. Güven Faktörü özelliğini aktifleştirmek istiyor musunuz? `yes` ya da `no` yazın!",
+        "enabled": "Güven Faktörü özelliği başarıyla aktifleştirildi!",
+        "disabled": "Güven Faktörü özelliği kapatıldı!",
+        "threshold": "Güven Faktörü sınırınız şu anda `%s` olarak ayarlı! Değiştirmek istiyor musunuz? `yes` ya da `no` yazın!",
+        "input": "Hangi Güven Seviyesini kullanmak istiyorsunuz? Aşırı Güvenilmez için `0`, Güvenilmeyen ve Altı (Varsayılan) için `1`, Güvenilir ve Altı için `2`, Çok Güvenilir ve Altı (Herkes) için `3` yazabilir ya da iptal etmek için `exit` yazabilirsiniz!",
+        "set_to_sd": "Güven Fakötürü sınırınız `Aşırı Güvenilmez` olarak ayarlandı!",
+        "set_to_d": "Güven Fakötürü sınırınız `Güvenilmeyen ve Altı` olarak ayarlandı!",
+        "set_to_t": "Güven Fakötürü sınırınız `Güvenilir ve Altı` olarak ayarlandı!",
+        "set_to_vt": "Güven Fakötürü sınırınız `Çok Güvenilir ve Altı`, yani herkesin doğrulaması gerektiği sistem olarak ayarlandı!"
+      }
+    }
+  },
+  "verify": {
+    "whitelist": "{} kullanıcısı beyaz listenizde olduğu için doğrulama yapılmayacaktır!",
+    "default_role_warning": "Bir Varsayılan Rol ayarlıydı ancak onu kaldırabilmek için yetkim yetmiyor. Lütfen `ROLLERİ YÖNET` yetkimin olduğuna ve varsayılan rolün sıralamada benim rollerimden en az bir tanesinin altında olduğundan emin olun! Doğrulama devam edecektir ancak kullanıcılar bu süreçte konuşabilirler.",
+    "suspicious": "Şüpheli bir hesap tespit edildi!",
+    "manual": "Bir çalışan %s kullanıcısı için manuel doğrulama başlattı!",
+    "self": "%s kendisine doğrulama başlattı",
+    "suspicious_long_age": "%s kullanıcısı, sınırınızın altında bulunan bir hesap yaşına sahip.\n\n%s kullancıısının hesabı %s gündür var fakat sizin sınırınız %s gün olarak ayarlı. %s sunucuya %s tarihinde giriş yaptılar.\n\nAltDentifier doğrulama işlemini başlatıyor.",
+    "suspicious_long_tf": "%s kullanıcısı, sınırınızın altında bulunan bir güven faktörüne sahip.\n\n%s kullanıcısının güven faktörü %s fakat sizin sınırınız %s olarak ayarlı.\n\nAltDentifier doğrulama işlemini başlatıyor.",
+    "manual_long": "\nGüven faktörleri: %s.\n\nAltDentifier doğrulama işlemini başlatıyor!",
+    "self_long": "\nGüven faktörleri: %s.\n\nAltDentifier doğrulama işlemini başlatıyor!",
+    "hello": "Merhaba %s,\n%s sunucusuna hoş geldin. Bu sunucu AltDentifier tarafından korunmaktadır. Hesabınızı doğrulamak için lütfen %s/verify/%s/%s?lang=%s adresini ziyaret edin. Doğrulamayı tamamlamak için %s dakikanız var!\nSaygılarımızla, %s yetkili ekibi.",
+    "actions": {
+      "ban": "sunucudan yasaklanın!",
+      "kick": "sunucudan atılın!",
+      "role": "sunucuda %s rolünü alın!",
+      "nothing": "yapılacak eylem sunucu yetkililerinin kararına göre olacaktır."
+    },
+    "dm_off": "Merhaba %s, sana özelden mesaj gönderemiyorum! Lütfen 1 dakika içerisinde bu sunucu için özel mesajlarınızı aktifleştirin ya da %s",
+    "left": "%s doğrulama işlemi tamamlanmadan sunucudan ayrıldı!",
+    "no_response": "Cevap yok!",
+    "action_applied": {
+      "kick": "%s cevap vermediği için sunucudan atıldı!",
+      "ban": "%s cevap vermediği için sunucudan yasaklandı!",
+      "role": "%s kullanıcısına cevap vermediği için %s rolü verildi!",
+      "kick_dm": "Cevap vermediğiniz için sunucudan atıldınız!",
+      "ban_dm": "Cevap vermediğiniz için sunucudan yasaklandınız!",
+      "role_dm": "Cevap vermediğiniz için sunucuda %s rolünü aldınız!",
+      "nothing_dm": "Zamanında cevap vermediniz, bundan sonra ne olacağına yetkili ekibi karar verecek!",
+      "nothing": "%s cevap vermedi!",
+      "ban_fail": "Cevap vermediğinden dolayı %s kullanıcısını yasaklamak istedim ancak başaramadım! Lütfen `KULLANICILARI YASAKLA` yetkimin olduğundan emin olun!",
+      "kick_fail": "Cevap vermediğinden dolayı %s kullanıcısını sunucudan atmak istedim ancak başaramadım! Lütfen `KULLANICILARI AT` yetkimin olduğundan emin olun!",
+      "role_fail": "Cevap vermediği için %s rolünü %s kullanıcısına vermek istedim ancak başaramadım! Lütfen `ROLLERİ YÖNET` yetkim olduğuna ve en az bir rolümün kullanıcınınkilerden bir yukarıda olduğuna emin olun!"
+    },
+    "bypass": "%s adlı yetkili %s kullanıcısını atladı!",
+    "bypass_dm": "%s adlı yetkili doğrulamayı atlamanıza izin verdi!",
+    "not_verified": "Bu kullanıcı zaten doğrulanmyor!",
+    "success": "Hesabınızı başarıyla doğruladınız. %s sunucusunda güzel vakit geçirmenizi diliyoruz!",
+    "warn": "Merhaba %s, bu sunucuya katılmak için hesabınızı doğrulamalısınız. Lütfen size gönderdiğim mesajı dikkatlice okuyun ve işlemleri  yapın. Doğrulamayı tamamlamak için %s dakikanız var!",
+    "in_verif": "Şu anda hala doğrulanıyorsunuz. Lütfen yukarıdaki linki kullanarak doğrulayın!",
+    "in_verif_audit": "Kullanıcı hala doğrulama aşamasında"
+  },
+  "autoraidmode": {
+    "raided": "Görünüşe göre sunucunuz saldırı altında! Bu saldırı sırasında şu kullanıcılar giriş yaptı ve {}: \n{}",
+    "actions": {
+      "verified": "doğrulandı",
+      "kicked": "atıldı",
+      "banned": "yasakladı"
+    }
+  },
+  "heartbeat": {
+    "no_bot_channel": "Bir bot kanalı ayarlı değil! Bu kanal AltDentifier'ın çalışması için gereklidir. Lütfen bir tane ayarlayın!",
+    "no_warn_channel": "Bir uyarı kanalı ayarlı değil! Bu kanal AltDentifier'ın çalışması için gereklidir. Lütfen bir tane ayarlayın!",
+    "cant_send": "%s kanalında mesaj gönderemiyorum! Lütfen `MESAJ GÖNDER` yetkisini verin!",
+    "no_rich": "%s kanalına zengin içerikli mesajlar gönderemiyorum! `EMBED MESAJLARI` yetkisini aktifleştirmek daha güzel mesajlar için tavsiye edilmektedir!",
+    "cant_give": "%s rolünü yeni kullanıcılara veremiyorum. Sıralamada en yüksekte bulunan rolümün %s rolünden yukarıda olduğundan emin olun.",
+    "no_role_perm": "Yeni kullanıcıları hiçbir rol veremiyorum. Lütfen `ROLLERİ YÖNET` yetkisi verin!",
+    "no_timeout_role": "Kullanıcılar doğrulamada başarısız olduklarında rol verilmesini seçtiniz ancak herhangi bir rol ayarlamadınız. Lütfen bir tane ayarlayın!",
+    "no_kick": "Kullanıcılar doğrulamada başarısız olduklarında sunucudan atılmalarını seçtiniz ancak onları atacak yetkim olmadığını unuttunuz. Lütfen `KULLANICILARI AT` yetkisi verin!",
+    "no_ban": "Kullanıcılar doğrulamada başarısız olduklarında sunucudan yasaklanmalarını seçtiniz ancak onları atacak yetkim olmadığını unuttunuz. Lütfen `KULLANICILARI YASAKLA` yetkisi verin!",
+    "no_audit_log": "Rol Verme Yasağını etkinleştirdiniz ancak Denetim Kayıtlarını görme yetkisi vermediniz. Lütfen `DENETİM KAYITLARINI OKU` yetkisi verin!",
+    "no_verif_methods": "Bu sunucuda tüm Doğrulama Yöntemleri kapatılmıştır. Giren kullanıcılara doğrulama işlemi uygulanmayacaktır!"
+  },
+  "errors": {
+    "no_member": "Bu komut için bir kullanıcı belirtmelisiniz! Kullanıcı seçimini etiketleyerek, ismini ya da ID'sini yazarak yapabilirsiniz!",
+    "not_found": "Üzgünüm, bu kullanıcıyı bulamıyorum! Bu kullanıcı sunucunuzda ve adını doğru yazdınız mı?",
+    "no_perms": "Bunu kullanabilmek için ekipten olmanız gerekmektedir!"
+  },
+  "trustfactor": {
+    "0": "Aşırı Güvenilmez",
+    "1": "Güvenilmez",
+    "2": "Güvenilir",
+    "3": "Çok Güvenilir"
+  },
+  "tf_threshold": {
+    "0": "Aşırı Güvenilmez",
+    "1": "Güvenilmez ve Altı",
+    "2": "Güvenilir ve Altı",
+    "3": "Çok Güvenilir ve Altı"
+  },
+  "logging": {
+    "embed": "\nDaha güzel mesajlar için `EMBED MESAJLARI` yetkisini aktifleştirebilirsiniz",
+    "before": "Önceki",
+    "after": "Sonraki",
+    "channel": {
+      "type": "Tür",
+      "text": "Yazı Kanalı",
+      "vc": "Ses Kanalı",
+      "category": "Kategori",
+      "other": "Ya Haberler Kanalı ya da bir Mağaza Kanalı. AltDentifier şu anda bunun ne kanalı olduğunu bilmiyor."
+    },
+    "channel_create": {
+      "title": "**Kanal Oluşturuldu**",
+      "simple": "Yeni bir %s kanalı oluşturuldu: %s"
+    },
+    "channel_delete": {
+      "title": "**Kanal Silindi**",
+      "simple": "%s kanalı silindi"
+    },
+    "role": {
+      "name": "**İsim:** %s\n",
+      "color": "**Renk:** %s\n",
+      "hoisted": "**Ayrı?:** %s\n",
+      "mentionable": "**Etiketlenebilir?:** %s\n"
+    },
+    "role_create": "**%s Rolü Oluşturuldu**",
+    "role_delete": "**%s Rolü Silindi**",
+    "member_ban": {
+      "title": "**Kullanıcı Yasaklandı**",
+      "simple": "%s kullanıcısı sunucunuzdan yasaklandı!"
+    },
+    "member_update": {
+      "role": {
+        "given": "**%s Rolü Verildi**",
+        "given_long": "%s kullanıcısna %s rolü verildi!",
+        "given_simple": "**Rol Verildi**",
+        "taken": "**%s Rolü Alındı**",
+        "taken_long": "%s kullanıcısının %s rolü alındı!",
+        "taken_simple": "**Rol Alındı**"
+      },
+      "nick": {
+        "title": "**Kullanıcı Adı Değiştirildi**",
+        "simple": "%s kullanıcısı eski kullanıcı adını (%s), %s olarak değiştirdi."
+      }
+    },
+    "member_join": {
+      "title": "**Kullanıcı Katıldı**",
+      "simple": "%s sunucunuza katıldı!",
+      "age": "Hesap Yaşı",
+      "age_value": "%s gün"
+    },
+    "member_leave": {
+      "title": "**Kullanıcı Ayrıldı**",
+      "simple": "%s sunucunuzdan ayrıldı!"
+    },
+    "member_unban": {
+      "title": "**Kullanıcı Yasaklaması Kaldırıldı**",
+      "simple": "%s kullanıcısının yasaklaması kaldırıldı!"
+    },
+    "message_delete": "**%s kullanıcısının %s kanalındaki mesajı silindi**\n",
+    "message_edit": "**%s kullanıcısının %s kanalındaki mesajı düzenlendi**\n",
+    "voice_update": {
+      "title": "**Kullanıcı ses kanalını değiştirdi**",
+      "entered": "%s kullanıcısı %s kanalına giriş yaptı!",
+      "left": "%s kullanıcısı %s kanalından çıkış yaptı!",
+      "changed": "%s kullanıcısı %s kanalından %s kanalına geçiş yaptı!"
+    }
+  },
+  "prefix": "Naber? Prefixi unuttuysan: **%s**"
+}

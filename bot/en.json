@@ -42,6 +42,7 @@
             "python": "Python Version",
             "guilds": "Guild Count",
             "d_py_version": "discord.py Version",
+            "cluster": "Cluster",
             "shards": "Shards",
             "shard_info": "(Current Shard/Shard Count)",
             "owner": "Owner",
@@ -75,7 +76,8 @@
             "no_whitelist": "You cannot verify members that are in your whitelist. Remove them first!",
             "no_self_already": "You cannot verify yourself if you are already being verified!",
             "no_self": "This server does not allow self-verification!",
-            "canceled": "Okay, canceled!"
+            "canceled": "Okay, canceled!",
+            "no_staff_self": "Staff are not allowed to verify themselves!"
         },
         "donate": "You can see our Premium plans at <https://altdentifier.com/premium>!",
         "upvote": "You can upvote AltDentifier at <https://discordbots.org/bot/altdentifier/vote>!",
@@ -379,12 +381,14 @@
         "suspicious": "Suspicious account detected!",
         "manual": "A staff member has manually started verification for %s!",
         "self": "%s has started their own verification",
-        "suspicious_long_age": "%s has an account whose minimum age is lower than your threshold.\n\n%s's account is %s days old, but your threshold is %s days. %s joined the server on %s\n\nAltDentifier has started the verification process.",
-        "suspicious_long_tf": "%s has an account whose Trust Factor is lower than your threshold.\n\n%s's account has a Trust Factor of %s, but your threshold is %s.\n\nAltDentifier has started the verification process.",
+        "raidmode": "%s joined during a raid!",
+        "suspicious_long_age": "%s has an account whose minimum age is lower than your threshold.\n\n%s's account is %s days old, but your threshold is %s days. %s joined the server on %s!\n\nAltDentifier has started the verification process.",
+        "suspicious_long_tf": "%s has an account whose Trust Factor is lower than your threshold.\n\n%s's account has a Trust Factor of %s, but your threshold is %s.\n\n%s's account is %s days old. %s joined the server on %s!\n\nAltDentifier has started the verification process.",
         "manual_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
         "self_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
+        "raidmode_long": "\nTheir Trust Factor is %s.\n\nAltDentifier is configured to verify all members while the server has raidmode enabled!\n\nAltDentifier has started the verification process!",
         "invite_tracker": "Invite Used",
-        "hello": "Hello %s,\nWelcome to %s. This server is protected by AltDentifier. To verify your account, please visit https://altdentifier.com/verify/%s/%s?lang=%s. You have %s minutes to complete verification!\nWith kind regards, the %s staff team.",
+        "hello": "Hello %s,\nWelcome to %s. This server is protected by AltDentifier. To verify your account, please visit %s/verify/%s/%s?lang=%s. You have %s minutes to complete verification!\nWith kind regards, the %s staff team.",
         "actions": {
             "ban": "you will be banned from the server!",
             "kick": "you will be kicked from the server!",
@@ -429,7 +433,7 @@
     },
     "heartbeat": {
         "no_bot_channel": "A bot channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
-        "no_warn_channel": "A warning channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
+        "no_warn_channel": "A warning channel has not been setup! This is r equired for AltDentifier to function correctly. Please choose one!",
         "cant_send": "I can't send messages in %s! Please enable the SEND MESSAGES permission!",
         "no_rich": "I can't send rich messages in %s! Enabling EMBED LINKS is recommended for cleaner message!",
         "cant_give": "I can't give %s to new members. Make sure that my highest role is above %s",
@@ -443,7 +447,8 @@
     "errors": {
         "no_member": "You must supply a member for this command! Choose a member by mentioning, typing their name or typing their ID!",
         "not_found": "Sorry, I could not find this member! Is this member in your server, and did you type their name correctly?",
-        "no_perms": "You must be a staff member to use this!"
+        "no_perms": "You must be a staff member to use this!",
+        "cannot_apply_role": "I cannot add or remove the %s role! Please check if I have `MANAGE ROLES` and the %s role is below my highest role!"
     },
     "trustfactor": {
         "0": "Severely Distrusted",
@@ -543,7 +548,7 @@
         "unban": "Unban",
         "kick": "Kick",
         "unmute": "Unmute",
-        "timeout": "Timout Role",
+        "timeout": "Timeout Role",
         "target": "Target",
         "mod": "Moderator",
         "reason": "Reason",

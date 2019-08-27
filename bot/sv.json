@@ -1,21 +1,42 @@
 {
   "commands": {
     "ban": {
-      "banned": "%s bannlyst!",
-      "ban_reason": "%s bannlyst för %s",
-      "above": "Du kan inte bannlysa medlemmar som är över din roll!",
+      "banned": "%s har blivit bannlyst!",
+      "ban_reason": "%s bannlyst för den följande orsaken \"%s\"",
+      "above": "Du kan inte bannlysa medlemmar som har en högre roll än dig!",
       "above_bot": "Jag kunde inte bannlysa den medlemmen! Medlemmen kanske har en högre roll än mig?",
-      "no_perms": "Du har inte behörigheter för att bannlysa den medlemmen!",
-      "no_perms_bot": "Jag har inte behörigheter för att bannlysa den medlemmen! Se till att jag har `Bannlysa medlemmar` behörigheten!"
+      "no_perms": "Du har inte behörighet att bannlysa denna medlemmen!",
+      "no_perms_bot": "Jag har inte behörigheter för att bannlysa den medlemmen! Se till att jag har behörigheten `Bannlysa medlemmar`!",
+      "self": "Du kanske skulle vilja överväga att bannlysa dig själv!"
     },
     "kick": {
-      "kicked": "%s sparkad!",
-      "kick_reason": "%s sparkad för %s",
-      "above": "Du kan inte sparka medlemmar som är över din roll!",
+      "kicked": "%s har blivit sparkad!",
+      "kick_reason": "%s har blivit sparkad för den följande orsaken: \"%s\"",
+      "above": "Du kan inte sparka medlemmar som har en högre roll än dig!",
       "above_bot": "Jag kunde inte sparka den medlemmen! Medlemmen kanske har en högre roll än mig?",
-      "no_perms": "Du har inte behörigheter för att sparka den medlemmen!",
-      "no_perms_bot": "Jag har inte behörigheter för att sparka den medlemmen! Se till att jag har `Sparka medlemmar` behörigheten!"
+      "no_perms": "Du har inte behörighet att sparka denna medlemmen!",
+      "no_perms_bot": "Jag har inte behörigheter för att sparka den medlemmen! Se till att jag har behörigheten `Sparka medlemmar`!",
+      "self": "Du kanske skulle vilja överväga att sparka dig själv!"
     },
+    "mute": {
+      "muted": "%s har blivit tystad!",
+      "muted_reason": "%s har blivit tystad för den följande anledningen: \"%s\"",
+      "above": "Du kan inte tysta medlemmar ifall du inte kan lägga till eller ta bort tystnings rollen från dig själv!",
+      "above_bot": "Jag kunde inte tysta denna medlemmen! Kanske denna medlemmen har en högre roll än mig? ",
+      "no_perms": "Du har inte behörighet att tysta denna medlemmen!",
+      "no_perms_bot": "Jag har inte behörigheter för att tysta denna medlemmen! Se till att jag har behörigheten `Hantera roller`!",
+      "self": "Du kanske skulle vilja överväga att sparka dig själv!",
+      "expired": "AUTO: Denna tystningen har gått ut!",
+      "until": "\nHen har blivit tystad tills %s",
+      "negative_time": "Du kan inte sätta en tystning at gå ut i det förflutna. Kom ihåg att standard tidszonen är GMT. Se till att ha med tidszonen i varaktigheten!"
+  },
+  "unmute": {
+      "unmuted": "%s har blivt otystad!",
+      "unmuted_reason": "%s har blivit otystad för den följande orsaken: \"%s\"",
+      "above_bot": "Jag kunde inte otysta denna medlemmen! Kanske denna medlemmen har en högre roll än mig?",
+      "no_perms": "Du har inte behörighet att otysta denna medlemmen!",
+      "no_perms_bot": "Jag har inte behörigheter att otysta denna medlemmen! Se till att jag har behörigheten `Hantera roller`!"
+  },
     "info": {
       "stats": "Statistik",
       "python": "Python Version",
@@ -28,7 +49,7 @@
       "id": "Mitt ID: %s",
       "site": "Webbsida",
       "users": "Användare",
-      "desc": "Den bästa Discord botten för säkerhet och gränskontroll!",
+      "desc": "Den bästa Discord botten för säkerhet och kontroll!",
       "support": "Hjälp Server"
     },
     "ping": ":ping_pong: Min ping är %sms",
@@ -45,7 +66,7 @@
       "disabled": "Raidmode har inaktiverats!"
     },
     "force": {
-      "afk": "%s kan vara AFK, är du säker på att du vill påbörja verifiering för hen? Skriv `yes` eller `no`!",
+      "afk": "%s kan vara AFK, är du säker på att du vill påbörja verifiering för hen? Skriv antingen `yes` eller `no`!",
       "starting": "Påbörjar verifiering för %s!",
       "no_staff": "Du kan inte tvinga verfiering för en personalmedlem!",
       "higher_role": "Du kan inte tvinga verifiering på medlemmar som har en högre roll än dig!",
@@ -90,25 +111,25 @@
     },
     "help": {
       "title": "Hjälp",
-      "desc": "Skydd mot spambottar och alternativa konton.\n[arg] betyder att argumentet är nödvändigt.\n<arg> betyder att argumentet är valfritt",
+      "desc": "Skydd mot spambottar och alternativa konton.\n[arg] betyder att valet är nödvändigt.\n<arg> betyder att valet är valfritt",
       "page": "Sida %s/3 - Skapad av: Auxim#0001",
       "tip": "Tips",
       "tips": [
         "Visste du att vi också har en kommando lista på vår hemsida! Besök https://altdentifier.com/commands för att se den",
-        "Visste du att du kan också nämna mig om du glömmer din prefix? Helt enkelt gör <@372022813839851520> för att se den igen",
-        "Visste du att du kan också använda rekationer för att skrolla igenom hjälp menyn? Det enda jag behöver är lägg till reaktioner behörigheten. Du kan också ge mig hantera meddelanden så att jag kan rensa dina rektioner!",
-        "Visste du att du kan arrangera så att raidmode aktiverar automatiskt när många användare ansluter under en kort tid? Besök https://altdentifier.com/dashboard, välj din server och öppna raidmode fliken.",
-        "Visste du att vi har en Patreon där du kan köpa yttligare funktionalitet, så som förmågan att sätta meddeladen på sidan eller att lägga till en bakgrundsbild till verifieringen? Besök https://altdentifier.com/premium för mer information!\nAlla donationer är mycket uppskattade",
-        "Visste du att du kan också kolla upp en hjälp meny med deras namn? Testa, skriv bara <@372022813839851520> help moderation!",
+        "Visste du att du kan också nämna mig om du glömmer dit prefix? Helt enkelt nämn <@372022813839851520> för att hitta den igen",
+        "Visste du att du kan också använda rekationer för att skrolla igenom hjälpmenyn? Det enda jag behöver är behörigheten LÄGG TILL REAKTIONER. Du kan också ge mig HANTERA MEDDELANDEN så att jag kan rensa dina rektioner!",
+        "Visste du att du kan konfigurera så att raidmode aktiverar automatiskt när många användare ansluter till servern under en kort tid? Besök https://altdentifier.com/dashboard, välj din server och öppna raidmode fliken.",
+        "Visste du att vi har en Patreon där du kan köpa yttligare funktionalitet, så som förmågan att sätta meddeladen på webbsidan eller att lägga till en bakgrundsbild till verifieringen? Besök https://altdentifier.com/premium för mer information!\nAlla donationer är mycket uppskattade",
+        "Visste du att du kan också kolla upp en hjälpmeny med deras namn? Testa, skriv bara <@372022813839851520> help moderation!",
         "Visste du att alla våra översättningar är gjorda av användare? Om du är intresserad kolla in vår hjälp server med info kommandot och fråga Auxim.\nVi letar efter Tyska och Svenska talare men all översättningar är välkommna!"
       ],
-      "doesnt_exist": "Den här hjälp sidan finns inte!",
-      "no_args": "Det här kommandot har inga argument!",
+      "doesnt_exist": "Denna hjälp sidan finns inte!",
+      "no_args": "Detta kommandot har inga val!",
       "no_perms": "Inga behörigheter är nögvändiga för det här kommandot!",
-      "requested_by": "Begärt av %s",
+      "requested_by": "Begärd av %s",
       "usage": "Användning",
-      "aliases": "Aliases",
-      "perms": "Behörgiheter",
+      "aliases": "Alias",
+      "perms": "Behörigheter",
       "cmd_desc": "Beskrivning",
       "no_usage": "Inget",
       "no_desc": "Ingen lång beskrivning finns för det här kommandot!",
@@ -131,7 +152,7 @@
           "long": "Använd det här kommandot för att få någon att verifiera. Det här kan vara användbart om du inte litar på någon som anslöt sig.\nDu kan använda en nämnd, namn eller ID för att välja en medlem. Exempel: ;force Auxim"
         },
         "ban": {
-          "usage": "[medlem] <ta bort meddelanden dagar> <anledning>",
+          "usage": "[medlem] <ta bort antal meddelanden dagar> <anledning>",
           "permissions": "BANNLYS MEDLEMMAR",
           "short": "Bannlyser en medlem",
           "long": "Banlyser någon från din server. Du kan använda en nämnd, namn eller ID för att välja en medlem. Exempel: ;ban Auxim\nDu kan också välja hur många dagar värt av meddelanden som ska tas bort, från 1 till 7 dagar. Tillslut, du kan också sätta en anledning som kommer att visas i ändringsloggen"
@@ -148,7 +169,7 @@
         "feedback": {
           "usage": "[typ] [meddelande]",
           "short": "Skicka feedback till bottens utvecklare. Feedback typerna är 'bug', 'feature' och 'support'.",
-          "long": "Skicka feedback till utvecklaren. Du måste definiera din feedback typ, antingen support, feature eller bug.\nVar medveten om att det här kommandot har en begränsning på en gång i timmen för att undvika spam, så se till att allting är korrekt!"
+          "long": "Skicka feedback till utvecklaren. Du måste specificera din feedback typ, antingen support, feature eller bug.\nVar medveten om att det här kommandot har en begränsning på en gång i timmen för att undvika spam, så se till att allting är korrekt!"
         },
         "heartbeat": {
           "permissions": "HANTERA SERVER/MOD ROLL",
@@ -158,13 +179,13 @@
         "help": {
           "usage": "<sidnummer, kategori eller kommando namn>",
           "short": "Visar det här kommandot",
-          "long": "Det här visar hjälp menyn. Det här, du vet. Vad förväntade du dig, pumpa juice?\nDu kan lägga till ett sidnummer, kategori eller kommandonamn för att hitta en specifik sida eller kommando!"
+          "long": "Det här visar hjälpmenyn. Det här, du vet. Vad förväntade du dig, pumpa juice?\nDu kan lägga till ett sidnummer, kategori eller kommandonamn för att hitta en specifik sida eller kommando!"
         },
         "info": {
           "short": "Bot statistik och information"
         },
         "invite": {
-          "short": "Ger bottens inbjudningslänk"
+          "short": "Visar bottens inbjudningslänk"
         },
         "ping": {
           "short": "Visar bottens responstid till Discord"
@@ -186,10 +207,28 @@
         },
         "userinfo": {
           "usage": "<användare>",
-          "short": "Visar information om dig eller andra"
+          "short": "Visar information om dig själv och andra"
+      },
+      "mute": {
+          "usage": "[medlem] <utgångsdatum> <anledning>",
+          "short": "Tystar en medlem",
+          "long": "Tystar en medlem med din tystning roll, när ingen tystnings roll är inställd, AltDentifier kommer att söka efter en roll som heter Muted innan den ger upp.\nDu kan ställa in ett utgångsdatum och en anledning för tystningen också. Exempel: ;mute Auxim \"1h\" \"Programmerar inte tillräckligt snabbt\". Denna utgångstid kan ställas in med absoluta eller relativa tider, som till exempel `15:00` eller `for 1 hour`. \nSe till att sätta citattäcken på utgångstiden och anledningen, annars kommer botten att ta den bästa gissningen.",
+          "permissions": "HANTERA ROLLER"
+      },
+      "unmute": {
+          "usage": "[medlem] <anledning>",
+          "short": "Otystar en tidigare tystad medlem!",
+          "long": "Använd detta kommandot för att otysta en medlem som är tystad. Du kan också ge en anledning för varför medlemmen blev otystad. Exempel: ;unmute Auxim Släppte äntligen uppdateringen",
+          "permissions": "HANTERA ROLLER"
+      },
+      "reason": {
+          "usage": "<fall> [anledning]",
+          "short": "Ställer in en mod-log anledning",
+          "long": "Använd detta kommandot för att ställa in en anledning i mod loggen. Exempel: ;reason 1 Auxim Fixade inte alla buggar. Ifall fall ID är utlämnat, anledning vill bli inställd till det senaste fallet på din server!",
+          "permissions": "HANTERA ROLLER/BANNLYSA MEDLEMMAR/SPARKA MEDLEMMAR"
         }
       },
-      "emebd": "Ge mig bädda in länkar behörigheten i den här kanalen så att jag kan skicka bättre hjälp meddelanden!"
+      "emebd": "Ge mig behörigheten BÄDDA IN LÄNKAR i den här kanalen så att jag kan skicka bättre hjälp meddelanden!"
     },
     "settings": {
       "title": "Inställningar",
@@ -198,7 +237,7 @@
       "canceled": "Okej, avbrutet!",
       "dashboard": "Vill du ha ett lättare sätt att hantera inställningar? Besök våran instrumentbräda på https://altdentifier.com/dashboard eller klicka på länken högst upp!",
       "dashboard_notif": "Alla våra inställningar kan hanteras på våran instrumentbräda nu! Vi rekommendarar starkt att du använder den eftersom kommandot för inställningar kanske inte uppdateras för nya funktioner\nBesök <https://altdentifier.com/dashboard> för att se instrumentbrädan!",
-      "not_number": "Inställningsargumentet måste vara ett nummer!",
+      "not_number": "Inställningsvalet måste vara ett nummer!",
       "already_open": "Inställningarna är redan öppna för den här servern. Använd den redan öppnade dialogen!",
       "altdentification": {
         "currently_enabled": "AltDentification är för tillfället aktiverad! Vill du avaktivera den? Skriv `yes` eller `no`.",
@@ -213,7 +252,7 @@
         "set_to": "Den förinställda rollen har blivit satt till `%s`!",
         "is_set": "Den nuvarande förinställda rollen är `%s`. Vill du ändra den? Om du forfarande har omvänd förinställd roll aktiverad, avaktivera det och sätt en verifieringsroll på instrumentbrädan! Du kan inte aktivera omvänd längre på grund av den här ändringen! Skriv `yes`, `no` eller `reverse`.",
         "reverse_disabled": "Omvänd har avaktiverats!",
-        "no_perms": "Du har en förinställd roll, däremot så kommer jag inte kunna get den till medlemmar eftersom att jag inte har `HANTERA ROLLER` behörigheten eller för att min roll är lägre än den förinställda rollen!"
+        "no_perms": "Du har en förinställd roll, däremot så kommer jag inte kunna get den till medlemmar eftersom att jag inte har behörigheten `HANTERA ROLLER` eller för att min roll är lägre än den förinställda rollen!"
       },
       "admin_roles": {
         "current": "Dina nuvarande Admin Roller är: ```\n%s```. Vill du lägga till eller ta bort en roll? Skriv `add`, `remove` eller `no` för att avsluta! Notera att Admin Roller är automatiskt tillagda till Mod Rollerna också men om du tar bort dem från Admin Rollerna så tas dem inte bort från Mod Rollerna!",
@@ -276,7 +315,7 @@
         "enabled": "Autoroll har aktiverats",
         "disabled": "Autoroll har avaktiverats",
         "no_role": "Du kan inte aktivera Autoroll om du inte har en förinställd roll!",
-        "no_perms": "Du kan inte aktivera Autoroll om jag inte har behörigheter att ge den förinställda rollen! Se om min högsta roll är över den förinställda rollen och att jag har `HANTERA ROLLER` behörigheten!",
+        "no_perms": "Du kan inte aktivera Autoroll om jag inte har behörigheter att ge den förinställda rollen! Se om min högsta roll är över den förinställda rollen och att jag har behörigheten `HANTERA ROLLER`!",
         "reverse_action": "Du kan inte aktivera Autoroll medans en omvänd förinställd roll är aktiv!"
       },
       "authentication_methods": {
@@ -290,16 +329,16 @@
         "chose_role": "För att använda roll handlingen måste du välja en roll som användaren kommer få om dem inte svarar. Skriv dess ID, nämnd eller namn nu!",
         "not_found": "Den rollen kunde inte hittas, kör kommandot igen för ett till försök eller välj en annan timeout handling!",
         "role": "Timeout handlingen har satts till `role`. Användare kommer få `%s` rollen om dem inte veriferar i tid!",
-        "no_perms_role": "Du kan inte sätta din timeout handling till roll om jag inte kan ge den här rollen! Se om min roll är över rollen som du valde och om jag har `HANTERA ROLLER` behörigheten!",
-        "no_perms_kick": "Du kan inte sätta din timeout handling till sparka om jag inte kan sparka medlemmar! Se om jag har `SPARKA MEDLEMMAR` behörigheten!",
-        "no_perms_ban": "Du kan inte sätta din timeout handling till bannlysa om jag inte kan banlyssa medlemmar! Se om jag har `BANNLYS MEDLEMMAR` behörigheten!",
+        "no_perms_role": "Du kan inte sätta din timeout handling till roll om jag inte kan ge den här rollen! Se om min roll är över rollen som du valde och om jag har behörigheten `HANTERA ROLLER`!",
+        "no_perms_kick": "Du kan inte sätta din timeout handling till sparka om jag inte kan sparka medlemmar! Se om jag har behörigheten `SPARKA MEDLEMMAR`!",
+        "no_perms_ban": "Du kan inte sätta din timeout handling till bannlysa om jag inte kan banlyssa medlemmar! Se om jag har behörigheten `BANNLYS MEDLEMMAR`!",
         "set": "Timeout handlingen har satts till %s!"
       },
       "minimum_karma": {
-        "change": "Minimum Reddit karman är för tillfället %s. Vill du ändra den? Skriv `yes` eller `no`.",
-        "change_to": "Vad vill du ändra minimum Reddit karman till? Kom ihåg att det här är en kombination av både länk och kommentar karma och måste vara ett nummer!",
-        "not_number": "Minimum Reddit karman måste vara ett nummer!",
-        "set": "Minimum Reddit karman har satts till %s!"
+        "change": "Minimum Reddit karma är för tillfället %s. Vill du ändra den? Skriv `yes` eller `no`.",
+        "change_to": "Vad vill du ändra minimum Reddit karma till? Kom ihåg att det här är en kombination av både länk och kommentar karma och måste vara ett nummer!",
+        "not_number": "Minimum Reddit karma måste vara ett nummer!",
+        "set": "Minimum Reddit karma har satts till %s!"
       },
       "log_channel": {
         "not_enabled": "Du har inte loggning aktiverat och därför kan du inte sätta en loggningskanal! Aktivera loggning först!",
@@ -335,8 +374,8 @@
     }
   },
   "verify": {
-      "whitelist": "%s är i din vitlista. Verifiering kommer inte att hända!!",
-      "default_role_warning": "En förinställd roll har satts men jag har inte behörigheter för att ta bort den. Se till att jag har `HANTERA ROLLER` behörigheten och att den förinställda rollen är under min högsta roll! verifieringen kommer att fortsätta men dem kanske kommer kunna prata under processen!",
+      "whitelist": "%s är i din vitlista. Verifiering kommer inte att hända!",
+      "default_role_warning": "En förinställd roll har satts men jag har inte behörigheter för att ta bort den. Se till att jag har behörigheten `HANTERA ROLLER` och att den förinställda rollen är under min högsta roll! verifieringen kommer att fortsätta men dem kanske kommer kunna prata under processen!",
       "suspicious": "Misstänksamt konto upptäckt!",
       "manual": "En personalmedlem har manuellt påbörjat en verifiering för %s!",
       "self": "%s har påbörjat sin egen verifiering!",
@@ -344,7 +383,8 @@
       "suspicious_long_tf": "%s har ett konto vars förtroendefaktor är lägre än din tröskel.\n\n%ss konto har en förtroendefaktor av %s men din tröskel är %s.\n\nAltDentifier har påbörjat verifieringsprocessen.",
       "manual_long": "\nDeras förtroendefaktor är %s.\n\nAltDentifier har påbörjat verifieringsprocessen!",
       "self_long": "\nDeras förtroendefaktor är %s.\n\nAltDentifier har påbörjat verifieringsprocessen!",
-      "hello": "Hej %s,\nVälkommen till %s. Den här servern är skyddad av AltDentifier. För att verifiera ditt konto besök https://altdentifier.com/verify/%s/%s?lang=%s. Du har %s minuter att slutföra veriferingen!\nMed vänliga hälsningar, %s personal.",
+      "invite_tracker": "Inbjudan Använd",
+      "hello": "Hej %s,\nVälkommen till %s. Den här servern är skyddad av AltDentifier. För att verifiera ditt konto besök %s/verify/%s/%s?lang=%s. Du har %s minuter att slutföra veriferingen!\nMed vänliga hälsningar, %s personal.",
       "actions": {
         "ban": "du att bli bannlyst från servern!",
         "kick": "du att bli sparkat från servern!",
@@ -363,11 +403,15 @@
         "role_dm": "Du har fått rollen %s för att du inte har svarat!",
         "nothing_dm": "Du har inte svarat i tid, vad som händer nu är upp till serverns personal!",
         "nothing": "%s har inte svarat!",
-        "ban_fail": "Jag försökte bannlysa %s för att inte ha svarat men det misslyckades! Se till att jag har `BANNLYS MEDLEMMAR` behörigheten!",
-        "kick_fail": "Jag försökte sparka %s för att inte ha svarat men det misslyckades! Se till att jag har `SPARKA MEDLEMMAR` behörigheten!",
-        "role_fail": "Jag försökte att ge %s till %s men det misslyckades! Se till att jag har `HANTERA ROLLER` behörigheten och att min roll är högre än användaren!"
+        "ban_fail": "Jag försökte bannlysa %s för att inte ha svarat men det misslyckades! Se till att jag har behörigheten `BANNLYS MEDLEMMAR`!",
+        "kick_fail": "Jag försökte sparka %s för att inte ha svarat men det misslyckades! Se till att jag har behörigheten `SPARKA MEDLEMMAR`!",
+        "role_fail": "Jag försökte att ge %s till %s men det misslyckades! Se till att jag har behörigheten `HANTERA ROLLER` och att min roll är högre än användaren!",
+        "kick_ic_dm": "Du har blivit sparkad för att du har verifierat med ett annat Discord konto!",
+        "ban_ic_dm": "Du har blivit bannlyst för att du har verifierat med ett annat Discord konto!",
+        "kick_ic": "%s har blivit sparkad för att hen har verifierat med ett annat Discord konto!",
+        "ban_ic": "%s har blivit bannlyst för att hen har verifierat med ett annat Discord konto!"
       },
-      "bypass": "%s bypassed %s!",
+      "bypass": "%s förbikopplade %s!",
       "bypass_dm": "%s har tillåtit dig att hoppa över verifieringen!",
       "not_verified": "Den medlemmen håller inte på att bli verifierad!",
       "success": "Du har lyckats med verifieringen av ditt konto. Vi hoppas att du har en trevlig upplevelse i %s!",
@@ -376,7 +420,7 @@
       "in_verif_audit": "Användare forfarande i verifiering"
     },
   "autoraidmode": {
-      "raided": "Det framgår att din server håller på att blir plundrad! De följande anvädnarna anslöt sig under den här perioden och kommer bli %s: \n%s",
+      "raided": "Det verkar som att din server håller på att bli raidad! De följande anvädnarna gick med i servern under den här perioden och kommer bli %s: \n%s",
       "actions": {
           "verified": "verifierade",
           "kicked": "sparkade",
@@ -386,14 +430,14 @@
   "heartbeat": {
     "no_bot_channel": "En botkanal har inte blivit uppsatt! Det är nödvändigt för att AltDentifier ska fungera. Välj en kanal!",
     "no_warn_channel": "En varningskanal har inte blivit upppsatt! Det är nödvändigt för AltDentifier ska fungera. Välj en kanal!",
-    "cant_send": "Jag kan inte skicka meddelanden i %s! Snälla ge mig SKICKA MEDDELANDEN behörigheten!",
+    "cant_send": "Jag kan inte skicka meddelanden i %s! Snälla ge mig behörigheten SKICKA MEDDELANDEN!",
     "no_rich": "Jag kan inte skicka rika meddelanden i %s! Det är rekommenderat att du ger mig BÄDDA IN LÄNKAR för bättre meddelanden!",
     "cant_give": "Jag kan inte ge %s till nya medlemmar. Se till att min roll är över %s",
-    "no_role_perm": "Jag kan inte ge roller till nya medlemmar. Snälla ge mig HANTERA ROLLER behörigheten!",
+    "no_role_perm": "Jag kan inte ge roller till nya medlemmar. Snälla ge mig behörigheten HANTERA ROLLER!",
     "no_timeout_role": "Du har valt att ge medlemmar en roll när dem misslyckas med verifieringen men ingen sådan roll har konfigurerats. Välj en roll!",
-    "no_kick": "Du har valt att sparka medlemmar när dem misslyckas med verifieringen men jag kommer inte kunna sparka dem. Snälla ge mig SPARKA MEDLEMMAR behörigheten!",
-    "no_ban": "Du har valt att bannlysa medlemmar när dem misslyckas med verifieringen men jag kommer inte kunna bannlysa dem. Snälla ge mig BANNLYS MEDLEMMAR behörigheten!",
-    "no_audit_log": "Du har aktiverat roll block men jag kan inte se ändringsloggen. Snälla ge mig SE ÄNDRIGSLOGGEN behörigheten!",
+    "no_kick": "Du har valt att sparka medlemmar när dem misslyckas med verifieringen men jag kommer inte kunna sparka dem. Snälla ge mig behörigheten SPARKA MEDLEMMAR!",
+    "no_ban": "Du har valt att bannlysa medlemmar när dem misslyckas med verifieringen men jag kommer inte kunna bannlysa dem. Snälla ge mig behörigheten BANNLYS MEDLEMMAR!",
+    "no_audit_log": "Du har aktiverat roll block men jag kan inte se ändringsloggen. Snälla ge mig behörigheten SE ÄNDRIGSLOGGEN!",
     "no_verif_methods": "Alla verifieringsmetoder i den här servern är avaktiverade. Användare som ansluter sig kommer inte kunna verifiera sig!"
   },
   "errors": {
@@ -414,72 +458,96 @@
     "3": "Väldigt Betrodd eller lägre"
   },
   "logging": {
-    "embed": "\nFör bättre meddelanden, överväg att ge mig `Bädda in länkar` behörigheten",
+    "embed": "\nFör bättre meddelanden, överväg att ge mig behörigheten `Bädda in länkar`",
     "before": "Före",
     "after": "Efter",
     "channel": {
-      "type": "Type",
+      "type": "Typ",
       "text": "Textkanal",
       "vc": "Röstkanal",
       "category": "Kategorikanal",
-      "other": "Antingen en nyhetskanal eller en butikskanal. AltDentifier kan inte se vilken kanaltyp det är vid denna tidpunkt"
+      "store": "Butikskanal",
+      "news": "Nyhetskanal",
+      "other": "Antingen en nyhetskanal eller en butikskanal. AltDentifier kan inte se vilken kanaltyp det är just nu"
     },
     "channel_create": {
-      "title": "**Kanal Skapad**",
+      "title": "Kanal Skapad",
       "simple": "En ny %s har skapats %s"
     },
     "channel_delete": {
-      "title": "**Kanal Raderad**",
+      "title": "Kanal Raderad",
       "simple": "Kanalen %s har blivit raderad"
     },
     "role": {
-      "name": "**Namn:** %s\n",
-      "color": "**Färg:** %s\n",
-      "hoisted": "**Lyftbar:** %s\n",
-      "mentionable": "**Nämnbar:** %s\n"
+      "name": "Namn: %s\n",
+      "color": "Färg: %s\n",
+      "hoisted": "Lyft: %s\n",
+      "mentionable": "Nämnbar: %s\n"
     },
-    "role_create": "**Roll %s Skapad**",
-    "role_delete": "**Roll %s Raderad**",
+    "role_create": "Roll %s Skapad",
+    "role_delete": "Roll %s Raderad",
     "member_ban": {
-      "title": "**Medlem Bannlyst**",
+      "title": "Medlem Bannlyst",
       "simple": "%s har blivint bannlyst från din server!"
     },
     "member_update": {
       "role": {
-        "given": "**Roll %s Gavs**",
+        "given": "Roll %s Gavs",
         "given_long": "%s gavs %s rollen!",
-        "given_simple": "**Roll Gavs**",
-        "taken": "**Roll %s Borttagen**",
+        "given_simple": "Roll Gavs",
+        "taken": "Roll %s Borttagen",
         "taken_long": "%s hade deras %s roll borttagen!",
-        "taken_simple": "**Roll Borttagen**"
+        "taken_simple": "Roll Borttagen"
       },
       "nick": {
-        "title": "**Smeknamn Bytt**",
+        "title": "Smeknamn Bytt",
         "simple": "%s bytte deras smeknamn från %s till %s"
       }
     },
     "member_join": {
-      "title": "**Medlem Anslöt sig**",
+      "title": "Medlem Anslöt sig",
       "simple": "%s har anslutit sig till din server!",
       "age": "Kontoålder",
-      "age_value": "%s dagar"
+      "age_value": "%s dagar",
+      "invite_tracker": "Inbjudan Använd",
+      "invitetrack_init": "För att spåra inbjudningar, se till att jag har behörigheten Hantera Server. Om jag har denna behörigheten bör inbjudningsspårning fungera när nästa medlem går med!",
+      "no_change": "Inget av inbjudningarna har förändrats. Kanske denna medlem anslöt sig till en guilds.join-anslutning?",
+      "invite": "Denna medlem gick med i servern med inbjudningskoden `%s` som var skapad av %s.\nKoden har blivit använd %s gång(er)!"
     },
     "member_leave": {
-      "title": "**Medlem Lämnade**",
+      "title": "Medlem Lämnade",
       "simple": "%s har lämnat din server!"
     },
+    "member_kick": {
+        "title": "Medlem Sparkad",
+        "simple": "%s har blvit sparkad från din server!"
+    },
     "member_unban": {
-      "title": "**Hävd Bannlysning**",
+      "title": "Hävd Bannlysning",
       "simple": "Bannlysningen för %s har blivit hävd!"
     },
-    "message_delete": "**Meddelande från %s togs bort i %s**\n",
-    "message_edit": "**Meddelande från %s redigerades i %s**\n",
+    "message_delete": "Meddelande från %s togs bort i %s\n",
+    "message_edit": "Meddelande från %s redigerades i %s\n",
     "voice_update": {
-      "title": "**Medlem bytte röstkanal**",
-      "entered": "%s anslöt sig till röstkanal %s!",
-      "left": "%s lämnade röstkanal %s!",
-      "changed": "%s bytte från röstkanal %s till %s!"
+      "title": "Medlem bytte röstkanal",
+      "entered": "%s anslöt sig till röstkanalen %s!",
+      "left": "%s lämnade röstkanalen %s!",
+      "changed": "%s bytte från röstkanalen %s till %s!"
     }
   },
-  "prefix": "Hej, min prefix här är: **%s**"
+  "prefix": "Hej, mitt prefix här är: **%s**",
+  "mod_log": {
+    "case": "Fall #%s | %s ",
+    "ban": "Bannlysning",
+    "mute": "Tystning",
+    "unban": "Hävd Bannlysning",
+    "kick": "Spark",
+    "unmute": "Otystning",
+    "timeout": "Timout Roll",
+    "target": "Mål",
+    "mod": "Moderator",
+    "reason": "Anledning",
+    "no_reason": "Ingen anledning var given. Du kan sätta en anledning med %sr %s anledninghär!",
+    "future": "Detta fall är från framtiden. Du vet inte vad som händer än!"
+  }
 }

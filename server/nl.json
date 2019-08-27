@@ -39,29 +39,74 @@
         },
         "server": {
             "title": "Beheert %s",
-            "menu_settings": "Instellingen",
+            "menu_settings": "Uw Server",
             "menu_accessroles": "Toegangsrollen",
             "menu_banlists": "Banlijsten",
-            "menu_raidmode": "Raidmodus",
+            "menu_moderation": "Moderatie",
+            "menu_verification": "Verificatie",
+            "menu_logging": "Logging",
+            "menu_auditlog": "Audit-Log",
             "menu_premium": "Premium",
             "menu_save": "Instellingen Opslaan",
             "settings": {
+                "owner": "Eigenaar: %s",
+                "members": "%s leden",
+                "current": "%s leden op dit moment in verificatie!",
+                "server_stats": {
+                    "daily": {
+                        "title": "Dagelijks",
+                        "total": "%s gebruiker(s) zijn vandaag verzocht zich te verifiëren!",
+                        "success": "%s gebruiker(s) hebben vandaag verificatie gepasseerd!",
+                        "failure": "%s gebruiker(s) hebben vandaag verificatie niet gepasseerd!",
+                        "bypass": "%s gebruiker(s) hebben vandaag verificatie over kunnen slaan!",
+                        "incorrect": "Tegen %s gebruiker(s) is vandaag actie genomen vanwege een verkeerde account combinatie!"
+                    },
+                    "weekly": {
+                        "title": "Wekelijks",
+                        "total": "%s gebruiker(s) zijn deze week verzocht zich te verifiëren!",
+                        "success": "%s gebruiker(s) hebben deze week verificatie gepasseerd!",
+                        "failure": "%s gebruiker(s) hebben deze week verificatie niet gepasseerd!",
+                        "bypass": "%s gebruiker(s) hebben deze week verificatie over kunnen slaan!",
+                        "incorrect": "Tegen %s gebruiker(s) is deze week actie genomen vanwege een verkeerde account combinatie!"
+                    },
+                    "monthly": {
+                        "title": "Maandelijks",
+                        "total": "%s gebruiker(s) zijn deze maand verzocht zich te verifiëren!",
+                        "success": "%s gebruiker(s) deze maand verificatie gepasseerd!",
+                        "failure": "%s gebruiker(s) deze maand verificatie niet gepasseerd!",
+                        "bypass": "%s gebruiker(s) deze maand verificatie over kunnen slaan!",
+                        "incorrect": "Tegen %s gebruiker(s) is vandaag actie genomen vanwege een verkeerde account combinatie!"
+                    }
+            },
                 "main_settings": {
                     "title": "Hoofdinstellingen",
                     "language": "Taal: ",
+                    "language_desc": "Selecteer de taal die AltDentifier in uw server moet gebruiken!",
                     "prefix": "Prefix: ",
-                    "timezone": "Tijdzone (Verschil in GMT): ",
-                    "autorole": "Autorole: "
+                    "language_desc": "Selecteer het voorvoegsel waar AltDentifier in uw server naar moet luisteren!",
+                    "timezone": "Tijdzone: ",
+                    "timezone_desc": "Selecteer de tijdzone die AltDentifier moet aanhouden wanneer met data wordt gewerkt!",
+                    "autorole": "Autorole: ",
+                    "autorole_desc": "Geef de Standaardrol automatisch aan gebruikers die zich niet hoeven te verifieëren!"
                 },
                 "verification_settings": {
                     "title": "Verificatie Instellingen",
                     "altdentification": "AltDentificatie: ",
+                    "altdentification_desc": "Schakel de automatische verificatie op basis van vertrouwensfactor in of uit!",
                     "bot_channel": "Bot Kanaal: ",
+                    "bot_channel_desc": "Wijzig het kanaal waar de bot informatie deelt over verificatiestatus. Dit kanaal hoort privé te zijn!",
                     "warning_channel": "Waarschuwingskanaal: ",
+                    "warning_channel_desc": "Wijzig het kanaal waar leden in verificatie meldingen krijgen van potentiële problemen!",
                     "default_role": "Standaardrol: ",
+                    "default_role_desc": "Selecteer een rol waarvan u wilt dat alle leden deze hebben. Als u niet iedereen verifieërt, schakel dan ook autorole in onder hoofdinstellingen!",
                     "in_verif_role": "Rol Tijdens Verificatie: ",
+                    "in_verif_role_desc": "Selecteer een rol die tijdens het verificatieproces aan leden wordt gegeven!",
                     "timeout_action": "Timeout Actie: ",
+                    "timout_action_desc": "Kies wat er gebeurd als een lid zich niet binnen de tijd verifieërt!",
+                    "incorrect_action": "Incorrect Account Actie: ",
+                    "incorrect_action_desc": "Selecteer wat er gebeurt als een lid met een ander account inlogt op AltDentifier dan wordt verwacht!\nWees bewust dat fouten gemaakt kunnen worden bij het inlogggen, dus overweeg de mogelijkheden zorgvuldig!",
                     "timeout_role": "Timeout Rol: ",
+                    "timeout_role_desc": "Als u een rol geeft als timeout actie, kies er dan één hier!",
                     "verification": "Verificatie",
                     "disabled": "Uitgeschakeld",
                     "everyone": "Iedereen",
@@ -69,19 +114,31 @@
                     "trusted-and-higher": "Vertrouwd and Hoger",
                     "very-trusted-only": "Enkel Zeer Vertrouwd",
                     "trustfactor_threshold": "Vertrouwensfactor Grens: ",
+                    "trustfactor_threshold_desc": "Selecteer de hoeveelheid vertrouwen die een lid moet hebben om niet geverifiërd te hoeven worden!",
                     "minimum_karma": "Reddit Minimum Karma: ",
+                    "minimum_karma_desc": "Selecteer de hoeveelheid aan gecombineerde Reddit karma die een gebruiker moet hebben om Reddit verificatie te kunnen passeren!",
                     "verification_alerts": "Verificatie Waarschuwingen: ",
+                    "verification_alerts_desc": "Laat AltDentifier een bericht sturen in het waarschuwingskanaal als iemand zich moet verifiëren!",
                     "role_block": "Blokkeer andere bots van het geven van rollen tijdens verificatie:",
+                    "role_block_desc": "Probeer andere bots tegen te houden als zij rollen toe willen kennen tijdens verificatie!",
                     "vpn_allowed": "Weiger VPN gebruikers van verificatie:",
+                    "vpn_allowed_Desc": "Weiger gebruikers die een verbinding met een VPN hebben van het passeren van verificatie!",
                     "timeout_time": "Timeout Tijd:",
+                    "timeout_time_desc": "Selecteer de hoeveelheid tijd die gebruikers hebben om verificatie te voltooien!",
                     "timeout_minutes": "minuten",
-                    "self_allowed": "Sta andere gebruikers toe verificatie voor zichzelf te starten: "
+                    "self_allowed": "Sta andere gebruikers toe verificatie voor zichzelf te starten: ",
+                    "self_allowed_desc": "Sta gebruikers toe handmatig hun eigen verificatie te starten met het ;verify commando!",
+                    "verification_methods": "Verificatie Methodes",
+                    "verification_methods_desc": "Kies of u een bepaalde verificatie methode wilt toestaan, weigeren of beperken voor gebruikers!"
                 },
                 "logging_settings": {
                     "title": "Logging Instellingen",
                     "enable": "Logging Ingeschakeld: ",
+                    "enable_desc": "Verstuur een bericht als bepaalde acties in de server worden ondernomen!",
                     "log_channel": "Log Kanaal: ",
-                    "log_options": "Logging Opties: "
+                    "log_channel_desc": "Selecteer het kanaal waarin u logging berichten wilt ontvangen",
+                    "log_options": "Logging Opties: ",
+                    "log_options_desc": "Selecteer de acties die AltDentifier moet loggen!"
                 },
                 "heartbeat": {
                     "title": "AltDentifier Hartslag",
@@ -89,8 +146,11 @@
                 }
             },
             "access_roles": {
+                "title": "Toegangsrollen",
                 "mod_roles": "Mod Rollen",
-                "admin_roles": "Admin Rollen"
+                "mod_roles_desc": "Selecteer rollen die een commando kunnen gebruiken dat beperkt is, zoals force en bypass",
+                "admin_roles": "Admin Rollen",
+                "admin_roles_desc": "Selecteer rollen die de bot's configuratie aan mogen passen, zoals settings"
             },
             "banlists": {
                 "suffix": "Banlijst",
@@ -100,13 +160,17 @@
             "raidmode": {
                 "title": "Raidmodus",
                 "activate": "Activeer Raidmodus: ",
+                "activate_desc": "Schakel raidmodus in of uit. Dit zal de Raidmode actie toepassen op elk lid dat binnenkomt!",
                 "auto": "Auto-Raidmodus: ",
+                "auto_desc": "Auto-Raidmous activeert raidmodus automatisch wanneer de grens is overschreden, en schakelt zichzelf uit na de vervalsdatum!",
                 "expire": "Auto-Raidmodus verloopt in",
                 "expire_2": "minuten!",
                 "trigger": "Activeer bij:",
                 "per": "gebruikers per",
                 "unit": "seconde",
-                "raidmode_action": "Raidmodus Actie"
+                "raidmode_action": "Raidmodus Actie",
+                "raidmode_action_desc": "Selecteer de actie die AltDentifier moet nemen tegen gebruikers die tijdens een raid binnentreden!",
+                "enabled": "WAARSCHUWING: Raidmodus is ingeschakeld. AltDentifier neemt de %s actie tegen ELK lid dat binnenkomt!"
             },
             "premium": {
                 "title": "Premium Instellingen",
@@ -114,6 +178,8 @@
                 "custom_message": "Aangepast Bericht:",
                 "custom_color": "Aangepaste Achtergrondskleur:",
                 "custom_image": "Aangepaste Achtergrondsafbeelding:",
+                "preview_verify": "Voorbeeld van Verify pagina",
+                "preview_verification": "Voorbeeld van Verification pagina",
                 "guidelines": {
                     "title": "Aanpassingsrichtlijnen en Restricties",
                     "required": "Verplicht",
@@ -138,15 +204,54 @@
                 "still-activatable-one": "U kunt nog %s server activeren!",
                 "activate": "Activeer Premium",
                 "deactivate": "Deactiveer Premium"
+            },
+            "moderation": {
+                "title": "Mod-Log",
+                "enable": "Schakel Mod-Log in",
+                "enable_desc": "Schakel AltDentifier's mod-log functionaliteit in of uit!",
+                "modlog_channel": "Mod-Log Kanaal",
+                "mute_role": "Mute/Strafrol",
+                "mute_role_desc": "Selecteer een rol voor het muten of straffen van mensen. Als dit niet ingesteld is, zal AltDentifier eerst naar een rol Muted zoeken voordat het commando wordt geannuleerd!"
+            },
+            "audit_log": {
+                "title": "Dashboard Wijzigingslog",
+                "date": "Datum",
+                "user": "Gebruiker",
+                "changes": "Wijzigingen"
+            },
+            "logging": {
+                "message_delete": "Bericht Verwijderd",
+                "message_edit": "Bericht Aangepast",
+                "channel_create": "Kanaal Gemaakt",
+                "channel_delete": "Kanaal Verwijderd",
+                "role_create": "Rol Gemaakt",
+                "role_delete": "Rol Verwijderd",
+                "member_leave": "Lid Weggegaan",
+                "member_join": "Lid Binnengetreden",
+                "member_ban": "Lid Verbannen",
+                "member_unban": "Member Ontbannen",
+                "member_update": "Bijnaam en Rol Wijzigingen",
+                "voice_update": "Spraakkanaal Wijzigingen"
             }
         },
         "privacy": {
             "title": "Privacy Instellingen",
             "request": "Verzoek Persoonlijke Data",
+            "request_sure": "U kunt uw data pakket van AltDentifier eens per twee weken opvragen. Als u verder gaat, zal AltDentifier uw account bevestigen en vragen om uw e-mail adres. Dit adres wordt enkel gebruikt om te weten waar uw datapakket heen moet worden verzonden. Weet u zeker dat u uw datapakket wilt opvragen?",
             "delete": "Verwijder Persoonlijke Data",
+            "delete_sure": "Als u uw account data verwijderd, wordt u voor 48 uur geblokkeerd van onze diensten. Deze actie kan niet ongedaan worden gemaakt. Weet u zeker dat u uw data wilt verwijderen?",
             "delete_confirm": "Als u uw persoonlijke data verwijderd, wordt u voor 48 uur geblokkeerd van onze diensten. Het verwijderen kan enkele momenten duren, verlaat de pagina niet terwijl deze nog bezig is! Weet u zeker dat u uw persoonlijke data wilt verwijderen?",
-            "request_confirm": "U kunt uw persoonlijke data slechts 1 maal per 24 uur opvragen. Het verzoek kan enkele momenten duren, verlaat de pagina niet voordat er een download is gestart. Zorg ervoor dat u uw inzicht opslaat!"
-        }
+            "request_confirm": "U kunt uw persoonlijke data slechts 1 maal per 24 uur opvragen. Het verzoek kan enkele momenten duren, verlaat de pagina niet voordat er een download is gestart. Zorg ervoor dat u uw inzicht opslaat!",
+            "sure": "Ja, ik ben zeker!",
+            "not_sure": "Ik ben niet zeker, breng me terug!",
+            "request_success": "Data Pakket Opgevraagd",
+            "request_success_full": "Uw data pakket is met succes opgevraagd. U ontvangt binnenkort een e-mail met de download link!",
+            "delete_success": "AltDentifier Data Verwijderd",
+            "delete_success_full": "Uw verwijderingsverzoek wordt verwerkt en zal binnenkort voltooid worden. We hebben uw account voor 48 uur de toegang tot AltDentifier ontzegt voor anti-misbruik redenen. U kunt na deze periode altijd uw account terugbrengen. We hopen u in de toekomst weer te zien!",
+            "return": "Terugkeren naar Dashboard"
+        },
+        "save_success": "Uw instellingen zijn met success opgeslagen!",
+        "save_error": "Een fout is opgetreden tijdens het opslaan van uw instellingen. Probeer opnieuw, of vraag om ondersteuning als het probleem blijft optreden!"
     },
     "error": {
         "title": "Er is een fout opgetreden",
@@ -372,7 +477,12 @@
     },
     "incorrect_account": {
         "title": "Onjuist Account",
-        "desc": "Het account waarmee u bent ingelogd is het niet hetzelfde als het account waarvoor u wilt verifieren. Server moderatie is hierover ingelicht!"
+        "desc": "Het account waarmee u bent ingelogd is het niet hetzelfde als het account waarvoor u wilt verifieren. Server moderatie is hierover ingelicht!",
+        "msg": "%s heeft geprobeerd te verifieëren met een ander Discord account. Dit account is van %s#%s",
+        "ban": "%s#%s is in uw banlijst gevonden. Om deze reden hebben wij %s verbanned!!",
+        "kicked": "Daarnaast heeft deze server besloten iedereen te kicken die met een verkeerd account verifieërd. Neem contact op met de server moderators als u denkt dat dit een fout is!\nAltDentifier kan u hierbij niet helpen!",
+        "banned": "Daarnaast heeft deze server besloten iedereen te verbannen die met een verkeerd account verifieërd. Neem contact op met de server moderators als u denkt dat dit een fout is!\nAltDentifier kan u hierbij niet helpen!"
+
     },
     "index": {
         "desc": "De beste Discord beveiligings en checkpoint bot!",
@@ -426,12 +536,15 @@
         "purchase_basic": "Koop Basic",
         "purchase_pro": "Koop Pro",
         "purchase_ultra": "Koop Ultra",
+        "boost": "Server Boosting",
+        "boost_desc": "Gebruikers kunnen nu AltDentifier Premium voor 1 server volledig gratis krijgen! Het enige dat u moet doen, is onze Discord server een kleine boost geven. Uw Premium blijft actief zolang u blijft boosten!",
+        "join_server": "Betreed onze Discord",
         "terms": "Door een abonnement aan te schaffen gaat u ermee akkoord dat u onmiddelijke toegang wordt verstrekt tot de functionaliteit na betaling.<br>Als u uw aankoop ongedaan wilt maken, kunt u mailen naar <a href=\"mailto:https://contact@altdentifier.com\">contact@altdentifier.com</a>. U gaat ermee akkoord dat u eerst met ons contact opneemt als u uw geld terug wilt vragen. Chargebacks zonder contact op te nemen kan resulteren in een permanente blokkade van onze diensten."
     },
     "requested": {
         "title": "Dataverzoek",
         "short": "Verzoek te recent!",
-        "long": "Uw dataverzoek was te recent, u kunt dit slechts 1 maal per 24 uur doen."
+        "long": "Uw dataverzoek was te recent, u kunt dit slechts 1 maal per twee weken doen."
     },
     "restricted": {
         "title": "Beperkt",
@@ -447,7 +560,7 @@
     "status": {
         "title": "AltDentifier Status",
         "website": "AltDentifier Website",
-        "bot": "AltDentifier Bot",
+        "bot": "Cluster Gemiddelde",
         "status": "Status: ",
         "latency": "Vertraging: ",
         "offline": "Offline",

@@ -84,7 +84,7 @@
                     "language_desc": "Set the language AltDentifier should use in your server!",
                     "prefix": "Prefix: ",
                     "prefix_desc": "Set the prefix AltDentifier should listen for in your server!",
-                    "timezone": "Timezone (GMT Offset): ",
+                    "timezone": "Timezone: ",
                     "timezone_desc": "Set the timezone AltDentifier should use when dates are sent!",
                     "autorole": "Autorole: ",
                     "autorole_desc": "Automatically give the Default Role to users that do not have to verify!"
@@ -146,6 +146,7 @@
                 }
             },
             "access_roles": {
+                "title": "Access Roles",
                 "mod_roles": "Mod Roles",
                 "mod_roles_desc": "Select roles that can access command that are restricted, such as force and bypass",
                 "admin_roles": "Admin Roles",
@@ -237,10 +238,21 @@
         "privacy": {
             "title": "Privacy Settings",
             "request": "Request Personal Data",
+            "request_sure": "You can request your data package from AltDentifier once every two weeks. When continuing, AltDentifier will ask you to confirm your account and ask for your e-mail address. This address is only used for AltDentifier to know where the data package should be sent. Are you sure you want to request your data package?",
             "delete": "Delete Personal Data",
+            "delete_sure": "When you delete all your data, you will be restricted from accessing AltDentifier services for 48 hours. This action cannot be undone! Are you sure you want to delete your data?",
             "delete_confirm": "When you delete your account data, you will be restricted from using our services for 48 hours. This process may take a while, do not leave the page while it is still loading! Are you sure you want to delete your personal data?",
-            "request_confirm": "You can only request a data insight once per 24 hours. This process may take a while, do not leave the page before a download link appears. Make sure to save your dump!"
-        }
+            "request_confirm": "You can only request a data insight once per 24 hours. This process may take a while, do not leave the page before a download link appears. Make sure to save your dump!",
+            "sure": "Yes, I'm sure!",
+            "not_sure": "I'm not sure, bring me back!",
+            "request_success": "Data Package Requested",
+            "request_success_full": "Your data package has been requested succesfully. You should receive an e-mail with your download link shortly!",
+            "delete_success": "AltDentifier Data Deleted",
+            "delete_success_full": "Your deletion request is being processed and should complete soon. We have restricted your account from accessing AltDentifier for 48 hours for anti-abuse reasons. You can always reinstate your account after this period. We hope to see you return in the future!",
+            "return": "Return to Dashboard"
+        },
+        "save_success": "Your settings have been saved succesfully!",
+        "save_error": "An error occurred while saving your settings. Please retry, or ask for support if the problem persists!"
     },
     "error": {
         "title": "An Error Occurred",
@@ -469,7 +481,7 @@
         "desc": "The account you are using to login is not the same as the account asked to verify. Server staff has been alerted of this.",
         "msg": "%s has attempted to verify with a different account. This account belongs to %s#%s",
         "ban": "%s#%s has been found in your ban list. %s has been banned as a result!",
-        "kicked": "In addition, this server has decided to remove all members that verify with a different Discord account. Please contact the server's moderation team if you think this is a mistake!\nAltDentifier cannot assist you with this!",
+        "kicked": "In addition, this server has decided to kick all members that verify with a different Discord account. Please contact the server's moderation team if you think this is a mistake!\nAltDentifier cannot assist you with this!",
         "banned": "In addition, this server has decided to ban all members that verify with a different Discord account. Please contact the server's moderation team if you think this is a mistake!\nAltDentifier cannot assist you with this!"
     },
     "index": {
@@ -524,12 +536,15 @@
         "purchase_basic": "Purchase Basic",
         "purchase_pro": "Purchase Pro",
         "purchase_ultra": "Purchase Ultra",
+        "boost": "Server Boosting",
+        "boost_desc": "Users can now get AltDentifier Premium for 1 server totally free. All you need to do is give our Discord a little server boost, and you'll keep your perks as long as you keep boosting!",
+        "join_server": "Join our Discord",
         "terms": "By purchasing a subscription you agree that you are being provided with immediate access to your perks upon payment.<br>To receive a refund, please contact us by e-mail using <a href=\"mailto:contact@altdentifier.com\">contact@altdentifier.com</a>.<br>You agree that if you wish to get a refund, you will contact us first. Charging back before contacting us may result in a permanent ban from our services."
     },
     "requested": {
         "title": "Data Requested",
         "short": "Request too recent!",
-        "long": "You have recently requested your data. You can only do this once per 24 hours. Please try again later."
+        "long": "You have recently requested your data. You can only do this once every two weeks. Please try again later."
     },
     "restricted": {
         "title": "Restricted",
@@ -545,7 +560,7 @@
     "status": {
         "title": "AltDentifier Status",
         "website": "AltDentifier Website",
-        "bot": "AltDentifier Bot",
+        "bot": "Cluster Average",
         "status": "Status: ",
         "latency": "Latency: ",
         "offline": "Offline",
