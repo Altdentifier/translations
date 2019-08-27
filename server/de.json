@@ -1,7 +1,7 @@
 {
     "dashboard": {
         "profile": {
-            "title": "AltDentifier Armaturenbrett",
+            "title": "AltDentifier Dashboard",
             "welcome": "Willkommen zurück, %s",
             "profile": "Profil",
             "servers": "Server",
@@ -14,23 +14,23 @@
             "not_banned": "Nicht Gesperrt",
             "banned": "Gesperrt",
             "ksoft_ban": " KSoft.si Sperrstatus",
-            "trustfactor": "Was ist Vertrauensfaktor?",
+            "trustfactor": "Was ist Trust Factor?",
             "trustfactor_explained": "AltDentifier Trust Factor ist ein von Auxim#0001 entwickeltes System, das die Vertrauenswürdigkeit Ihres Discord-Kontos bestimmt. Der Vertrauensfaktor wird unter Verwendung benutzerdefinierter Formeln berechnet, die mehrere Faktoren bei der Berechnung des Endwerts berücksichtigen. Nachdem ein Vertrauensfaktor berechnet wurde, überprüfen wir den Bereich, in den Ihr Vertrauensfaktor fällt und den wir Ihnen anzeigen. Diese Vertrauensfaktoren reichen von sehr unzuverlässig bis sehr vertrauenswürdig. Ihr Vertrauensfaktor wird dann verwendet, um zu entscheiden, ob Ihr Konto beim Beitritt zu einem geschützten AltDentifier-Server überprüft werden muss!",
             "premium": {
                 "title": "Premium",
                 "your_tier": "Ihre Premium-Stufe",
                 "plan": "Ihr aktueller Plan: ",
                 "click_here": "Klick hier",
-                "no_premium": "Es scheint, als hättest du keine Premium.",
+                "no_premium": "Es scheint, als hättest du kein Premium.",
                 "ad-free": "Sie befinden sich derzeit auf unserer werbefreien Ebene. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
                 "basic": "Sie befinden sich derzeit auf unserer Basisstufe. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
-                "pro": "Du bist derzeit auf unserer Pro-Tier. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
-                "ultra": "Du befindest dich derzeit auf unserer Ultra-Ebene. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
+                "pro": "Sie befinden sich derzeit auf unserer Pro Stufe. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
+                "ultra": "Sie befinden dich derzeit auf unserer Ultra Stufe. Wenn du deinen Plan aktualisieren oder ändern möchtest,",
                 "offer": "um unsere Premium-Pläne zu sehen. Wenn Sie Premium kaufen, sollte es aktualisiert werden, wenn Sie die Seite aktualisieren. Wenn dies nicht der Fall ist, klicken Sie bitte auf die Schaltfläche Patreon aktualisieren unten!",
                 "change_plan": "Wenn du deinen Plan änderst, sollte er automatisch auf dieser Seite aktualisiert werden. Wenn dies nicht der Fall ist, klicken Sie bitte auf die Schaltfläche Patreon aktualisieren unten!",
-                "perks": "Enthaltene Vergünstigungen",
+                "perks": "Enthaltene Rabatte",
                 "no-ads": "Verwenden Sie AltDentifier ohne Werbung. Du wirst nie Werbung auf einer Seite sehen!",
-                "activate-on": "Premium aktivieren bei %s Server",
+                "activate-on": "Premium aktivieren bei %s Servern",
                 "activate-on-one": "Premium aktivieren bei %s Server",
                 "servers-left": "Du hast noch %s Server übrig!",
                 "servers-left-one": "Du hast noch %s Server übrig!",
@@ -39,74 +39,29 @@
         },
         "server": {
             "title": "Verwalten von %s",
-            "menu_settings": "Dein Server",
+            "menu_settings": "Einstellungen",
             "menu_accessroles": "Zugriff auf Rollen",
             "menu_banlists": "Banlisten",
-            "menu_moderation": "Moderation",
-            "menu_verification": "Verifikation",
-            "menu_logging": "Logging",
-            "menu_auditlog":  "Audit-log",
+            "menu_raidmode": "Raidmodus",
             "menu_premium": "Premium",
             "menu_save": "Einstellungen speichern",
             "settings": {
-                "owner": "Eigentümer: %s",
-                "members": "%s Mitglied(en)",
-                "current": "%s Mitglied(en) derzeit in Verifizierung",
-                "server_stats": {
-                    "daily": {
-                        "title": "Täglich",
-                        "total": "%s Mitglied(en) heute durch Verifizierung geführt!",
-                        "success": "%s Mitglied(en) haben heute die Verifizierung bestanden!",
-                        "failure": "%s Mitglied(en) haben heute die Verifizierung fehlgeschlagen!",
-                        "bypass": "%s Mitglied(en) haben heute die Verifizierung überspringt!",
-                        "incorrect": "%s Mitglied(en) haben heute wegen Kontoinkongruenz Masßnahmen gegen sie ergriffen!"
-                    },
-                    "weekly": {
-                        "title": "Wöchentlich",
-                        "total": "%s Mitglied(en) sind diese Woche durch Verifizierung geführt!",
-                        "success": "%s Mitglied(en) haben diese Woche die Verifizierung bestanden!",
-                        "failure": "%s Mitglied(en) haben diese Woche die Verifizierung fehlgeschlagen!",
-                        "bypass": "%s Mitglied(en) haben diese Woche die Verifizierung überspringt!",
-                        "incorrect": "%s Mitglied(en) haben diese Woche wegen Kontoinkongruenz Masßnahmen gegen sie ergriffen!"
-                    },
-                    "monthly": {
-                        "title": "Monatlich",
-                        "total": "%s Mitglied(en) sind diesen Monat durch Verifizierung geführt!",
-                        "success": "%s Mitglied(en) haben diesen Monat die Verifizierung bestanden!",
-                        "failure": "%s Mitglied(en) haben diesen Monat die Verifizierung fehlgeschlagen!",
-                        "bypass": "%s Mitglied(en) haben diesen Monat die Verifizierung überspringt!",
-                        "incorrect": "%s Mitglied(en) haben diesen Monat wegen Kontoinkongruenz Masßnahmen gegen sie ergriffen!"
-                    }
-                },
                 "main_settings": {
                     "title": "Haupteinstellungen",
                     "language": "Sprache: ",
-                    "language_desc": "Stellen Sie die Sprache ein, die AltDentifier auf Ihrem Server verwenden soll!",
                     "prefix": "Präfix: ",
-                    "prefix_desc": "Setzen Sie das Präfix, auf das AltDentifier auf Ihrem Server warten soll!",
                     "timezone": "Zeitzone (GMT Offset): ",
-                    "timezone_desc": "Stellen Sie die Zeitzone ein, die AltDentifier beim Senden von Daten verwenden soll!",
-                    "autorole": "Autorolle: ",
-                    "autorole_desc": "Geben Sie die Standardrolle automatisch an Benutzer weiter, die nicht verifiziert werden müssen!"
+                    "autorole": "Autorolle: "
                 },
                 "verification_settings": {
                     "title": "Verifizierungseinstellungen",
                     "altdentification": "AltDentifizierung: ",
-                    "altdentification_desc": "Aktivieren oder deaktivieren Sie die automatische Verifizierung von Mitgliedern gemäß Ihrem Vertrauensfaktor.",
                     "bot_channel": "Botkanal: ",
-                    "bot_channel_desc": "Ändert den Kanal, in dem der Bot-Ausgang den Status der Überprüfung hat. Dieser Kanal sollte nur für Mitarbeiter zugänglich sein!",
                     "warning_channel": "Warnkanal: ",
-                    "warning_channel-desc": "Ändern Sie den Kanal, über den Mitglieder in der Verifizierung über potenzielle Probleme informiert werden!",
                     "default_role": "Standardrolle: ",
-                    "default_role_desc": "Wählen Sie eine Rolle aus, die alle Mitglieder, die verifieren, haben sollen. Wenn du nicht alle verifizierst, stelle sicher, dass die Autorolle unter den Haupteinstellungen aktiviert ist!",
                     "in_verif_role": "Rolle bei der Verifizierung: ",
-                    "in_verif_role_desc": "Wählen Sie eine Rolle aus, die Sie den Mitgliedern während der verifiezierung geben möchten.",
                     "timeout_action": "Timeout-Aktion: ",
-                    "timeout_action_desc": "Wählen Sie aus, was passiert, wenn ein Mitglied nicht rechtzeitig auf die Verifizierung reagiert.",
-                    "incorrect_action": "Konto-Fehlanpassungsaktion:",
-                    "incorrect_action_desc": "Wählen Sie aus, was passiert, wenn sich ein Mitglied in der Verifikation mit einem anderen Konto als erwartet bei AltDentifier anmeldet!\nSeien Sie sich bewusst, dass Fehler passieren können, also wägen Sie Ihre Optionen sorgfältig ab!",
                     "timeout_role": "Timeout-Rolle: ",
-                    "timeout_role_desc": "Wenn Sie eine Rolle als Timeout-Aktion angeben, wählen Sie hier eine aus!",
                     "verification": "Verifizierung",
                     "disabled": "Deaktiviert",
                     "everyone": "Alle",
@@ -114,31 +69,19 @@
                     "trusted-and-higher": "Vertrauenswürdig und höher",
                     "very-trusted-only": "Nur sehr vertrauenswürdig",
                     "trustfactor_threshold": "Vertrauensfaktor Schwellenwert: ",
-                    "trustfactor_threshold_desc": "Wählen Sie den Grad an Vertrauen, den ein Mitglied haben muss, um nicht verifiziert zu werden.",
                     "minimum_karma": "Reddit Minimales Karma: ",
-                    "minimum_karma_desc": "Wähle die Menge an kombiniertem Reddit-Karma, die ein Mitglied haben muss, wenn es die Reddit-Verifizierung bestehen möchte.",
                     "verification_alerts": "Verifizierungswarnungen: ",
-                    "verification_alerts_desc": "Senden Sie eine Nachricht im Warnkanal, wenn jemand verifizieren muss.",
                     "role_block": "Verhindern Sie, dass andere Bots während der Überprüfung Rollen vergeben.:",
-                    "role_block_desc": "Versuchen Sie zu verhindern, dass andere Bots Rollen an Mitglieder vergeben, die derzeit verifizieren.",
                     "vpn_allowed": "VPN-Benutzer von der Verifizierung ausschließen:",
-                    "vpn_allowed_desc": "Verhindern Sie, dass Benutzer, die sich mit einem VPN verbinden, erfolgreich verifizieren.",
                     "timeout_time": "Timeout Zeit: ",
-                    "timeout_time_desc": "Wählen Sie die Zeitspanne, die der Benutzer für die Verifizierung benötigt.",
                     "timeout_minutes": "Minuten",
-                    "self_allowed": "Erlauben Sie anderen Benutzern, deine Überprüfung selbst zu starten: ",
-                    "self_allowed_desc": "Erlaubt es Benutzern, ihre eigene Verifikation mit dem Befehl ;verify manuell zu starten!",
-                    "verification_methods": "Verifikationsmethoden",
-                    "verification_methods_desc": "Aktivieren, Deaktivieren oder Einschränken einer bestimmten Verifikationsmethode für Benutzer"
+                    "self_allowed": "Erlauben Sie anderen Benutzern, deine Überprüfung selbst zu starten: "
                 },
                 "logging_settings": {
                     "title": "Logging-Einstellungen",
                     "enable": "Logging aktivieren: ",
-                    "enable_desc": "Senden Sie eine Nachricht, wenn ein bestimmtes Ereignis auf Ihrem Server eintritt!",
                     "log_channel": "Logkanal: ",
-                    "log_channel_desc": "Wählen Sie den Kanal aus, an den die loggingnachrichten gesendet werden sollen.",
-                    "log_options": "Logging Einstellungen: ",
-                    "log_options_desc": "Wählen Sie die Ereignisse aus, die AltDentifier loggen soll."
+                    "log_options": "Logging Einstellungen: "
                 },
                 "heartbeat": {
                     "title": "AltDentifier Herzschlag",
@@ -147,29 +90,23 @@
             },
             "access_roles": {
                 "mod_roles": "Mod Rollen",
-                "mod_roles_desc": "Wählen Sie Rollen aus, die auf eingeschränkte Befehle zugreifen können, wie z.B. force und bypass.",
-                "admin_roles": "Admin Rollen",
-                "admin_roles_desc": "Wählen Sie Rollen aus, die die Konfiguration des Bot ändern dürfen, z.B. settings."
+                "admin_roles": "Admin Rollen"
             },
             "banlists": {
-                "suffix": "Banlist",
-                "whitelist": "Weißliste",
+                "suffix": "Banliste",
+                "whitelist": "Whiteliste",
                 "new_line": "Platziere jeden Ban auf einer neuen Linie!"
             },
             "raidmode": {
                 "title": "Raidmode",
                 "activate": "Raidmode Aktivieren: ",
-                "activate_desc": "Raidmode aktivieren oder deaktivieren. Dadurch wird die Raidmode Action auf jedes Mitglied angewendet, das beitritt!",
                 "auto": "Auto-Raidmode: ",
-                "auto_desc": "Auto-Raidmode aktiviert den Raidmode automatisch, wenn der Trigger erreicht wird, und deaktiviert ihn selbst nach Ablauf!",
                 "expire": "Auto-Raidmode verfällt in",
                 "expire_2": "minuten!",
                 "trigger": "Auslösung ein:",
                 "per": "Benutzer pro",
                 "unit": "Sekunden",
-                "raidmode_action": "Raidmode Aktion",
-                "raidmode_action_desc": "Stellen Sie die Aktion ein, die AltDentifier gegen Mitglieder durchführen soll, die während der Raubzüge teilnehmen!",
-                "enabled": "WARNUNG: Der Raidmode ist derzeit aktiviert. AltDentifier wird die %s aktion gegen JEDES Mitglied nehmen, das Ihrem Server beitritt!"
+                "raidmode_action": "Raidmode Aktion"
             },
             "premium": {
                 "title": "Premium Einstellungen",
@@ -177,8 +114,6 @@
                 "custom_message": "Benutzerdefinierte Nachricht:",
                 "custom_color": "Benutzerdefinierte Hintergrundfarbe:",
                 "custom_image": "Benutzerdefinierte URL für Hintergrundbilder:",
-                "preview_verify": "Vorschau der Verify Seite",
-                "preview_verification": "Vorschau der Verification Seite",
                 "guidelines": {
                     "title": "Anpassungsrichtlinien und -einschränkungen",
                     "required": "Erforderlich",
@@ -189,13 +124,13 @@
                     "4": "Kundenspezifische Nachrichten dürfen keine Form von Hassreden, Diskriminierung, Rassismus oder anderen obszönen Inhalten enthalten.",
                     "5": "Kundenspezifische Nachrichten dürfen keine Vulgaritäten, Schimpfwörter oder politischen Aussagen enthalten.",
                     "6": "Benutzerdefinierte Hintergrundbilder dürfen keine Gore, NSFW, NSFL oder andere obszöne Inhalte enthalten, die für Benutzer unter 18 Jahren nicht geeignet sind.",
-                    "7": "Benutzerdefinierte Hintergrundbilder müssen auf vertrauenswürdigen Domänen bereitgestellt werden. Dazu gehören unter anderem Imgur, Flickr und Discord CDN.",
+                    "7": "Benutzerdefinierte Hintergrundbilder müssen auf vertrauenswürdigen Domains bereitgestellt werden. Dazu gehören unter anderem Imgur, Flickr und Discord CDN.",
                     "8": "Die benutzerdefinierte Hintergrundfarbe darf nicht zu hell sein, um Konflikte mit weißem Text zu vermeiden.",
                     "9": "Benutzerdefinierte Hintergrundbilder können in keiner Weise animiert werden.",
                     "10": "Benutzerdefinierte Hintergrundbilder sollten für den Benutzer nicht zu störend sein.",
                     "11": "Benutzerdefinierte Nachrichten sollten dem Benutzer etwas über Ihren Server erzählen und erklären, warum er mit AltDentifier überprüfen muss, um ihm beizutreten."
                 },
-                "no_premium": "Dieser Server hat keine Premium!",
+                "no_premium": "Dieser Server hat kein Premium!",
                 "click_here": "Klick hier",
                 "offers": " um sich über unsere Premium-Angebote zu informieren!",
                 "subscription": "Du hast ein Abonnement für unseren Premium-Plan und kannst auf diesem Server Premium aktivieren.",
@@ -203,35 +138,6 @@
                 "still-activatable-one": "Sie können noch %s Server aktivieren!",
                 "activate": "Premium aktivieren",
                 "deactivate": "Premium deaktivieren"
-            },
-            "moderation": {
-                "title": "Mod-Log",
-                "enable": "Mod-Log Aktivieren",
-                "enable_desc": "Aktivieren oder deaktivieren Sie die Mod-Log-Funktion von AltDentifier!",
-                "modlog_channel": "ModLog-Kanal",
-                "modlog_channel_desc": "Wählen Sie den Kanal, auf dem AltDentifier Mod-Log-Fälle ausgeben soll!",
-                "mute_role": "Mute/Bestrafungsrolle",
-                "mute_role_desc": "Wählen Sie eine Rolle, um Personen zu stummschalten oder zu bestrafen. Wenn dies nicht gesetzt ist, sucht AltDentifier nach einer Rolle namens \"Muted\", bevor er den Befehl abbricht!"
-            },
-            "audit_log": {
-                "title": "Dashboard Bearbeitungslog",
-                "date": "Datum",
-                "user": "Benutzer",
-                "changes": "Änderungen"
-            },
-            "logging": {
-                "message_delete": "Nachricht Gelöscht",
-                "message_edit": "Nachricht Bearbeitet",
-                "channel_create": "Kanal Erstellt",
-                "channel_delete": "Kanal Gelöscht",
-                "role_create": "Rolle Erstellt",
-                "role_delete": "Rolle Gelöscht",
-                "member_leave": "Mitglied Verlassen",
-                "member_join": "Mitglied Beitritte",
-                "member_ban": "Mitglied Verbannt",
-                "member_unban": "Mitglied Unbanned",
-                "member_update": "Änderungen an Spitznamen und Rollen",
-                "voice_update": "Sprachkanal Änderungen"
             }
         },
         "privacy": {
@@ -244,20 +150,20 @@
     },
     "error": {
         "title": "Ein Fehler ist aufgetreten",
-        "button_normal": "Zurückgehen",
-        "button_setup": "Setup neu starten"
+        "button_normal": "Zurück",
+        "button_setup": "Setup nochmal durchführen"
     },
     "verification": {
         "title": "Verifizierung für %s",
         "welcome": "Willkommen bei {}!",
-        "method": "Bitte wählen Sie eine Verifizierungsmethode!\nMethoden, die auf der Serverseite deaktiviert sind, werden ausgeblendet. Mit Ausnahme von Xbox Verification ist es nicht erforderlich, Ihr Konto mit Discord zu verknüpfen.",
+        "method": "Bitte wählen Sie eine Verifizierungsmethode!\nMethoden, die auf der Serverseite deaktiviert sind, werden ausgeblendet. Mit Ausnahme von Xbox Verifikation ist es nicht erforderlich, Ihr Konto mit Discord zu verknüpfen.",
         "choices": "Sie können mit AltDentifier mit Reddit, Steam, Twitter, Overwatch, Xbox, Youtube und Captcha überprüfen. Die verfügbaren Optionen hängen vom Server ab. Klicken Sie auf den untenstehenden Button, um mit der Verifizierung fortzufahren!\n\n\nBei der Verifizierung mit AltDentifier stimmen Sie unserer <a href='https://altdentifier.com/tos'>Datenschutzrichtlinie und Allgemeinen Geschäftsbedingungen</a> zu.",
-        "message": "%s möchte Ihnen folgende Nachricht zukommen lassen: %s",
+        "message": "%s hat Ihnen folgende Nachricht gesendet: %s",
         "login": "Anmelden mit Discord",
-        "explain": "Die Serveradministratoren haben auf diesem Server zusätzliche Sicherheitsschritte eingerichtet, um Alt-Accounts, Spammer und Raider zu bekämpfen. Leider wurde Ihr Konto von unserem System als verdächtig markiert, oder ein Moderator hat beantragt, Ihr Konto zu bearbeiten. Wenn unser System Ihr Konto erfolgreich überprüfen kann, steht es Ihnen frei, sich am Server zu beteiligen. Sollte Ihr Konto nicht bestätigen können, {}. Administratoren haben immer die Macht, dieses System zu umgehen. Mit freundlichen Grüßen, das Mitarbeiterteam.",
+        "explain": "Die Serveradministratoren haben auf diesem Server zusätzliche Sicherheitsschritte eingerichtet, um Alt-Accounts, Spammer und Raider zu bekämpfen. Leider wurde Ihr Konto von unserem System als verdächtig markiert, oder ein Moderator hat beantragt, Ihr Konto zu überprüfen. Wenn unser System Ihr Konto erfolgreich überprüfen kann, steht es Ihnen frei, sich am Server zu beteiligen. Sollte Ihr Konto sich nicht bestätigen können, {}. Administratoren haben immer die Macht, dieses System zu umgehen. Mit freundlichen Grüßen, das Mitarbeiterteam.",
         "servers": "Der Benutzer befindet sich auf {} Servern.",
         "actions": {
-            "kick": "wirst du vom Server geworfen.",
+            "kick": "wirst du vom Server gekickt.",
             "ban": "wirst du vom Server gebannt.",
             "role": "bekommst du eine bestimmte Rolle.",
             "nothing": "liegen die getroffenen Maßnahmen im Ermessen des Serverpersonals."
@@ -334,7 +240,7 @@
         "success": {
             "title": "Verifizierung erfolgreich",
             "leave": "Du kannst diese Seite jetzt verlassen.",
-            "dm": "Sie haben Ihr Konto erfolgreich verifiziert. Wir wünschen Ihnen einen angenehmen Aufenthalt in {}!"
+            "dm": "Sie haben Ihr Konto erfolgreich verifiziert. Wir wünschen Ihnen einen angenehmen Aufenthalt in {}{}!"
         },
         "vpn": {
             "yes": "Ja",
@@ -372,8 +278,8 @@
             "tr": "Türkisch (Türkçe)"
         },
         "back": "Zurück",
-        "save-and-continue": "Speichern und Weitermachen",
-        "continue": "Weitermachen",
+        "save-and-continue": "Speichern und weiter",
+        "continue": "weiter",
         "failed": {
             "title": "Setup fehlgeschlagen",
             "reason": "Bot-Kanal oder Warnkanal wurde nicht gesetzt! Diese sind für die Funktion des Bot zwingend erforderlich."
@@ -385,10 +291,10 @@
     },
     "nav": {
         "invite": "Invite",
-        "dashboard": "Armaturenbrett",
+        "dashboard": "Dashboard",
         "blog": "Blog",
         "faq": "FAQ",
-        "commands": "Kommandos",
+        "commands": "Befehle",
         "status": "Status",
         "about": "Über",
         "premium": "Premium",
@@ -404,7 +310,7 @@
         "staff": "Personal",
         "dev": "Entwickler",
         "mod": "Mod",
-        "translator": "Übersetzerin",
+        "translator": "Übersetzer/in",
         "widgets": "Widgets"
     },
     "authorization": {
@@ -425,7 +331,7 @@
         "read_more": "Mehr lesen"
     },
     "commands": {
-        "title": "AltDentifier Kommandos",
+        "title": "AltDentifier Befehle",
         "tip": "Tipp: Verwenden Sie ;help [command] im Bot, um mehr Informationen über einen Befehl zu erhalten!"
     },
     "create_post": {
@@ -436,7 +342,7 @@
     },
     "deleted": {
         "title": "Daten gelöscht",
-        "removed": "Wir löchsten %s Verifizierungsnachrichten",
+        "removed": "Wir löschten %s Verifizierungsnachrichten",
         "restricted": "Ihr Konto wurde vorübergehend gesperrt, und Sie können innerhalb von 48 Stunden wieder auf unsere Dienste zugreifen.",
         "not_restricted": "Dein Konto wurde nicht eingeschränkt.",
         "logged_out": "Du bist jetzt ausgeloggt!"
@@ -466,12 +372,7 @@
     },
     "incorrect_account": {
         "title": "Falsches Konto",
-        "desc": "Das Konto, mit dem Sie sich anmelden, ist nicht dasselbe wie das Konto, das Sie zur Überprüfung aufgefordert haben. Das Serverpersonal wurde darauf aufmerksam gemacht.",
-        "msg": "%s hat versucht, mit einem anderen Konto zu überprüfen. Dieses Konto gehört zu %s#%s",
-        "ban": "%s#%s wurde in Ihrer Sperrliste gefunden. %s wurde deshalb verbannen!",
-        "kicked": "Darüber hinaus hat dieser Server beschlossen, alle Mitglieder, die mit einem anderen Discord-Konto bestätigen, zu kicken. Bitte kontaktieren Sie das Moderatorenteam des Servers, wenn Sie der Meinung sind, dass dies ein Fehler ist!\nAltDentifier kann Ihnen dabei nicht helfen!",
-        "banned": "Darüber hinaus hat dieser Server beschlossen, alle Mitglieder, die mit einem anderen Discord-Konto bestätigen, zu verbannen. Bitte kontaktieren Sie das Moderatorenteam des Servers, wenn Sie der Meinung sind, dass dies ein Fehler ist!\nAltDentifier kann Ihnen dabei nicht helfen!"
-
+        "desc": "Das Konto, mit dem Sie sich anmelden, ist nicht dasselbe wie das Konto, das Sie zur Überprüfung aufgefordert haben. Das Serverpersonal wurde darauf aufmerksam gemacht."
     },
     "index": {
         "desc": "Der beste Discord-Sicherheits- und Kontrollpunkt-Bot!",

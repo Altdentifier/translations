@@ -384,7 +384,11 @@
       "manual_long": "\nDeras förtroendefaktor är %s.\n\nAltDentifier har påbörjat verifieringsprocessen!",
       "self_long": "\nDeras förtroendefaktor är %s.\n\nAltDentifier har påbörjat verifieringsprocessen!",
       "invite_tracker": "Inbjudan Använd",
+<<<<<<< HEAD
       "hello": "Hej %s,\nVälkommen till %s. Den här servern är skyddad av AltDentifier. För att verifiera ditt konto besök %s/verify/%s/%s?lang=%s. Du har %s minuter att slutföra veriferingen!\nMed vänliga hälsningar, %s personal.",
+=======
+      "hello": "Hej %s,\nVälkommen till %s. Den här servern är skyddad av AltDentifier. För att verifiera ditt konto besök https://altdentifier.com/verify/%s/%s?lang=%s. Du har %s minuter att slutföra veriferingen!\nMed vänliga hälsningar, %s personal.",
+>>>>>>> 42b7c93a4a3b6205ce43e527d73f47d62baed176
       "actions": {
         "ban": "du att bli bannlyst från servern!",
         "kick": "du att bli sparkat från servern!",
