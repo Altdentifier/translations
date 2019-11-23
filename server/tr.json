@@ -217,7 +217,7 @@
         "success": {
             "title": "Doğrulama Başarılı",
             "leave": "Bu sayfayı kapatabilirsiniz",
-            "dm": "Hesabınızı başarıyla doğruladığınz. {} sunucusunda iyi bir vakit geçirmenizi diliyoruz!"
+            "dm": "Hesabınızı başarıyla doğruladınız. {} sunucusunda iyi bir vakit geçirmenizi diliyoruz!"
         },
         "vpn": {
             "yes": "Evet",
