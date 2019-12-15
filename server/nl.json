@@ -46,6 +46,7 @@
             "menu_verification": "Verificatie",
             "menu_logging": "Logging",
             "menu_auditlog": "Audit-Log",
+            "menu_alerts": "Alert Regels",
             "menu_premium": "Premium",
             "menu_save": "Instellingen Opslaan",
             "settings": {
@@ -138,7 +139,9 @@
                     "log_channel": "Log Kanaal: ",
                     "log_channel_desc": "Selecteer het kanaal waarin u logging berichten wilt ontvangen",
                     "log_options": "Logging Opties: ",
-                    "log_options_desc": "Selecteer de acties die AltDentifier moet loggen!"
+                    "log_options_desc": "Selecteer de acties die AltDentifier moet loggen!",
+                    "advanced": "Geavanceerde Modus",
+                    "simple": "Simpele Modus"
                 },
                 "heartbeat": {
                     "title": "AltDentifier Hartslag",
@@ -210,6 +213,7 @@
                 "enable": "Schakel Mod-Log in",
                 "enable_desc": "Schakel AltDentifier's mod-log functionaliteit in of uit!",
                 "modlog_channel": "Mod-Log Kanaal",
+                "modlog_channel_desc": "Selecteer het kanaal dat AltDentifier moet gebruiken voor mod-log cases!",
                 "mute_role": "Mute/Strafrol",
                 "mute_role_desc": "Selecteer een rol voor het muten of straffen van mensen. Als dit niet ingesteld is, zal AltDentifier eerst naar een rol Muted zoeken voordat het commando wordt geannuleerd!"
             },
@@ -232,6 +236,30 @@
                 "member_unban": "Member Ontbannen",
                 "member_update": "Bijnaam en Rol Wijzigingen",
                 "voice_update": "Spraakkanaal Wijzigingen"
+            },
+            "alert_rules": {
+                "title": "Alert Regels",
+                "channel": "Kanaal:",
+                "channel_tooltip": "Selecteer het kanaal waarnaar de alert verzonden moet worden.",
+                "message": "Bericht:",
+                "message_tooltip": "Stel het bericht in dat bij deze alert hoort. Dit bericht wordt niet gestript, dus u kunt leden, rollen of zelfs @everyone pingen als dit nodig is.",
+                "start": "Verificatie Gestart",
+                "pass": "Verificatie Gepasseerd",
+                "fail": "Verificatie Gefaald",
+                "ignore": "Verificatie Genegeerd",
+                "incorrect": "Onjuist Account",
+                "webhooks": {
+                    "title": "Webhooks",
+                    "docs": "Documentatie",
+                    "url": "URL:",
+                    "url_tooltip": "Stel de URL in waar webhooks naartoe moeten worden verzonden.",
+                    "signature": "Signature:",
+                    "signature_tooltip": "Elke webhook bevat een Signature en Digest header zodat u de authenticiteit van het bericht kun controleren!",
+                    "regenerate": "Hergenereren",
+                    "integrations": "Integraties",
+                    "no_pub": "Publieke integraties zullen later beschikbaar worden",
+                    "test": "Test Webhook"
+                }
             }
         },
         "privacy": {
@@ -273,6 +301,7 @@
             "role": "u een speciale rol ontvangen",
             "nothing": "de actie die genomen wordt afhankelijk zijn van het moderatieteam"
         },
+        "failed": "%s heeft verificatie niet gehaald vanwege: %s",
         "failure": {
             "title": "Verificatie Mislukt",
             "button": "Terug naar methode selectie"
@@ -331,8 +360,8 @@
         "youtube": {
             "result": "Gebruikersnaam: {}\nAccount Leeftijd: {} dagen\nBeschrijving: {}\nWeergaven: {}\nAbonnees: {}\nVideos: {}\nReacties: {}",
             "fail_1": "Uw verbinding met YouTube is niet geverifieërd door Discord. Controleer alstublieft of er een vinkje bij uw connectie staat. Probeer uw YouTube account opnieuw met Discord te koppelen, of probeer een andere verificatiemethode!",
-            "fail_2": "Er was een probleem met ophalen van uw YouTube data. Probeer opnieuw, of gebruik een andere methode!",
-            "fail_3": "Uw YouTube account is op dit moment niet bruikbaar voor verificatie!"
+            "fail_2": "We konden geen YouTube kanaal vinden dat met uw account is geassocieerd. Controleer of u een kanaal heeft gemaakt! Probeer opnieuw, of gebruik een andere methode!",
+            "fail_3": "Uw YouTube kanaal is op dit moment niet bruikbaar voor verificatie!"
         },
         "xbox": {
             "result": "Gamertag: {}\nGamerscore: {}\nTier: {}\nReputatie: {}",
@@ -352,6 +381,11 @@
             "no": "Nee",
             "maybe": "Misschien",
             "not_allowed": "Deze server staat verificatie niet toe als u een VPN gebruikt. Schakel uw VPN alstublieft uit, en probeer opnieuw!"
+        },
+        "alert_rules": {
+            "fail": "%s heeft verificatie niet gehaald\nReden: %s!",
+            "incorrect": "%s probeerde met een ander account te verifiëren.\nGebruikt account: %s#%s!",
+            "pass": "%s heeft verificatie gehaald!"
         }
     },
     "setup": {

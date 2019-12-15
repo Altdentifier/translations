@@ -46,6 +46,7 @@
             "menu_verification": "Verification",
             "menu_logging": "Logging",
             "menu_auditlog": "Audit-Log",
+            "menu_alerts": "Alert Rules",
             "menu_premium": "Premium",
             "menu_save": "Save Settings",
             "settings": {
@@ -138,7 +139,9 @@
                     "log_channel": "Log Channel: ",
                     "log_channel_desc": "Select the channel you want logging messages to be sent to.",
                     "log_options": "Logging Options: ",
-                    "log_options_desc": "Select the events that you want AltDentifier to log."
+                    "log_options_desc": "Select the events that you want AltDentifier to log.",
+                    "advanced": "Advanced Mode",
+                    "simple": "Simple Mode"
                 },
                 "heartbeat": {
                     "title": "AltDentifier Heartbeat",
@@ -233,6 +236,30 @@
                 "member_unban": "Member Unbanned",
                 "member_update": "Nickname and Role Changes",
                 "voice_update": "Voice Channel Changes"
+            },
+            "alert_rules": {
+                "title": "Alert Rules",
+                "channel": "Channel:",
+                "channel_tooltip": "Select the channel the alert should be sent in.",
+                "message": "Message:",
+                "message_tooltip": "Set the message you want to include in this alert. This message is not cleaned, you can mention members, roles and @everyone if needed.",
+                "start": "Verification Started",
+                "pass": "Verification Passed",
+                "fail": "Verification Failed",
+                "ignore": "Verification Ignored",
+                "incorrect": "Incorrect Account",
+                "webhooks": {
+                    "title": "Webhooks",
+                    "docs": "Documentation",
+                    "url": "URL:",
+                    "url_tooltip": "Enter the URL where you want webhooks to be sent to!",
+                    "signature": "Signature:",
+                    "signature_tooltip": "Every webhook will contain a Signature and Digest header so you can verify the webhooks authenticity!",
+                    "regenerate": "Regenerate",
+                    "integrations": "Integrations",
+                    "no_pub": "Public Integrations will become available at a later time!",
+                    "test": "Test Webhook"
+                }
             }
         },
         "privacy": {
@@ -274,6 +301,7 @@
             "role": "you will receive a certain role",
             "nothing": "the action taken will be up to the discretion of the server staff"
         },
+        "failed": "%s has failed verification for the following reason: %s",
         "failure": {
             "title": "Verification Failed",
             "button": "Return to method selection"
@@ -332,7 +360,7 @@
         "youtube": {
             "result": "Username: {}\nAccount Age: {} days\nDescription: {}\nViews: {}\nSubscribers: {}\nVideos: {}\nComments: {}",
             "fail_1": "Your connection to YouTube was not verified by Discord. Make sure a tick is visible next to your connection in Discord. Please re-link your YouTube account to Discord and try again, or try a different method!",
-            "fail_2": "There was a problem retrieving your YouTube profile from the API. Please try again, or use a different method!",
+            "fail_2": "We could not find a YouTube channel associated with your account. Make sure you have a created a channel! Please try again, or use a different method!",
             "fail_3": "Your YouTube account is currently not eligible for verification"
         },
         "xbox": {
@@ -353,6 +381,11 @@
             "no": "No",
             "maybe": "Maybe",
             "not_allowed": "This server does not allow users to verify while using a VPN. Please disable your VPN and try again!"
+        },
+        "alert_rules": {
+            "fail": "%s failed verification\nReason: %s!",
+            "incorrect": "%s has attempted to verify with a different account.\nAccount Used: %s#%s!",
+            "pass": "%s passed verification succesfully!"
         }
     },
     "setup": {

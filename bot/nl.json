@@ -383,12 +383,12 @@
         "self": "%s heeft hun eigen verificatie gestart!",
         "raidmode": "%s is tijdens een raid binnengekomen!",
         "suspicious_long_age": "%s heeft een account waarvan de leeftijd lager is dan uw grens.\n\n%s's account is %s dagen oud, maar uw grens is %s dagen. %s is de server binnengetreden op %s\n\nAltDentifier heeft het verificatieproces gestart.",
-        "suspicious_long_tf": "%s heeft een account waarvan de vertrouwensfactor lager is dan uw grens.\n\n%s's account heef een vertrouwensfactor van %s, maar uw grens is %s.\n\nAltDentifier heeft het verificatieproces gestart.",
+        "suspicious_long_tf": "%s heeft een account waarvan de vertrouwensfactor lager is dan uw grens.\n\n%s's account heef een vertrouwensfactor van %s, maar uw grens is %s.\n\n%s's account is %s dagen oud. %s is de server binnengetreden op %s!\n\nAltDentifier heeft het verificatieproces gestart.",
         "manual_long": "\nHeeft een vertrouwensfactor van %s.\n\nAltDentifier heeft het verificatieproces gestart.",
         "self_long": "\nHeeft een vertrouwensfactor van %s.\n\nAltDentifier heeft het verificatieproces gestart.",
         "raidmode_long": "\nHeeft een vertrouwensfactor van %s\n\nAltDentifier is ingesteld om alle leden te verifiëren tijdens wanneer raidmodus is ingeschakeld!\n\nAltDentifier heeft het verificatieproces gestart.",
         "invite_tracker": "Gebruikte Uitnodiging",
-        "hello": "Hallo %s,\nWelkom in %s. Deze server wordt bescherm door AltDentifier. Om uw account te verifiëren, bezoekt u %s/verify/%s/%s?lang=%s. U heeft %s minuten om het verificatieproces te voltooien!\nMet vriendelijke groet, de staf van %s .",
+        "hello": "Hallo %s,\nWelkom in %s. Deze server wordt bescherm door AltDentifier. Om uw account te verifiëren, bezoekt u %s/verify/%s?lang=%s. U heeft %s minuten om het verificatieproces te voltooien!\nMet vriendelijke groet, de staf van %s .",
         "actions": {
             "ban": "u wordt van de server verbannen!",
             "kick": "u wordt van de server verwijderd!",
@@ -420,8 +420,11 @@
         "not_verified": "Dit lid wordt op dit moment niet geverifieërd!",
         "success": "U heeft uw account met succes geverifieërd. We hopen dat u een fijne ervaring heeft in %s!",
         "warn": "Hallo %s, om in deze server te kunnen spreken, moet u uw account verifiëren. Lees het bericht dat ik u verzonden heb zorgvuldig. U heeft %s minuten om verificatie te voltooien!",
-        "in_verif": "U ondergaat nog steeds verificatie. Verifieër uzelf alstublieft met bovenstaande link!",
-        "in_verif_audit": "Lid bevindt zich nog steeds in verificatie"
+        "in_verif": "U ondergaat nog steeds verificatie. Verifieër alstublieft door <%s/verify/%s?lang=%s> te bezoeken!",
+        "in_verif_audit": "Lid bevindt zich nog steeds in verificatie",
+        "no_start": "Verificatie kon om deze reden niet gestart worden!",
+        "no_bot": "U heeft geen bot kanaal ingesteld. Verificatie zal niet werken zonder bot kanaal. Zorg ervoor dat u een bot kanaal heeft gekozen door hem op ons controlepaneel in te stellen, te vinden via <https://altdentifier.com/dashboard>.",
+        "no_warn": "U heeft geen waarschuwingskanaal ingesteld. Verificatie zal niet werken zonder waarschuwingskanaal. Zorg ervoor dat u een waarschuwingskanaal heeft gekozen door hem op ons controlepaneel in te stellen, te vinden via <https://altdentifier.com/dashboard>."
     },
     "autoraidmode": {
         "raided": "Het lijkt erop dat er een raid plaatsvind in uw server! De volgende gebruikers zijn in deze periode binnengekomen en worden %s: \n%s",
@@ -442,7 +445,7 @@
         "no_kick": "U heeft ervoor gekozen leden te verwijderen als ze zich niet verifieren, maar het zal mij niet lukken om ze te verwijderen. Controleer alstublieft of ik de LEDEN VERWIJDEREN permissie heb!",
         "no_ban": "U heeft ervoor gekozen leden te verbannen als ze zich niet verifieren, maar het zal mij niet lukken om ze te verbannen. Controleer alstublieft of ik de LEDEN VERBANNEN permissie heb!",
         "no_audit_log": "U heeft rolblokkade ingeschakeld, maar ik kan het audit-logboek niet inzien. Controleer alstublieft of ik de AUDIT-LOGBOEK WEERGEVEN permissie heb!",
-        "no_verif_methods": "Alle Verificatie Methoden in deze server zijn uitgeschakeld. Leden die binnenkomen zullen zich niet kunnen verifiëren!"
+        "no_verif_methods": "Uw Verificatiemethoden zijn op dusdanige wijze ingesteld dat sommige leden die binnenkomen zich niet kunnen verifieren.\nZorg ervoor dat tenminste één verificatiemethode beschikbaar is voor \"Iedereen\""
     },
     "errors": {
         "no_member": "U moet een lid benoemen voor dit commando! Kies een gebruiker door hen te vermelden, hun naam of hun ID in te typen!",
@@ -553,5 +556,10 @@
         "mod": "Moderator",
         "no_reason": "Geen reden gegeven. U kunt een reden instellen met %sr %s redenhier!",
         "future": "Deze casus moet nog gebeuren. We hebben geen idee wat plaats gaat vinden!"
+    },
+    "alert_rules": {
+        "start": "Verificatie gestart voor %s",
+        "ignore": "%s heeft niet gereageerd op verificatie! Genomen actie: %s",
+        "bypass": "De verificatie van %s was overgeslagen!"
     }
 }

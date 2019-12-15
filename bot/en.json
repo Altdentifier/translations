@@ -22,7 +22,7 @@
             "muted": "%s has been muted!",
             "muted_reason": "%s has been muted for the following reason: \"%s\"",
             "above": "You cannot mute members if you cannot assign or remove the mute role yourself!",
-            "above_bot": "I could not mute this member! Perhaps this member member has a higher role than me?",
+            "above_bot": "I could not mute this member! Perhaps this member has a higher role than me?",
             "no_perms": "You do not have permission to mute this member!",
             "no_perms_bot": "I do not have permission to mute this member! Please make sure I have the `Manage Roles` permission!",
             "self": "You might want to reconsider muting yourself!",
@@ -33,7 +33,7 @@
         "unmute": {
             "unmuted": "%s has been unmuted!",
             "unmuted_reason": "%s has been unmuted for the following reason: \"%s\"",
-            "above_bot": "I could not unmute this member! Perhaps this member member has a higher role than me?",
+            "above_bot": "I could not unmute this member! Perhaps this member has a higher role than me?",
             "no_perms": "You do not have permission to unmute this member!",
             "no_perms_bot": "I do not have permission to unmute this member! Please make sure I have the `Manage Roles` permission!"
         },
@@ -388,7 +388,7 @@
         "self_long": "\nTheir Trust Factor is %s.\n\nAltDentifier has started the verification process!",
         "raidmode_long": "\nTheir Trust Factor is %s.\n\nAltDentifier is configured to verify all members while the server has raidmode enabled!\n\nAltDentifier has started the verification process!",
         "invite_tracker": "Invite Used",
-        "hello": "Hello %s,\nWelcome to %s. This server is protected by AltDentifier. To verify your account, please visit %s/verify/%s/%s?lang=%s. You have %s minutes to complete verification!\nWith kind regards, the %s staff team.",
+        "hello": "Hello %s,\nWelcome to %s. This server is protected by AltDentifier. To verify your account, please visit %s/verify/%s?lang=%s. You have %s minutes to complete verification!\nWith kind regards, the %s staff team.",
         "actions": {
             "ban": "you will be banned from the server!",
             "kick": "you will be kicked from the server!",
@@ -420,8 +420,11 @@
         "not_verified": "This member is not being verified!",
         "success": "You have succesfully verified your account. We hope you have a pleasant experience in %s!",
         "warn": "Hi %s, to participate in this server, you must verify your account. Please read the DM I sent to you carefully. You have %s minutes to complete verification!",
-        "in_verif": "You are still being verified. Please verify with the link above!",
-        "in_verif_audit": "User still in verification"
+        "in_verif": "You are still being verified. Please verify using <%s/verify/%s?lang=%s>",
+        "in_verif_audit": "User still in verification",
+        "no_start": "Verification could not be started for this reason!",
+        "no_bot": "You do not have a bot channel set up. Verification cannot work without a bot channel. Make sure to select a bot channel by configuring it on the dashboard, visit <https://altdentifier.com/dashboard> to do this!\n\nIf you are a normal user, please alert the server's staff of this problem!",
+        "no_warn": "You do not have a warning channel set up. Verification cannot work without a warning channel. Make sure to select a warning channel by configuring it on the dashboard, visit <https://altdentifier.com/dashboard> to do this!\n\nIf you are a normal user, please alert the server's staff of this problem!",
     },
     "autoraidmode": {
         "raided": "It appears your server is being raided! The following users joined in this period and will be %s: \n%s",
@@ -433,7 +436,7 @@
     },
     "heartbeat": {
         "no_bot_channel": "A bot channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
-        "no_warn_channel": "A warning channel has not been setup! This is r equired for AltDentifier to function correctly. Please choose one!",
+        "no_warn_channel": "A warning channel has not been setup! This is required for AltDentifier to function correctly. Please choose one!",
         "cant_send": "I can't send messages in %s! Please enable the SEND MESSAGES permission!",
         "no_rich": "I can't send rich messages in %s! Enabling EMBED LINKS is recommended for cleaner message!",
         "cant_give": "I can't give %s to new members. Make sure that my highest role is above %s",
@@ -442,7 +445,7 @@
         "no_kick": "You have chosen to kick members when they fail verification, but I will not be able to kick them. Please enable the KICK MEMBERS permission!",
         "no_ban": "You have chosen to ban members when they fail verification, but I will not be able to ban them. Please enable the BAN MEMBERS permission!",
         "no_audit_log": "You have enabled Role Block, but I cannot view the Audit Log. Please enable the VIEW AUDIT LOG permission!",
-        "no_verif_methods": "All Verification Methods in this server are disabled. Users joining will not be able to verify!"
+        "no_verif_methods": "Your Verification Methods are configured in such a way that some members joining may not have a verification method available to them!\nMake sure at least one verification is accessible to \"Everyone\""
     },
     "errors": {
         "no_member": "You must supply a member for this command! Choose a member by mentioning, typing their name or typing their ID!",
@@ -554,5 +557,10 @@
         "reason": "Reason",
         "no_reason": "No reason was given. You can set a reason with %sr %s reasonhere!",
         "future": "This case is from the future. You do not know what happens yet!"
+    },
+    "alert_rules": {
+        "start": "Verification started for %s",
+        "ignore": "%s did not respond to verification! Action Taken: %s",
+        "bypass": "%s has had their verification bypassed!"
     }
 }
